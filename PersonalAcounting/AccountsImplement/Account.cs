@@ -11,6 +11,8 @@ namespace Account
     {
         #region field
         private string _name;
+        private string _owner;
+        private double _createdata;
         #endregion field
 
         #region properties
@@ -22,6 +24,25 @@ namespace Account
             get { return _name; }
             set { _name = value; }
         }
+
+        /// <summary>
+        /// Владелец счета
+        /// </summary>
+        public string Owner
+        {
+            get { return _owner; }
+            set { _owner = value; }
+        }
+
+        /// <summary>
+        /// Дата создания счета
+        /// </summary>
+        public double CreateData
+        {
+            get { return _createdata; }
+            set { _createdata = value; }
+        }
+
         #endregion properties
     }
 }
