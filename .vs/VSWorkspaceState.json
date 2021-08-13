@@ -1,7 +1,10 @@
 {
   "ExpandedNodes": [
-    ""
+    "",
+    "\\PersonalAcounting",
+    "\\PersonalAcounting\\AccountsImplement",
+    "\\PersonalAcounting\\IAccounts"
   ],
-  "SelectedNode": "\\",
+  "SelectedNode": "\\PersonalAcounting\\IAccounts\\IAccountEditor.cs",
   "PreviewInSolutionExplorer": false
 }

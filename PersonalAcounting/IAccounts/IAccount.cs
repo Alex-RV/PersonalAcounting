@@ -1,6 +1,5 @@
 ﻿using System;
 using System.Collections.Generic;
-using System.Data;
 using System.Text;
 
 namespace Account
@@ -23,10 +22,9 @@ namespace Account
 
 
         /// <summary>
-        /// дата или время создания счета
+        /// дата время создания счета
         /// </summary>
-        double CreateDate { get; }
-        //возожно нужно использовать DataTime или String
+        DateTime CreateDate { get; }
 
 
         //TODO: добавить свойства 

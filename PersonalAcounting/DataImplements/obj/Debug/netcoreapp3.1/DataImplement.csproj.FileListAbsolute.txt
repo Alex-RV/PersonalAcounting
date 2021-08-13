@@ -1,0 +1,10 @@
+D:\Work\PersonalAcounting\PersonalAcounting\DataImplements\bin\Debug\netcoreapp3.1\DataImplement.deps.json
+D:\Work\PersonalAcounting\PersonalAcounting\DataImplements\bin\Debug\netcoreapp3.1\DataImplement.dll
+D:\Work\PersonalAcounting\PersonalAcounting\DataImplements\bin\Debug\netcoreapp3.1\DataImplement.pdb
+D:\Work\PersonalAcounting\PersonalAcounting\DataImplements\obj\Debug\netcoreapp3.1\DataImplement.csproj.AssemblyReference.cache
+D:\Work\PersonalAcounting\PersonalAcounting\DataImplements\obj\Debug\netcoreapp3.1\DataImplement.GeneratedMSBuildEditorConfig.editorconfig
+D:\Work\PersonalAcounting\PersonalAcounting\DataImplements\obj\Debug\netcoreapp3.1\DataImplement.AssemblyInfoInputs.cache
+D:\Work\PersonalAcounting\PersonalAcounting\DataImplements\obj\Debug\netcoreapp3.1\DataImplement.AssemblyInfo.cs
+D:\Work\PersonalAcounting\PersonalAcounting\DataImplements\obj\Debug\netcoreapp3.1\DataImplement.csproj.CoreCompileInputs.cache
+D:\Work\PersonalAcounting\PersonalAcounting\DataImplements\obj\Debug\netcoreapp3.1\DataImplement.dll
+D:\Work\PersonalAcounting\PersonalAcounting\DataImplements\obj\Debug\netcoreapp3.1\DataImplement.pdb

@@ -1,0 +1,23 @@
+{
+  "runtimeTarget": {
+    "name": ".NETCoreApp,Version=v3.1",
+    "signature": ""
+  },
+  "compilationOptions": {},
+  "targets": {
+    ".NETCoreApp,Version=v3.1": {
+      "PersonalAcounting/1.0.0": {
+        "runtime": {
+          "PersonalAcounting.dll": {}
+        }
+      }
+    }
+  },
+  "libraries": {
+    "PersonalAcounting/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    }
+  }
+}

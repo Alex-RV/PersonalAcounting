@@ -1,0 +1,10 @@
+D:\Work\PersonalAcounting\PersonalAcounting\IIncome\bin\Debug\netcoreapp3.1\IIncome.deps.json
+D:\Work\PersonalAcounting\PersonalAcounting\IIncome\bin\Debug\netcoreapp3.1\IIncome.dll
+D:\Work\PersonalAcounting\PersonalAcounting\IIncome\bin\Debug\netcoreapp3.1\IIncome.pdb
+D:\Work\PersonalAcounting\PersonalAcounting\IIncome\obj\Debug\netcoreapp3.1\IIncome.csproj.AssemblyReference.cache
+D:\Work\PersonalAcounting\PersonalAcounting\IIncome\obj\Debug\netcoreapp3.1\IIncome.GeneratedMSBuildEditorConfig.editorconfig
+D:\Work\PersonalAcounting\PersonalAcounting\IIncome\obj\Debug\netcoreapp3.1\IIncome.AssemblyInfoInputs.cache
+D:\Work\PersonalAcounting\PersonalAcounting\IIncome\obj\Debug\netcoreapp3.1\IIncome.AssemblyInfo.cs
+D:\Work\PersonalAcounting\PersonalAcounting\IIncome\obj\Debug\netcoreapp3.1\IIncome.csproj.CoreCompileInputs.cache
+D:\Work\PersonalAcounting\PersonalAcounting\IIncome\obj\Debug\netcoreapp3.1\IIncome.dll
+D:\Work\PersonalAcounting\PersonalAcounting\IIncome\obj\Debug\netcoreapp3.1\IIncome.pdb

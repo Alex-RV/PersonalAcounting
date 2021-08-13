@@ -1,0 +1,15 @@
+D:\Work\PersonalAcounting\PersonalAcounting\AccountFabric\bin\Debug\netcoreapp3.1\AccountFabric.deps.json
+D:\Work\PersonalAcounting\PersonalAcounting\AccountFabric\bin\Debug\netcoreapp3.1\AccountFabric.dll
+D:\Work\PersonalAcounting\PersonalAcounting\AccountFabric\bin\Debug\netcoreapp3.1\AccountFabric.pdb
+D:\Work\PersonalAcounting\PersonalAcounting\AccountFabric\bin\Debug\netcoreapp3.1\AccountImplement.dll
+D:\Work\PersonalAcounting\PersonalAcounting\AccountFabric\bin\Debug\netcoreapp3.1\IAccount.dll
+D:\Work\PersonalAcounting\PersonalAcounting\AccountFabric\bin\Debug\netcoreapp3.1\AccountImplement.pdb
+D:\Work\PersonalAcounting\PersonalAcounting\AccountFabric\bin\Debug\netcoreapp3.1\IAccount.pdb
+D:\Work\PersonalAcounting\PersonalAcounting\AccountFabric\obj\Debug\netcoreapp3.1\AccountFabric.csproj.AssemblyReference.cache
+D:\Work\PersonalAcounting\PersonalAcounting\AccountFabric\obj\Debug\netcoreapp3.1\AccountFabric.GeneratedMSBuildEditorConfig.editorconfig
+D:\Work\PersonalAcounting\PersonalAcounting\AccountFabric\obj\Debug\netcoreapp3.1\AccountFabric.AssemblyInfoInputs.cache
+D:\Work\PersonalAcounting\PersonalAcounting\AccountFabric\obj\Debug\netcoreapp3.1\AccountFabric.AssemblyInfo.cs
+D:\Work\PersonalAcounting\PersonalAcounting\AccountFabric\obj\Debug\netcoreapp3.1\AccountFabric.csproj.CoreCompileInputs.cache
+D:\Work\PersonalAcounting\PersonalAcounting\AccountFabric\obj\Debug\netcoreapp3.1\AccountFabric.csproj.CopyComplete
+D:\Work\PersonalAcounting\PersonalAcounting\AccountFabric\obj\Debug\netcoreapp3.1\AccountFabric.dll
+D:\Work\PersonalAcounting\PersonalAcounting\AccountFabric\obj\Debug\netcoreapp3.1\AccountFabric.pdb

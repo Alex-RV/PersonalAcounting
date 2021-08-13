@@ -1,0 +1,13 @@
+D:\Work\PersonalAcounting\PersonalAcounting\AccountsImplement\obj\Debug\netcoreapp3.1\AccountImplement.csproj.AssemblyReference.cache
+D:\Work\PersonalAcounting\PersonalAcounting\AccountsImplement\obj\Debug\netcoreapp3.1\AccountImplement.GeneratedMSBuildEditorConfig.editorconfig
+D:\Work\PersonalAcounting\PersonalAcounting\AccountsImplement\obj\Debug\netcoreapp3.1\AccountImplement.AssemblyInfoInputs.cache
+D:\Work\PersonalAcounting\PersonalAcounting\AccountsImplement\obj\Debug\netcoreapp3.1\AccountImplement.AssemblyInfo.cs
+D:\Work\PersonalAcounting\PersonalAcounting\AccountsImplement\obj\Debug\netcoreapp3.1\AccountImplement.csproj.CoreCompileInputs.cache
+D:\Work\PersonalAcounting\PersonalAcounting\AccountsImplement\bin\Debug\netcoreapp3.1\AccountImplement.deps.json
+D:\Work\PersonalAcounting\PersonalAcounting\AccountsImplement\bin\Debug\netcoreapp3.1\AccountImplement.dll
+D:\Work\PersonalAcounting\PersonalAcounting\AccountsImplement\bin\Debug\netcoreapp3.1\AccountImplement.pdb
+D:\Work\PersonalAcounting\PersonalAcounting\AccountsImplement\bin\Debug\netcoreapp3.1\IAccount.dll
+D:\Work\PersonalAcounting\PersonalAcounting\AccountsImplement\bin\Debug\netcoreapp3.1\IAccount.pdb
+D:\Work\PersonalAcounting\PersonalAcounting\AccountsImplement\obj\Debug\netcoreapp3.1\AccountImplement.csproj.CopyComplete
+D:\Work\PersonalAcounting\PersonalAcounting\AccountsImplement\obj\Debug\netcoreapp3.1\AccountImplement.dll
+D:\Work\PersonalAcounting\PersonalAcounting\AccountsImplement\obj\Debug\netcoreapp3.1\AccountImplement.pdb

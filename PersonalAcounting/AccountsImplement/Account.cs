@@ -12,7 +12,7 @@ namespace Account
         #region field
         private string _name;
         private string _owner;
-        private double _createdata;
+        private DateTime _createdata;
         #endregion field
 
         #region properties
@@ -37,7 +37,7 @@ namespace Account
         /// <summary>
         /// Дата создания счета
         /// </summary>
-        public double CreateData
+        public DateTime CreateDate
         {
             get { return _createdata; }
             set { _createdata = value; }

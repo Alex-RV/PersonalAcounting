@@ -8,6 +8,7 @@ namespace Account
     {
         #region fields
         private AccountList _list;
+
         #endregion fields
 
         #region constructor
@@ -34,6 +35,47 @@ namespace Account
                 correntAccount.Name = name;
             }
         }
-        #endregion metods
+
+
+        public void SetOwner(IAccount account, string owner)
+        {
+            Account correntAccount = account as Account;
+            if (correntAccount != null)
+            {
+                correntAccount.Owner = owner;
+            }
+        }
+
+        public void SetCreateDate(IAccount account, DateTime createdate)
+        {
+            Account correntAccount = account as Account;
+            if (correntAccount != null)
+            {
+                correntAccount.CreateDate = createdate;
+            }
+        }
+
+
+        /*
+            public void Remove(AccountList account, Items)
+            {
+                Account correntAccount = account as Account;
+                if (correntAccount != null)
+                {
+                    correntAccount.List = _;
+                }
+            }*/
+
+        public void Remove(IAccount deleteItem)
+        {
+        Account deleteI = deleteItem as Account;
+            if (deleteI != null)
+            { 
+            _list.Items.Remove(deleteI);
+            }
+        }
+        
     }
+        #endregion metods
+    
 }

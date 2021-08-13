@@ -1,0 +1,10 @@
+D:\Work\PersonalAcounting\PersonalAcounting\AccountsControl\bin\Debug\netcoreapp3.1\AccountControl.deps.json
+D:\Work\PersonalAcounting\PersonalAcounting\AccountsControl\bin\Debug\netcoreapp3.1\AccountControl.dll
+D:\Work\PersonalAcounting\PersonalAcounting\AccountsControl\bin\Debug\netcoreapp3.1\AccountControl.pdb
+D:\Work\PersonalAcounting\PersonalAcounting\AccountsControl\obj\Debug\netcoreapp3.1\AccountControl.csproj.AssemblyReference.cache
+D:\Work\PersonalAcounting\PersonalAcounting\AccountsControl\obj\Debug\netcoreapp3.1\AccountControl.GeneratedMSBuildEditorConfig.editorconfig
+D:\Work\PersonalAcounting\PersonalAcounting\AccountsControl\obj\Debug\netcoreapp3.1\AccountControl.AssemblyInfoInputs.cache
+D:\Work\PersonalAcounting\PersonalAcounting\AccountsControl\obj\Debug\netcoreapp3.1\AccountControl.AssemblyInfo.cs
+D:\Work\PersonalAcounting\PersonalAcounting\AccountsControl\obj\Debug\netcoreapp3.1\AccountControl.csproj.CoreCompileInputs.cache
+D:\Work\PersonalAcounting\PersonalAcounting\AccountsControl\obj\Debug\netcoreapp3.1\AccountControl.dll
+D:\Work\PersonalAcounting\PersonalAcounting\AccountsControl\obj\Debug\netcoreapp3.1\AccountControl.pdb
