@@ -4,8 +4,7 @@ using System.Text;
 
 namespace Income
 {
-    public interface IIncomeList
+    public interface IIncomeList : Base.IBaseList
     {
-        IEnumerable<IIncome> Items { get; }
     }
 }

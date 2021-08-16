@@ -3,7 +3,7 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 16
 VisualStudioVersion = 16.0.31605.320
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "PersonalAcounting", "PersonalAcounting\PersonalAcounting.csproj", "{BA642168-59B6-4474-9E51-2E04D98FDDBD}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "PersonalAcounting", "PersonalAcounting\PersonalAcounting.csproj", "{BA642168-59B6-4474-9E51-2E04D98FDDBD}"
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Base", "Base", "{A89A5EF2-F130-4B2F-A80C-D91AD176CF42}"
 EndProject
@@ -13,39 +13,45 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Costs", "Costs", "{41E955EC
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Data", "Data", "{019980B4-E745-4B7C-83E4-B41FA88F3999}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "IBase", "IBase\IBase.csproj", "{2529A17D-9AD0-4329-A1B6-33745F3859A1}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "IBase", "IBase\IBase.csproj", "{2529A17D-9AD0-4329-A1B6-33745F3859A1}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CostsControls", "CostsControls\CostsControls.csproj", "{3F624B8B-045B-46AB-A32C-35F24C5E343F}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "CostsControls", "CostsControls\CostsControls.csproj", "{3F624B8B-045B-46AB-A32C-35F24C5E343F}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ICosts", "ICosts\ICosts.csproj", "{00BDDD4A-FE0E-47C2-8CD5-597AE7414079}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "ICosts", "ICosts\ICosts.csproj", "{00BDDD4A-FE0E-47C2-8CD5-597AE7414079}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CostsImplement", "CostsImplements\CostsImplement.csproj", "{79ED6B29-F33E-4BF6-8101-28DC138E9445}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "CostsImplement", "CostsImplements\CostsImplement.csproj", "{79ED6B29-F33E-4BF6-8101-28DC138E9445}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "IncomeControls", "IncomeControls\IncomeControls.csproj", "{2A4212D1-C343-4A5B-B09A-593BA009B10D}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "IncomeControls", "IncomeControls\IncomeControls.csproj", "{2A4212D1-C343-4A5B-B09A-593BA009B10D}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "IIncome", "IIncome\IIncome.csproj", "{7357CBDF-DEA4-4ABF-98BF-CA0605C5FB6C}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "IIncome", "IIncome\IIncome.csproj", "{7357CBDF-DEA4-4ABF-98BF-CA0605C5FB6C}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "IncomeImplement", "IncomeImplements\IncomeImplement.csproj", "{8710B559-4725-4F69-9664-7486775E5B0F}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "IncomeImplement", "IncomeImplements\IncomeImplement.csproj", "{8710B559-4725-4F69-9664-7486775E5B0F}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "IData", "IData\IData.csproj", "{9BAEE3F5-C2FA-4F36-9A83-C4C751A2ABBA}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "IData", "IData\IData.csproj", "{9BAEE3F5-C2FA-4F36-9A83-C4C751A2ABBA}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DataImplement", "DataImplements\DataImplement.csproj", "{419F608A-DB69-4E7F-9545-B451A82CAAA6}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "DataImplement", "DataImplements\DataImplement.csproj", "{419F608A-DB69-4E7F-9545-B451A82CAAA6}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BaseImplement", "BaseImplements\BaseImplement.csproj", "{92363806-D7C4-4C3F-9325-AE7473FEC1B5}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "BaseImplement", "BaseImplements\BaseImplement.csproj", "{92363806-D7C4-4C3F-9325-AE7473FEC1B5}"
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Account", "Account", "{07402883-B01F-45EB-A9B5-B9F1DFB31622}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AccountControl", "AccountsControl\AccountControl.csproj", "{031738BA-AC01-4EAE-989F-238BDB11A20E}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "AccountControl", "AccountsControl\AccountControl.csproj", "{031738BA-AC01-4EAE-989F-238BDB11A20E}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "IAccount", "IAccounts\IAccount.csproj", "{4E8E9A81-F105-4C10-BA44-1E70FE70168D}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "IAccount", "IAccounts\IAccount.csproj", "{4E8E9A81-F105-4C10-BA44-1E70FE70168D}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AccountImplement", "AccountsImplement\AccountImplement.csproj", "{A30B05D1-F6A9-486F-B06E-74D3158D798A}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "AccountImplement", "AccountsImplement\AccountImplement.csproj", "{A30B05D1-F6A9-486F-B06E-74D3158D798A}"
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Common", "Common", "{80CBE34D-6C9F-4752-A005-2CD591E729C5}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WPFHelper", "WPFHelper\WPFHelper.csproj", "{D71AC2DF-A92C-40E1-98BB-B3C25A718CFF}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "WPFHelper", "WPFHelper\WPFHelper.csproj", "{D71AC2DF-A92C-40E1-98BB-B3C25A718CFF}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AccountFabric", "AccountFabric\AccountFabric.csproj", "{3B3BAA6B-7811-47FE-BD20-DBF070DABDE3}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "AccountFabric", "AccountFabric\AccountFabric.csproj", "{3B3BAA6B-7811-47FE-BD20-DBF070DABDE3}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Directory", "Directory", "{550A4E7D-6219-4FD9-8723-7DACC6E78011}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DirectoryImplement", "DirectoryImplement\DirectoryImplement.csproj", "{4C2F3A67-FCA5-4C83-A636-6EB60A056AF8}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "IDirectory", "IDirectory\IDirectory.csproj", "{76FEE755-836C-4DB5-BCFB-29BA9E07BBEB}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -117,6 +123,14 @@ Global
 		{3B3BAA6B-7811-47FE-BD20-DBF070DABDE3}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{3B3BAA6B-7811-47FE-BD20-DBF070DABDE3}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{3B3BAA6B-7811-47FE-BD20-DBF070DABDE3}.Release|Any CPU.Build.0 = Release|Any CPU
+		{4C2F3A67-FCA5-4C83-A636-6EB60A056AF8}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{4C2F3A67-FCA5-4C83-A636-6EB60A056AF8}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{4C2F3A67-FCA5-4C83-A636-6EB60A056AF8}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{4C2F3A67-FCA5-4C83-A636-6EB60A056AF8}.Release|Any CPU.Build.0 = Release|Any CPU
+		{76FEE755-836C-4DB5-BCFB-29BA9E07BBEB}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{76FEE755-836C-4DB5-BCFB-29BA9E07BBEB}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{76FEE755-836C-4DB5-BCFB-29BA9E07BBEB}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{76FEE755-836C-4DB5-BCFB-29BA9E07BBEB}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -137,6 +151,8 @@ Global
 		{A30B05D1-F6A9-486F-B06E-74D3158D798A} = {07402883-B01F-45EB-A9B5-B9F1DFB31622}
 		{D71AC2DF-A92C-40E1-98BB-B3C25A718CFF} = {80CBE34D-6C9F-4752-A005-2CD591E729C5}
 		{3B3BAA6B-7811-47FE-BD20-DBF070DABDE3} = {07402883-B01F-45EB-A9B5-B9F1DFB31622}
+		{4C2F3A67-FCA5-4C83-A636-6EB60A056AF8} = {550A4E7D-6219-4FD9-8723-7DACC6E78011}
+		{76FEE755-836C-4DB5-BCFB-29BA9E07BBEB} = {550A4E7D-6219-4FD9-8723-7DACC6E78011}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {0864F8FE-A7FF-4944-AD99-7CC9BD8C43D0}

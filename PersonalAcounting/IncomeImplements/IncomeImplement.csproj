@@ -5,4 +5,9 @@
     <RootNamespace>Income</RootNamespace>
   </PropertyGroup>
 
+  <ItemGroup>
+    <ProjectReference Include="..\BaseImplements\BaseImplement.csproj" />
+    <ProjectReference Include="..\IIncome\IIncome.csproj" />
+  </ItemGroup>
+
 </Project>
