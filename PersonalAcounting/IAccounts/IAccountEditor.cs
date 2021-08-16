@@ -15,7 +15,6 @@ namespace Account
         /// <param name="AddAccount"></param>
         void Add(IAccount AddAccount);
 
-
         /// <summary>
         /// удаление аккаунта
         /// </summary>

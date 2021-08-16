@@ -12,7 +12,7 @@ namespace Account
         #region field
         private string _name;
         private string _owner;
-        private DateTime _createdata;
+        private DateTime _createdate;
         #endregion field
 
         #region properties
@@ -39,8 +39,8 @@ namespace Account
         /// </summary>
         public DateTime CreateDate
         {
-            get { return _createdata; }
-            set { _createdata = value; }
+            get { return _createdate; }
+            set { _createdate = value; }
         }
 
         #endregion properties
