@@ -51,20 +51,10 @@ namespace Account
             Account correntAccount = account as Account;
             if (correntAccount != null)
             {
+                createdate = DateTime.Now;
                 correntAccount.CreateDate = createdate;
             }
         }
-
-
-        /*
-            public void Remove(AccountList account, Items)
-            {
-                Account correntAccount = account as Account;
-                if (correntAccount != null)
-                {
-                    correntAccount.List = _;
-                }
-            }*/
 
         public void Remove(IAccount deleteItem)
         {

@@ -15,6 +15,7 @@ namespace AccountControl.ViewModels
         private string _name;
         private string _owner;
         private IAccountEditor _accountEditor;
+        private DateTime _createDate;
         #endregion fields
 
         #region constructor
@@ -57,6 +58,24 @@ namespace AccountControl.ViewModels
             }
         }
 
+        /// <summary>
+        /// Дата создания счета
+        /// </summary>
+       public DateTime CreateDate
+        {
+            get { return _createDate; }
+            set
+            {
+                if (_createDate != value)
+                {
+                    
+                    _createDate = value;
+                     
+                    OnPropertyChanged(nameof(CreateDate));
+                }
+            }
+        }
+
         WPFHelper.RelayCommand _acceptCommand;
         public WPFHelper.RelayCommand AcceptCommand
         {
@@ -81,6 +100,7 @@ namespace AccountControl.ViewModels
             _account = account;
             Name = _account.Name;
             Owner = _account.Owner;
+            CreateDate = _account.CreateDate;
         }
 
         /// <summary>
@@ -99,6 +119,7 @@ namespace AccountControl.ViewModels
         {
             _accountEditor.SetName(_account, _name);
             _accountEditor.SetOwner(_account, _owner);
+            _accountEditor.SetCreateDate(_account, _createDate);
             OnEndEditing();
         }
         #endregion
