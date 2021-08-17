@@ -6,4 +6,11 @@
     <UseWPF>true</UseWPF>
   </PropertyGroup>
 
+  <ItemGroup>
+    <ProjectReference Include="..\AccountFabric\AccountFabric.csproj" />
+    <ProjectReference Include="..\AccountsControl\AccountControl.csproj" />
+    <ProjectReference Include="..\IAccounts\IAccount.csproj" />
+    <ProjectReference Include="..\WPFHelper\WPFHelper.csproj" />
+  </ItemGroup>
+
 </Project>

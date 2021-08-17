@@ -23,6 +23,8 @@ namespace PersonalAcounting
         public MainWindow()
         {
             InitializeComponent();
+
+            DataContext = new MainViewModel();
         }
     }
 }

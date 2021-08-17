@@ -7,14 +7,81 @@
   "targets": {
     ".NETCoreApp,Version=v3.1": {
       "PersonalAcounting/1.0.0": {
+        "dependencies": {
+          "AccountControl": "1.0.0",
+          "AccountFabric": "1.0.0",
+          "IAccount": "1.0.0",
+          "WPFHelper": "1.0.0"
+        },
         "runtime": {
           "PersonalAcounting.dll": {}
+        }
+      },
+      "AccountControl/1.0.0": {
+        "dependencies": {
+          "IAccount": "1.0.0",
+          "WPFHelper": "1.0.0"
+        },
+        "runtime": {
+          "AccountControl.dll": {}
+        }
+      },
+      "AccountFabric/1.0.0": {
+        "dependencies": {
+          "AccountImplement": "1.0.0",
+          "IAccount": "1.0.0"
+        },
+        "runtime": {
+          "AccountFabric.dll": {}
+        }
+      },
+      "AccountImplement/1.0.0": {
+        "dependencies": {
+          "IAccount": "1.0.0"
+        },
+        "runtime": {
+          "AccountImplement.dll": {}
+        }
+      },
+      "IAccount/1.0.0": {
+        "runtime": {
+          "IAccount.dll": {}
+        }
+      },
+      "WPFHelper/1.0.0": {
+        "runtime": {
+          "WPFHelper.dll": {}
         }
       }
     }
   },
   "libraries": {
     "PersonalAcounting/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    },
+    "AccountControl/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    },
+    "AccountFabric/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    },
+    "AccountImplement/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    },
+    "IAccount/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    },
+    "WPFHelper/1.0.0": {
       "type": "project",
       "serviceable": false,
       "sha512": ""

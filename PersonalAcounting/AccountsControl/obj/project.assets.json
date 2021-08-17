@@ -1,11 +1,49 @@
 {
   "version": 3,
   "targets": {
-    ".NETCoreApp,Version=v3.1": {}
+    ".NETCoreApp,Version=v3.1": {
+      "IAccount/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v3.1",
+        "compile": {
+          "bin/placeholder/IAccount.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/IAccount.dll": {}
+        }
+      },
+      "WPFHelper/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v3.1",
+        "compile": {
+          "bin/placeholder/WPFHelper.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/WPFHelper.dll": {}
+        },
+        "frameworkReferences": [
+          "Microsoft.WindowsDesktop.App.WPF"
+        ]
+      }
+    }
   },
-  "libraries": {},
+  "libraries": {
+    "IAccount/1.0.0": {
+      "type": "project",
+      "path": "../IAccounts/IAccount.csproj",
+      "msbuildProject": "../IAccounts/IAccount.csproj"
+    },
+    "WPFHelper/1.0.0": {
+      "type": "project",
+      "path": "../WPFHelper/WPFHelper.csproj",
+      "msbuildProject": "../WPFHelper/WPFHelper.csproj"
+    }
+  },
   "projectFileDependencyGroups": {
-    ".NETCoreApp,Version=v3.1": []
+    ".NETCoreApp,Version=v3.1": [
+      "IAccount >= 1.0.0",
+      "WPFHelper >= 1.0.0"
+    ]
   },
   "packageFolders": {
     "C:\\Users\\MaynskiyAP\\.nuget\\packages\\": {}
@@ -33,7 +71,14 @@
       "frameworks": {
         "netcoreapp3.1": {
           "targetAlias": "netcoreapp3.1",
-          "projectReferences": {}
+          "projectReferences": {
+            "C:\\Users\\MaynskiyAP\\Source\\Repos\\PersonalAcounting\\PersonalAcounting\\IAccounts\\IAccount.csproj": {
+              "projectPath": "C:\\Users\\MaynskiyAP\\Source\\Repos\\PersonalAcounting\\PersonalAcounting\\IAccounts\\IAccount.csproj"
+            },
+            "C:\\Users\\MaynskiyAP\\Source\\Repos\\PersonalAcounting\\PersonalAcounting\\WPFHelper\\WPFHelper.csproj": {
+              "projectPath": "C:\\Users\\MaynskiyAP\\Source\\Repos\\PersonalAcounting\\PersonalAcounting\\WPFHelper\\WPFHelper.csproj"
+            }
+          }
         }
       },
       "warningProperties": {
