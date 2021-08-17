@@ -14,12 +14,13 @@ namespace AccountControl.ViewModels
         private IAccount _account;
         private string _name;
         private string _owner;
+        private IAccountEditor _accountEditor;
         #endregion fields
 
         #region constructor
-        public AccountEditorViewModel()
-        { 
-
+        public AccountEditorViewModel(IAccountEditor accountEditor)
+        {
+            _accountEditor = accountEditor;
         }
         #endregion constructor
 
@@ -83,12 +84,35 @@ namespace AccountControl.ViewModels
         }
 
         /// <summary>
+        /// Возвращает редактируемый элемент
+        /// </summary>
+        /// <returns></returns>
+        public IAccount GetEditingItem()
+        {
+            return _account;
+        }
+
+        /// <summary>
         /// Метод выполняющийся при нажатии на кнопку Применить
         /// </summary>
         private void Accept()
-        { 
-
+        {
+            _accountEditor.SetName(_account, _name);
+            _accountEditor.SetOwner(_account, _owner);
+            OnEndEditing();
         }
         #endregion
+
+        private void OnEndEditing()
+        {
+            if (EndEditing != null)
+            {
+                EndEditing(this, EventArgs.Empty);
+            }
+        }
+        /// <summary>
+        /// Завершено редактирование
+        /// </summary>
+        public event EventHandler EndEditing;
     }
 }

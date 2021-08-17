@@ -19,3 +19,5 @@ C:\Users\MaynskiyAP\Source\Repos\PersonalAcounting\PersonalAcounting\WPFHelper\o
 C:\Users\MaynskiyAP\Source\Repos\PersonalAcounting\PersonalAcounting\WPFHelper\obj\Debug\netcoreapp3.1\WPFHelper.csprojAssemblyReference.cache
 C:\Users\MaynskiyAP\Source\Repos\PersonalAcounting\PersonalAcounting\WPFHelper\obj\Debug\netcoreapp3.1\WPFHelper.Properties.Resources.resources
 C:\Users\MaynskiyAP\Source\Repos\PersonalAcounting\PersonalAcounting\WPFHelper\obj\Debug\netcoreapp3.1\WPFHelper.csproj.GenerateResource.cache
+D:\Work\PersonalAcounting\PersonalAcounting\WPFHelper\obj\Debug\netcoreapp3.1\WPFHelper.Properties.Resources.resources
+D:\Work\PersonalAcounting\PersonalAcounting\WPFHelper\obj\Debug\netcoreapp3.1\WPFHelper.csproj.GenerateResource.cache

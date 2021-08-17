@@ -15,11 +15,15 @@ namespace AccountControl.ViewModels
         private WPFHelper.RelayCommand _addCommand;
         private bool _visibleEditor = false;
         private AccountEditorViewModel _editor;
+        private IAccountEditor _accountEditor;
+        private IAccountFabric _accountFabric;
         #endregion fields
 
         #region constructor
-        public AccountsViewModel(IAccountList list)
+        public AccountsViewModel(IAccountList list, IAccountEditor accountEditor, IAccountFabric accountFabric)
         {
+            _accountEditor = accountEditor;
+            _accountFabric = accountFabric;
             InitializeItems(list);
         }
         #endregion constructor
@@ -72,16 +76,26 @@ namespace AccountControl.ViewModels
                     {
                         //IAccount account = null;
                         //AccountEditorViewModel accountEditor = new AccountEditorViewModel(account);
-                        VisibleEditor = !VisibleEditor;
+                        VisibleEditor = true;
                         if (Editor == null)
                         {
-                            Editor = new AccountEditorViewModel();
+                            Editor = new AccountEditorViewModel(_accountEditor);
+                            Editor.EndEditing += Editor_EndEditing;
                         }
 
+                        Editor.SetEditingAccount(_accountFabric.CreateNew());
                     });
                 }
                 return _addCommand;
             }
+        }
+
+        private void Editor_EndEditing(object sender, EventArgs e)
+        {
+            IAccount edditingAcount = Editor.GetEditingItem();
+            _accountEditor.Add(edditingAcount);
+            Items.Add(new AccountViewModel(edditingAcount));
+            VisibleEditor = false;
         }
 
         /// <summary>

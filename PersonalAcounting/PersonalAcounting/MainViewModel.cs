@@ -48,7 +48,10 @@ namespace PersonalAcounting
         /// </summary>
         private void InitializeAccouts()
         {
-            Accounts = new AccountsViewModel(_fabricsContainer.AccountFabric.GetAccountList());
+            Accounts = new AccountsViewModel(
+                _fabricsContainer.AccountFabric.GetAccountList(),
+                _fabricsContainer.AccountFabric.GetEditor(),
+                _fabricsContainer.AccountFabric);
         }
         #endregion metods
     }
