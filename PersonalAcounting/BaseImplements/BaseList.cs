@@ -4,7 +4,7 @@ using System.Text;
 
 namespace Base
 {
-    public abstract class BaseList<T> where T:Base
+    public abstract class BaseList<T> where T: IBase
     {
         #region field
         private List<T> _items = new List<T>();

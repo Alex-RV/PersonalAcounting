@@ -8,3 +8,15 @@ D:\Work\PersonalAcounting\PersonalAcounting\IIncome\obj\Debug\netcoreapp3.1\IInc
 D:\Work\PersonalAcounting\PersonalAcounting\IIncome\obj\Debug\netcoreapp3.1\IIncome.csproj.CoreCompileInputs.cache
 D:\Work\PersonalAcounting\PersonalAcounting\IIncome\obj\Debug\netcoreapp3.1\IIncome.dll
 D:\Work\PersonalAcounting\PersonalAcounting\IIncome\obj\Debug\netcoreapp3.1\IIncome.pdb
+C:\Users\MaynskiyAP\Source\Repos\PersonalAcounting\PersonalAcounting\IIncome\obj\Debug\netcoreapp3.1\IIncome.csprojAssemblyReference.cache
+C:\Users\MaynskiyAP\Source\Repos\PersonalAcounting\PersonalAcounting\IIncome\obj\Debug\netcoreapp3.1\IIncome.AssemblyInfoInputs.cache
+C:\Users\MaynskiyAP\Source\Repos\PersonalAcounting\PersonalAcounting\IIncome\obj\Debug\netcoreapp3.1\IIncome.AssemblyInfo.cs
+C:\Users\MaynskiyAP\Source\Repos\PersonalAcounting\PersonalAcounting\IIncome\obj\Debug\netcoreapp3.1\IIncome.csproj.CoreCompileInputs.cache
+C:\Users\MaynskiyAP\Source\Repos\PersonalAcounting\PersonalAcounting\IIncome\obj\Debug\netcoreapp3.1\IIncome.dll
+C:\Users\MaynskiyAP\Source\Repos\PersonalAcounting\PersonalAcounting\IIncome\obj\Debug\netcoreapp3.1\IIncome.pdb
+C:\Users\MaynskiyAP\Source\Repos\PersonalAcounting\PersonalAcounting\IIncome\bin\Debug\netcoreapp3.1\IIncome.deps.json
+C:\Users\MaynskiyAP\Source\Repos\PersonalAcounting\PersonalAcounting\IIncome\bin\Debug\netcoreapp3.1\IIncome.dll
+C:\Users\MaynskiyAP\Source\Repos\PersonalAcounting\PersonalAcounting\IIncome\bin\Debug\netcoreapp3.1\IIncome.pdb
+C:\Users\MaynskiyAP\Source\Repos\PersonalAcounting\PersonalAcounting\IIncome\bin\Debug\netcoreapp3.1\IBase.dll
+C:\Users\MaynskiyAP\Source\Repos\PersonalAcounting\PersonalAcounting\IIncome\bin\Debug\netcoreapp3.1\IBase.pdb
+C:\Users\MaynskiyAP\Source\Repos\PersonalAcounting\PersonalAcounting\IIncome\obj\Debug\netcoreapp3.1\IIncome.csproj.CopyComplete

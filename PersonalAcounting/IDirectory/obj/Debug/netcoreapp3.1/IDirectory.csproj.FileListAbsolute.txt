@@ -1,0 +1,9 @@
+C:\Users\MaynskiyAP\Source\Repos\PersonalAcounting\PersonalAcounting\IDirectory\bin\Debug\netcoreapp3.1\IDirectory.deps.json
+C:\Users\MaynskiyAP\Source\Repos\PersonalAcounting\PersonalAcounting\IDirectory\bin\Debug\netcoreapp3.1\IDirectory.dll
+C:\Users\MaynskiyAP\Source\Repos\PersonalAcounting\PersonalAcounting\IDirectory\bin\Debug\netcoreapp3.1\IDirectory.pdb
+C:\Users\MaynskiyAP\Source\Repos\PersonalAcounting\PersonalAcounting\IDirectory\obj\Debug\netcoreapp3.1\IDirectory.csprojAssemblyReference.cache
+C:\Users\MaynskiyAP\Source\Repos\PersonalAcounting\PersonalAcounting\IDirectory\obj\Debug\netcoreapp3.1\IDirectory.AssemblyInfoInputs.cache
+C:\Users\MaynskiyAP\Source\Repos\PersonalAcounting\PersonalAcounting\IDirectory\obj\Debug\netcoreapp3.1\IDirectory.AssemblyInfo.cs
+C:\Users\MaynskiyAP\Source\Repos\PersonalAcounting\PersonalAcounting\IDirectory\obj\Debug\netcoreapp3.1\IDirectory.csproj.CoreCompileInputs.cache
+C:\Users\MaynskiyAP\Source\Repos\PersonalAcounting\PersonalAcounting\IDirectory\obj\Debug\netcoreapp3.1\IDirectory.dll
+C:\Users\MaynskiyAP\Source\Repos\PersonalAcounting\PersonalAcounting\IDirectory\obj\Debug\netcoreapp3.1\IDirectory.pdb

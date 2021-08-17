@@ -7,7 +7,7 @@ namespace Income
     /// <summary>
     /// редактор доходов
     /// </summary>
-    public interface IIncomeEditor : Base.IBaseEditor
+    public interface IIncomeEditor : Base.IBaseEditor<IIncome>
     {
 
     }

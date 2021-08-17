@@ -8,3 +8,12 @@ D:\Work\PersonalAcounting\PersonalAcounting\CostsControls\obj\Debug\netcoreapp3.
 D:\Work\PersonalAcounting\PersonalAcounting\CostsControls\obj\Debug\netcoreapp3.1\CostsControls.csproj.CoreCompileInputs.cache
 D:\Work\PersonalAcounting\PersonalAcounting\CostsControls\obj\Debug\netcoreapp3.1\CostsControls.dll
 D:\Work\PersonalAcounting\PersonalAcounting\CostsControls\obj\Debug\netcoreapp3.1\CostsControls.pdb
+C:\Users\MaynskiyAP\Source\Repos\PersonalAcounting\PersonalAcounting\CostsControls\bin\Debug\netcoreapp3.1\CostsControls.deps.json
+C:\Users\MaynskiyAP\Source\Repos\PersonalAcounting\PersonalAcounting\CostsControls\bin\Debug\netcoreapp3.1\CostsControls.dll
+C:\Users\MaynskiyAP\Source\Repos\PersonalAcounting\PersonalAcounting\CostsControls\bin\Debug\netcoreapp3.1\CostsControls.pdb
+C:\Users\MaynskiyAP\Source\Repos\PersonalAcounting\PersonalAcounting\CostsControls\obj\Debug\netcoreapp3.1\CostsControls.csprojAssemblyReference.cache
+C:\Users\MaynskiyAP\Source\Repos\PersonalAcounting\PersonalAcounting\CostsControls\obj\Debug\netcoreapp3.1\CostsControls.AssemblyInfoInputs.cache
+C:\Users\MaynskiyAP\Source\Repos\PersonalAcounting\PersonalAcounting\CostsControls\obj\Debug\netcoreapp3.1\CostsControls.AssemblyInfo.cs
+C:\Users\MaynskiyAP\Source\Repos\PersonalAcounting\PersonalAcounting\CostsControls\obj\Debug\netcoreapp3.1\CostsControls.csproj.CoreCompileInputs.cache
+C:\Users\MaynskiyAP\Source\Repos\PersonalAcounting\PersonalAcounting\CostsControls\obj\Debug\netcoreapp3.1\CostsControls.dll
+C:\Users\MaynskiyAP\Source\Repos\PersonalAcounting\PersonalAcounting\CostsControls\obj\Debug\netcoreapp3.1\CostsControls.pdb

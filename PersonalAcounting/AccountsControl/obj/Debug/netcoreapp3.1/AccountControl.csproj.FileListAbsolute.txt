@@ -8,3 +8,12 @@ D:\Work\PersonalAcounting\PersonalAcounting\AccountsControl\obj\Debug\netcoreapp
 D:\Work\PersonalAcounting\PersonalAcounting\AccountsControl\obj\Debug\netcoreapp3.1\AccountControl.csproj.CoreCompileInputs.cache
 D:\Work\PersonalAcounting\PersonalAcounting\AccountsControl\obj\Debug\netcoreapp3.1\AccountControl.dll
 D:\Work\PersonalAcounting\PersonalAcounting\AccountsControl\obj\Debug\netcoreapp3.1\AccountControl.pdb
+C:\Users\MaynskiyAP\Source\Repos\PersonalAcounting\PersonalAcounting\AccountsControl\bin\Debug\netcoreapp3.1\AccountControl.deps.json
+C:\Users\MaynskiyAP\Source\Repos\PersonalAcounting\PersonalAcounting\AccountsControl\bin\Debug\netcoreapp3.1\AccountControl.dll
+C:\Users\MaynskiyAP\Source\Repos\PersonalAcounting\PersonalAcounting\AccountsControl\bin\Debug\netcoreapp3.1\AccountControl.pdb
+C:\Users\MaynskiyAP\Source\Repos\PersonalAcounting\PersonalAcounting\AccountsControl\obj\Debug\netcoreapp3.1\AccountControl.csprojAssemblyReference.cache
+C:\Users\MaynskiyAP\Source\Repos\PersonalAcounting\PersonalAcounting\AccountsControl\obj\Debug\netcoreapp3.1\AccountControl.AssemblyInfoInputs.cache
+C:\Users\MaynskiyAP\Source\Repos\PersonalAcounting\PersonalAcounting\AccountsControl\obj\Debug\netcoreapp3.1\AccountControl.AssemblyInfo.cs
+C:\Users\MaynskiyAP\Source\Repos\PersonalAcounting\PersonalAcounting\AccountsControl\obj\Debug\netcoreapp3.1\AccountControl.csproj.CoreCompileInputs.cache
+C:\Users\MaynskiyAP\Source\Repos\PersonalAcounting\PersonalAcounting\AccountsControl\obj\Debug\netcoreapp3.1\AccountControl.dll
+C:\Users\MaynskiyAP\Source\Repos\PersonalAcounting\PersonalAcounting\AccountsControl\obj\Debug\netcoreapp3.1\AccountControl.pdb

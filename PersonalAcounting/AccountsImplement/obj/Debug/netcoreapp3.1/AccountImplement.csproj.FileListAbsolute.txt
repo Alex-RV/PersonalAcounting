@@ -11,3 +11,15 @@ D:\Work\PersonalAcounting\PersonalAcounting\AccountsImplement\bin\Debug\netcorea
 D:\Work\PersonalAcounting\PersonalAcounting\AccountsImplement\obj\Debug\netcoreapp3.1\AccountImplement.csproj.CopyComplete
 D:\Work\PersonalAcounting\PersonalAcounting\AccountsImplement\obj\Debug\netcoreapp3.1\AccountImplement.dll
 D:\Work\PersonalAcounting\PersonalAcounting\AccountsImplement\obj\Debug\netcoreapp3.1\AccountImplement.pdb
+C:\Users\MaynskiyAP\Source\Repos\PersonalAcounting\PersonalAcounting\AccountsImplement\bin\Debug\netcoreapp3.1\AccountImplement.deps.json
+C:\Users\MaynskiyAP\Source\Repos\PersonalAcounting\PersonalAcounting\AccountsImplement\bin\Debug\netcoreapp3.1\AccountImplement.dll
+C:\Users\MaynskiyAP\Source\Repos\PersonalAcounting\PersonalAcounting\AccountsImplement\bin\Debug\netcoreapp3.1\AccountImplement.pdb
+C:\Users\MaynskiyAP\Source\Repos\PersonalAcounting\PersonalAcounting\AccountsImplement\bin\Debug\netcoreapp3.1\IAccount.dll
+C:\Users\MaynskiyAP\Source\Repos\PersonalAcounting\PersonalAcounting\AccountsImplement\bin\Debug\netcoreapp3.1\IAccount.pdb
+C:\Users\MaynskiyAP\Source\Repos\PersonalAcounting\PersonalAcounting\AccountsImplement\obj\Debug\netcoreapp3.1\AccountImplement.csprojAssemblyReference.cache
+C:\Users\MaynskiyAP\Source\Repos\PersonalAcounting\PersonalAcounting\AccountsImplement\obj\Debug\netcoreapp3.1\AccountImplement.AssemblyInfoInputs.cache
+C:\Users\MaynskiyAP\Source\Repos\PersonalAcounting\PersonalAcounting\AccountsImplement\obj\Debug\netcoreapp3.1\AccountImplement.AssemblyInfo.cs
+C:\Users\MaynskiyAP\Source\Repos\PersonalAcounting\PersonalAcounting\AccountsImplement\obj\Debug\netcoreapp3.1\AccountImplement.csproj.CoreCompileInputs.cache
+C:\Users\MaynskiyAP\Source\Repos\PersonalAcounting\PersonalAcounting\AccountsImplement\obj\Debug\netcoreapp3.1\AccountImplement.csproj.CopyComplete
+C:\Users\MaynskiyAP\Source\Repos\PersonalAcounting\PersonalAcounting\AccountsImplement\obj\Debug\netcoreapp3.1\AccountImplement.dll
+C:\Users\MaynskiyAP\Source\Repos\PersonalAcounting\PersonalAcounting\AccountsImplement\obj\Debug\netcoreapp3.1\AccountImplement.pdb

@@ -4,8 +4,8 @@ using System.Text;
 
 namespace Base
 {
-    class BaseEditor<T>  : IBaseEditor
-        where T : Base, IBase
+    public abstract class BaseEditor<T>  : IBaseEditor<T>
+        where T : IBase
     {
         #region fields
         private BaseList<T> _list;
@@ -28,37 +28,17 @@ namespace Base
             }
         }
 
-        public void SetName(T correntBase, string name)
-        {
-       
-            if (correntBase != null)
-            {
-                correntBase.Name = name;
-            }
-        }
+        public abstract void SetName(T correntBase, string name);
 
+        public abstract void SetAmount(T correntBase, double amount);
 
-        public void SetAmount( T correntBase, double amount)
-        {
-            if (correntBase != null)
-            {
-                correntBase.Amount = amount;
-            }
-        }
+        public abstract void SetCreateDate(T correntBase, DateTime createdate);
 
-        public void SetCreateDate(T correntBase, DateTime createdate)
+        public void Remove(T delete)
         {
-            if (correntBase != null)
+            if (delete != null)
             {
-                correntBase.CreateDate = createdate;
-            }
-        }
-
-        public void Remove(T deleteI)
-        {
-            if (deleteI != null)
-            {
-                _list.Items.Remove(deleteI);
+                _list.Items.Remove(delete);
             }
         }
         #endregion

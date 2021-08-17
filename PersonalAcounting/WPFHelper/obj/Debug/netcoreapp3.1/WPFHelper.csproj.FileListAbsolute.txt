@@ -8,3 +8,11 @@ D:\Work\PersonalAcounting\PersonalAcounting\WPFHelper\obj\Debug\netcoreapp3.1\WP
 D:\Work\PersonalAcounting\PersonalAcounting\WPFHelper\obj\Debug\netcoreapp3.1\WPFHelper.csproj.CoreCompileInputs.cache
 D:\Work\PersonalAcounting\PersonalAcounting\WPFHelper\obj\Debug\netcoreapp3.1\WPFHelper.dll
 D:\Work\PersonalAcounting\PersonalAcounting\WPFHelper\obj\Debug\netcoreapp3.1\WPFHelper.pdb
+C:\Users\MaynskiyAP\Source\Repos\PersonalAcounting\PersonalAcounting\WPFHelper\bin\Debug\netcoreapp3.1\WPFHelper.deps.json
+C:\Users\MaynskiyAP\Source\Repos\PersonalAcounting\PersonalAcounting\WPFHelper\bin\Debug\netcoreapp3.1\WPFHelper.dll
+C:\Users\MaynskiyAP\Source\Repos\PersonalAcounting\PersonalAcounting\WPFHelper\bin\Debug\netcoreapp3.1\WPFHelper.pdb
+C:\Users\MaynskiyAP\Source\Repos\PersonalAcounting\PersonalAcounting\WPFHelper\obj\Debug\netcoreapp3.1\WPFHelper.AssemblyInfoInputs.cache
+C:\Users\MaynskiyAP\Source\Repos\PersonalAcounting\PersonalAcounting\WPFHelper\obj\Debug\netcoreapp3.1\WPFHelper.AssemblyInfo.cs
+C:\Users\MaynskiyAP\Source\Repos\PersonalAcounting\PersonalAcounting\WPFHelper\obj\Debug\netcoreapp3.1\WPFHelper.csproj.CoreCompileInputs.cache
+C:\Users\MaynskiyAP\Source\Repos\PersonalAcounting\PersonalAcounting\WPFHelper\obj\Debug\netcoreapp3.1\WPFHelper.dll
+C:\Users\MaynskiyAP\Source\Repos\PersonalAcounting\PersonalAcounting\WPFHelper\obj\Debug\netcoreapp3.1\WPFHelper.pdb

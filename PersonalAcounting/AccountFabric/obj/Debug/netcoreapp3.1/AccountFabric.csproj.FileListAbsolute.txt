@@ -13,3 +13,17 @@ D:\Work\PersonalAcounting\PersonalAcounting\AccountFabric\obj\Debug\netcoreapp3.
 D:\Work\PersonalAcounting\PersonalAcounting\AccountFabric\obj\Debug\netcoreapp3.1\AccountFabric.csproj.CopyComplete
 D:\Work\PersonalAcounting\PersonalAcounting\AccountFabric\obj\Debug\netcoreapp3.1\AccountFabric.dll
 D:\Work\PersonalAcounting\PersonalAcounting\AccountFabric\obj\Debug\netcoreapp3.1\AccountFabric.pdb
+C:\Users\MaynskiyAP\Source\Repos\PersonalAcounting\PersonalAcounting\AccountFabric\bin\Debug\netcoreapp3.1\AccountFabric.deps.json
+C:\Users\MaynskiyAP\Source\Repos\PersonalAcounting\PersonalAcounting\AccountFabric\bin\Debug\netcoreapp3.1\AccountFabric.dll
+C:\Users\MaynskiyAP\Source\Repos\PersonalAcounting\PersonalAcounting\AccountFabric\bin\Debug\netcoreapp3.1\AccountFabric.pdb
+C:\Users\MaynskiyAP\Source\Repos\PersonalAcounting\PersonalAcounting\AccountFabric\bin\Debug\netcoreapp3.1\AccountImplement.dll
+C:\Users\MaynskiyAP\Source\Repos\PersonalAcounting\PersonalAcounting\AccountFabric\bin\Debug\netcoreapp3.1\IAccount.dll
+C:\Users\MaynskiyAP\Source\Repos\PersonalAcounting\PersonalAcounting\AccountFabric\bin\Debug\netcoreapp3.1\AccountImplement.pdb
+C:\Users\MaynskiyAP\Source\Repos\PersonalAcounting\PersonalAcounting\AccountFabric\bin\Debug\netcoreapp3.1\IAccount.pdb
+C:\Users\MaynskiyAP\Source\Repos\PersonalAcounting\PersonalAcounting\AccountFabric\obj\Debug\netcoreapp3.1\AccountFabric.csprojAssemblyReference.cache
+C:\Users\MaynskiyAP\Source\Repos\PersonalAcounting\PersonalAcounting\AccountFabric\obj\Debug\netcoreapp3.1\AccountFabric.AssemblyInfoInputs.cache
+C:\Users\MaynskiyAP\Source\Repos\PersonalAcounting\PersonalAcounting\AccountFabric\obj\Debug\netcoreapp3.1\AccountFabric.AssemblyInfo.cs
+C:\Users\MaynskiyAP\Source\Repos\PersonalAcounting\PersonalAcounting\AccountFabric\obj\Debug\netcoreapp3.1\AccountFabric.csproj.CoreCompileInputs.cache
+C:\Users\MaynskiyAP\Source\Repos\PersonalAcounting\PersonalAcounting\AccountFabric\obj\Debug\netcoreapp3.1\AccountFabric.csproj.CopyComplete
+C:\Users\MaynskiyAP\Source\Repos\PersonalAcounting\PersonalAcounting\AccountFabric\obj\Debug\netcoreapp3.1\AccountFabric.dll
+C:\Users\MaynskiyAP\Source\Repos\PersonalAcounting\PersonalAcounting\AccountFabric\obj\Debug\netcoreapp3.1\AccountFabric.pdb

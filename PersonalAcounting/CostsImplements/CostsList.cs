@@ -4,7 +4,7 @@ using System.Text;
 
 namespace Costs
 {
-    class CostsList : Base.Base, ICostsList
+    public class CostsList : Base.BaseList<ICosts>, ICostsList
     {
     }
 }

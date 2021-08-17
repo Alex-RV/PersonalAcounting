@@ -4,7 +4,7 @@ using System.Text;
 
 namespace Costs
 {
-    public interface ICostsEditor : Base.IBaseEditor
+    public interface ICostsEditor : Base.IBaseEditor<ICosts>
     {
     }
 }

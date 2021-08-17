@@ -4,7 +4,7 @@ using System.Text;
 
 namespace Income
 {
-    public class IncomeList : Base.Base, IIncomeList
+    public class IncomeList : Base.BaseList<IIncome>, IIncomeList
     {
     }
 }
