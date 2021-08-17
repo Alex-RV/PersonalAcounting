@@ -43,7 +43,8 @@
         <Button 
             Grid.Row="2"
             Grid.Column="0"
-            Content="{x:Static resCom:Resources.Accept}"/>
+            Content="{x:Static resCom:Resources.Accept}"
+            Command="{Binding Path=AcceptCommand}"/>
 
     </Grid>
 </UserControl>

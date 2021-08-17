@@ -17,11 +17,9 @@ namespace AccountControl.ViewModels
         #endregion fields
 
         #region constructor
-        public AccountEditorViewModel(IAccount account)
-        {
-            _account = account;
-            _name = _account.Name;
-            _owner = _account.Owner;
+        public AccountEditorViewModel()
+        { 
+
         }
         #endregion constructor
 
@@ -58,6 +56,39 @@ namespace AccountControl.ViewModels
             }
         }
 
+        WPFHelper.RelayCommand _acceptCommand;
+        public WPFHelper.RelayCommand AcceptCommand
+        {
+            get
+            {
+                if (_acceptCommand == null)
+                {
+                    _acceptCommand = new WPFHelper.RelayCommand("", (p) => { Accept(); });
+                }
+                return _acceptCommand;
+            }
+        }
         #endregion properties
+
+        #region methods
+        /// <summary>
+        /// Установка редактируемого счета
+        /// </summary>
+        /// <param name="account"></param>
+        public void SetEditingAccount(IAccount account)
+        {
+            _account = account;
+            Name = _account.Name;
+            Owner = _account.Owner;
+        }
+
+        /// <summary>
+        /// Метод выполняющийся при нажатии на кнопку Применить
+        /// </summary>
+        private void Accept()
+        { 
+
+        }
+        #endregion
     }
 }

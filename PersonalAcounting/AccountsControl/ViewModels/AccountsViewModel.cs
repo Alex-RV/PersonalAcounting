@@ -14,6 +14,7 @@ namespace AccountControl.ViewModels
         private AccountViewModel _selectedItem = null;
         private WPFHelper.RelayCommand _addCommand;
         private bool _visibleEditor = false;
+        private AccountEditorViewModel _editor;
         #endregion fields
 
         #region constructor
@@ -45,6 +46,22 @@ namespace AccountControl.ViewModels
             }
         }
 
+        /// <summary>
+        /// Редактор
+        /// </summary>
+        public AccountEditorViewModel Editor
+        { 
+            get { return _editor; }
+            set
+            {
+                if (_editor != value)
+                {
+                    _editor = value;
+                    OnPropertyChanged(nameof(Editor));
+                }
+            }
+        }
+
         public WPFHelper.RelayCommand AddCommand
         {
             get
@@ -56,6 +73,11 @@ namespace AccountControl.ViewModels
                         //IAccount account = null;
                         //AccountEditorViewModel accountEditor = new AccountEditorViewModel(account);
                         VisibleEditor = !VisibleEditor;
+                        if (Editor == null)
+                        {
+                            Editor = new AccountEditorViewModel();
+                        }
+
                     });
                 }
                 return _addCommand;

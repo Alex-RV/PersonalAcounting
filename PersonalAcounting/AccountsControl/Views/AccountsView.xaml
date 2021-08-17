@@ -63,6 +63,9 @@
 
         <local:AccountEditorView
             Grid.Row="2"
-            Visibility="{Binding Path=VisibleEditor, Converter={x:Static conv:BoolToVisible.Instance}}"/>
+            Visibility="{Binding Path=DataContext.VisibleEditor, 
+                Converter={x:Static conv:BoolToVisible.Instance}, 
+                RelativeSource={RelativeSource Mode=FindAncestor, AncestorType=UserControl}}"
+            DataContext="{Binding Path=Editor}"/>
     </Grid>
 </UserControl>
