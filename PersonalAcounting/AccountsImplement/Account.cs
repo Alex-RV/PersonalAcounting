@@ -12,8 +12,14 @@ namespace Account
         #region field
         private string _name;
         private string _owner;
-        private DateTime _createdate;
+        private DateTime _createDate;
+        //private DateTime _dateNow;
         #endregion field
+
+        public Account()
+        {
+            _createDate = DateTime.Now;
+        }
 
         #region properties
         /// <summary>
@@ -39,8 +45,7 @@ namespace Account
         /// </summary>
         public DateTime CreateDate
         {
-            get { return _createdate; }
-            set { _createdate = value; }
+            get { return _createDate; }
         }
 
         #endregion properties

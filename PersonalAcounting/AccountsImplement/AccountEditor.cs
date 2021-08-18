@@ -51,8 +51,7 @@ namespace Account
             Account correntAccount = account as Account;
             if (correntAccount != null)
             {
-                createdate = DateTime.Now;
-                correntAccount.CreateDate = createdate;
+
             }
         }
 

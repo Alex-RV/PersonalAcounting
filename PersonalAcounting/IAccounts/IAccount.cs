@@ -26,9 +26,8 @@ namespace Account
         /// </summary>
         DateTime CreateDate { get; }
 
+        //DateTime DateNow { get; }
 
-        //TODO: добавить свойства 
-        //Owner
-        //CreateDate
+
     }
 }
