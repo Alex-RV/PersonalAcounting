@@ -17,6 +17,7 @@ namespace AccountControl.ViewModels
         private AccountEditorViewModel _editor;
         private IAccountEditor _accountEditor;
         private IAccountFabric _accountFabric;
+        private WPFHelper.RelayCommand _deleteCommand;
         #endregion fields
 
         #region constructor
@@ -66,6 +67,9 @@ namespace AccountControl.ViewModels
             }
         }
 
+        /// <summary>
+        /// Команда для кнопки Добавить
+        /// </summary>
         public WPFHelper.RelayCommand AddCommand
         {
             get
@@ -74,8 +78,6 @@ namespace AccountControl.ViewModels
                 {
                     _addCommand = new WPFHelper.RelayCommand("", (p) =>
                     {
-                        //IAccount account = null;
-                        //AccountEditorViewModel accountEditor = new AccountEditorViewModel(account);
                         VisibleEditor = true;
                         if (Editor == null)
                         {
@@ -90,12 +92,27 @@ namespace AccountControl.ViewModels
             }
         }
 
-        private void Editor_EndEditing(object sender, EventArgs e)
+        /// <summary>
+        /// Команда для кнопки Удалить
+        /// </summary>
+        public WPFHelper.RelayCommand DeleteCommand
         {
-            IAccount edditingAcount = Editor.GetEditingItem();
-            _accountEditor.Add(edditingAcount);
-            Items.Add(new AccountViewModel(edditingAcount));
-            VisibleEditor = false;
+            get
+            {
+                if (_deleteCommand == null)
+                {
+                    _deleteCommand = new WPFHelper.RelayCommand("", (p) =>
+                    {
+                        if(SelectedItem == null)
+                        {
+                            return;
+                        }
+                        _accountEditor.Remove(SelectedItem.GetModel());
+                        UpdateItems();
+                    });
+                }
+                return _deleteCommand;
+            }
         }
 
         /// <summary>
@@ -124,12 +141,42 @@ namespace AccountControl.ViewModels
         {
             _list = list;
 
+            FillItems();
+        }
+
+        /// <summary>
+        /// Обновлнеие списка
+        /// </summary>
+        private void UpdateItems()
+        {
+            Items.Clear();
+            FillItems();
+        }
+
+        /// <summary>
+        /// Наполение списка
+        /// </summary>
+        private void FillItems()
+        {
             foreach (IAccount item in _list.Items)
             {
                 _items.Add(new AccountViewModel(item));
             }
         }
+
         #endregion metods
+
+
+        #region event handlers
+
+        private void Editor_EndEditing(object sender, EventArgs e)
+        {
+            IAccount edditingAcount = Editor.GetEditingItem();
+            _accountEditor.Add(edditingAcount);
+            Items.Add(new AccountViewModel(edditingAcount));
+            VisibleEditor = false;
+        }
+        #endregion event handlers
 
         #region IDisposble
         protected override void OnDispose()

@@ -46,5 +46,16 @@ namespace AccountControl.ViewModels
             get { return _account.CreateDate; }
         }
         #endregion properties
+
+        #region metods
+        /// <summary>
+        /// Возвращает модель строки - счет
+        /// </summary>
+        /// <returns></returns>
+        public IAccount GetModel()
+        {
+            return _account;
+        }
+        #endregion metods
     }
 }

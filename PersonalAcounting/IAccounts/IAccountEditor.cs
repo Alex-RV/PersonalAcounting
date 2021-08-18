@@ -12,13 +12,13 @@ namespace Account
         /// <summary>
         /// добавление счета
         /// </summary>
-        /// <param name="AddAccount"></param>
-        void Add(IAccount AddAccount);
+        /// <param name="addAccount"></param>
+        void Add(IAccount addAccount);
 
         /// <summary>
         /// удаление аккаунта
         /// </summary>
-        void Remove(IAccount DeleteAccount);
+        void Remove(IAccount deleteAccount);
 
         /// <summary>
         /// редактирование имени

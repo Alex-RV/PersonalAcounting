@@ -8,12 +8,3 @@ D:\Work\PersonalAcounting\PersonalAcounting\DataImplements\obj\Debug\netcoreapp3
 D:\Work\PersonalAcounting\PersonalAcounting\DataImplements\obj\Debug\netcoreapp3.1\DataImplement.csproj.CoreCompileInputs.cache
 D:\Work\PersonalAcounting\PersonalAcounting\DataImplements\obj\Debug\netcoreapp3.1\DataImplement.dll
 D:\Work\PersonalAcounting\PersonalAcounting\DataImplements\obj\Debug\netcoreapp3.1\DataImplement.pdb
-C:\Users\MaynskiyAP\Source\Repos\PersonalAcounting\PersonalAcounting\DataImplements\bin\Debug\netcoreapp3.1\DataImplement.deps.json
-C:\Users\MaynskiyAP\Source\Repos\PersonalAcounting\PersonalAcounting\DataImplements\bin\Debug\netcoreapp3.1\DataImplement.dll
-C:\Users\MaynskiyAP\Source\Repos\PersonalAcounting\PersonalAcounting\DataImplements\bin\Debug\netcoreapp3.1\DataImplement.pdb
-C:\Users\MaynskiyAP\Source\Repos\PersonalAcounting\PersonalAcounting\DataImplements\obj\Debug\netcoreapp3.1\DataImplement.csprojAssemblyReference.cache
-C:\Users\MaynskiyAP\Source\Repos\PersonalAcounting\PersonalAcounting\DataImplements\obj\Debug\netcoreapp3.1\DataImplement.AssemblyInfoInputs.cache
-C:\Users\MaynskiyAP\Source\Repos\PersonalAcounting\PersonalAcounting\DataImplements\obj\Debug\netcoreapp3.1\DataImplement.AssemblyInfo.cs
-C:\Users\MaynskiyAP\Source\Repos\PersonalAcounting\PersonalAcounting\DataImplements\obj\Debug\netcoreapp3.1\DataImplement.csproj.CoreCompileInputs.cache
-C:\Users\MaynskiyAP\Source\Repos\PersonalAcounting\PersonalAcounting\DataImplements\obj\Debug\netcoreapp3.1\DataImplement.dll
-C:\Users\MaynskiyAP\Source\Repos\PersonalAcounting\PersonalAcounting\DataImplements\obj\Debug\netcoreapp3.1\DataImplement.pdb

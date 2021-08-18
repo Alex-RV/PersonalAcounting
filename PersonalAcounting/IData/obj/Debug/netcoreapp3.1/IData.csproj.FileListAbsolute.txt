@@ -8,11 +8,3 @@ D:\Work\PersonalAcounting\PersonalAcounting\IData\obj\Debug\netcoreapp3.1\IData.
 D:\Work\PersonalAcounting\PersonalAcounting\IData\obj\Debug\netcoreapp3.1\IData.csproj.CoreCompileInputs.cache
 D:\Work\PersonalAcounting\PersonalAcounting\IData\obj\Debug\netcoreapp3.1\IData.dll
 D:\Work\PersonalAcounting\PersonalAcounting\IData\obj\Debug\netcoreapp3.1\IData.pdb
-C:\Users\MaynskiyAP\Source\Repos\PersonalAcounting\PersonalAcounting\IData\bin\Debug\netcoreapp3.1\IData.deps.json
-C:\Users\MaynskiyAP\Source\Repos\PersonalAcounting\PersonalAcounting\IData\bin\Debug\netcoreapp3.1\IData.dll
-C:\Users\MaynskiyAP\Source\Repos\PersonalAcounting\PersonalAcounting\IData\bin\Debug\netcoreapp3.1\IData.pdb
-C:\Users\MaynskiyAP\Source\Repos\PersonalAcounting\PersonalAcounting\IData\obj\Debug\netcoreapp3.1\IData.AssemblyInfoInputs.cache
-C:\Users\MaynskiyAP\Source\Repos\PersonalAcounting\PersonalAcounting\IData\obj\Debug\netcoreapp3.1\IData.AssemblyInfo.cs
-C:\Users\MaynskiyAP\Source\Repos\PersonalAcounting\PersonalAcounting\IData\obj\Debug\netcoreapp3.1\IData.csproj.CoreCompileInputs.cache
-C:\Users\MaynskiyAP\Source\Repos\PersonalAcounting\PersonalAcounting\IData\obj\Debug\netcoreapp3.1\IData.dll
-C:\Users\MaynskiyAP\Source\Repos\PersonalAcounting\PersonalAcounting\IData\obj\Debug\netcoreapp3.1\IData.pdb

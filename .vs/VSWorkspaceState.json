@@ -1,6 +1,16 @@
 {
   "ExpandedNodes": [
-    ""
+    "",
+    "\\PersonalAcounting",
+    "\\PersonalAcounting\\AccountsControl",
+    "\\PersonalAcounting\\AccountsControl\\Views",
+    "\\PersonalAcounting\\AccountsImplement",
+    "\\PersonalAcounting\\IAccounts",
+    "\\PersonalAcounting\\IDirectory",
+    "\\PersonalAcounting\\PersonalAcounting",
+    "\\PersonalAcounting\\WPFHelper",
+    "\\PersonalAcounting\\WPFHelper\\Converters"
   ],
+  "SelectedNode": "\\PersonalAcounting\\AccountsControl\\Views\\AccountsView.xaml.cs",
   "PreviewInSolutionExplorer": false
 }

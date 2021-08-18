@@ -57,10 +57,10 @@ namespace Account
 
         public void Remove(IAccount deleteItem)
         {
-        Account deleteI = deleteItem as Account;
+            Account deleteI = deleteItem as Account;
             if (deleteI != null)
             { 
-            _list.Items.Remove(deleteI);
+                _list.Items.Remove(deleteI);
             }
         }
         
