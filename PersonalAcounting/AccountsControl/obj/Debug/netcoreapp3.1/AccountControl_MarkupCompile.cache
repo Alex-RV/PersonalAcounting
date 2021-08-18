@@ -4,7 +4,7 @@
 library
 C#
 .cs
-C:\Users\MaynskiyAP\source\repos\PersonalAcounting\PersonalAcounting\AccountsControl\obj\Debug\netcoreapp3.1\
+D:\Work\PersonalAcounting\PersonalAcounting\AccountsControl\obj\Debug\netcoreapp3.1\
 AccountControl
 none
 false
@@ -13,7 +13,7 @@ TRACE;DEBUG;NETCOREAPP;NETCOREAPP3_1;
 21464133405
 
 61064958209
-194366664162
+194-960247826
 Views\AccountEditorView.xaml;Views\AccountsView.xaml;
 
 False

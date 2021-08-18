@@ -25,7 +25,8 @@
                 Width="20"
                 Command="{Binding Path=DeleteCommand}">-</Button>
             <Button
-                Width="20">*</Button>
+                Width="20"
+                Command="{Binding Path=EditorCommand}">*</Button>
         </StackPanel>
         
         <ListView 
@@ -51,7 +52,7 @@
                         </GridViewColumn.CellTemplate>
                     </GridViewColumn>
 
-                    <GridViewColumn Width="200" Header="{x:Static res:Resources.CreateDate}">
+                    <GridViewColumn Width="150" Header="{x:Static res:Resources.CreateDate}">
                         <GridViewColumn.CellTemplate>
                             <DataTemplate>
                                 <TextBlock Text="{Binding Path=CreateDate}"/>

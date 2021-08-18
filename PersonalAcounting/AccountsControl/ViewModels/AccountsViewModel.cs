@@ -18,6 +18,7 @@ namespace AccountControl.ViewModels
         private IAccountEditor _accountEditor;
         private IAccountFabric _accountFabric;
         private WPFHelper.RelayCommand _deleteCommand;
+        private WPFHelper.RelayCommand _editorCommand;
         #endregion fields
 
         #region constructor
@@ -79,13 +80,16 @@ namespace AccountControl.ViewModels
                     _addCommand = new WPFHelper.RelayCommand("", (p) =>
                     {
                         VisibleEditor = true;
+                        
                         if (Editor == null)
                         {
                             Editor = new AccountEditorViewModel(_accountEditor);
                             Editor.EndEditing += Editor_EndEditing;
                         }
 
+                        
                         Editor.SetEditingAccount(_accountFabric.CreateNew());
+                        Editor.IsNew = true;
                     });
                 }
                 return _addCommand;
@@ -109,9 +113,35 @@ namespace AccountControl.ViewModels
                         }
                         _accountEditor.Remove(SelectedItem.GetModel());
                         UpdateItems();
+                        Editor.SetEditingAccount(_accountFabric.CreateNew());
                     });
                 }
                 return _deleteCommand;
+            }
+        }
+
+        /// <summary>
+        /// Команда для кнопки Изменить
+        /// </summary>
+        public WPFHelper.RelayCommand EditorCommand
+        {
+            get
+            {
+                if (_editorCommand == null)
+                {
+                    _editorCommand = new WPFHelper.RelayCommand("", (p) =>
+                    {
+                        if (SelectedItem == null)
+                        {
+                            return;
+                        }
+                        VisibleEditor = true;
+                        Editor.SetEditingAccount(SelectedItem.GetModel());
+                        Editor.IsNew = false;
+                        UpdateItems();
+                    });
+                }
+                return _editorCommand;
             }
         }
 
@@ -171,11 +201,16 @@ namespace AccountControl.ViewModels
 
         private void Editor_EndEditing(object sender, EventArgs e)
         {
+            
             IAccount edditingAcount = Editor.GetEditingItem();
-            _accountEditor.Add(edditingAcount);
-            Items.Add(new AccountViewModel(edditingAcount));
+            if (Editor.IsNew)
+            {
+                _accountEditor.Add(edditingAcount);
+            }
+            UpdateItems();
             VisibleEditor = false;
         }
+
         #endregion event handlers
 
         #region IDisposble

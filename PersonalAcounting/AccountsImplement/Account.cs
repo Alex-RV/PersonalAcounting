@@ -16,10 +16,12 @@ namespace Account
         //private DateTime _dateNow;
         #endregion field
 
+        #region constructor
         public Account()
         {
             _createDate = DateTime.Now;
         }
+        #endregion constructor
 
         #region properties
         /// <summary>

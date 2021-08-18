@@ -15,6 +15,7 @@ namespace AccountControl.ViewModels
         private string _name;
         private string _owner;
         private IAccountEditor _accountEditor;
+        private bool _isNew;
         #endregion fields
 
         #region constructor
@@ -25,6 +26,15 @@ namespace AccountControl.ViewModels
         #endregion constructor
 
         #region properties
+        /// <summary>
+        /// Добавление или удаление
+        /// </summary>
+        public bool IsNew
+        {
+            get { return _isNew; }
+            set { _isNew = value; }
+        }
+
         /// <summary>
         /// Название счета
         /// </summary>
@@ -57,10 +67,7 @@ namespace AccountControl.ViewModels
             }
         }
 
-        /// <summary>
-        /// Дата создания счета
-        /// </summary>
-       
+
 
         WPFHelper.RelayCommand _acceptCommand;
         public WPFHelper.RelayCommand AcceptCommand
@@ -104,7 +111,6 @@ namespace AccountControl.ViewModels
         {
             _accountEditor.SetName(_account, _name);
             _accountEditor.SetOwner(_account, _owner);
-            //_accountEditor.SetCreateDate(_account, _createDate);
             OnEndEditing();
         }
         #endregion
