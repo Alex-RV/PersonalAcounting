@@ -3,7 +3,7 @@
     "",
     "\\PersonalAcounting",
     "\\PersonalAcounting\\AccountsControl",
-    "\\PersonalAcounting\\AccountsControl\\Views",
+    "\\PersonalAcounting\\AccountsControl\\ViewModels",
     "\\PersonalAcounting\\AccountsImplement",
     "\\PersonalAcounting\\IAccounts",
     "\\PersonalAcounting\\IDirectory",

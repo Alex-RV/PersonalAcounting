@@ -1,0 +1,36 @@
+{
+  "runtimeTarget": {
+    "name": ".NETCoreApp,Version=v3.1",
+    "signature": ""
+  },
+  "compilationOptions": {},
+  "targets": {
+    ".NETCoreApp,Version=v3.1": {
+      "BaseImplement/1.0.0": {
+        "dependencies": {
+          "IBase": "1.0.0"
+        },
+        "runtime": {
+          "BaseImplement.dll": {}
+        }
+      },
+      "IBase/1.0.0": {
+        "runtime": {
+          "IBase.dll": {}
+        }
+      }
+    }
+  },
+  "libraries": {
+    "BaseImplement/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    },
+    "IBase/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    }
+  }
+}

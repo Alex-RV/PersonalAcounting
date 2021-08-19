@@ -8,3 +8,15 @@ D:\Work\PersonalAcounting\PersonalAcounting\ICosts\obj\Debug\netcoreapp3.1\ICost
 D:\Work\PersonalAcounting\PersonalAcounting\ICosts\obj\Debug\netcoreapp3.1\ICosts.csproj.CoreCompileInputs.cache
 D:\Work\PersonalAcounting\PersonalAcounting\ICosts\obj\Debug\netcoreapp3.1\ICosts.dll
 D:\Work\PersonalAcounting\PersonalAcounting\ICosts\obj\Debug\netcoreapp3.1\ICosts.pdb
+C:\Users\MaynskiyAP\source\repos\PersonalAcounting\PersonalAcounting\ICosts\bin\Debug\netcoreapp3.1\ICosts.deps.json
+C:\Users\MaynskiyAP\source\repos\PersonalAcounting\PersonalAcounting\ICosts\bin\Debug\netcoreapp3.1\ICosts.dll
+C:\Users\MaynskiyAP\source\repos\PersonalAcounting\PersonalAcounting\ICosts\bin\Debug\netcoreapp3.1\ICosts.pdb
+C:\Users\MaynskiyAP\source\repos\PersonalAcounting\PersonalAcounting\ICosts\bin\Debug\netcoreapp3.1\IBase.dll
+C:\Users\MaynskiyAP\source\repos\PersonalAcounting\PersonalAcounting\ICosts\bin\Debug\netcoreapp3.1\IBase.pdb
+C:\Users\MaynskiyAP\source\repos\PersonalAcounting\PersonalAcounting\ICosts\obj\Debug\netcoreapp3.1\ICosts.csprojAssemblyReference.cache
+C:\Users\MaynskiyAP\source\repos\PersonalAcounting\PersonalAcounting\ICosts\obj\Debug\netcoreapp3.1\ICosts.AssemblyInfoInputs.cache
+C:\Users\MaynskiyAP\source\repos\PersonalAcounting\PersonalAcounting\ICosts\obj\Debug\netcoreapp3.1\ICosts.AssemblyInfo.cs
+C:\Users\MaynskiyAP\source\repos\PersonalAcounting\PersonalAcounting\ICosts\obj\Debug\netcoreapp3.1\ICosts.csproj.CoreCompileInputs.cache
+C:\Users\MaynskiyAP\source\repos\PersonalAcounting\PersonalAcounting\ICosts\obj\Debug\netcoreapp3.1\ICosts.csproj.CopyComplete
+C:\Users\MaynskiyAP\source\repos\PersonalAcounting\PersonalAcounting\ICosts\obj\Debug\netcoreapp3.1\ICosts.dll
+C:\Users\MaynskiyAP\source\repos\PersonalAcounting\PersonalAcounting\ICosts\obj\Debug\netcoreapp3.1\ICosts.pdb

@@ -12,6 +12,7 @@ namespace AccountControl.ViewModels
     {
         #region fields
         private IAccount _account;
+        private WPFHelper.RelayCommand _exitCommand;
         #endregion fields
 
         #region contructor
@@ -45,6 +46,25 @@ namespace AccountControl.ViewModels
         {
             get { return _account.CreateDate; }
         }
+
+        /// <summary>
+        /// Команда выхода из счета
+        /// </summary>
+        public WPFHelper.RelayCommand ExitCommand
+        {
+            get
+            {
+                if (_exitCommand == null)
+                {
+                    _exitCommand = new WPFHelper.RelayCommand("", (p) => 
+                    {
+                        OnExit();
+                    });
+                }
+
+                return _exitCommand;
+            }
+        }
         #endregion properties
 
         #region metods
@@ -57,5 +77,19 @@ namespace AccountControl.ViewModels
             return _account;
         }
         #endregion metods
+
+        #region events
+        private void OnExit()
+        {
+            if (Exit != null)
+            {
+                Exit(this, EventArgs.Empty);
+            }
+        }
+        /// <summary>
+        /// Выполнен выход из счета
+        /// </summary>
+        public event EventHandler Exit;
+        #endregion
     }
 }

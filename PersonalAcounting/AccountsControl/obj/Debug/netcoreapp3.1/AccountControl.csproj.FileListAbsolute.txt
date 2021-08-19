@@ -58,11 +58,13 @@ C:\Users\MaynskiyAP\source\repos\PersonalAcounting\PersonalAcounting\AccountsCon
 C:\Users\MaynskiyAP\source\repos\PersonalAcounting\PersonalAcounting\AccountsControl\obj\Debug\netcoreapp3.1\AccountControl.csprojAssemblyReference.cache
 C:\Users\MaynskiyAP\source\repos\PersonalAcounting\PersonalAcounting\AccountsControl\obj\Debug\netcoreapp3.1\Views\AccountEditorView.g.cs
 C:\Users\MaynskiyAP\source\repos\PersonalAcounting\PersonalAcounting\AccountsControl\obj\Debug\netcoreapp3.1\Views\AccountsView.g.cs
+C:\Users\MaynskiyAP\source\repos\PersonalAcounting\PersonalAcounting\AccountsControl\obj\Debug\netcoreapp3.1\Views\AccountView.g.cs
 C:\Users\MaynskiyAP\source\repos\PersonalAcounting\PersonalAcounting\AccountsControl\obj\Debug\netcoreapp3.1\GeneratedInternalTypeHelper.g.cs
 C:\Users\MaynskiyAP\source\repos\PersonalAcounting\PersonalAcounting\AccountsControl\obj\Debug\netcoreapp3.1\AccountControl_MarkupCompile.cache
 C:\Users\MaynskiyAP\source\repos\PersonalAcounting\PersonalAcounting\AccountsControl\obj\Debug\netcoreapp3.1\AccountControl_MarkupCompile.lref
 C:\Users\MaynskiyAP\source\repos\PersonalAcounting\PersonalAcounting\AccountsControl\obj\Debug\netcoreapp3.1\Views\AccountEditorView.baml
 C:\Users\MaynskiyAP\source\repos\PersonalAcounting\PersonalAcounting\AccountsControl\obj\Debug\netcoreapp3.1\Views\AccountsView.baml
+C:\Users\MaynskiyAP\source\repos\PersonalAcounting\PersonalAcounting\AccountsControl\obj\Debug\netcoreapp3.1\Views\AccountView.baml
 C:\Users\MaynskiyAP\source\repos\PersonalAcounting\PersonalAcounting\AccountsControl\obj\Debug\netcoreapp3.1\AccountControl.g.resources
 C:\Users\MaynskiyAP\source\repos\PersonalAcounting\PersonalAcounting\AccountsControl\obj\Debug\netcoreapp3.1\AccountControl.Properties.Resources.resources
 C:\Users\MaynskiyAP\source\repos\PersonalAcounting\PersonalAcounting\AccountsControl\obj\Debug\netcoreapp3.1\AccountControl.csproj.GenerateResource.cache
@@ -72,3 +74,5 @@ C:\Users\MaynskiyAP\source\repos\PersonalAcounting\PersonalAcounting\AccountsCon
 C:\Users\MaynskiyAP\source\repos\PersonalAcounting\PersonalAcounting\AccountsControl\obj\Debug\netcoreapp3.1\AccountControl.csproj.CopyComplete
 C:\Users\MaynskiyAP\source\repos\PersonalAcounting\PersonalAcounting\AccountsControl\obj\Debug\netcoreapp3.1\AccountControl.dll
 C:\Users\MaynskiyAP\source\repos\PersonalAcounting\PersonalAcounting\AccountsControl\obj\Debug\netcoreapp3.1\AccountControl.pdb
+C:\Users\MaynskiyAP\source\repos\PersonalAcounting\PersonalAcounting\AccountsControl\obj\Debug\netcoreapp3.1\Views\AccountShortView.g.cs
+C:\Users\MaynskiyAP\source\repos\PersonalAcounting\PersonalAcounting\AccountsControl\obj\Debug\netcoreapp3.1\Views\AccountShortView.baml

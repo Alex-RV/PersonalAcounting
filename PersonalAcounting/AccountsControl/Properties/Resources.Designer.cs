@@ -70,6 +70,15 @@ namespace AccountControl.Properties {
         }
         
         /// <summary>
+        ///   Looks up a localized string similar to Выход.
+        /// </summary>
+        public static string Exit {
+            get {
+                return ResourceManager.GetString("Exit", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   Looks up a localized string similar to Название.
         /// </summary>
         public static string Name {
@@ -79,11 +88,29 @@ namespace AccountControl.Properties {
         }
         
         /// <summary>
+        ///   Looks up a localized string similar to Открыть сессию.
+        /// </summary>
+        public static string OpenAccount {
+            get {
+                return ResourceManager.GetString("OpenAccount", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   Looks up a localized string similar to Владелец.
         /// </summary>
         public static string Owner {
             get {
                 return ResourceManager.GetString("Owner", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Обзор счета.
+        /// </summary>
+        public static string ShortViewHeader {
+            get {
+                return ResourceManager.GetString("ShortViewHeader", resourceCulture);
             }
         }
     }

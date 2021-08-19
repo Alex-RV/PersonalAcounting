@@ -19,6 +19,7 @@ namespace AccountControl.ViewModels
         private IAccountFabric _accountFabric;
         private WPFHelper.RelayCommand _deleteCommand;
         private WPFHelper.RelayCommand _editorCommand;
+        private WPFHelper.RelayCommand _openAccountCommand;
         #endregion fields
 
         #region constructor
@@ -146,6 +147,26 @@ namespace AccountControl.ViewModels
         }
 
         /// <summary>
+        /// Активация используемого счета
+        /// </summary>
+        public WPFHelper.RelayCommand OpenAccountCommand
+        {
+            get
+            {
+                if (_openAccountCommand == null)
+                {
+                    _openAccountCommand = new WPFHelper.RelayCommand("", (p) => {
+                        if (SelectedItem != null)
+                        {
+                            OnChangedActivAcount();
+                        }
+                    });
+                }
+                return _openAccountCommand;
+            }
+        }
+
+        /// <summary>
         /// Видимость редактора
         /// </summary>
         public bool VisibleEditor
@@ -196,7 +217,6 @@ namespace AccountControl.ViewModels
 
         #endregion metods
 
-
         #region event handlers
 
         private void Editor_EndEditing(object sender, EventArgs e)
@@ -212,6 +232,17 @@ namespace AccountControl.ViewModels
         }
 
         #endregion event handlers
+
+        #region events
+        public event EventHandler ChangedActivAcount;
+        private void OnChangedActivAcount()
+        { 
+            if(ChangedActivAcount != null)
+            {
+                ChangedActivAcount(this, EventArgs.Empty);
+            }
+        }
+        #endregion events
 
         #region IDisposble
         protected override void OnDispose()

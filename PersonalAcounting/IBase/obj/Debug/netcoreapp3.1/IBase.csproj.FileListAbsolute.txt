@@ -8,3 +8,12 @@ D:\Work\PersonalAcounting\PersonalAcounting\IBase\obj\Debug\netcoreapp3.1\IBase.
 D:\Work\PersonalAcounting\PersonalAcounting\IBase\obj\Debug\netcoreapp3.1\IBase.csproj.CoreCompileInputs.cache
 D:\Work\PersonalAcounting\PersonalAcounting\IBase\obj\Debug\netcoreapp3.1\IBase.dll
 D:\Work\PersonalAcounting\PersonalAcounting\IBase\obj\Debug\netcoreapp3.1\IBase.pdb
+C:\Users\MaynskiyAP\source\repos\PersonalAcounting\PersonalAcounting\IBase\bin\Debug\netcoreapp3.1\IBase.deps.json
+C:\Users\MaynskiyAP\source\repos\PersonalAcounting\PersonalAcounting\IBase\bin\Debug\netcoreapp3.1\IBase.dll
+C:\Users\MaynskiyAP\source\repos\PersonalAcounting\PersonalAcounting\IBase\bin\Debug\netcoreapp3.1\IBase.pdb
+C:\Users\MaynskiyAP\source\repos\PersonalAcounting\PersonalAcounting\IBase\obj\Debug\netcoreapp3.1\IBase.csprojAssemblyReference.cache
+C:\Users\MaynskiyAP\source\repos\PersonalAcounting\PersonalAcounting\IBase\obj\Debug\netcoreapp3.1\IBase.AssemblyInfoInputs.cache
+C:\Users\MaynskiyAP\source\repos\PersonalAcounting\PersonalAcounting\IBase\obj\Debug\netcoreapp3.1\IBase.AssemblyInfo.cs
+C:\Users\MaynskiyAP\source\repos\PersonalAcounting\PersonalAcounting\IBase\obj\Debug\netcoreapp3.1\IBase.csproj.CoreCompileInputs.cache
+C:\Users\MaynskiyAP\source\repos\PersonalAcounting\PersonalAcounting\IBase\obj\Debug\netcoreapp3.1\IBase.dll
+C:\Users\MaynskiyAP\source\repos\PersonalAcounting\PersonalAcounting\IBase\obj\Debug\netcoreapp3.1\IBase.pdb

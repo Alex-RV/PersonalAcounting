@@ -1,0 +1,12 @@
+C:\Users\MaynskiyAP\source\repos\PersonalAcounting\PersonalAcounting\DirectoryImplement\bin\Debug\netcoreapp3.1\DirectoryImplement.deps.json
+C:\Users\MaynskiyAP\source\repos\PersonalAcounting\PersonalAcounting\DirectoryImplement\bin\Debug\netcoreapp3.1\DirectoryImplement.dll
+C:\Users\MaynskiyAP\source\repos\PersonalAcounting\PersonalAcounting\DirectoryImplement\bin\Debug\netcoreapp3.1\DirectoryImplement.pdb
+C:\Users\MaynskiyAP\source\repos\PersonalAcounting\PersonalAcounting\DirectoryImplement\bin\Debug\netcoreapp3.1\IDirectory.dll
+C:\Users\MaynskiyAP\source\repos\PersonalAcounting\PersonalAcounting\DirectoryImplement\bin\Debug\netcoreapp3.1\IDirectory.pdb
+C:\Users\MaynskiyAP\source\repos\PersonalAcounting\PersonalAcounting\DirectoryImplement\obj\Debug\netcoreapp3.1\DirectoryImplement.csprojAssemblyReference.cache
+C:\Users\MaynskiyAP\source\repos\PersonalAcounting\PersonalAcounting\DirectoryImplement\obj\Debug\netcoreapp3.1\DirectoryImplement.AssemblyInfoInputs.cache
+C:\Users\MaynskiyAP\source\repos\PersonalAcounting\PersonalAcounting\DirectoryImplement\obj\Debug\netcoreapp3.1\DirectoryImplement.AssemblyInfo.cs
+C:\Users\MaynskiyAP\source\repos\PersonalAcounting\PersonalAcounting\DirectoryImplement\obj\Debug\netcoreapp3.1\DirectoryImplement.csproj.CoreCompileInputs.cache
+C:\Users\MaynskiyAP\source\repos\PersonalAcounting\PersonalAcounting\DirectoryImplement\obj\Debug\netcoreapp3.1\DirectoryImplement.csproj.CopyComplete
+C:\Users\MaynskiyAP\source\repos\PersonalAcounting\PersonalAcounting\DirectoryImplement\obj\Debug\netcoreapp3.1\DirectoryImplement.dll
+C:\Users\MaynskiyAP\source\repos\PersonalAcounting\PersonalAcounting\DirectoryImplement\obj\Debug\netcoreapp3.1\DirectoryImplement.pdb

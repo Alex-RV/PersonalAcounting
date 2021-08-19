@@ -27,6 +27,9 @@
             <Button
                 Width="20"
                 Command="{Binding Path=EditorCommand}">*</Button>
+            <Button
+                Content="{x:Static res:Resources.OpenAccount}"
+                Command="{Binding Path=OpenAccountCommand}"/>
         </StackPanel>
         
         <ListView 

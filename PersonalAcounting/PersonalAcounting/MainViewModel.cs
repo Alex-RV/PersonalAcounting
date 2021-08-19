@@ -13,6 +13,8 @@ namespace PersonalAcounting
         #region fields
         private FabricsContainer _fabricsContainer;
         private AccountsViewModel _accounts;
+        private bool _visibleAccounts = false;
+        private bool _visibleAccount = false;
         #endregion fields
 
         #region constructor
@@ -40,6 +42,38 @@ namespace PersonalAcounting
                 }
             }
         }
+
+        /// <summary>
+        /// Видимость списка счетов
+        /// </summary>
+        public bool VisibleAccounts
+        {
+            get { return _visibleAccounts; }
+            set
+            {
+                if (_visibleAccounts != value)
+                {
+                    _visibleAccounts = value;
+                    OnPropertyChanged(nameof(VisibleAccounts));
+                }
+            }
+        }
+        
+        /// <summary>
+        /// Видимость счета
+        /// </summary>
+        public bool VisibleAccount
+        {
+            get { return _visibleAccount; }
+            set
+            {
+                if (_visibleAccount != value)
+                {
+                    _visibleAccount = value;
+                    OnPropertyChanged(nameof(VisibleAccount));
+                }
+            }
+        }
         #endregion properties
 
         #region metods
@@ -52,7 +86,26 @@ namespace PersonalAcounting
                 _fabricsContainer.AccountFabric.GetAccountList(),
                 _fabricsContainer.AccountFabric.GetEditor(),
                 _fabricsContainer.AccountFabric);
+            VisibleAccounts = true;
+            Accounts.ChangedActivAcount += Accounts_ChangedActivAcount;
         }
+
         #endregion metods
+
+        #region event handlers
+        private void Accounts_ChangedActivAcount(object sender, EventArgs e)
+        {
+            VisibleAccounts = false;
+            VisibleAccount = true;
+            Accounts.SelectedItem.Exit += Account_Exit;
+        }
+
+        private void Account_Exit(object sender, EventArgs e)
+        {
+            VisibleAccount = false;
+            VisibleAccounts = true;
+            Accounts.SelectedItem.Exit -= Account_Exit;
+        }
+        #endregion event handlers
     }
 }

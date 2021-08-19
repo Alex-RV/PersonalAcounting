@@ -4,17 +4,17 @@
 library
 C#
 .cs
-D:\Work\PersonalAcounting\PersonalAcounting\AccountsControl\obj\Debug\netcoreapp3.1\
+C:\Users\MaynskiyAP\source\repos\PersonalAcounting\PersonalAcounting\AccountsControl\obj\Debug\netcoreapp3.1\
 AccountControl
 none
 false
 TRACE;DEBUG;NETCOREAPP;NETCOREAPP3_1;
 
-21464133405
+42122056994
 
-814446631
-194-960247826
-Views\AccountEditorView.xaml;Views\AccountsView.xaml;
+10874823240
+194366664162
+Views\AccountEditorView.xaml;Views\AccountShortView.xaml;Views\AccountsView.xaml;Views\AccountView.xaml;
 
-True
+False
 
