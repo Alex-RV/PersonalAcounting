@@ -9,6 +9,7 @@
       "AccountControl/1.0.0": {
         "dependencies": {
           "IAccount": "1.0.0",
+          "IncomeControls": "1.0.0",
           "WPFHelper": "1.0.0"
         },
         "runtime": {
@@ -18,6 +19,28 @@
       "IAccount/1.0.0": {
         "runtime": {
           "IAccount.dll": {}
+        }
+      },
+      "IBase/1.0.0": {
+        "runtime": {
+          "IBase.dll": {}
+        }
+      },
+      "IIncome/1.0.0": {
+        "dependencies": {
+          "IBase": "1.0.0"
+        },
+        "runtime": {
+          "IIncome.dll": {}
+        }
+      },
+      "IncomeControls/1.0.0": {
+        "dependencies": {
+          "IIncome": "1.0.0",
+          "WPFHelper": "1.0.0"
+        },
+        "runtime": {
+          "IncomeControls.dll": {}
         }
       },
       "WPFHelper/1.0.0": {
@@ -34,6 +57,21 @@
       "sha512": ""
     },
     "IAccount/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    },
+    "IBase/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    },
+    "IIncome/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    },
+    "IncomeControls/1.0.0": {
       "type": "project",
       "serviceable": false,
       "sha512": ""

@@ -1,4 +1,3 @@
-D:\Work\PersonalAcounting\PersonalAcounting\IAccounts\obj\Debug\netcoreapp3.1\IAccount.csproj.AssemblyReference.cache
 D:\Work\PersonalAcounting\PersonalAcounting\IAccounts\obj\Debug\netcoreapp3.1\IAccount.GeneratedMSBuildEditorConfig.editorconfig
 D:\Work\PersonalAcounting\PersonalAcounting\IAccounts\obj\Debug\netcoreapp3.1\IAccount.AssemblyInfoInputs.cache
 D:\Work\PersonalAcounting\PersonalAcounting\IAccounts\obj\Debug\netcoreapp3.1\IAccount.AssemblyInfo.cs
@@ -26,3 +25,4 @@ C:\Users\MaynskiyAP\source\repos\PersonalAcounting\PersonalAcounting\IAccounts\o
 C:\Users\MaynskiyAP\source\repos\PersonalAcounting\PersonalAcounting\IAccounts\obj\Debug\netcoreapp3.1\IAccount.csproj.CoreCompileInputs.cache
 C:\Users\MaynskiyAP\source\repos\PersonalAcounting\PersonalAcounting\IAccounts\obj\Debug\netcoreapp3.1\IAccount.dll
 C:\Users\MaynskiyAP\source\repos\PersonalAcounting\PersonalAcounting\IAccounts\obj\Debug\netcoreapp3.1\IAccount.pdb
+D:\Work\PersonalAcounting\PersonalAcounting\IAccounts\obj\Debug\netcoreapp3.1\IAccount.csproj.AssemblyReference.cache

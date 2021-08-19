@@ -76,3 +76,13 @@ C:\Users\MaynskiyAP\source\repos\PersonalAcounting\PersonalAcounting\AccountsCon
 C:\Users\MaynskiyAP\source\repos\PersonalAcounting\PersonalAcounting\AccountsControl\obj\Debug\netcoreapp3.1\AccountControl.pdb
 C:\Users\MaynskiyAP\source\repos\PersonalAcounting\PersonalAcounting\AccountsControl\obj\Debug\netcoreapp3.1\Views\AccountShortView.g.cs
 C:\Users\MaynskiyAP\source\repos\PersonalAcounting\PersonalAcounting\AccountsControl\obj\Debug\netcoreapp3.1\Views\AccountShortView.baml
+D:\Work\PersonalAcounting\PersonalAcounting\AccountsControl\obj\Debug\netcoreapp3.1\Views\AccountShortView.g.cs
+D:\Work\PersonalAcounting\PersonalAcounting\AccountsControl\obj\Debug\netcoreapp3.1\Views\AccountView.g.cs
+D:\Work\PersonalAcounting\PersonalAcounting\AccountsControl\obj\Debug\netcoreapp3.1\Views\AccountShortView.baml
+D:\Work\PersonalAcounting\PersonalAcounting\AccountsControl\obj\Debug\netcoreapp3.1\Views\AccountView.baml
+D:\Work\PersonalAcounting\PersonalAcounting\AccountsControl\bin\Debug\netcoreapp3.1\IBase.dll
+D:\Work\PersonalAcounting\PersonalAcounting\AccountsControl\bin\Debug\netcoreapp3.1\IIncome.dll
+D:\Work\PersonalAcounting\PersonalAcounting\AccountsControl\bin\Debug\netcoreapp3.1\IncomeControls.dll
+D:\Work\PersonalAcounting\PersonalAcounting\AccountsControl\bin\Debug\netcoreapp3.1\IncomeControls.pdb
+D:\Work\PersonalAcounting\PersonalAcounting\AccountsControl\bin\Debug\netcoreapp3.1\IBase.pdb
+D:\Work\PersonalAcounting\PersonalAcounting\AccountsControl\bin\Debug\netcoreapp3.1\IIncome.pdb

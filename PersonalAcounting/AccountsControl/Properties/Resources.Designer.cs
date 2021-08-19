@@ -79,6 +79,15 @@ namespace AccountControl.Properties {
         }
         
         /// <summary>
+        ///   Looks up a localized string similar to Доходы.
+        /// </summary>
+        public static string Income {
+            get {
+                return ResourceManager.GetString("Income", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   Looks up a localized string similar to Название.
         /// </summary>
         public static string Name {

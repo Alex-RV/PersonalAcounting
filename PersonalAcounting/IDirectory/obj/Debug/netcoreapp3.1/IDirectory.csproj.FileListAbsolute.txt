@@ -6,3 +6,13 @@ C:\Users\MaynskiyAP\source\repos\PersonalAcounting\PersonalAcounting\IDirectory\
 C:\Users\MaynskiyAP\source\repos\PersonalAcounting\PersonalAcounting\IDirectory\obj\Debug\netcoreapp3.1\IDirectory.csproj.CoreCompileInputs.cache
 C:\Users\MaynskiyAP\source\repos\PersonalAcounting\PersonalAcounting\IDirectory\obj\Debug\netcoreapp3.1\IDirectory.dll
 C:\Users\MaynskiyAP\source\repos\PersonalAcounting\PersonalAcounting\IDirectory\obj\Debug\netcoreapp3.1\IDirectory.pdb
+D:\Work\PersonalAcounting\PersonalAcounting\IDirectory\bin\Debug\netcoreapp3.1\IDirectory.deps.json
+D:\Work\PersonalAcounting\PersonalAcounting\IDirectory\bin\Debug\netcoreapp3.1\IDirectory.dll
+D:\Work\PersonalAcounting\PersonalAcounting\IDirectory\bin\Debug\netcoreapp3.1\IDirectory.pdb
+D:\Work\PersonalAcounting\PersonalAcounting\IDirectory\obj\Debug\netcoreapp3.1\IDirectory.GeneratedMSBuildEditorConfig.editorconfig
+D:\Work\PersonalAcounting\PersonalAcounting\IDirectory\obj\Debug\netcoreapp3.1\IDirectory.AssemblyInfoInputs.cache
+D:\Work\PersonalAcounting\PersonalAcounting\IDirectory\obj\Debug\netcoreapp3.1\IDirectory.AssemblyInfo.cs
+D:\Work\PersonalAcounting\PersonalAcounting\IDirectory\obj\Debug\netcoreapp3.1\IDirectory.csproj.CoreCompileInputs.cache
+D:\Work\PersonalAcounting\PersonalAcounting\IDirectory\obj\Debug\netcoreapp3.1\IDirectory.dll
+D:\Work\PersonalAcounting\PersonalAcounting\IDirectory\obj\Debug\netcoreapp3.1\IDirectory.pdb
+D:\Work\PersonalAcounting\PersonalAcounting\IDirectory\obj\Debug\netcoreapp3.1\IDirectory.csproj.AssemblyReference.cache

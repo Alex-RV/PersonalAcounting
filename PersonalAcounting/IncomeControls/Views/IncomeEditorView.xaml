@@ -1,0 +1,48 @@
+﻿<UserControl x:Class="IncomeControls.Views.IncomeEditorView"
+             xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+             xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+             xmlns:res="clr-namespace:IncomeControls.Properties"
+             mc:Ignorable="d" 
+             d:DesignHeight="450" d:DesignWidth="800">
+    <Grid>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="Auto"/>
+            <ColumnDefinition Width="*"/>
+        </Grid.ColumnDefinitions>
+
+        <Grid.RowDefinitions>
+            <RowDefinition Height="Auto"/>
+            <RowDefinition Height="Auto"/>
+            <RowDefinition Height="Auto"/>
+        </Grid.RowDefinitions>
+
+        <Label 
+            Grid.Row="0"
+            Grid.Column="0"
+            Content="Name"/>
+
+        <TextBox
+            Grid.Row="0"
+            Grid.Column="1"
+            Text="{Binding Path=Name, UpdateSourceTrigger=PropertyChanged}"></TextBox>
+
+        <Label 
+            Grid.Row="1"
+            Grid.Column="0"
+            Content="Amount"/>
+
+        <TextBox
+            Grid.Row="1"
+            Grid.Column="1"
+            Text="{Binding Path=Owner, UpdateSourceTrigger=PropertyChanged}"></TextBox>
+
+        <Button 
+            Grid.Row="2"
+            Grid.Column="0"
+            Content="Accept"
+            Command="{Binding Path=AcceptCommand}"/>
+
+    </Grid>
+</UserControl>
