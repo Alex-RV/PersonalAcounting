@@ -5,4 +5,8 @@
     <RootNamespace>Account</RootNamespace>
   </PropertyGroup>
 
+  <ItemGroup>
+    <ProjectReference Include="..\IIncome\IIncome.csproj" />
+  </ItemGroup>
+
 </Project>

@@ -4,7 +4,8 @@ using System.Text;
 
 namespace Base
 {
-    public abstract class BaseList<T> where T: IBase
+    public abstract class BaseList<T>: IBaseList<T>
+        where T: IBase
     {
         #region field
         private List<T> _items = new List<T>();
@@ -12,7 +13,9 @@ namespace Base
 
         #region properties
         public List<T> Items { get { return _items; } }
-        //IEnumerable<IBase> IBaseList.Items { get { return Items; } }
+
+        IEnumerable<T> IBaseList<T>.Items { get { return Items; } }
+        //IEnumerable<T> IBaseList<T>.Items { get { return Items; } }
 
 
         #endregion properties

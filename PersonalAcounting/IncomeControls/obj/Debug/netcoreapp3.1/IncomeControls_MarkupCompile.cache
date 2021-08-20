@@ -4,7 +4,7 @@
 library
 C#
 .cs
-C:\Users\Alex\source\repos\Alex-RV\PersonalAcounting\PersonalAcounting\IncomeControls\obj\Debug\netcoreapp3.1\
+C:\Users\MaynskiyAP\source\repos\PersonalAcounting\PersonalAcounting\IncomeControls\obj\Debug\netcoreapp3.1\
 IncomeControls
 none
 false
@@ -12,8 +12,8 @@ TRACE;DEBUG;NETCOREAPP;NETCOREAPP3_1;
 
 2467210091
 
-51363936363
-195-1631153765
+6783361906
+195-2093862952
 Views\IncomeEditorView.xaml;Views\IncomeView.xaml;
 
 False

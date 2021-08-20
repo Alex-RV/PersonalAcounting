@@ -1,4 +1,5 @@
-﻿using System;
+﻿using Income;
+using System;
 using System.Collections.Generic;
 using System.Text;
 
@@ -8,13 +9,14 @@ namespace Account
     {
         #region fields
         private AccountList _list;
-
+        private IIncomeFabric _incomeFabric;
         #endregion fields
 
         #region constructor
-        public AccountEditor(AccountList list)
+        public AccountEditor(AccountList list, IIncomeFabric incomeFabric)
         {
             _list = list;
+            _incomeFabric = incomeFabric;
         }
         #endregion
         #region metods
@@ -63,7 +65,16 @@ namespace Account
                 _list.Items.Remove(deleteI);
             }
         }
-        
+
+        public IIncomeEditor GetIncomeEditor(IAccount account)
+        {
+            return _incomeFabric.GetIncomeEditor(account.Incomes);
+        }
+
+        public IIncomeFabric GetIncomeFabric()
+        {
+            return _incomeFabric;
+        }
     }
         #endregion metods
     

@@ -16,7 +16,7 @@ namespace PersonalAcounting
         #region constructor
         public FabricsContainer()
         {
-            _accountFabric = new Account.AccountFabric();
+            _accountFabric = new Account.AccountFabric(new Income.IncomeFabric());
         }
         #endregion constructor
 

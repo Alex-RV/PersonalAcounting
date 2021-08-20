@@ -16,12 +16,15 @@ namespace AccountControl.ViewModels
         private WPFHelper.RelayCommand _incomeCommand;
         private bool _visibleIncomeView = false;
         private bool _visibleShortView = true;
+        private IncomeControls.ViewModels.IncomesViewModel _income;
+        private IAccountEditor _accountEditor;
         #endregion fields
 
         #region contructor
-        public AccountViewModel(IAccount account)
+        public AccountViewModel(IAccount account, IAccountEditor accountEditor)
         {
             _account = account;
+            _accountEditor = accountEditor;
         }
         #endregion contructor
 
@@ -81,6 +84,10 @@ namespace AccountControl.ViewModels
                 {
                     _incomeCommand = new WPFHelper.RelayCommand("", (p) =>
                     {
+                        if (Income == null)
+                        {
+                            Income = new IncomeControls.ViewModels.IncomesViewModel(_account.Incomes, _accountEditor.GetIncomeEditor(_account));
+                        }
                         VisibleShortView = false;
                         VisibleIncomeView = true;
                     });
@@ -119,6 +126,19 @@ namespace AccountControl.ViewModels
                 {
                     _visibleIncomeView = value;
                     OnPropertyChanged(nameof(VisibleIncomeView));
+                }
+            }
+        }
+
+        public IncomeControls.ViewModels.IncomesViewModel Income
+        { 
+            get { return _income; }
+            set
+            {
+                if (_income != value)
+                {
+                    _income = value;
+                    OnPropertyChanged(nameof(Income));
                 }
             }
         }

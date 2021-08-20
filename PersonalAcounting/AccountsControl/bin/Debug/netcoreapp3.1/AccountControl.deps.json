@@ -17,6 +17,9 @@
         }
       },
       "IAccount/1.0.0": {
+        "dependencies": {
+          "IIncome": "1.0.0"
+        },
         "runtime": {
           "IAccount.dll": {}
         }

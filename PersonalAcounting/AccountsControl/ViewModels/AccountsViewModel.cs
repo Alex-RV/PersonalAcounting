@@ -210,7 +210,7 @@ namespace AccountControl.ViewModels
         {
             foreach (IAccount item in _list.Items)
             {
-                _items.Add(new AccountViewModel(item));
+                _items.Add(new AccountViewModel(item, _accountEditor));
             }
         }
 

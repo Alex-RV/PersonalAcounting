@@ -26,8 +26,10 @@ namespace Account
         /// </summary>
         DateTime CreateDate { get; }
 
-        //DateTime DateNow { get; }
-
+        /// <summary>
+        /// Доходы
+        /// </summary>
+        Income.IIncomeList Incomes { get; }
 
     }
 }

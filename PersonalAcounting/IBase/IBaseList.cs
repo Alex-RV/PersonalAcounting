@@ -4,8 +4,8 @@ using System.Text;
 
 namespace Base
 {
-    public interface IBaseList
+    public interface IBaseList<T> where T: IBase
     {
-        //IEnumerable<IBase> Items { get; }
+        IEnumerable<T> Items { get; }
     }
 }

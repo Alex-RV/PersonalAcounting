@@ -11,6 +11,8 @@
           "AccountControl": "1.0.0",
           "AccountFabric": "1.0.0",
           "IAccount": "1.0.0",
+          "IIncome": "1.0.0",
+          "IncomeFabric": "1.0.0",
           "WPFHelper": "1.0.0"
         },
         "runtime": {
@@ -30,7 +32,8 @@
       "AccountFabric/1.0.0": {
         "dependencies": {
           "AccountImplement": "1.0.0",
-          "IAccount": "1.0.0"
+          "IAccount": "1.0.0",
+          "IIncome": "1.0.0"
         },
         "runtime": {
           "AccountFabric.dll": {}
@@ -44,7 +47,18 @@
           "AccountImplement.dll": {}
         }
       },
+      "BaseImplement/1.0.0": {
+        "dependencies": {
+          "IBase": "1.0.0"
+        },
+        "runtime": {
+          "BaseImplement.dll": {}
+        }
+      },
       "IAccount/1.0.0": {
+        "dependencies": {
+          "IIncome": "1.0.0"
+        },
         "runtime": {
           "IAccount.dll": {}
         }
@@ -69,6 +83,24 @@
         },
         "runtime": {
           "IncomeControls.dll": {}
+        }
+      },
+      "IncomeFabric/1.0.0": {
+        "dependencies": {
+          "IIncome": "1.0.0",
+          "IncomeImplement": "1.0.0"
+        },
+        "runtime": {
+          "IncomeFabric.dll": {}
+        }
+      },
+      "IncomeImplement/1.0.0": {
+        "dependencies": {
+          "BaseImplement": "1.0.0",
+          "IIncome": "1.0.0"
+        },
+        "runtime": {
+          "IncomeImplement.dll": {}
         }
       },
       "WPFHelper/1.0.0": {
@@ -99,6 +131,11 @@
       "serviceable": false,
       "sha512": ""
     },
+    "BaseImplement/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    },
     "IAccount/1.0.0": {
       "type": "project",
       "serviceable": false,
@@ -115,6 +152,16 @@
       "sha512": ""
     },
     "IncomeControls/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    },
+    "IncomeFabric/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    },
+    "IncomeImplement/1.0.0": {
       "type": "project",
       "serviceable": false,
       "sha512": ""

@@ -42,3 +42,7 @@ C:\Users\MaynskiyAP\source\repos\PersonalAcounting\PersonalAcounting\AccountFabr
 C:\Users\MaynskiyAP\source\repos\PersonalAcounting\PersonalAcounting\AccountFabric\obj\Debug\netcoreapp3.1\AccountFabric.csproj.CopyComplete
 C:\Users\MaynskiyAP\source\repos\PersonalAcounting\PersonalAcounting\AccountFabric\obj\Debug\netcoreapp3.1\AccountFabric.dll
 C:\Users\MaynskiyAP\source\repos\PersonalAcounting\PersonalAcounting\AccountFabric\obj\Debug\netcoreapp3.1\AccountFabric.pdb
+C:\Users\MaynskiyAP\source\repos\PersonalAcounting\PersonalAcounting\AccountFabric\bin\Debug\netcoreapp3.1\IBase.dll
+C:\Users\MaynskiyAP\source\repos\PersonalAcounting\PersonalAcounting\AccountFabric\bin\Debug\netcoreapp3.1\IIncome.dll
+C:\Users\MaynskiyAP\source\repos\PersonalAcounting\PersonalAcounting\AccountFabric\bin\Debug\netcoreapp3.1\IIncome.pdb
+C:\Users\MaynskiyAP\source\repos\PersonalAcounting\PersonalAcounting\AccountFabric\bin\Debug\netcoreapp3.1\IBase.pdb

@@ -1,4 +1,5 @@
-﻿using System;
+﻿using Income;
+using System;
 using System.Collections.Generic;
 using System.Text;
 
@@ -13,7 +14,7 @@ namespace Account
         private string _name;
         private string _owner;
         private DateTime _createDate;
-        //private DateTime _dateNow;
+        private IIncomeList _incomes;
         #endregion field
 
         #region constructor
@@ -48,6 +49,12 @@ namespace Account
         public DateTime CreateDate
         {
             get { return _createDate; }
+        }
+
+        public IIncomeList Incomes
+        { 
+            get { return _incomes; }
+            set { _incomes = value; }
         }
 
         #endregion properties

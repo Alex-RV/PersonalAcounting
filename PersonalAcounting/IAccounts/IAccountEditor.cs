@@ -34,5 +34,9 @@ namespace Account
         /// добавление даты создания счета
         /// </summary>
         void SetCreateDate(IAccount account, DateTime createdate);
+
+        Income.IIncomeEditor GetIncomeEditor(IAccount account);
+
+        Income.IIncomeFabric GetIncomeFabric();
     }
 }
