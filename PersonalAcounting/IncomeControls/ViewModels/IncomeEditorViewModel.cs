@@ -11,6 +11,7 @@ namespace IncomeControls.ViewModels
         private IIncome _income;
         private string _name;
         private double _amount;
+        private DateTime _createdate;
         private IIncomeEditor _incomeEditor;
         private bool _isNew;
         #endregion fields
@@ -33,7 +34,7 @@ namespace IncomeControls.ViewModels
         }
 
         /// <summary>
-        /// Название счета
+        /// Название дохода
         /// </summary>
         public string Name
         {
@@ -49,7 +50,7 @@ namespace IncomeControls.ViewModels
         }
 
         /// <summary>
-        /// Имя владельца счета
+        /// Сумма дохода
         /// </summary>
         public double Amount
         {
@@ -65,9 +66,26 @@ namespace IncomeControls.ViewModels
         }
 
 
+        /// <summary>
+        /// Дата получения дохода
+        /// </summary>
+        public DateTime CreateDate
+        {
+            get { return _createdate; }
+            set
+            {
+                if (_createdate != value)
+                {
+                    _createdate = value;
+                    OnPropertyChanged(nameof(CreateDate));
+                }
+            }
+        }
+
+
 
         WPFHelper.RelayCommand _acceptCommand;
-        public WPFHelper.RelayCommand AcceptCommand
+        public WPFHelper.RelayCommand AcceptIncomeCommand
         {
             get
             {
@@ -78,11 +96,13 @@ namespace IncomeControls.ViewModels
                 return _acceptCommand;
             }
         }
+
+
         #endregion properties
 
         #region methods
         /// <summary>
-        /// Установка редактируемого счета
+        /// Установка редактируемого дохода
         /// </summary>
         /// <param name="income"></param>
         public void SetEditingIncome(IIncome income)
@@ -90,6 +110,7 @@ namespace IncomeControls.ViewModels
             _income = income;
             Name = _income.Name;
             Amount = _income.Amount;
+            CreateDate = _income.CreateDate;
         }
 
         /// <summary>
@@ -108,6 +129,7 @@ namespace IncomeControls.ViewModels
         {
             _incomeEditor.SetName(_income, _name);
             _incomeEditor.SetAmount(_income, _amount);
+            _incomeEditor.SetCreateDate(_income, _createdate);
             OnEndEditing();
         }
         #endregion

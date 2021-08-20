@@ -55,7 +55,7 @@
                     <GridViewColumn Width="150" Header="CreateDate">
                         <GridViewColumn.CellTemplate>
                             <DataTemplate>
-                                <TextBlock Text="{Binding Path=CreateDate}"/>
+                                <TextBlock Text="{Binding Path=CreateDate, StringFormat=dd.MM.yyyy}"/>
                             </DataTemplate>
                         </GridViewColumn.CellTemplate>
                     </GridViewColumn>
@@ -66,8 +66,9 @@
         
         <local:IncomeEditorView
             Grid.Row="2"
-            Visibility="{Binding Path=VisibleEditorIncome,
-                        Converter={x:Static conv:BoolToVisible.Instance}}"
+            Visibility="{Binding Path=DataContext.VisibleEditorIncome,
+                        Converter={x:Static conv:BoolToVisible.Instance},RelativeSource={RelativeSource Mode=FindAncestor, AncestorType=UserControl}}"
+            DataContext="{Binding Path=Editor}"
         />
 
     </Grid>

@@ -4,6 +4,8 @@
              xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
              xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
              xmlns:res="clr-namespace:IncomeControls.Properties"
+             xmlns:ress="clr-namespace:IncomeControls.ViewModels"
+             xmlns:resCom="clr-namespace:WPFHelper.Properties;assembly=WPFHelper"
              mc:Ignorable="d" 
              d:DesignHeight="450" d:DesignWidth="800">
     <Grid>
@@ -16,12 +18,13 @@
             <RowDefinition Height="Auto"/>
             <RowDefinition Height="Auto"/>
             <RowDefinition Height="Auto"/>
+            <RowDefinition Height="Auto"/>
         </Grid.RowDefinitions>
 
         <Label 
             Grid.Row="0"
             Grid.Column="0"
-            Content="Name"/>
+            Content="Наименование"/>
 
         <TextBox
             Grid.Row="0"
@@ -31,18 +34,30 @@
         <Label 
             Grid.Row="1"
             Grid.Column="0"
-            Content="Amount"/>
+            Content="Сумма"/>
 
         <TextBox
             Grid.Row="1"
             Grid.Column="1"
             Text="{Binding Path=Amount, UpdateSourceTrigger=PropertyChanged}"></TextBox>
 
-        <Button 
+        <Label 
             Grid.Row="2"
             Grid.Column="0"
-            Content="Accept"
-            Command="{Binding Path=AcceptCommand}"/>
+            Content="Дата получения дохода"/>
+
+        <DatePicker
+            Grid.Row="2"
+            Grid.Column="1"
+            SelectedDate="{Binding Path=CreateDate, UpdateSourceTrigger=LostFocus}"
+            >
+        </DatePicker>
+
+            <Button 
+            Grid.Row="3"
+            Grid.Column="0"
+            Content="{x:Static resCom:Resources.Accept}"
+            Command="{Binding Path=AcceptIncomeCommand}"/>
 
     </Grid>
 </UserControl>

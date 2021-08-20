@@ -16,15 +16,17 @@ namespace IncomeControls.ViewModels
         private bool _visibleEditorIncome = false;
         private IncomeEditorViewModel _editor;
         private IIncomeEditor _incomeEditor;
+        private IIncomeFabric _incomeFabric;
         private WPFHelper.RelayCommand _deleteCommand;
         private WPFHelper.RelayCommand _editorCommand;
         #endregion fields
 
         #region constructor
-        public IncomesViewModel(IIncomeList list, IIncomeEditor IncomeEditor)
+        public IncomesViewModel(IIncomeList list, IIncomeEditor incomeEditor, IIncomeFabric incomeFabric)
         {
             _list = list;
-            _incomeEditor = IncomeEditor;
+            _incomeEditor = incomeEditor;
+            _incomeFabric = incomeFabric;
             InitializeItems(list);
         }
         #endregion constructor
@@ -77,6 +79,9 @@ namespace IncomeControls.ViewModels
             }
         }
 
+        /// <summary>
+        /// Действие при нажатии на кнопку ДОБАВИТЬ доход
+        /// </summary>
         public WPFHelper.RelayCommand AddIncomeCommand
         {
             get
@@ -86,42 +91,68 @@ namespace IncomeControls.ViewModels
                     _addIncomeCommand = new WPFHelper.RelayCommand("", (p) =>
                     {
                         VisibleEditorIncome = true;
+
+                        if (Editor == null)
+                        {
+                            Editor = new IncomeEditorViewModel(_incomeEditor);
+                            Editor.EndEditing += Editor_EndEditing;
+                        }
+
+
+                        Editor.SetEditingIncome(_incomeFabric.CreateNew());
+                        Editor.IsNew = true;
                     });
                 }
-
                 return _addIncomeCommand;
             }
         }
 
+        /// <summary>
+        /// Действие при нажатии на кнопку УДАЛИТЬ строку дохода
+        /// </summary>
         public WPFHelper.RelayCommand DeleteCommand
         {
             get
             {
-                //if (_deleteCommand == null)
-                //{
-                //    _addIncomeCommand = new WPFHelper.RelayCommand("", (p) =>
-                //    {
-                //        VisibleEditorIncome = true;
-                //    });
-                //}
-
+                if (_deleteCommand == null)
+                {
+                    _deleteCommand = new WPFHelper.RelayCommand("", (p) =>
+                    {
+                        if (SelectedItem == null)
+                        {
+                            return;
+                        }
+                        _incomeEditor.Remove(SelectedItem.GetModel());
+                        UpdateItems();
+                        Editor.SetEditingIncome(_incomeFabric.CreateNew());
+                    });
+                }
                 return _deleteCommand;
             }
         }
 
 
+        /// <summary>
+        /// Действие при нажатии на кнопку ИЗМЕНИТЬ доход
+        /// </summary>
         public WPFHelper.RelayCommand EditorCommand
         {
             get
             {
-                //if (_deleteCommand == null)
-                //{
-                //    _addIncomeCommand = new WPFHelper.RelayCommand("", (p) =>
-                //    {
-                //        VisibleEditorIncome = true;
-                //    });
-                //}
-
+                if (_editorCommand == null)
+                {
+                    _editorCommand = new WPFHelper.RelayCommand("", (p) =>
+                    {
+                        if (SelectedItem == null)
+                        {
+                            return;
+                        }
+                        VisibleEditorIncome = true;
+                        Editor.SetEditingIncome(SelectedItem.GetModel());
+                        Editor.IsNew = false;
+                        UpdateItems();
+                    });
+                }
                 return _editorCommand;
             }
         }
@@ -166,10 +197,10 @@ namespace IncomeControls.ViewModels
         private void Editor_EndEditing(object sender, EventArgs e)
         {
 
-            IIncome edditingAcount = Editor.GetEditingItem();
+            IIncome edditingIncome = Editor.GetEditingItem();
             if (Editor.IsNew)
             {
-                _incomeEditor.Add(edditingAcount);
+                _incomeEditor.Add(edditingIncome);
             }
             UpdateItems();
             VisibleEditorIncome = false;

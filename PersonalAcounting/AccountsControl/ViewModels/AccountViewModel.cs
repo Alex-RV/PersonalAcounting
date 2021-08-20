@@ -86,7 +86,7 @@ namespace AccountControl.ViewModels
                     {
                         if (Income == null)
                         {
-                            Income = new IncomeControls.ViewModels.IncomesViewModel(_account.Incomes, _accountEditor.GetIncomeEditor(_account));
+                            Income = new IncomeControls.ViewModels.IncomesViewModel(_account.Incomes, _accountEditor.GetIncomeEditor(_account), _accountEditor.GetIncomeFabric());
                         }
                         VisibleShortView = false;
                         VisibleIncomeView = true;

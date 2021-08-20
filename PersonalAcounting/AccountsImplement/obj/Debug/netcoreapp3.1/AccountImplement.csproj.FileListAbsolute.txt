@@ -40,3 +40,7 @@ C:\Users\MaynskiyAP\source\repos\PersonalAcounting\PersonalAcounting\AccountsImp
 C:\Users\MaynskiyAP\source\repos\PersonalAcounting\PersonalAcounting\AccountsImplement\bin\Debug\netcoreapp3.1\IIncome.dll
 C:\Users\MaynskiyAP\source\repos\PersonalAcounting\PersonalAcounting\AccountsImplement\bin\Debug\netcoreapp3.1\IBase.pdb
 C:\Users\MaynskiyAP\source\repos\PersonalAcounting\PersonalAcounting\AccountsImplement\bin\Debug\netcoreapp3.1\IIncome.pdb
+D:\Work\PersonalAcounting\PersonalAcounting\AccountsImplement\bin\Debug\netcoreapp3.1\IBase.dll
+D:\Work\PersonalAcounting\PersonalAcounting\AccountsImplement\bin\Debug\netcoreapp3.1\IIncome.dll
+D:\Work\PersonalAcounting\PersonalAcounting\AccountsImplement\bin\Debug\netcoreapp3.1\IBase.pdb
+D:\Work\PersonalAcounting\PersonalAcounting\AccountsImplement\bin\Debug\netcoreapp3.1\IIncome.pdb

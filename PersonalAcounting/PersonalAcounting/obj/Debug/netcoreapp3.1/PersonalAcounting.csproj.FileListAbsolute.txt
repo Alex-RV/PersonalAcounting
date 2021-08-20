@@ -114,3 +114,9 @@ C:\Users\MaynskiyAP\source\repos\PersonalAcounting\PersonalAcounting\PersonalAco
 C:\Users\MaynskiyAP\source\repos\PersonalAcounting\PersonalAcounting\PersonalAcounting\bin\Debug\netcoreapp3.1\IncomeFabric.pdb
 C:\Users\MaynskiyAP\source\repos\PersonalAcounting\PersonalAcounting\PersonalAcounting\bin\Debug\netcoreapp3.1\BaseImplement.pdb
 C:\Users\MaynskiyAP\source\repos\PersonalAcounting\PersonalAcounting\PersonalAcounting\bin\Debug\netcoreapp3.1\IncomeImplement.pdb
+D:\Work\PersonalAcounting\PersonalAcounting\PersonalAcounting\bin\Debug\netcoreapp3.1\BaseImplement.dll
+D:\Work\PersonalAcounting\PersonalAcounting\PersonalAcounting\bin\Debug\netcoreapp3.1\IncomeFabric.dll
+D:\Work\PersonalAcounting\PersonalAcounting\PersonalAcounting\bin\Debug\netcoreapp3.1\IncomeImplement.dll
+D:\Work\PersonalAcounting\PersonalAcounting\PersonalAcounting\bin\Debug\netcoreapp3.1\IncomeFabric.pdb
+D:\Work\PersonalAcounting\PersonalAcounting\PersonalAcounting\bin\Debug\netcoreapp3.1\BaseImplement.pdb
+D:\Work\PersonalAcounting\PersonalAcounting\PersonalAcounting\bin\Debug\netcoreapp3.1\IncomeImplement.pdb

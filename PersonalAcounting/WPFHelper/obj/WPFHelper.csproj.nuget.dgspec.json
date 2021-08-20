@@ -1,20 +1,24 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\MaynskiyAP\\source\\repos\\PersonalAcounting\\PersonalAcounting\\WPFHelper\\WPFHelper.csproj": {}
+    "D:\\Work\\PersonalAcounting\\PersonalAcounting\\WPFHelper\\WPFHelper.csproj": {}
   },
   "projects": {
-    "C:\\Users\\MaynskiyAP\\source\\repos\\PersonalAcounting\\PersonalAcounting\\WPFHelper\\WPFHelper.csproj": {
+    "D:\\Work\\PersonalAcounting\\PersonalAcounting\\WPFHelper\\WPFHelper.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\MaynskiyAP\\source\\repos\\PersonalAcounting\\PersonalAcounting\\WPFHelper\\WPFHelper.csproj",
+        "projectUniqueName": "D:\\Work\\PersonalAcounting\\PersonalAcounting\\WPFHelper\\WPFHelper.csproj",
         "projectName": "WPFHelper",
-        "projectPath": "C:\\Users\\MaynskiyAP\\source\\repos\\PersonalAcounting\\PersonalAcounting\\WPFHelper\\WPFHelper.csproj",
-        "packagesPath": "C:\\Users\\MaynskiyAP\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\MaynskiyAP\\source\\repos\\PersonalAcounting\\PersonalAcounting\\WPFHelper\\obj\\",
+        "projectPath": "D:\\Work\\PersonalAcounting\\PersonalAcounting\\WPFHelper\\WPFHelper.csproj",
+        "packagesPath": "C:\\Users\\alexs\\.nuget\\packages\\",
+        "outputPath": "D:\\Work\\PersonalAcounting\\PersonalAcounting\\WPFHelper\\obj\\",
         "projectStyle": "PackageReference",
+        "fallbackFolders": [
+          "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
+        ],
         "configFilePaths": [
-          "C:\\Users\\MaynskiyAP\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\alexs\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
@@ -57,7 +61,7 @@
               "privateAssets": "none"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.206\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.400\\RuntimeIdentifierGraph.json"
         }
       }
     }

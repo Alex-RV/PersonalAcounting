@@ -1,20 +1,24 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\MaynskiyAP\\source\\repos\\PersonalAcounting\\PersonalAcounting\\CostsImplements\\CostsImplement.csproj": {}
+    "D:\\Work\\PersonalAcounting\\PersonalAcounting\\CostsImplements\\CostsImplement.csproj": {}
   },
   "projects": {
-    "C:\\Users\\MaynskiyAP\\source\\repos\\PersonalAcounting\\PersonalAcounting\\BaseImplements\\BaseImplement.csproj": {
+    "D:\\Work\\PersonalAcounting\\PersonalAcounting\\BaseImplements\\BaseImplement.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\MaynskiyAP\\source\\repos\\PersonalAcounting\\PersonalAcounting\\BaseImplements\\BaseImplement.csproj",
+        "projectUniqueName": "D:\\Work\\PersonalAcounting\\PersonalAcounting\\BaseImplements\\BaseImplement.csproj",
         "projectName": "BaseImplement",
-        "projectPath": "C:\\Users\\MaynskiyAP\\source\\repos\\PersonalAcounting\\PersonalAcounting\\BaseImplements\\BaseImplement.csproj",
-        "packagesPath": "C:\\Users\\MaynskiyAP\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\MaynskiyAP\\source\\repos\\PersonalAcounting\\PersonalAcounting\\BaseImplements\\obj\\",
+        "projectPath": "D:\\Work\\PersonalAcounting\\PersonalAcounting\\BaseImplements\\BaseImplement.csproj",
+        "packagesPath": "C:\\Users\\alexs\\.nuget\\packages\\",
+        "outputPath": "D:\\Work\\PersonalAcounting\\PersonalAcounting\\BaseImplements\\obj\\",
         "projectStyle": "PackageReference",
+        "fallbackFolders": [
+          "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
+        ],
         "configFilePaths": [
-          "C:\\Users\\MaynskiyAP\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\alexs\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
@@ -28,8 +32,8 @@
           "netcoreapp3.1": {
             "targetAlias": "netcoreapp3.1",
             "projectReferences": {
-              "C:\\Users\\MaynskiyAP\\source\\repos\\PersonalAcounting\\PersonalAcounting\\IBase\\IBase.csproj": {
-                "projectPath": "C:\\Users\\MaynskiyAP\\source\\repos\\PersonalAcounting\\PersonalAcounting\\IBase\\IBase.csproj"
+              "D:\\Work\\PersonalAcounting\\PersonalAcounting\\IBase\\IBase.csproj": {
+                "projectPath": "D:\\Work\\PersonalAcounting\\PersonalAcounting\\IBase\\IBase.csproj"
               }
             }
           }
@@ -58,21 +62,25 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.206\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.400\\RuntimeIdentifierGraph.json"
         }
       }
     },
-    "C:\\Users\\MaynskiyAP\\source\\repos\\PersonalAcounting\\PersonalAcounting\\CostsImplements\\CostsImplement.csproj": {
+    "D:\\Work\\PersonalAcounting\\PersonalAcounting\\CostsImplements\\CostsImplement.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\MaynskiyAP\\source\\repos\\PersonalAcounting\\PersonalAcounting\\CostsImplements\\CostsImplement.csproj",
+        "projectUniqueName": "D:\\Work\\PersonalAcounting\\PersonalAcounting\\CostsImplements\\CostsImplement.csproj",
         "projectName": "CostsImplement",
-        "projectPath": "C:\\Users\\MaynskiyAP\\source\\repos\\PersonalAcounting\\PersonalAcounting\\CostsImplements\\CostsImplement.csproj",
-        "packagesPath": "C:\\Users\\MaynskiyAP\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\MaynskiyAP\\source\\repos\\PersonalAcounting\\PersonalAcounting\\CostsImplements\\obj\\",
+        "projectPath": "D:\\Work\\PersonalAcounting\\PersonalAcounting\\CostsImplements\\CostsImplement.csproj",
+        "packagesPath": "C:\\Users\\alexs\\.nuget\\packages\\",
+        "outputPath": "D:\\Work\\PersonalAcounting\\PersonalAcounting\\CostsImplements\\obj\\",
         "projectStyle": "PackageReference",
+        "fallbackFolders": [
+          "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
+        ],
         "configFilePaths": [
-          "C:\\Users\\MaynskiyAP\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\alexs\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
@@ -86,11 +94,11 @@
           "netcoreapp3.1": {
             "targetAlias": "netcoreapp3.1",
             "projectReferences": {
-              "C:\\Users\\MaynskiyAP\\source\\repos\\PersonalAcounting\\PersonalAcounting\\BaseImplements\\BaseImplement.csproj": {
-                "projectPath": "C:\\Users\\MaynskiyAP\\source\\repos\\PersonalAcounting\\PersonalAcounting\\BaseImplements\\BaseImplement.csproj"
+              "D:\\Work\\PersonalAcounting\\PersonalAcounting\\BaseImplements\\BaseImplement.csproj": {
+                "projectPath": "D:\\Work\\PersonalAcounting\\PersonalAcounting\\BaseImplements\\BaseImplement.csproj"
               },
-              "C:\\Users\\MaynskiyAP\\source\\repos\\PersonalAcounting\\PersonalAcounting\\ICosts\\ICosts.csproj": {
-                "projectPath": "C:\\Users\\MaynskiyAP\\source\\repos\\PersonalAcounting\\PersonalAcounting\\ICosts\\ICosts.csproj"
+              "D:\\Work\\PersonalAcounting\\PersonalAcounting\\ICosts\\ICosts.csproj": {
+                "projectPath": "D:\\Work\\PersonalAcounting\\PersonalAcounting\\ICosts\\ICosts.csproj"
               }
             }
           }
@@ -119,21 +127,25 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.206\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.400\\RuntimeIdentifierGraph.json"
         }
       }
     },
-    "C:\\Users\\MaynskiyAP\\source\\repos\\PersonalAcounting\\PersonalAcounting\\IBase\\IBase.csproj": {
+    "D:\\Work\\PersonalAcounting\\PersonalAcounting\\IBase\\IBase.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\MaynskiyAP\\source\\repos\\PersonalAcounting\\PersonalAcounting\\IBase\\IBase.csproj",
+        "projectUniqueName": "D:\\Work\\PersonalAcounting\\PersonalAcounting\\IBase\\IBase.csproj",
         "projectName": "IBase",
-        "projectPath": "C:\\Users\\MaynskiyAP\\source\\repos\\PersonalAcounting\\PersonalAcounting\\IBase\\IBase.csproj",
-        "packagesPath": "C:\\Users\\MaynskiyAP\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\MaynskiyAP\\source\\repos\\PersonalAcounting\\PersonalAcounting\\IBase\\obj\\",
+        "projectPath": "D:\\Work\\PersonalAcounting\\PersonalAcounting\\IBase\\IBase.csproj",
+        "packagesPath": "C:\\Users\\alexs\\.nuget\\packages\\",
+        "outputPath": "D:\\Work\\PersonalAcounting\\PersonalAcounting\\IBase\\obj\\",
         "projectStyle": "PackageReference",
+        "fallbackFolders": [
+          "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
+        ],
         "configFilePaths": [
-          "C:\\Users\\MaynskiyAP\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\alexs\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
@@ -173,21 +185,25 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.206\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.400\\RuntimeIdentifierGraph.json"
         }
       }
     },
-    "C:\\Users\\MaynskiyAP\\source\\repos\\PersonalAcounting\\PersonalAcounting\\ICosts\\ICosts.csproj": {
+    "D:\\Work\\PersonalAcounting\\PersonalAcounting\\ICosts\\ICosts.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\MaynskiyAP\\source\\repos\\PersonalAcounting\\PersonalAcounting\\ICosts\\ICosts.csproj",
+        "projectUniqueName": "D:\\Work\\PersonalAcounting\\PersonalAcounting\\ICosts\\ICosts.csproj",
         "projectName": "ICosts",
-        "projectPath": "C:\\Users\\MaynskiyAP\\source\\repos\\PersonalAcounting\\PersonalAcounting\\ICosts\\ICosts.csproj",
-        "packagesPath": "C:\\Users\\MaynskiyAP\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\MaynskiyAP\\source\\repos\\PersonalAcounting\\PersonalAcounting\\ICosts\\obj\\",
+        "projectPath": "D:\\Work\\PersonalAcounting\\PersonalAcounting\\ICosts\\ICosts.csproj",
+        "packagesPath": "C:\\Users\\alexs\\.nuget\\packages\\",
+        "outputPath": "D:\\Work\\PersonalAcounting\\PersonalAcounting\\ICosts\\obj\\",
         "projectStyle": "PackageReference",
+        "fallbackFolders": [
+          "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
+        ],
         "configFilePaths": [
-          "C:\\Users\\MaynskiyAP\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\alexs\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
@@ -201,8 +217,8 @@
           "netcoreapp3.1": {
             "targetAlias": "netcoreapp3.1",
             "projectReferences": {
-              "C:\\Users\\MaynskiyAP\\source\\repos\\PersonalAcounting\\PersonalAcounting\\IBase\\IBase.csproj": {
-                "projectPath": "C:\\Users\\MaynskiyAP\\source\\repos\\PersonalAcounting\\PersonalAcounting\\IBase\\IBase.csproj"
+              "D:\\Work\\PersonalAcounting\\PersonalAcounting\\IBase\\IBase.csproj": {
+                "projectPath": "D:\\Work\\PersonalAcounting\\PersonalAcounting\\IBase\\IBase.csproj"
               }
             }
           }
@@ -231,7 +247,7 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.206\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.400\\RuntimeIdentifierGraph.json"
         }
       }
     }
