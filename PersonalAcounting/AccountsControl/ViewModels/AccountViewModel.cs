@@ -13,6 +13,9 @@ namespace AccountControl.ViewModels
         #region fields
         private IAccount _account;
         private WPFHelper.RelayCommand _exitCommand;
+        private WPFHelper.RelayCommand _incomeCommand;
+        private bool _visibleIncomeView = false;
+        private bool _visibleShortView = true;
         #endregion fields
 
         #region contructor
@@ -65,6 +68,60 @@ namespace AccountControl.ViewModels
                 return _exitCommand;
             }
         }
+
+
+        /// <summary>
+        /// Команда входа во вкладку доходы
+        /// </summary>
+        public WPFHelper.RelayCommand IncomeCommand
+        {
+            get
+            {
+                if (_incomeCommand == null)
+                {
+                    _incomeCommand = new WPFHelper.RelayCommand("", (p) =>
+                    {
+                        VisibleShortView = false;
+                        VisibleIncomeView = true;
+                    });
+                }
+
+                return _incomeCommand;
+            }
+        }
+
+        /// <summary>
+        /// Видимость стартового окна
+        /// </summary>
+        public bool VisibleShortView
+        {
+            get { return _visibleShortView; }
+            set
+            {
+                if (_visibleShortView != value)
+                {
+                    _visibleShortView = value;
+                    OnPropertyChanged(nameof(VisibleShortView));
+                }
+            }
+        }
+
+
+        /// <summary>
+        /// Видимость окна доходов
+        /// </summary>
+        public bool VisibleIncomeView
+        {
+            get { return _visibleIncomeView; }
+            set
+            {
+                if (_visibleIncomeView != value)
+                {
+                    _visibleIncomeView = value;
+                    OnPropertyChanged(nameof(VisibleIncomeView));
+                }
+            }
+        }
         #endregion properties
 
         #region metods
@@ -86,10 +143,27 @@ namespace AccountControl.ViewModels
                 Exit(this, EventArgs.Empty);
             }
         }
+
+
         /// <summary>
         /// Выполнен выход из счета
         /// </summary>
         public event EventHandler Exit;
+
+
+        /*private void OnIncome()
+        {
+            if (Income != null)
+            {
+                Income(this, EventArgs.Empty);
+            }
+        }*/
+
+
+        /// <summary>
+        /// Выполнен выход из счета
+        /// </summary>
+        //public event EventHandler Income;
         #endregion
     }
 }

@@ -20,3 +20,6 @@ C:\Users\MaynskiyAP\source\repos\PersonalAcounting\PersonalAcounting\ICosts\obj\
 C:\Users\MaynskiyAP\source\repos\PersonalAcounting\PersonalAcounting\ICosts\obj\Debug\netcoreapp3.1\ICosts.csproj.CopyComplete
 C:\Users\MaynskiyAP\source\repos\PersonalAcounting\PersonalAcounting\ICosts\obj\Debug\netcoreapp3.1\ICosts.dll
 C:\Users\MaynskiyAP\source\repos\PersonalAcounting\PersonalAcounting\ICosts\obj\Debug\netcoreapp3.1\ICosts.pdb
+D:\Work\PersonalAcounting\PersonalAcounting\ICosts\bin\Debug\netcoreapp3.1\IBase.dll
+D:\Work\PersonalAcounting\PersonalAcounting\ICosts\bin\Debug\netcoreapp3.1\IBase.pdb
+D:\Work\PersonalAcounting\PersonalAcounting\ICosts\obj\Debug\netcoreapp3.1\ICosts.csproj.CopyComplete

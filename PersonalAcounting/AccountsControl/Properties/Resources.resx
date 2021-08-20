@@ -123,6 +123,9 @@
   <data name="Exit" xml:space="preserve">
     <value>Выход</value>
   </data>
+  <data name="Income" xml:space="preserve">
+    <value>Доходы</value>
+  </data>
   <data name="Name" xml:space="preserve">
     <value>Название</value>
   </data>

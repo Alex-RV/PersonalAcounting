@@ -90,3 +90,15 @@ C:\Users\MaynskiyAP\source\repos\PersonalAcounting\PersonalAcounting\PersonalAco
 C:\Users\MaynskiyAP\source\repos\PersonalAcounting\PersonalAcounting\PersonalAcounting\obj\Debug\netcoreapp3.1\PersonalAcounting.dll
 C:\Users\MaynskiyAP\source\repos\PersonalAcounting\PersonalAcounting\PersonalAcounting\obj\Debug\netcoreapp3.1\PersonalAcounting.pdb
 C:\Users\MaynskiyAP\source\repos\PersonalAcounting\PersonalAcounting\PersonalAcounting\obj\Debug\netcoreapp3.1\PersonalAcounting.genruntimeconfig.cache
+D:\Work\PersonalAcounting\PersonalAcounting\PersonalAcounting\bin\Debug\netcoreapp3.1\IBase.dll
+D:\Work\PersonalAcounting\PersonalAcounting\PersonalAcounting\bin\Debug\netcoreapp3.1\IIncome.dll
+D:\Work\PersonalAcounting\PersonalAcounting\PersonalAcounting\bin\Debug\netcoreapp3.1\IncomeControls.dll
+D:\Work\PersonalAcounting\PersonalAcounting\PersonalAcounting\bin\Debug\netcoreapp3.1\IBase.pdb
+D:\Work\PersonalAcounting\PersonalAcounting\PersonalAcounting\bin\Debug\netcoreapp3.1\IIncome.pdb
+D:\Work\PersonalAcounting\PersonalAcounting\PersonalAcounting\bin\Debug\netcoreapp3.1\IncomeControls.pdb
+C:\Users\Alex\source\repos\Alex-RV\PersonalAcounting\PersonalAcounting\PersonalAcounting\bin\Debug\netcoreapp3.1\IBase.dll
+C:\Users\Alex\source\repos\Alex-RV\PersonalAcounting\PersonalAcounting\PersonalAcounting\bin\Debug\netcoreapp3.1\IIncome.dll
+C:\Users\Alex\source\repos\Alex-RV\PersonalAcounting\PersonalAcounting\PersonalAcounting\bin\Debug\netcoreapp3.1\IncomeControls.dll
+C:\Users\Alex\source\repos\Alex-RV\PersonalAcounting\PersonalAcounting\PersonalAcounting\bin\Debug\netcoreapp3.1\IBase.pdb
+C:\Users\Alex\source\repos\Alex-RV\PersonalAcounting\PersonalAcounting\PersonalAcounting\bin\Debug\netcoreapp3.1\IIncome.pdb
+C:\Users\Alex\source\repos\Alex-RV\PersonalAcounting\PersonalAcounting\PersonalAcounting\bin\Debug\netcoreapp3.1\IncomeControls.pdb

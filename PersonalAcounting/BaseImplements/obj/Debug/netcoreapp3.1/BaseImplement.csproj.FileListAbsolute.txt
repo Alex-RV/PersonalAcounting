@@ -1,7 +1,6 @@
 D:\Work\PersonalAcounting\PersonalAcounting\BaseImplements\bin\Debug\netcoreapp3.1\BaseImplement.deps.json
 D:\Work\PersonalAcounting\PersonalAcounting\BaseImplements\bin\Debug\netcoreapp3.1\BaseImplement.dll
 D:\Work\PersonalAcounting\PersonalAcounting\BaseImplements\bin\Debug\netcoreapp3.1\BaseImplement.pdb
-D:\Work\PersonalAcounting\PersonalAcounting\BaseImplements\obj\Debug\netcoreapp3.1\BaseImplement.csproj.AssemblyReference.cache
 D:\Work\PersonalAcounting\PersonalAcounting\BaseImplements\obj\Debug\netcoreapp3.1\BaseImplement.GeneratedMSBuildEditorConfig.editorconfig
 D:\Work\PersonalAcounting\PersonalAcounting\BaseImplements\obj\Debug\netcoreapp3.1\BaseImplement.AssemblyInfoInputs.cache
 D:\Work\PersonalAcounting\PersonalAcounting\BaseImplements\obj\Debug\netcoreapp3.1\BaseImplement.AssemblyInfo.cs
@@ -20,3 +19,7 @@ C:\Users\MaynskiyAP\source\repos\PersonalAcounting\PersonalAcounting\BaseImpleme
 C:\Users\MaynskiyAP\source\repos\PersonalAcounting\PersonalAcounting\BaseImplements\obj\Debug\netcoreapp3.1\BaseImplement.csproj.CopyComplete
 C:\Users\MaynskiyAP\source\repos\PersonalAcounting\PersonalAcounting\BaseImplements\obj\Debug\netcoreapp3.1\BaseImplement.dll
 C:\Users\MaynskiyAP\source\repos\PersonalAcounting\PersonalAcounting\BaseImplements\obj\Debug\netcoreapp3.1\BaseImplement.pdb
+D:\Work\PersonalAcounting\PersonalAcounting\BaseImplements\bin\Debug\netcoreapp3.1\IBase.dll
+D:\Work\PersonalAcounting\PersonalAcounting\BaseImplements\bin\Debug\netcoreapp3.1\IBase.pdb
+D:\Work\PersonalAcounting\PersonalAcounting\BaseImplements\obj\Debug\netcoreapp3.1\BaseImplement.csproj.CopyComplete
+D:\Work\PersonalAcounting\PersonalAcounting\BaseImplements\obj\Debug\netcoreapp3.1\BaseImplement.csproj.AssemblyReference.cache

@@ -10,3 +10,16 @@ C:\Users\MaynskiyAP\source\repos\PersonalAcounting\PersonalAcounting\DirectoryIm
 C:\Users\MaynskiyAP\source\repos\PersonalAcounting\PersonalAcounting\DirectoryImplement\obj\Debug\netcoreapp3.1\DirectoryImplement.csproj.CopyComplete
 C:\Users\MaynskiyAP\source\repos\PersonalAcounting\PersonalAcounting\DirectoryImplement\obj\Debug\netcoreapp3.1\DirectoryImplement.dll
 C:\Users\MaynskiyAP\source\repos\PersonalAcounting\PersonalAcounting\DirectoryImplement\obj\Debug\netcoreapp3.1\DirectoryImplement.pdb
+D:\Work\PersonalAcounting\PersonalAcounting\DirectoryImplement\bin\Debug\netcoreapp3.1\DirectoryImplement.deps.json
+D:\Work\PersonalAcounting\PersonalAcounting\DirectoryImplement\bin\Debug\netcoreapp3.1\DirectoryImplement.dll
+D:\Work\PersonalAcounting\PersonalAcounting\DirectoryImplement\bin\Debug\netcoreapp3.1\DirectoryImplement.pdb
+D:\Work\PersonalAcounting\PersonalAcounting\DirectoryImplement\bin\Debug\netcoreapp3.1\IDirectory.dll
+D:\Work\PersonalAcounting\PersonalAcounting\DirectoryImplement\bin\Debug\netcoreapp3.1\IDirectory.pdb
+D:\Work\PersonalAcounting\PersonalAcounting\DirectoryImplement\obj\Debug\netcoreapp3.1\DirectoryImplement.csproj.AssemblyReference.cache
+D:\Work\PersonalAcounting\PersonalAcounting\DirectoryImplement\obj\Debug\netcoreapp3.1\DirectoryImplement.GeneratedMSBuildEditorConfig.editorconfig
+D:\Work\PersonalAcounting\PersonalAcounting\DirectoryImplement\obj\Debug\netcoreapp3.1\DirectoryImplement.AssemblyInfoInputs.cache
+D:\Work\PersonalAcounting\PersonalAcounting\DirectoryImplement\obj\Debug\netcoreapp3.1\DirectoryImplement.AssemblyInfo.cs
+D:\Work\PersonalAcounting\PersonalAcounting\DirectoryImplement\obj\Debug\netcoreapp3.1\DirectoryImplement.csproj.CoreCompileInputs.cache
+D:\Work\PersonalAcounting\PersonalAcounting\DirectoryImplement\obj\Debug\netcoreapp3.1\DirectoryImplement.csproj.CopyComplete
+D:\Work\PersonalAcounting\PersonalAcounting\DirectoryImplement\obj\Debug\netcoreapp3.1\DirectoryImplement.dll
+D:\Work\PersonalAcounting\PersonalAcounting\DirectoryImplement\obj\Debug\netcoreapp3.1\DirectoryImplement.pdb
