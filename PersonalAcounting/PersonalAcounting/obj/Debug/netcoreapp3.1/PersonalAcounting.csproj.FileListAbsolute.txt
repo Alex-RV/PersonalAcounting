@@ -96,3 +96,9 @@ D:\Work\PersonalAcounting\PersonalAcounting\PersonalAcounting\bin\Debug\netcorea
 D:\Work\PersonalAcounting\PersonalAcounting\PersonalAcounting\bin\Debug\netcoreapp3.1\IBase.pdb
 D:\Work\PersonalAcounting\PersonalAcounting\PersonalAcounting\bin\Debug\netcoreapp3.1\IIncome.pdb
 D:\Work\PersonalAcounting\PersonalAcounting\PersonalAcounting\bin\Debug\netcoreapp3.1\IncomeControls.pdb
+C:\Users\Alex\source\repos\Alex-RV\PersonalAcounting\PersonalAcounting\PersonalAcounting\bin\Debug\netcoreapp3.1\IBase.dll
+C:\Users\Alex\source\repos\Alex-RV\PersonalAcounting\PersonalAcounting\PersonalAcounting\bin\Debug\netcoreapp3.1\IIncome.dll
+C:\Users\Alex\source\repos\Alex-RV\PersonalAcounting\PersonalAcounting\PersonalAcounting\bin\Debug\netcoreapp3.1\IncomeControls.dll
+C:\Users\Alex\source\repos\Alex-RV\PersonalAcounting\PersonalAcounting\PersonalAcounting\bin\Debug\netcoreapp3.1\IBase.pdb
+C:\Users\Alex\source\repos\Alex-RV\PersonalAcounting\PersonalAcounting\PersonalAcounting\bin\Debug\netcoreapp3.1\IIncome.pdb
+C:\Users\Alex\source\repos\Alex-RV\PersonalAcounting\PersonalAcounting\PersonalAcounting\bin\Debug\netcoreapp3.1\IncomeControls.pdb

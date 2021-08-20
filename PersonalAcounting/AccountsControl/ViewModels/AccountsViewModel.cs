@@ -1,12 +1,10 @@
-﻿using System;
-using System.Collections.Generic;
+﻿using Account;
+using System;
 using System.Collections.ObjectModel;
-using System.Text;
-using Account;
 
 namespace AccountControl.ViewModels
 {
-    public class AccountsViewModel: WPFHelper.ViewModelBase
+    public class AccountsViewModel : WPFHelper.ViewModelBase
     {
         #region fields
         private IAccountList _list;
@@ -36,16 +34,16 @@ namespace AccountControl.ViewModels
         /// Элементы
         /// </summary>
         public ObservableCollection<AccountViewModel> Items { get { return _items; } }
-        
+
         /// <summary>
         /// Выбранный элемент
         /// </summary>
         public AccountViewModel SelectedItem
-        { 
+        {
             get { return _selectedItem; }
             set
             {
-                if(_selectedItem != value)
+                if (_selectedItem != value)
                 {
                     _selectedItem = value;
                     OnPropertyChanged(nameof(SelectedItem));
@@ -57,7 +55,7 @@ namespace AccountControl.ViewModels
         /// Редактор
         /// </summary>
         public AccountEditorViewModel Editor
-        { 
+        {
             get { return _editor; }
             set
             {
@@ -81,14 +79,14 @@ namespace AccountControl.ViewModels
                     _addCommand = new WPFHelper.RelayCommand("", (p) =>
                     {
                         VisibleEditor = true;
-                        
+
                         if (Editor == null)
                         {
                             Editor = new AccountEditorViewModel(_accountEditor);
                             Editor.EndEditing += Editor_EndEditing;
                         }
 
-                        
+
                         Editor.SetEditingAccount(_accountFabric.CreateNew());
                         Editor.IsNew = true;
                     });
@@ -108,7 +106,7 @@ namespace AccountControl.ViewModels
                 {
                     _deleteCommand = new WPFHelper.RelayCommand("", (p) =>
                     {
-                        if(SelectedItem == null)
+                        if (SelectedItem == null)
                         {
                             return;
                         }
@@ -155,7 +153,8 @@ namespace AccountControl.ViewModels
             {
                 if (_openAccountCommand == null)
                 {
-                    _openAccountCommand = new WPFHelper.RelayCommand("", (p) => {
+                    _openAccountCommand = new WPFHelper.RelayCommand("", (p) =>
+                    {
                         if (SelectedItem != null)
                         {
                             OnChangedActivAcount();
@@ -221,7 +220,7 @@ namespace AccountControl.ViewModels
 
         private void Editor_EndEditing(object sender, EventArgs e)
         {
-            
+
             IAccount edditingAcount = Editor.GetEditingItem();
             if (Editor.IsNew)
             {
@@ -236,8 +235,8 @@ namespace AccountControl.ViewModels
         #region events
         public event EventHandler ChangedActivAcount;
         private void OnChangedActivAcount()
-        { 
-            if(ChangedActivAcount != null)
+        {
+            if (ChangedActivAcount != null)
             {
                 ChangedActivAcount(this, EventArgs.Empty);
             }

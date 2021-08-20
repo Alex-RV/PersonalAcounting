@@ -5,7 +5,7 @@
              xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
              xmlns:local="clr-namespace:IncomeControls.Views"
              xmlns:res="clr-namespace:IncomeControls.Properties"
-             
+             xmlns:conv="clr-namespace:WPFHelper.Converters;assembly=WPFHelper"
              mc:Ignorable="d" 
              d:DesignHeight="450" d:DesignWidth="800">
     <Grid>
@@ -20,7 +20,7 @@
             Orientation="Horizontal">
             <Button  
                 Width="20"
-                Command="{Binding Path=AddCommand}">+</Button>
+                Command="{Binding Path=AddIncomeCommand}">+</Button>
             <Button
                 Width="20"
                 Command="{Binding Path=DeleteCommand}">-</Button>
@@ -36,8 +36,7 @@
             ScrollViewer.HorizontalScrollBarVisibility="Visible">
             <ListView.View>
                 <GridView>
-                    <!--<GridViewColumn Width="100" Header="{x:Static res:Resources.Name}">-->
-                    <GridViewColumn Width="100" Header="Name">
+                    <GridViewColumn Width="100" Header="{x:Static res:Resources.Name}">
                         <GridViewColumn.CellTemplate>
                             <DataTemplate>
                                 <TextBlock Text="{Binding Path=Name}"/>
@@ -45,8 +44,7 @@
                         </GridViewColumn.CellTemplate>
                     </GridViewColumn>
 
-                    <!--<GridViewColumn Width="100" Header="{x:Static res:Resources.Amount}">-->
-                    <GridViewColumn Width="100" Header="Amount">
+                    <GridViewColumn Width="100" Header="{x:Static res:Resources.Amount}">
                         <GridViewColumn.CellTemplate>
                             <DataTemplate>
                                 <TextBlock Text="{Binding Path=Amount}"/>
@@ -66,12 +64,11 @@
         </ListView>
         
         
-        <!--<local:AccountEditorView
+        <local:IncomeEditorView
             Grid.Row="2"
-            Visibility="{Binding Path=DataContext.VisibleEditor, 
-                Converter={x:Static conv:BoolToVisible.Instance}, 
-                RelativeSource={RelativeSource Mode=FindAncestor, AncestorType=UserControl}}"
-            DataContext="{Binding Path=Editor}"/>-->
+            Visibility="{Binding Path=DataContext.VisibleEditorIncome,
+                        Converter={x:Static conv:BoolToVisible.Instance}}"
+        />
 
     </Grid>
 </UserControl>
