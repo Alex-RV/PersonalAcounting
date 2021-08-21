@@ -37,3 +37,8 @@ D:\Work\PersonalAcounting\PersonalAcounting\IAccounts\bin\Debug\netcoreapp3.1\II
 D:\Work\PersonalAcounting\PersonalAcounting\IAccounts\bin\Debug\netcoreapp3.1\IIncome.pdb
 D:\Work\PersonalAcounting\PersonalAcounting\IAccounts\bin\Debug\netcoreapp3.1\IBase.pdb
 D:\Work\PersonalAcounting\PersonalAcounting\IAccounts\obj\Debug\netcoreapp3.1\IAccount.csproj.CopyComplete
+C:\Users\Alex\source\repos\Alex-RV\PersonalAcounting\PersonalAcounting\IAccounts\bin\Debug\netcoreapp3.1\IBase.dll
+C:\Users\Alex\source\repos\Alex-RV\PersonalAcounting\PersonalAcounting\IAccounts\bin\Debug\netcoreapp3.1\IIncome.dll
+C:\Users\Alex\source\repos\Alex-RV\PersonalAcounting\PersonalAcounting\IAccounts\bin\Debug\netcoreapp3.1\IIncome.pdb
+C:\Users\Alex\source\repos\Alex-RV\PersonalAcounting\PersonalAcounting\IAccounts\bin\Debug\netcoreapp3.1\IBase.pdb
+C:\Users\Alex\source\repos\Alex-RV\PersonalAcounting\PersonalAcounting\IAccounts\obj\Debug\netcoreapp3.1\IAccount.csproj.CopyComplete

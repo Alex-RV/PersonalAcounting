@@ -7,70 +7,189 @@
              xmlns:res="clr-namespace:AccountControl.Properties"
              xmlns:conv="clr-namespace:WPFHelper.Converters;assembly=WPFHelper"
              mc:Ignorable="d" 
-             d:DesignHeight="450" d:DesignWidth="800">
-    <Grid>
-        <Grid.RowDefinitions>
-            <RowDefinition Height="Auto"/>
-            <RowDefinition Height="*"/>
-            <RowDefinition Height="Auto"/>
-        </Grid.RowDefinitions>
+             
+             d:DesignHeight="600"  d:DesignWidth="920">
 
-        <StackPanel
-            Grid.Row="0"
-            Orientation="Horizontal">
-            <Button  
-                Width="20"
-                Command="{Binding Path=AddCommand}">+</Button>
-            <Button
-                Width="20"
-                Command="{Binding Path=DeleteCommand}">-</Button>
-            <Button
-                Width="20"
-                Command="{Binding Path=EditorCommand}">*</Button>
-            <Button
-                Content="{x:Static res:Resources.OpenAccount}"
-                Command="{Binding Path=OpenAccountCommand}"/>
-        </StackPanel>
-        
-        <ListView 
-            Grid.Row="1"
-            ItemsSource="{Binding Path=Items}" 
-            SelectedItem="{Binding Path=SelectedItem}"
-            ScrollViewer.HorizontalScrollBarVisibility="Visible">
-            <ListView.View>
-                <GridView>
-                    <GridViewColumn Width="100" Header="{x:Static res:Resources.Name}">
-                        <GridViewColumn.CellTemplate>
-                            <DataTemplate>
-                                <TextBlock Text="{Binding Path=Name}"/>
-                            </DataTemplate>
-                        </GridViewColumn.CellTemplate>
-                    </GridViewColumn>
+    <Border Background="#07021c"
+            CornerRadius="25">
+        <Grid>
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="200"/>
+                <ColumnDefinition/>
+            </Grid.ColumnDefinitions>
 
-                    <GridViewColumn Width="100" Header="{x:Static res:Resources.Owner}">
-                        <GridViewColumn.CellTemplate>
-                            <DataTemplate>
-                                <TextBlock Text="{Binding Path=Owner}"/>
-                            </DataTemplate>
-                        </GridViewColumn.CellTemplate>
-                    </GridViewColumn>
+            <Grid.RowDefinitions>
+                <RowDefinition Height="75"/>
+                <RowDefinition/>
+                <RowDefinition Height="Auto"/>
+            </Grid.RowDefinitions>
 
-                    <GridViewColumn Width="150" Header="{x:Static res:Resources.CreateDate}">
-                        <GridViewColumn.CellTemplate>
-                            <DataTemplate>
-                                <TextBlock Text="{Binding Path=CreateDate}"/>
-                            </DataTemplate>
-                        </GridViewColumn.CellTemplate>
-                    </GridViewColumn>
-                </GridView>
-            </ListView.View>
-        </ListView>
+            <TextBlock Text="Счета"
+                       VerticalAlignment="Center"
+                       HorizontalAlignment="Left"
+                       Foreground="White"
+                       FontSize="30"
+                       Margin="20,0,0,0"/>
+            
+            <StackPanel
+                    Grid.Row="1"
+                    Orientation="Vertical">
+                <RadioButton 
+                        Command="{Binding Path=AddCommand}"
+                        Content="{x:Static res:Resources.Add}"
+                        Height="50"
+                        Foreground="White"
+                        FontSize="22"
+                        Style="{StaticResource MenuButtonTheme}"
+                        />
 
-        <local:AccountEditorView
-            Grid.Row="2"
-            Visibility="{Binding Path=DataContext.VisibleEditor, 
-                Converter={x:Static conv:BoolToVisible.Instance}, 
-                RelativeSource={RelativeSource Mode=FindAncestor, AncestorType=UserControl}}"
-            DataContext="{Binding Path=Editor}"/>
-    </Grid>
+                <RadioButton
+                        Command="{Binding Path=DeleteCommand}"
+                        Content="{x:Static res:Resources.Delete}"
+                        Height="50"
+                        Foreground="White"
+                        FontSize="22"
+                        Style="{StaticResource MenuButtonTheme}"/>
+
+                <RadioButton
+                        Command="{Binding Path=EditorCommand}"
+                        Content="{x:Static res:Resources.Edit}"
+                        Height="50"
+                        Foreground="White"
+                        FontSize="22"
+                        Style="{StaticResource MenuButtonTheme}"/>
+
+                <RadioButton
+                        Content="{x:Static res:Resources.OpenAccount}"
+                        Command="{Binding Path=OpenAccountCommand}"
+                        Height="50"
+                        Foreground="White"
+                        FontSize="22"
+                        Style="{StaticResource MenuButtonTheme}"/>
+            </StackPanel>
+
+            <ContentControl Grid.Row="1"
+                            Grid.Column="1"
+                            Margin="10">
+                <ListView 
+                    Grid.Row="1"
+                    ItemsSource="{Binding Path=Items}" 
+                    SelectedItem="{Binding Path=SelectedItem}"
+                    Background="#16224f"
+                    ScrollViewer.HorizontalScrollBarVisibility="Visible">
+                    <ListView.View>
+                        <GridView>
+                            <GridViewColumn Width="200"
+                                            Header="{x:Static res:Resources.Name}">
+                                <GridViewColumn.CellTemplate>
+                                    <DataTemplate>
+                                        <TextBlock Text="{Binding Path=Name}"
+                                                   Foreground="White"
+                                                   FontSize="20"/>
+                                    </DataTemplate>
+                                </GridViewColumn.CellTemplate>
+                            </GridViewColumn>
+
+                            <GridViewColumn Width="200" Header="{x:Static res:Resources.Owner}">
+                                <GridViewColumn.CellTemplate>
+                                    <DataTemplate>
+                                        <TextBlock Text="{Binding Path=Owner}"
+                                                   Foreground="White"
+                                                   FontSize="20"/>
+                                    </DataTemplate>
+                                </GridViewColumn.CellTemplate>
+                            </GridViewColumn>
+
+                            <GridViewColumn Width="225" Header="{x:Static res:Resources.CreateDate}">
+                                <GridViewColumn.CellTemplate>
+                                    <DataTemplate>
+                                        <TextBlock Text="{Binding Path=CreateDate}"
+                                                   Foreground="White"
+                                                   FontSize="20"/>
+                                    </DataTemplate>
+                                </GridViewColumn.CellTemplate>
+                            </GridViewColumn>
+                        </GridView>
+                    </ListView.View>
+                </ListView>
+            </ContentControl>
+
+            <local:AccountEditorView
+                    Grid.Column="1"
+                    Grid.Row="2"
+                    Visibility="{Binding Path=DataContext.VisibleEditor, 
+                        Converter={x:Static conv:BoolToVisible.Instance}, 
+                        RelativeSource={RelativeSource Mode=FindAncestor, AncestorType=UserControl}}"
+                    DataContext="{Binding Path=Editor}"/>
+        </Grid>
+    </Border>
+
+    <!--<Border Background="#07021c">
+
+        <Grid>
+            <Grid.RowDefinitions>
+                <RowDefinition Height="Auto"/>
+                <RowDefinition Height="*"/>
+                <RowDefinition Height="Auto"/>
+            </Grid.RowDefinitions>
+
+            <StackPanel
+                    Grid.Row="0"
+                    Orientation="Horizontal">
+                <Button  
+                        Width="20"
+                        Command="{Binding Path=AddCommand}">+</Button>
+                <Button
+                        Width="20"
+                        Command="{Binding Path=DeleteCommand}">-</Button>
+                <Button
+                        Width="20"
+                        Command="{Binding Path=EditorCommand}">*</Button>
+                <Button
+                        Content="{x:Static res:Resources.OpenAccount}"
+                        Command="{Binding Path=OpenAccountCommand}"/>
+            </StackPanel>
+
+            <ListView 
+                    Grid.Row="1"
+                    ItemsSource="{Binding Path=Items}" 
+                    SelectedItem="{Binding Path=SelectedItem}"
+                    ScrollViewer.HorizontalScrollBarVisibility="Visible">
+                <ListView.View>
+                    <GridView>
+                        <GridViewColumn Width="100" Header="{x:Static res:Resources.Name}">
+                            <GridViewColumn.CellTemplate>
+                                <DataTemplate>
+                                    <TextBlock Text="{Binding Path=Name}"/>
+                                </DataTemplate>
+                            </GridViewColumn.CellTemplate>
+                        </GridViewColumn>
+
+                        <GridViewColumn Width="100" Header="{x:Static res:Resources.Owner}">
+                            <GridViewColumn.CellTemplate>
+                                <DataTemplate>
+                                    <TextBlock Text="{Binding Path=Owner}"/>
+                                </DataTemplate>
+                            </GridViewColumn.CellTemplate>
+                        </GridViewColumn>
+
+                        <GridViewColumn Width="150" Header="{x:Static res:Resources.CreateDate}">
+                            <GridViewColumn.CellTemplate>
+                                <DataTemplate>
+                                    <TextBlock Text="{Binding Path=CreateDate}"/>
+                                </DataTemplate>
+                            </GridViewColumn.CellTemplate>
+                        </GridViewColumn>
+                    </GridView>
+                </ListView.View>
+            </ListView>
+
+            <local:AccountEditorView
+                    Grid.Row="2"
+                    Visibility="{Binding Path=DataContext.VisibleEditor, 
+                        Converter={x:Static conv:BoolToVisible.Instance}, 
+                        RelativeSource={RelativeSource Mode=FindAncestor, AncestorType=UserControl}}"
+                    DataContext="{Binding Path=Editor}"/>
+        </Grid>
+    </Border>-->    
 </UserControl>

@@ -20,10 +20,10 @@ D:\Work\PersonalAcounting\PersonalAcounting\IBase\obj\Debug\netcoreapp3.1\IBase.
 C:\Users\Alex\source\repos\Alex-RV\PersonalAcounting\PersonalAcounting\IBase\bin\Debug\netcoreapp3.1\IBase.deps.json
 C:\Users\Alex\source\repos\Alex-RV\PersonalAcounting\PersonalAcounting\IBase\bin\Debug\netcoreapp3.1\IBase.dll
 C:\Users\Alex\source\repos\Alex-RV\PersonalAcounting\PersonalAcounting\IBase\bin\Debug\netcoreapp3.1\IBase.pdb
-C:\Users\Alex\source\repos\Alex-RV\PersonalAcounting\PersonalAcounting\IBase\obj\Debug\netcoreapp3.1\IBase.csproj.AssemblyReference.cache
 C:\Users\Alex\source\repos\Alex-RV\PersonalAcounting\PersonalAcounting\IBase\obj\Debug\netcoreapp3.1\IBase.GeneratedMSBuildEditorConfig.editorconfig
 C:\Users\Alex\source\repos\Alex-RV\PersonalAcounting\PersonalAcounting\IBase\obj\Debug\netcoreapp3.1\IBase.AssemblyInfoInputs.cache
 C:\Users\Alex\source\repos\Alex-RV\PersonalAcounting\PersonalAcounting\IBase\obj\Debug\netcoreapp3.1\IBase.AssemblyInfo.cs
 C:\Users\Alex\source\repos\Alex-RV\PersonalAcounting\PersonalAcounting\IBase\obj\Debug\netcoreapp3.1\IBase.csproj.CoreCompileInputs.cache
 C:\Users\Alex\source\repos\Alex-RV\PersonalAcounting\PersonalAcounting\IBase\obj\Debug\netcoreapp3.1\IBase.dll
 C:\Users\Alex\source\repos\Alex-RV\PersonalAcounting\PersonalAcounting\IBase\obj\Debug\netcoreapp3.1\IBase.pdb
+C:\Users\Alex\source\repos\Alex-RV\PersonalAcounting\PersonalAcounting\IBase\obj\Debug\netcoreapp3.1\IBase.csproj.AssemblyReference.cache

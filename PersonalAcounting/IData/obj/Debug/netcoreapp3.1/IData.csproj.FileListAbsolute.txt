@@ -16,3 +16,13 @@ C:\Users\MaynskiyAP\source\repos\PersonalAcounting\PersonalAcounting\IData\obj\D
 C:\Users\MaynskiyAP\source\repos\PersonalAcounting\PersonalAcounting\IData\obj\Debug\netcoreapp3.1\IData.csproj.CoreCompileInputs.cache
 C:\Users\MaynskiyAP\source\repos\PersonalAcounting\PersonalAcounting\IData\obj\Debug\netcoreapp3.1\IData.dll
 C:\Users\MaynskiyAP\source\repos\PersonalAcounting\PersonalAcounting\IData\obj\Debug\netcoreapp3.1\IData.pdb
+C:\Users\Alex\source\repos\Alex-RV\PersonalAcounting\PersonalAcounting\IData\bin\Debug\netcoreapp3.1\IData.deps.json
+C:\Users\Alex\source\repos\Alex-RV\PersonalAcounting\PersonalAcounting\IData\bin\Debug\netcoreapp3.1\IData.dll
+C:\Users\Alex\source\repos\Alex-RV\PersonalAcounting\PersonalAcounting\IData\bin\Debug\netcoreapp3.1\IData.pdb
+C:\Users\Alex\source\repos\Alex-RV\PersonalAcounting\PersonalAcounting\IData\obj\Debug\netcoreapp3.1\IData.csproj.AssemblyReference.cache
+C:\Users\Alex\source\repos\Alex-RV\PersonalAcounting\PersonalAcounting\IData\obj\Debug\netcoreapp3.1\IData.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Alex\source\repos\Alex-RV\PersonalAcounting\PersonalAcounting\IData\obj\Debug\netcoreapp3.1\IData.AssemblyInfoInputs.cache
+C:\Users\Alex\source\repos\Alex-RV\PersonalAcounting\PersonalAcounting\IData\obj\Debug\netcoreapp3.1\IData.AssemblyInfo.cs
+C:\Users\Alex\source\repos\Alex-RV\PersonalAcounting\PersonalAcounting\IData\obj\Debug\netcoreapp3.1\IData.csproj.CoreCompileInputs.cache
+C:\Users\Alex\source\repos\Alex-RV\PersonalAcounting\PersonalAcounting\IData\obj\Debug\netcoreapp3.1\IData.dll
+C:\Users\Alex\source\repos\Alex-RV\PersonalAcounting\PersonalAcounting\IData\obj\Debug\netcoreapp3.1\IData.pdb
