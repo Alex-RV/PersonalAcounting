@@ -19,10 +19,10 @@ C:\Users\MaynskiyAP\source\repos\PersonalAcounting\PersonalAcounting\CostsContro
 C:\Users\Alex\source\repos\Alex-RV\PersonalAcounting\PersonalAcounting\CostsControls\bin\Debug\netcoreapp3.1\CostsControls.deps.json
 C:\Users\Alex\source\repos\Alex-RV\PersonalAcounting\PersonalAcounting\CostsControls\bin\Debug\netcoreapp3.1\CostsControls.dll
 C:\Users\Alex\source\repos\Alex-RV\PersonalAcounting\PersonalAcounting\CostsControls\bin\Debug\netcoreapp3.1\CostsControls.pdb
-C:\Users\Alex\source\repos\Alex-RV\PersonalAcounting\PersonalAcounting\CostsControls\obj\Debug\netcoreapp3.1\CostsControls.csproj.AssemblyReference.cache
 C:\Users\Alex\source\repos\Alex-RV\PersonalAcounting\PersonalAcounting\CostsControls\obj\Debug\netcoreapp3.1\CostsControls.GeneratedMSBuildEditorConfig.editorconfig
 C:\Users\Alex\source\repos\Alex-RV\PersonalAcounting\PersonalAcounting\CostsControls\obj\Debug\netcoreapp3.1\CostsControls.AssemblyInfoInputs.cache
 C:\Users\Alex\source\repos\Alex-RV\PersonalAcounting\PersonalAcounting\CostsControls\obj\Debug\netcoreapp3.1\CostsControls.AssemblyInfo.cs
 C:\Users\Alex\source\repos\Alex-RV\PersonalAcounting\PersonalAcounting\CostsControls\obj\Debug\netcoreapp3.1\CostsControls.csproj.CoreCompileInputs.cache
 C:\Users\Alex\source\repos\Alex-RV\PersonalAcounting\PersonalAcounting\CostsControls\obj\Debug\netcoreapp3.1\CostsControls.dll
 C:\Users\Alex\source\repos\Alex-RV\PersonalAcounting\PersonalAcounting\CostsControls\obj\Debug\netcoreapp3.1\CostsControls.pdb
+C:\Users\Alex\source\repos\Alex-RV\PersonalAcounting\PersonalAcounting\CostsControls\obj\Debug\netcoreapp3.1\CostsControls.csproj.AssemblyReference.cache

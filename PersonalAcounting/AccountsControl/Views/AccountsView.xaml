@@ -40,7 +40,7 @@
                         Height="50"
                         Foreground="White"
                         FontSize="22"
-                        Style="{StaticResource MenuButtonTheme}"
+                        Style="{StaticResource MenuStartButtonTheme}"
                         />
 
                 <RadioButton
@@ -49,7 +49,7 @@
                         Height="50"
                         Foreground="White"
                         FontSize="22"
-                        Style="{StaticResource MenuButtonTheme}"/>
+                        Style="{StaticResource MenuStartButtonTheme}"/>
 
                 <RadioButton
                         Command="{Binding Path=EditorCommand}"
@@ -57,7 +57,7 @@
                         Height="50"
                         Foreground="White"
                         FontSize="22"
-                        Style="{StaticResource MenuButtonTheme}"/>
+                        Style="{StaticResource MenuStartButtonTheme}"/>
 
                 <RadioButton
                         Content="{x:Static res:Resources.OpenAccount}"
@@ -65,7 +65,7 @@
                         Height="50"
                         Foreground="White"
                         FontSize="22"
-                        Style="{StaticResource MenuButtonTheme}"/>
+                        Style="{StaticResource MenuStartButtonTheme}"/>
             </StackPanel>
 
             <ContentControl Grid.Row="1"
@@ -85,7 +85,7 @@
                                     <DataTemplate>
                                         <TextBlock Text="{Binding Path=Name}"
                                                    Foreground="White"
-                                                   FontSize="20"/>
+                                                   FontSize="18"/>
                                     </DataTemplate>
                                 </GridViewColumn.CellTemplate>
                             </GridViewColumn>
@@ -95,7 +95,7 @@
                                     <DataTemplate>
                                         <TextBlock Text="{Binding Path=Owner}"
                                                    Foreground="White"
-                                                   FontSize="20"/>
+                                                   FontSize="18"/>
                                     </DataTemplate>
                                 </GridViewColumn.CellTemplate>
                             </GridViewColumn>
@@ -105,7 +105,7 @@
                                     <DataTemplate>
                                         <TextBlock Text="{Binding Path=CreateDate}"
                                                    Foreground="White"
-                                                   FontSize="20"/>
+                                                   FontSize="18"/>
                                     </DataTemplate>
                                 </GridViewColumn.CellTemplate>
                             </GridViewColumn>
@@ -125,7 +125,7 @@
     </Border>
 
     <!--<Border Background="#07021c">
-
+ GridView.ColumnHeaderTemplate="{StaticResource HeadListViewTheme}"
         <Grid>
             <Grid.RowDefinitions>
                 <RowDefinition Height="Auto"/>

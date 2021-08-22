@@ -2,7 +2,7 @@
                     xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
     <Style BasedOn="{StaticResource {x:Type ToggleButton}}"
            TargetType="{x:Type RadioButton}"
-           x:Key="MenuButtonTheme">
+           x:Key="MenuStartButtonTheme">
         <Style.Setters>
             <Setter Property="Template">
                 <Setter.Value>
@@ -13,19 +13,30 @@
 
                             <TextBlock Text="{TemplateBinding Property=Content}"
                                        VerticalAlignment="Center"
-                                       Margin="30,0,0,0"/>
+                                       FontFamily="Candara Light"
+                                       Margin="30,5,10,0"/>
 
                         </Grid>
                     </ControlTemplate>
                 </Setter.Value>
             </Setter>
-
             <Setter Property="Background" Value="Transparent"/>
             <Setter Property="BorderThickness" Value="0"/>
         </Style.Setters>
 
         <Style.Triggers>
-            <Trigger Property="IsChecked" Value="True" >
+            <Trigger Property="IsPressed" Value="True">
+                <Trigger.EnterActions>
+                    <BeginStoryboard>
+                        <Storyboard Storyboard.TargetProperty="Background.Color">
+                            <ColorAnimation To="Blue" Duration="0:0:0.5" />
+                            <ColorAnimation To="#07021c" BeginTime="0:0:0.5" Duration="0:0:1" />
+                        </Storyboard>
+                    </BeginStoryboard>
+                </Trigger.EnterActions>
+            </Trigger>
+            
+            <!--<Trigger Property="IsChecked" Value="True" >
                 <Trigger.EnterActions>
                     <BeginStoryboard>
                         <Storyboard Storyboard.TargetProperty="Background.Color">
@@ -36,9 +47,10 @@
                     </BeginStoryboard>
                 </Trigger.EnterActions>
                 <Setter Property="Background" Value="#22202f" />
-            </Trigger>
+            </Trigger>-->
         </Style.Triggers>
 
+
+
     </Style>
-    
 </ResourceDictionary>

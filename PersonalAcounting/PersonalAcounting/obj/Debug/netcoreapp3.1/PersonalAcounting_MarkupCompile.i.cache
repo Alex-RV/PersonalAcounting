@@ -10,11 +10,11 @@ none
 false
 TRACE;DEBUG;NETCOREAPP;NETCOREAPP3_1;
 C:\Users\Alex\source\repos\Alex-RV\PersonalAcounting\PersonalAcounting\PersonalAcounting\App.xaml
-21505968660
+5-1548668815
 
-71338110830
+8-698801917
 2033405882
-MainWindow.xaml;Theme\MenuButtonTheme.xaml;
+MainWindow.xaml;Style\Window\WindowStyle.xaml;Theme\AcceptButtonTheme.xaml;Theme\MenuButtonTheme.xaml;Theme\MenuStartButtonTheme.xaml;
 
-True
+False
 
