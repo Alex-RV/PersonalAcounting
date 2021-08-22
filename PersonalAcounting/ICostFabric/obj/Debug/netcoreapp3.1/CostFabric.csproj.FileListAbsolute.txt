@@ -1,0 +1,5 @@
+C:\Users\Alex\source\repos\Alex-RV\PersonalAcounting\PersonalAcounting\ICostFabric\obj\Debug\netcoreapp3.1\CostFabric.csproj.AssemblyReference.cache
+C:\Users\Alex\source\repos\Alex-RV\PersonalAcounting\PersonalAcounting\ICostFabric\obj\Debug\netcoreapp3.1\CostFabric.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Alex\source\repos\Alex-RV\PersonalAcounting\PersonalAcounting\ICostFabric\obj\Debug\netcoreapp3.1\CostFabric.AssemblyInfoInputs.cache
+C:\Users\Alex\source\repos\Alex-RV\PersonalAcounting\PersonalAcounting\ICostFabric\obj\Debug\netcoreapp3.1\CostFabric.AssemblyInfo.cs
+C:\Users\Alex\source\repos\Alex-RV\PersonalAcounting\PersonalAcounting\ICostFabric\obj\Debug\netcoreapp3.1\CostFabric.csproj.CoreCompileInputs.cache

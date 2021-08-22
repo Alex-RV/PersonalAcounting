@@ -14,9 +14,12 @@ namespace AccountControl.ViewModels
         private IAccount _account;
         private WPFHelper.RelayCommand _exitCommand;
         private WPFHelper.RelayCommand _incomeCommand;
+        private WPFHelper.RelayCommand _accountInfoCommand;
+        private WPFHelper.RelayCommand _costsCommand;
         private bool _visibleIncomeView = false;
         private bool _visibleShortView = true;
         private IncomeControls.ViewModels.IncomesViewModel _income;
+        private AccountControl.ViewModels.AccountViewModel _accountInfo;
         private IAccountEditor _accountEditor;
         #endregion fields
 
@@ -98,6 +101,27 @@ namespace AccountControl.ViewModels
         }
 
         /// <summary>
+        /// Команда входа во вкладку информация о счете
+        /// </summary>
+        public WPFHelper.RelayCommand AccountShortCommand
+        {
+            get
+            {
+                if (_accountInfoCommand == null)
+                {
+                    _accountInfoCommand = new WPFHelper.RelayCommand("", (p) =>
+                    {
+                       
+                        VisibleShortView = true;
+                        VisibleIncomeView = false;
+                    });
+                }
+
+                return _accountInfoCommand;
+            }
+        }
+
+        /// <summary>
         /// Видимость стартового окна
         /// </summary>
         public bool VisibleShortView
@@ -142,6 +166,19 @@ namespace AccountControl.ViewModels
                 }
             }
         }
+
+        //public AccountControl.ViewModels.AccountViewModel Account
+        //{
+        //    get { return _accountInfo; }
+        //    set
+        //    {
+        //        if (_accountInfo != value)
+        //        {
+        //            _accountInfo = value;
+        //            OnPropertyChanged(nameof(Account));
+        //        }
+        //    }
+        //}
         #endregion properties
 
         #region metods

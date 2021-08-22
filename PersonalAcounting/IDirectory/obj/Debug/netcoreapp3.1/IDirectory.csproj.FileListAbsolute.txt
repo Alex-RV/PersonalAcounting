@@ -19,10 +19,10 @@ D:\Work\PersonalAcounting\PersonalAcounting\IDirectory\obj\Debug\netcoreapp3.1\I
 C:\Users\Alex\source\repos\Alex-RV\PersonalAcounting\PersonalAcounting\IDirectory\bin\Debug\netcoreapp3.1\IDirectory.deps.json
 C:\Users\Alex\source\repos\Alex-RV\PersonalAcounting\PersonalAcounting\IDirectory\bin\Debug\netcoreapp3.1\IDirectory.dll
 C:\Users\Alex\source\repos\Alex-RV\PersonalAcounting\PersonalAcounting\IDirectory\bin\Debug\netcoreapp3.1\IDirectory.pdb
+C:\Users\Alex\source\repos\Alex-RV\PersonalAcounting\PersonalAcounting\IDirectory\obj\Debug\netcoreapp3.1\IDirectory.csproj.AssemblyReference.cache
 C:\Users\Alex\source\repos\Alex-RV\PersonalAcounting\PersonalAcounting\IDirectory\obj\Debug\netcoreapp3.1\IDirectory.GeneratedMSBuildEditorConfig.editorconfig
 C:\Users\Alex\source\repos\Alex-RV\PersonalAcounting\PersonalAcounting\IDirectory\obj\Debug\netcoreapp3.1\IDirectory.AssemblyInfoInputs.cache
 C:\Users\Alex\source\repos\Alex-RV\PersonalAcounting\PersonalAcounting\IDirectory\obj\Debug\netcoreapp3.1\IDirectory.AssemblyInfo.cs
 C:\Users\Alex\source\repos\Alex-RV\PersonalAcounting\PersonalAcounting\IDirectory\obj\Debug\netcoreapp3.1\IDirectory.csproj.CoreCompileInputs.cache
 C:\Users\Alex\source\repos\Alex-RV\PersonalAcounting\PersonalAcounting\IDirectory\obj\Debug\netcoreapp3.1\IDirectory.dll
 C:\Users\Alex\source\repos\Alex-RV\PersonalAcounting\PersonalAcounting\IDirectory\obj\Debug\netcoreapp3.1\IDirectory.pdb
-C:\Users\Alex\source\repos\Alex-RV\PersonalAcounting\PersonalAcounting\IDirectory\obj\Debug\netcoreapp3.1\IDirectory.csproj.AssemblyReference.cache

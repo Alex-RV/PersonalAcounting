@@ -7,7 +7,6 @@
              xmlns:res="clr-namespace:AccountControl.Properties"
              xmlns:conv="clr-namespace:WPFHelper.Converters;assembly=WPFHelper"
              mc:Ignorable="d" 
-             
              d:DesignHeight="600"  d:DesignWidth="920">
 
     <Border Background="#07021c"

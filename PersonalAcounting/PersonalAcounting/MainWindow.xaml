@@ -7,10 +7,9 @@
         xmlns:conv="clr-namespace:WPFHelper.Converters;assembly=WPFHelper"
         xmlns:local="clr-namespace:PersonalAcounting"
         mc:Ignorable="d"
-        ResizeMode="NoResize" 
         Background="Transparent"
-        AllowsTransparency="True"
-        WindowStyle="None"        
+        MinHeight="400" MinWidth="825"
+        WindowStyle="ThreeDBorderWindow"        
         Title="Личная бухгалтерия" Height="600" Width="920">
 
     <Border Background="#07021c"

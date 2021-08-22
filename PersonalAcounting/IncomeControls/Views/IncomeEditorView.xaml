@@ -24,31 +24,53 @@
         <Label 
             Grid.Row="0"
             Grid.Column="0"
+            Background="#07021c"
+            FontFamily="Candara Light"
+            Foreground="#e3dcdf"
+            FontSize="14"
             Content="Наименование"/>
 
         <TextBox
             Grid.Row="0"
             Grid.Column="1"
+            Margin="0,0,10,0"
+            Background="#14235c"
+            Foreground="White"
             Text="{Binding Path=Name, UpdateSourceTrigger=PropertyChanged}"></TextBox>
 
         <Label 
             Grid.Row="1"
             Grid.Column="0"
+            Background="#07021c"
+            FontFamily="Candara Light"
+            Foreground="#e3dcdf"
+            FontSize="14"
             Content="Сумма"/>
 
         <TextBox
             Grid.Row="1"
             Grid.Column="1"
+            Background="#14235c"
+            Foreground="White"
+            Margin="0,0,10,0"
             Text="{Binding Path=Amount, UpdateSourceTrigger=PropertyChanged}"></TextBox>
 
         <Label 
             Grid.Row="2"
             Grid.Column="0"
+            Background="#07021c"
+            FontFamily="Candara Light"
+            Foreground="#e3dcdf"
+            FontSize="14"
             Content="Дата получения дохода"/>
 
         <DatePicker
             Grid.Row="2"
             Grid.Column="1"
+            Background="#07021c"
+            FontFamily="Candara Light"
+            Foreground="#e3dcdf"
+            FontSize="14"
             SelectedDate="{Binding Path=CreateDate, UpdateSourceTrigger=LostFocus}"
             >
         </DatePicker>
@@ -56,6 +78,10 @@
             <Button 
             Grid.Row="3"
             Grid.Column="0"
+            Foreground="White"
+            Padding="5"
+            Margin="1,10,1,10"
+            Style="{DynamicResource RoundCorner}" 
             Content="{x:Static resCom:Resources.Accept}"
             Command="{Binding Path=AcceptIncomeCommand}"/>
 

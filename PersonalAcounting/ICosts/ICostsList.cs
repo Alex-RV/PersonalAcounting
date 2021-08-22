@@ -4,7 +4,7 @@ using System.Text;
 
 namespace Costs
 {
-    public interface ICostsList : Base.IBaseList
+    public interface ICostsList : Base.IBaseList<ICosts>
     {
     }
 }

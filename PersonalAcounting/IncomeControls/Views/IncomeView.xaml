@@ -18,44 +18,67 @@
         <StackPanel
             Grid.Row="0"
             Orientation="Horizontal">
-            <Button  
-                Width="20"
-                Command="{Binding Path=AddIncomeCommand}">+</Button>
-            <Button
-                Width="20"
-                Command="{Binding Path=DeleteCommand}">-</Button>
-            <Button
-                Width="20"
-                Command="{Binding Path=EditorCommand}">*</Button>
+            <RadioButton  
+                Width="Auto"
+                Command="{Binding Path=AddIncomeCommand}"
+                Content="Добавить доход"
+                BorderBrush="White" 
+                BorderThickness="0.5"
+                Foreground="White"
+                Style="{StaticResource MenuStartButtonTheme}"/>
+            <RadioButton
+                Width="Auto"
+                Command="{Binding Path=DeleteCommand}"
+                Content="Удалить доход"
+                BorderBrush="White" 
+                BorderThickness="0.5"
+                Foreground="White"
+                Style="{StaticResource MenuStartButtonTheme}"/>
+            <RadioButton
+                Width="Auto"
+                Command="{Binding Path=EditorCommand}"
+                Content="Изменить доход"
+                BorderBrush="White" 
+                BorderThickness="0.5"
+                Foreground="White"
+                Style="{StaticResource MenuStartButtonTheme}"/>
         </StackPanel>
         
         <ListView 
             Grid.Row="1"
             ItemsSource="{Binding Path=Items}" 
             SelectedItem="{Binding Path=SelectedItem}"
+            Background="#16224f"
             ScrollViewer.HorizontalScrollBarVisibility="Visible">
             <ListView.View>
                 <GridView>
-                    <GridViewColumn Width="100" Header="{x:Static res:Resources.Name}">
+                    <GridViewColumn Width="200" Header="{x:Static res:Resources.Name}">
                         <GridViewColumn.CellTemplate>
                             <DataTemplate>
-                                <TextBlock Text="{Binding Path=Name}"/>
+                                <TextBlock Text="{Binding Path=Name}"
+                                           Foreground="White"
+                                           FontSize="13"/>
                             </DataTemplate>
                         </GridViewColumn.CellTemplate>
                     </GridViewColumn>
 
-                    <GridViewColumn Width="100" Header="{x:Static res:Resources.Amount}">
+                    <GridViewColumn Width="200" Header="{x:Static res:Resources.Amount}">
                         <GridViewColumn.CellTemplate>
                             <DataTemplate>
-                                <TextBlock Text="{Binding Path=Amount}"/>
+                                <TextBlock Text="{Binding Path=Amount}"
+                                           Foreground="LawnGreen"
+                                           HorizontalAlignment="Center"
+                                           FontSize="14"/>
                             </DataTemplate>
                         </GridViewColumn.CellTemplate>
                     </GridViewColumn>
 
-                    <GridViewColumn Width="150" Header="CreateDate">
+                    <GridViewColumn Width="225" Header="Дата дохода">
                         <GridViewColumn.CellTemplate>
                             <DataTemplate>
-                                <TextBlock Text="{Binding Path=CreateDate, StringFormat=dd.MM.yyyy}"/>
+                                <TextBlock Text="{Binding Path=CreateDate, StringFormat=dd.MM.yyyy}"
+                                           Foreground="White"
+                                           FontSize="13"/>
                             </DataTemplate>
                         </GridViewColumn.CellTemplate>
                     </GridViewColumn>

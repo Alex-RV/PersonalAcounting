@@ -6,12 +6,5 @@ namespace Costs
 {
     public class Costs : Base.Base, ICosts
     {
-        #region field
-
-        #endregion field
-
-        #region properties
-
-        #endregion properties
     }
 }
