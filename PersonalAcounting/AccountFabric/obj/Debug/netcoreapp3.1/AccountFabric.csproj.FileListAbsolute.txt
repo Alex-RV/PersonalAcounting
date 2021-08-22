@@ -41,11 +41,13 @@ C:\Users\Alex\source\repos\Alex-RV\PersonalAcounting\PersonalAcounting\AccountFa
 C:\Users\Alex\source\repos\Alex-RV\PersonalAcounting\PersonalAcounting\AccountFabric\bin\Debug\netcoreapp3.1\AccountImplement.dll
 C:\Users\Alex\source\repos\Alex-RV\PersonalAcounting\PersonalAcounting\AccountFabric\bin\Debug\netcoreapp3.1\IAccount.dll
 C:\Users\Alex\source\repos\Alex-RV\PersonalAcounting\PersonalAcounting\AccountFabric\bin\Debug\netcoreapp3.1\IBase.dll
+C:\Users\Alex\source\repos\Alex-RV\PersonalAcounting\PersonalAcounting\AccountFabric\bin\Debug\netcoreapp3.1\ICosts.dll
 C:\Users\Alex\source\repos\Alex-RV\PersonalAcounting\PersonalAcounting\AccountFabric\bin\Debug\netcoreapp3.1\IIncome.dll
 C:\Users\Alex\source\repos\Alex-RV\PersonalAcounting\PersonalAcounting\AccountFabric\bin\Debug\netcoreapp3.1\AccountImplement.pdb
 C:\Users\Alex\source\repos\Alex-RV\PersonalAcounting\PersonalAcounting\AccountFabric\bin\Debug\netcoreapp3.1\IAccount.pdb
 C:\Users\Alex\source\repos\Alex-RV\PersonalAcounting\PersonalAcounting\AccountFabric\bin\Debug\netcoreapp3.1\IIncome.pdb
 C:\Users\Alex\source\repos\Alex-RV\PersonalAcounting\PersonalAcounting\AccountFabric\bin\Debug\netcoreapp3.1\IBase.pdb
+C:\Users\Alex\source\repos\Alex-RV\PersonalAcounting\PersonalAcounting\AccountFabric\bin\Debug\netcoreapp3.1\ICosts.pdb
 C:\Users\Alex\source\repos\Alex-RV\PersonalAcounting\PersonalAcounting\AccountFabric\obj\Debug\netcoreapp3.1\AccountFabric.csproj.AssemblyReference.cache
 C:\Users\Alex\source\repos\Alex-RV\PersonalAcounting\PersonalAcounting\AccountFabric\obj\Debug\netcoreapp3.1\AccountFabric.GeneratedMSBuildEditorConfig.editorconfig
 C:\Users\Alex\source\repos\Alex-RV\PersonalAcounting\PersonalAcounting\AccountFabric\obj\Debug\netcoreapp3.1\AccountFabric.AssemblyInfoInputs.cache

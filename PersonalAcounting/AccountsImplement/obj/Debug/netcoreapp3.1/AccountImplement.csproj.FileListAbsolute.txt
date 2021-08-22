@@ -36,9 +36,11 @@ C:\Users\Alex\source\repos\Alex-RV\PersonalAcounting\PersonalAcounting\AccountsI
 C:\Users\Alex\source\repos\Alex-RV\PersonalAcounting\PersonalAcounting\AccountsImplement\bin\Debug\netcoreapp3.1\AccountImplement.pdb
 C:\Users\Alex\source\repos\Alex-RV\PersonalAcounting\PersonalAcounting\AccountsImplement\bin\Debug\netcoreapp3.1\IAccount.dll
 C:\Users\Alex\source\repos\Alex-RV\PersonalAcounting\PersonalAcounting\AccountsImplement\bin\Debug\netcoreapp3.1\IBase.dll
+C:\Users\Alex\source\repos\Alex-RV\PersonalAcounting\PersonalAcounting\AccountsImplement\bin\Debug\netcoreapp3.1\ICosts.dll
 C:\Users\Alex\source\repos\Alex-RV\PersonalAcounting\PersonalAcounting\AccountsImplement\bin\Debug\netcoreapp3.1\IIncome.dll
 C:\Users\Alex\source\repos\Alex-RV\PersonalAcounting\PersonalAcounting\AccountsImplement\bin\Debug\netcoreapp3.1\IAccount.pdb
 C:\Users\Alex\source\repos\Alex-RV\PersonalAcounting\PersonalAcounting\AccountsImplement\bin\Debug\netcoreapp3.1\IBase.pdb
+C:\Users\Alex\source\repos\Alex-RV\PersonalAcounting\PersonalAcounting\AccountsImplement\bin\Debug\netcoreapp3.1\ICosts.pdb
 C:\Users\Alex\source\repos\Alex-RV\PersonalAcounting\PersonalAcounting\AccountsImplement\bin\Debug\netcoreapp3.1\IIncome.pdb
 C:\Users\Alex\source\repos\Alex-RV\PersonalAcounting\PersonalAcounting\AccountsImplement\obj\Debug\netcoreapp3.1\AccountImplement.csproj.AssemblyReference.cache
 C:\Users\Alex\source\repos\Alex-RV\PersonalAcounting\PersonalAcounting\AccountsImplement\obj\Debug\netcoreapp3.1\AccountImplement.GeneratedMSBuildEditorConfig.editorconfig

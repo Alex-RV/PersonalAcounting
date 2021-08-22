@@ -1,0 +1,13 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>netcoreapp3.1</TargetFramework>
+    <RootNamespace>Costs</RootNamespace>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\CostsImplements\CostsImplement.csproj" />
+    <ProjectReference Include="..\ICosts\ICosts.csproj" />
+  </ItemGroup>
+
+</Project>

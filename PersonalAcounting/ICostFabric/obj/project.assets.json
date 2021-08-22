@@ -89,9 +89,9 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\Alex\\source\\repos\\Alex-RV\\PersonalAcounting\\PersonalAcounting\\ICostFabric\\CostFabric.csproj",
-      "projectName": "CostFabric",
-      "projectPath": "C:\\Users\\Alex\\source\\repos\\Alex-RV\\PersonalAcounting\\PersonalAcounting\\ICostFabric\\CostFabric.csproj",
+      "projectUniqueName": "C:\\Users\\Alex\\source\\repos\\Alex-RV\\PersonalAcounting\\PersonalAcounting\\ICostFabric\\CostsFabric.csproj",
+      "projectName": "CostsFabric",
+      "projectPath": "C:\\Users\\Alex\\source\\repos\\Alex-RV\\PersonalAcounting\\PersonalAcounting\\ICostFabric\\CostsFabric.csproj",
       "packagesPath": "C:\\Users\\Alex\\.nuget\\packages\\",
       "outputPath": "C:\\Users\\Alex\\source\\repos\\Alex-RV\\PersonalAcounting\\PersonalAcounting\\ICostFabric\\obj\\",
       "projectStyle": "PackageReference",

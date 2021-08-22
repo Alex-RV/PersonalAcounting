@@ -31,5 +31,11 @@ namespace Account
         /// </summary>
         Income.IIncomeList Incomes { get; }
 
+        /// <summary>
+        /// Расходы
+        /// </summary>
+        Costs.ICostsList Costs { get; }
+
+
     }
 }

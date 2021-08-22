@@ -6,6 +6,7 @@
         "type": "project",
         "framework": ".NETCoreApp,Version=v3.1",
         "dependencies": {
+          "CostsControls": "1.0.0",
           "IAccount": "1.0.0",
           "IncomeControls": "1.0.0",
           "WPFHelper": "1.0.0"
@@ -61,10 +62,56 @@
           "bin/placeholder/BaseImplement.dll": {}
         }
       },
+      "CostsControls/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v3.1",
+        "dependencies": {
+          "ICosts": "1.0.0",
+          "WPFHelper": "1.0.0"
+        },
+        "compile": {
+          "bin/placeholder/CostsControls.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/CostsControls.dll": {}
+        },
+        "frameworkReferences": [
+          "Microsoft.WindowsDesktop.App.WPF"
+        ]
+      },
+      "CostsFabric/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v3.1",
+        "dependencies": {
+          "CostsImplement": "1.0.0",
+          "ICosts": "1.0.0"
+        },
+        "compile": {
+          "bin/placeholder/CostsFabric.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/CostsFabric.dll": {}
+        }
+      },
+      "CostsImplement/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v3.1",
+        "dependencies": {
+          "BaseImplement": "1.0.0",
+          "ICosts": "1.0.0"
+        },
+        "compile": {
+          "bin/placeholder/CostsImplement.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/CostsImplement.dll": {}
+        }
+      },
       "IAccount/1.0.0": {
         "type": "project",
         "framework": ".NETCoreApp,Version=v3.1",
         "dependencies": {
+          "ICosts": "1.0.0",
           "IIncome": "1.0.0"
         },
         "compile": {
@@ -82,6 +129,19 @@
         },
         "runtime": {
           "bin/placeholder/IBase.dll": {}
+        }
+      },
+      "ICosts/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v3.1",
+        "dependencies": {
+          "IBase": "1.0.0"
+        },
+        "compile": {
+          "bin/placeholder/ICosts.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/ICosts.dll": {}
         }
       },
       "IIncome/1.0.0": {
@@ -178,6 +238,21 @@
       "path": "../BaseImplements/BaseImplement.csproj",
       "msbuildProject": "../BaseImplements/BaseImplement.csproj"
     },
+    "CostsControls/1.0.0": {
+      "type": "project",
+      "path": "../CostsControls/CostsControls.csproj",
+      "msbuildProject": "../CostsControls/CostsControls.csproj"
+    },
+    "CostsFabric/1.0.0": {
+      "type": "project",
+      "path": "../ICostFabric/CostsFabric.csproj",
+      "msbuildProject": "../ICostFabric/CostsFabric.csproj"
+    },
+    "CostsImplement/1.0.0": {
+      "type": "project",
+      "path": "../CostsImplements/CostsImplement.csproj",
+      "msbuildProject": "../CostsImplements/CostsImplement.csproj"
+    },
     "IAccount/1.0.0": {
       "type": "project",
       "path": "../IAccounts/IAccount.csproj",
@@ -187,6 +262,11 @@
       "type": "project",
       "path": "../IBase/IBase.csproj",
       "msbuildProject": "../IBase/IBase.csproj"
+    },
+    "ICosts/1.0.0": {
+      "type": "project",
+      "path": "../ICosts/ICosts.csproj",
+      "msbuildProject": "../ICosts/ICosts.csproj"
     },
     "IIncome/1.0.0": {
       "type": "project",
@@ -218,7 +298,9 @@
     ".NETCoreApp,Version=v3.1": [
       "AccountControl >= 1.0.0",
       "AccountFabric >= 1.0.0",
+      "CostsFabric >= 1.0.0",
       "IAccount >= 1.0.0",
+      "ICosts >= 1.0.0",
       "IIncome >= 1.0.0",
       "IncomeFabric >= 1.0.0",
       "WPFHelper >= 1.0.0"
@@ -264,6 +346,12 @@
             },
             "C:\\Users\\Alex\\source\\repos\\Alex-RV\\PersonalAcounting\\PersonalAcounting\\IAccounts\\IAccount.csproj": {
               "projectPath": "C:\\Users\\Alex\\source\\repos\\Alex-RV\\PersonalAcounting\\PersonalAcounting\\IAccounts\\IAccount.csproj"
+            },
+            "C:\\Users\\Alex\\source\\repos\\Alex-RV\\PersonalAcounting\\PersonalAcounting\\ICostFabric\\CostsFabric.csproj": {
+              "projectPath": "C:\\Users\\Alex\\source\\repos\\Alex-RV\\PersonalAcounting\\PersonalAcounting\\ICostFabric\\CostsFabric.csproj"
+            },
+            "C:\\Users\\Alex\\source\\repos\\Alex-RV\\PersonalAcounting\\PersonalAcounting\\ICosts\\ICosts.csproj": {
+              "projectPath": "C:\\Users\\Alex\\source\\repos\\Alex-RV\\PersonalAcounting\\PersonalAcounting\\ICosts\\ICosts.csproj"
             },
             "C:\\Users\\Alex\\source\\repos\\Alex-RV\\PersonalAcounting\\PersonalAcounting\\IIncome\\IIncome.csproj": {
               "projectPath": "C:\\Users\\Alex\\source\\repos\\Alex-RV\\PersonalAcounting\\PersonalAcounting\\IIncome\\IIncome.csproj"

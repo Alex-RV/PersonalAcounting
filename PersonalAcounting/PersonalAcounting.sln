@@ -55,7 +55,7 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "IDirectory", "IDirectory\ID
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "IncomeFabric", "IncomeFabric\IncomeFabric.csproj", "{32AE8B57-5F42-4E40-A628-615341488BF8}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CostFabric", "ICostFabric\CostFabric.csproj", "{32F11A21-C4D7-4A3A-94C8-1A1BFFB53A68}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "CostsFabric", "ICostFabric\CostsFabric.csproj", "{32F11A21-C4D7-4A3A-94C8-1A1BFFB53A68}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution

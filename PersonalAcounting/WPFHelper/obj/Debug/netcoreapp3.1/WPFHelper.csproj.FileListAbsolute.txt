@@ -24,7 +24,6 @@ C:\Users\MaynskiyAP\source\repos\PersonalAcounting\PersonalAcounting\WPFHelper\o
 C:\Users\Alex\source\repos\Alex-RV\PersonalAcounting\PersonalAcounting\WPFHelper\bin\Debug\netcoreapp3.1\WPFHelper.deps.json
 C:\Users\Alex\source\repos\Alex-RV\PersonalAcounting\PersonalAcounting\WPFHelper\bin\Debug\netcoreapp3.1\WPFHelper.dll
 C:\Users\Alex\source\repos\Alex-RV\PersonalAcounting\PersonalAcounting\WPFHelper\bin\Debug\netcoreapp3.1\WPFHelper.pdb
-C:\Users\Alex\source\repos\Alex-RV\PersonalAcounting\PersonalAcounting\WPFHelper\obj\Debug\netcoreapp3.1\WPFHelper.csproj.AssemblyReference.cache
 C:\Users\Alex\source\repos\Alex-RV\PersonalAcounting\PersonalAcounting\WPFHelper\obj\Debug\netcoreapp3.1\WPFHelper.Properties.Resources.resources
 C:\Users\Alex\source\repos\Alex-RV\PersonalAcounting\PersonalAcounting\WPFHelper\obj\Debug\netcoreapp3.1\WPFHelper.csproj.GenerateResource.cache
 C:\Users\Alex\source\repos\Alex-RV\PersonalAcounting\PersonalAcounting\WPFHelper\obj\Debug\netcoreapp3.1\WPFHelper.GeneratedMSBuildEditorConfig.editorconfig

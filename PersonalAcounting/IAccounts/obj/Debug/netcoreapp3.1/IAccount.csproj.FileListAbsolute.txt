@@ -31,7 +31,9 @@ C:\Users\Alex\source\repos\Alex-RV\PersonalAcounting\PersonalAcounting\IAccounts
 C:\Users\Alex\source\repos\Alex-RV\PersonalAcounting\PersonalAcounting\IAccounts\bin\Debug\netcoreapp3.1\IAccount.dll
 C:\Users\Alex\source\repos\Alex-RV\PersonalAcounting\PersonalAcounting\IAccounts\bin\Debug\netcoreapp3.1\IAccount.pdb
 C:\Users\Alex\source\repos\Alex-RV\PersonalAcounting\PersonalAcounting\IAccounts\bin\Debug\netcoreapp3.1\IBase.dll
+C:\Users\Alex\source\repos\Alex-RV\PersonalAcounting\PersonalAcounting\IAccounts\bin\Debug\netcoreapp3.1\ICosts.dll
 C:\Users\Alex\source\repos\Alex-RV\PersonalAcounting\PersonalAcounting\IAccounts\bin\Debug\netcoreapp3.1\IIncome.dll
+C:\Users\Alex\source\repos\Alex-RV\PersonalAcounting\PersonalAcounting\IAccounts\bin\Debug\netcoreapp3.1\ICosts.pdb
 C:\Users\Alex\source\repos\Alex-RV\PersonalAcounting\PersonalAcounting\IAccounts\bin\Debug\netcoreapp3.1\IIncome.pdb
 C:\Users\Alex\source\repos\Alex-RV\PersonalAcounting\PersonalAcounting\IAccounts\bin\Debug\netcoreapp3.1\IBase.pdb
 C:\Users\Alex\source\repos\Alex-RV\PersonalAcounting\PersonalAcounting\IAccounts\obj\Debug\netcoreapp3.1\IAccount.csproj.AssemblyReference.cache

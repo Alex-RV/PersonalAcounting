@@ -80,7 +80,7 @@ namespace CostsControls.ViewModels
         }
 
         /// <summary>
-        /// Действие при нажатии на кнопку ДОБАВИТЬ доход
+        /// Действие при нажатии на кнопку ДОБАВИТЬ расход
         /// </summary>
         public WPFHelper.RelayCommand AddCostCommand
         {

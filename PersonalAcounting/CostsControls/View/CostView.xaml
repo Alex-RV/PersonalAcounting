@@ -20,7 +20,7 @@
             Orientation="Horizontal">
             <RadioButton  
                 Width="Auto"
-                Command="{Binding Path=AddIncomeCommand}"
+                Command="{Binding Path=AddCostCommand}"
                 Content="Добавить доход"
                 BorderBrush="White" 
                 BorderThickness="0.5"
@@ -87,9 +87,9 @@
         </ListView>
 
 
-        <local:IncomeEditorView
+        <local:CostEditorView
             Grid.Row="2"
-            Visibility="{Binding Path=DataContext.VisibleEditorIncome,
+            Visibility="{Binding Path=DataContext.VisibleEditorCosts,
                         Converter={x:Static conv:BoolToVisible.Instance},RelativeSource={RelativeSource Mode=FindAncestor, AncestorType=UserControl}}"
             DataContext="{Binding Path=Editor}"
         />

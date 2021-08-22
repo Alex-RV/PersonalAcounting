@@ -2,10 +2,28 @@
   "version": 3,
   "targets": {
     ".NETCoreApp,Version=v3.1": {
+      "CostsControls/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v3.1",
+        "dependencies": {
+          "ICosts": "1.0.0",
+          "WPFHelper": "1.0.0"
+        },
+        "compile": {
+          "bin/placeholder/CostsControls.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/CostsControls.dll": {}
+        },
+        "frameworkReferences": [
+          "Microsoft.WindowsDesktop.App.WPF"
+        ]
+      },
       "IAccount/1.0.0": {
         "type": "project",
         "framework": ".NETCoreApp,Version=v3.1",
         "dependencies": {
+          "ICosts": "1.0.0",
           "IIncome": "1.0.0"
         },
         "compile": {
@@ -23,6 +41,19 @@
         },
         "runtime": {
           "bin/placeholder/IBase.dll": {}
+        }
+      },
+      "ICosts/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v3.1",
+        "dependencies": {
+          "IBase": "1.0.0"
+        },
+        "compile": {
+          "bin/placeholder/ICosts.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/ICosts.dll": {}
         }
       },
       "IIncome/1.0.0": {
@@ -71,6 +102,11 @@
     }
   },
   "libraries": {
+    "CostsControls/1.0.0": {
+      "type": "project",
+      "path": "../CostsControls/CostsControls.csproj",
+      "msbuildProject": "../CostsControls/CostsControls.csproj"
+    },
     "IAccount/1.0.0": {
       "type": "project",
       "path": "../IAccounts/IAccount.csproj",
@@ -80,6 +116,11 @@
       "type": "project",
       "path": "../IBase/IBase.csproj",
       "msbuildProject": "../IBase/IBase.csproj"
+    },
+    "ICosts/1.0.0": {
+      "type": "project",
+      "path": "../ICosts/ICosts.csproj",
+      "msbuildProject": "../ICosts/ICosts.csproj"
     },
     "IIncome/1.0.0": {
       "type": "project",
@@ -99,6 +140,7 @@
   },
   "projectFileDependencyGroups": {
     ".NETCoreApp,Version=v3.1": [
+      "CostsControls >= 1.0.0",
       "IAccount >= 1.0.0",
       "IncomeControls >= 1.0.0",
       "WPFHelper >= 1.0.0"
@@ -136,6 +178,9 @@
         "netcoreapp3.1": {
           "targetAlias": "netcoreapp3.1",
           "projectReferences": {
+            "C:\\Users\\Alex\\source\\repos\\Alex-RV\\PersonalAcounting\\PersonalAcounting\\CostsControls\\CostsControls.csproj": {
+              "projectPath": "C:\\Users\\Alex\\source\\repos\\Alex-RV\\PersonalAcounting\\PersonalAcounting\\CostsControls\\CostsControls.csproj"
+            },
             "C:\\Users\\Alex\\source\\repos\\Alex-RV\\PersonalAcounting\\PersonalAcounting\\IAccounts\\IAccount.csproj": {
               "projectPath": "C:\\Users\\Alex\\source\\repos\\Alex-RV\\PersonalAcounting\\PersonalAcounting\\IAccounts\\IAccount.csproj"
             },

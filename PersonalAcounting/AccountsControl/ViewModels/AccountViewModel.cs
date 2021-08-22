@@ -15,10 +15,12 @@ namespace AccountControl.ViewModels
         private WPFHelper.RelayCommand _exitCommand;
         private WPFHelper.RelayCommand _incomeCommand;
         private WPFHelper.RelayCommand _accountInfoCommand;
-        private WPFHelper.RelayCommand _costsCommand;
+        private WPFHelper.RelayCommand _costCommand;
         private bool _visibleIncomeView = false;
+        private bool _visibleCostView = false;
         private bool _visibleShortView = true;
         private IncomeControls.ViewModels.IncomesViewModel _income;
+        private CostsControls.ViewModels.CostsViewModel _costs;
         private AccountControl.ViewModels.AccountViewModel _accountInfo;
         private IAccountEditor _accountEditor;
         #endregion fields
@@ -93,6 +95,32 @@ namespace AccountControl.ViewModels
                         }
                         VisibleShortView = false;
                         VisibleIncomeView = true;
+                        VisibleCostView = false;
+                    });
+                }
+
+                return _incomeCommand;
+            }
+        }
+
+        /// <summary>
+        /// Команда входа во вкладку расходы
+        /// </summary>
+        public WPFHelper.RelayCommand CostCommand
+        {
+            get
+            {
+                if (_costCommand == null)
+                {
+                    _costCommand = new WPFHelper.RelayCommand("", (p) =>
+                    {
+                        if (Costs == null)
+                        {
+                            Costs = new CostsControls.ViewModels.CostsViewModel(_account.Costs, _accountEditor.GetCostsEditor(_account), _accountEditor.GetCostsFabric());
+                        }
+                        VisibleShortView = false;
+                        VisibleIncomeView = false;
+                        VisibleCostView = true;
                     });
                 }
 
@@ -114,6 +142,7 @@ namespace AccountControl.ViewModels
                        
                         VisibleShortView = true;
                         VisibleIncomeView = false;
+                        VisibleCostView = false;
                     });
                 }
 
@@ -154,6 +183,22 @@ namespace AccountControl.ViewModels
             }
         }
 
+        /// <summary>
+        /// Видимость окна расходов
+        /// </summary>
+        public bool VisibleCostView
+        {
+            get { return _visibleCostView; }
+            set
+            {
+                if (_visibleCostView != value)
+                {
+                    _visibleCostView = value;
+                    OnPropertyChanged(nameof(VisibleCostView));
+                }
+            }
+        }
+
         public IncomeControls.ViewModels.IncomesViewModel Income
         { 
             get { return _income; }
@@ -163,6 +208,19 @@ namespace AccountControl.ViewModels
                 {
                     _income = value;
                     OnPropertyChanged(nameof(Income));
+                }
+            }
+        }
+
+        public CostsControls.ViewModels.CostsViewModel Costs
+        {
+            get { return _costs; }
+            set
+            {
+                if (_costs != value)
+                {
+                    _costs = value;
+                    OnPropertyChanged(nameof(Costs));
                 }
             }
         }
@@ -208,19 +266,7 @@ namespace AccountControl.ViewModels
         public event EventHandler Exit;
 
 
-        /*private void OnIncome()
-        {
-            if (Income != null)
-            {
-                Income(this, EventArgs.Empty);
-            }
-        }*/
 
-
-        /// <summary>
-        /// Выполнен выход из счета
-        /// </summary>
-        //public event EventHandler Income;
         #endregion
     }
 }

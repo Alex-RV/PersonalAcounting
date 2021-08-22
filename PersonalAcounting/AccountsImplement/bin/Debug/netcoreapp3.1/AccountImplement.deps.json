@@ -16,6 +16,7 @@
       },
       "IAccount/1.0.0": {
         "dependencies": {
+          "ICosts": "1.0.0",
           "IIncome": "1.0.0"
         },
         "runtime": {
@@ -25,6 +26,14 @@
       "IBase/1.0.0": {
         "runtime": {
           "IBase.dll": {}
+        }
+      },
+      "ICosts/1.0.0": {
+        "dependencies": {
+          "IBase": "1.0.0"
+        },
+        "runtime": {
+          "ICosts.dll": {}
         }
       },
       "IIncome/1.0.0": {
@@ -49,6 +58,11 @@
       "sha512": ""
     },
     "IBase/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    },
+    "ICosts/1.0.0": {
       "type": "project",
       "serviceable": false,
       "sha512": ""

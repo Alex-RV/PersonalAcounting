@@ -6,6 +6,7 @@
   </PropertyGroup>
 
   <ItemGroup>
+    <ProjectReference Include="..\CostsControls\CostsControls.csproj" />
     <ProjectReference Include="..\IAccounts\IAccount.csproj" />
     <ProjectReference Include="..\IncomeControls\IncomeControls.csproj" />
     <ProjectReference Include="..\WPFHelper\WPFHelper.csproj" />
