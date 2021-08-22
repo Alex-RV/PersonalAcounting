@@ -132,3 +132,7 @@ C:\Users\Alex\source\repos\Alex-RV\PersonalAcounting\PersonalAcounting\PersonalA
 C:\Users\Alex\source\repos\Alex-RV\PersonalAcounting\PersonalAcounting\PersonalAcounting\obj\Debug\netcoreapp3.1\Theme\AcceptButtonTheme.baml
 C:\Users\Alex\source\repos\Alex-RV\PersonalAcounting\PersonalAcounting\PersonalAcounting\obj\Debug\netcoreapp3.1\Style\Window\WindowStyle.baml
 C:\Users\Alex\source\repos\Alex-RV\PersonalAcounting\PersonalAcounting\PersonalAcounting\obj\Debug\netcoreapp3.1\Style\Window\WindowStyle.g.cs
+D:\Work\PersonalAcounting\PersonalAcounting\PersonalAcounting\obj\Debug\netcoreapp3.1\Theme\AcceptButtonTheme.baml
+D:\Work\PersonalAcounting\PersonalAcounting\PersonalAcounting\obj\Debug\netcoreapp3.1\Theme\MenuButtonTheme.baml
+D:\Work\PersonalAcounting\PersonalAcounting\PersonalAcounting\obj\Debug\netcoreapp3.1\Theme\MenuStartButtonTheme.baml
+D:\Work\PersonalAcounting\PersonalAcounting\PersonalAcounting\obj\Debug\netcoreapp3.1\App.baml

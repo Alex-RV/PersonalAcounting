@@ -26,3 +26,4 @@ C:\Users\Alex\source\repos\Alex-RV\PersonalAcounting\PersonalAcounting\IData\obj
 C:\Users\Alex\source\repos\Alex-RV\PersonalAcounting\PersonalAcounting\IData\obj\Debug\netcoreapp3.1\IData.dll
 C:\Users\Alex\source\repos\Alex-RV\PersonalAcounting\PersonalAcounting\IData\obj\Debug\netcoreapp3.1\IData.pdb
 C:\Users\Alex\source\repos\Alex-RV\PersonalAcounting\PersonalAcounting\IData\obj\Debug\netcoreapp3.1\IData.csproj.AssemblyReference.cache
+D:\Work\PersonalAcounting\PersonalAcounting\IData\obj\Debug\netcoreapp3.1\IData.csproj.AssemblyReference.cache

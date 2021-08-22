@@ -26,3 +26,4 @@ C:\Users\Alex\source\repos\Alex-RV\PersonalAcounting\PersonalAcounting\CostsCont
 C:\Users\Alex\source\repos\Alex-RV\PersonalAcounting\PersonalAcounting\CostsControls\obj\Debug\netcoreapp3.1\CostsControls.dll
 C:\Users\Alex\source\repos\Alex-RV\PersonalAcounting\PersonalAcounting\CostsControls\obj\Debug\netcoreapp3.1\CostsControls.pdb
 C:\Users\Alex\source\repos\Alex-RV\PersonalAcounting\PersonalAcounting\CostsControls\obj\Debug\netcoreapp3.1\CostsControls.csproj.AssemblyReference.cache
+D:\Work\PersonalAcounting\PersonalAcounting\CostsControls\obj\Debug\netcoreapp3.1\CostsControls.csproj.AssemblyReference.cache
