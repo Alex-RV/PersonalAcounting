@@ -108,7 +108,7 @@ namespace CostsControls.ViewModels
         }
 
         /// <summary>
-        /// Действие при нажатии на кнопку УДАЛИТЬ строку дохода
+        /// Действие при нажатии на кнопку УДАЛИТЬ строку расхода
         /// </summary>
         public WPFHelper.RelayCommand DeleteCommand
         {
@@ -133,7 +133,7 @@ namespace CostsControls.ViewModels
 
 
         /// <summary>
-        /// Действие при нажатии на кнопку ИЗМЕНИТЬ доход
+        /// Действие при нажатии на кнопку ИЗМЕНИТЬ расход
         /// </summary>
         public WPFHelper.RelayCommand EditorCommand
         {

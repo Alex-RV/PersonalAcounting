@@ -129,10 +129,4 @@
   <data name="Exit" xml:space="preserve">
     <value>Выход</value>
   </data>
-  <data name="Name" xml:space="preserve">
-    <value>Название</value>
-  </data>
-  <data name="OpenAccount" xml:space="preserve">
-    <value>Открыть сессию</value>
-  </data>
 </root>

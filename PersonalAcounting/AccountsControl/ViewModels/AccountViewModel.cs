@@ -106,7 +106,7 @@ namespace AccountControl.ViewModels
         /// <summary>
         /// Команда входа во вкладку расходы
         /// </summary>
-        public WPFHelper.RelayCommand CostCommand
+        public WPFHelper.RelayCommand CostsCommand
         {
             get
             {

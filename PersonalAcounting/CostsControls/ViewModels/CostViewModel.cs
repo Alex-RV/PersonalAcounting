@@ -17,9 +17,9 @@ namespace CostsControls.ViewModels
 
 
         #region contructor
-        public CostViewModel(Costs.ICosts cost)
+        public CostViewModel(Costs.ICosts costs)
         {
-            _costs = cost;
+            _costs = costs;
         }
         #endregion contructor
 

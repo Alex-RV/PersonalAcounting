@@ -62,8 +62,8 @@
                         Style="{StaticResource MenuButtonTheme}"
                         />
 
-                            <RadioButton
-                        Command="{Binding Path=CostCommand}"
+                        <RadioButton
+                        Command="{Binding Path=CostsCommand}"
                         Content="{x:Static res:Resources.Costs}"
                         Height="50"
                         Foreground="White"

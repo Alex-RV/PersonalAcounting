@@ -21,27 +21,27 @@
             <RadioButton  
                 Width="Auto"
                 Command="{Binding Path=AddCostCommand}"
-                Content="Добавить доход"
+                Content="Добавить расход"
                 BorderBrush="White" 
                 BorderThickness="0.5"
                 Foreground="White"
-                Style="{StaticResource MenuStartButtonTheme}"/>
+                />
             <RadioButton
                 Width="Auto"
                 Command="{Binding Path=DeleteCommand}"
-                Content="Удалить доход"
+                Content="Удалить расход"
                 BorderBrush="White" 
                 BorderThickness="0.5"
                 Foreground="White"
-                Style="{StaticResource MenuStartButtonTheme}"/>
+                />
             <RadioButton
                 Width="Auto"
                 Command="{Binding Path=EditorCommand}"
-                Content="Изменить доход"
+                Content="Изменить расход"
                 BorderBrush="White" 
                 BorderThickness="0.5"
                 Foreground="White"
-                Style="{StaticResource MenuStartButtonTheme}"/>
+                /><!--Style="{StaticResource MenuStartButtonTheme}"-->
         </StackPanel>
 
         <ListView 
@@ -52,7 +52,7 @@
             ScrollViewer.HorizontalScrollBarVisibility="Visible">
             <ListView.View>
                 <GridView>
-                    <GridViewColumn Width="200" Header="{x:Static res:Resources.Name}">
+                    <GridViewColumn Width="200" Header="Название" ><!--Header="{x:Static res:Resources.Name}"-->
                         <GridViewColumn.CellTemplate>
                             <DataTemplate>
                                 <TextBlock Text="{Binding Path=Name}"
@@ -62,11 +62,11 @@
                         </GridViewColumn.CellTemplate>
                     </GridViewColumn>
 
-                    <GridViewColumn Width="200" Header="{x:Static res:Resources.Amount}">
+                    <GridViewColumn Width="200" Header="Сумма" ><!--Header="{x:Static res:Resources.Amount}"-->
                         <GridViewColumn.CellTemplate>
                             <DataTemplate>
                                 <TextBlock Text="{Binding Path=Amount}"
-                                           Foreground="LawnGreen"
+                                           Foreground="Red"
                                            HorizontalAlignment="Center"
                                            FontSize="14"/>
                             </DataTemplate>

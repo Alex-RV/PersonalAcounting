@@ -8,6 +8,7 @@
         "dependencies": {
           "CostsControls": "1.0.0",
           "IAccount": "1.0.0",
+          "ICosts": "1.0.0",
           "IncomeControls": "1.0.0",
           "WPFHelper": "1.0.0"
         },

@@ -61,7 +61,7 @@
             FontFamily="Candara Light"
             Foreground="#e3dcdf"
             FontSize="14"
-            Content="Дата получения дохода"/>
+            Content="Дата получения расхода"/>
 
         <DatePicker
             Grid.Row="2"

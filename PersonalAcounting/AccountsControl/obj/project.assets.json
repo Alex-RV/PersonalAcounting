@@ -142,6 +142,7 @@
     ".NETCoreApp,Version=v3.1": [
       "CostsControls >= 1.0.0",
       "IAccount >= 1.0.0",
+      "ICosts >= 1.0.0",
       "IncomeControls >= 1.0.0",
       "WPFHelper >= 1.0.0"
     ]
@@ -183,6 +184,9 @@
             },
             "C:\\Users\\Alex\\source\\repos\\Alex-RV\\PersonalAcounting\\PersonalAcounting\\IAccounts\\IAccount.csproj": {
               "projectPath": "C:\\Users\\Alex\\source\\repos\\Alex-RV\\PersonalAcounting\\PersonalAcounting\\IAccounts\\IAccount.csproj"
+            },
+            "C:\\Users\\Alex\\source\\repos\\Alex-RV\\PersonalAcounting\\PersonalAcounting\\ICosts\\ICosts.csproj": {
+              "projectPath": "C:\\Users\\Alex\\source\\repos\\Alex-RV\\PersonalAcounting\\PersonalAcounting\\ICosts\\ICosts.csproj"
             },
             "C:\\Users\\Alex\\source\\repos\\Alex-RV\\PersonalAcounting\\PersonalAcounting\\IncomeControls\\IncomeControls.csproj": {
               "projectPath": "C:\\Users\\Alex\\source\\repos\\Alex-RV\\PersonalAcounting\\PersonalAcounting\\IncomeControls\\IncomeControls.csproj"
