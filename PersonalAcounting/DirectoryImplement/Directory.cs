@@ -12,6 +12,7 @@ namespace Directory
         private string _name;
         private int _id;
         private IDirectoryType _type;
+        private List<DirectoryItem> _items = new List<DirectoryItem>();
         #endregion field
 
         public Directory(IDirectoryType directoryType)
@@ -46,9 +47,8 @@ namespace Directory
             get { return _type; }
         }
 
-        public IEnumerable<IDirectoryItem> Items => throw new NotImplementedException();
-
-        IDirectoryType IDirectory.Type => throw new NotImplementedException();
+        IEnumerable<IDirectoryItem> IDirectory.Items => Items;
+        public List<DirectoryItem> Items { get { return _items; } }
         #endregion properties
     }
 }

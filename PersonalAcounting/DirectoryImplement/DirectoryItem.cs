@@ -6,10 +6,29 @@ namespace Directory
 {
     public class DirectoryItem : IDirectoryItem
     {
-        public int ID => throw new NotImplementedException();
 
-        public string Name => throw new NotImplementedException();
+        #region field
+        private string _name;
+        private int _id;
+        private IDirectoryType _type;
+        #endregion field
 
-        public IDirectoryType DirectoryType => throw new NotImplementedException();
+        public int ID
+        {
+            get { return _id; }
+            set { _id = value; }
+        }
+
+        public string Name
+        {
+            get { return _name; }
+            set { _name = value; }
+        }
+
+        public IDirectoryType DirectoryType
+        {
+            get { return _type; }
+            set { _type = value; }
+        }
     }
 }
