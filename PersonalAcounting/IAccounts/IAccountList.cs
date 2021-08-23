@@ -6,6 +6,7 @@ namespace Account
 {
     public interface IAccountList
     {
-        IEnumerable<IAccount> Items { get; }
+        
+        IEnumerable<IAccount> Items { get; } 
     }
 }

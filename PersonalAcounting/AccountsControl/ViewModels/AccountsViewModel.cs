@@ -112,7 +112,7 @@ namespace AccountControl.ViewModels
                         }
                         _accountEditor.Remove(SelectedItem.GetModel());
                         UpdateItems();
-                        Editor.SetEditingAccount(_accountFabric.CreateNew());
+                        //Editor.SetEditingAccount(_accountFabric.CreateNew());
                     });
                 }
                 return _deleteCommand;
