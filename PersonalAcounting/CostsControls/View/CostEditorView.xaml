@@ -63,7 +63,7 @@
             FontSize="14"
             Content="Дата получения расхода"/>
 
-        <DatePicker
+        <!--<DatePicker
             Grid.Row="2"
             Grid.Column="1"
             Background="#07021c"
@@ -72,7 +72,18 @@
             FontSize="14"
             SelectedDate="{Binding Path=CreateDate, UpdateSourceTrigger=LostFocus}"
             >
+        </DatePicker>-->
+
+
+        <DatePicker
+            Grid.Row="2"
+            Grid.Column="1"
+            FontFamily="Candara Light"
+            FontSize="14"
+            SelectedDate="{Binding Path=CreateDate, UpdateSourceTrigger=LostFocus}"
+            >
         </DatePicker>
+
 
         <Button 
             Grid.Row="3"

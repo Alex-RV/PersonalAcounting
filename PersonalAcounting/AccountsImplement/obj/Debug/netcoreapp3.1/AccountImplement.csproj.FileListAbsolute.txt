@@ -52,3 +52,5 @@ C:\Users\Alex\source\repos\Alex-RV\PersonalAcounting\PersonalAcounting\AccountsI
 C:\Users\Alex\source\repos\Alex-RV\PersonalAcounting\PersonalAcounting\AccountsImplement\obj\Debug\netcoreapp3.1\AccountImplement.pdb
 D:\Work\PersonalAcounting\PersonalAcounting\AccountsImplement\bin\Debug\netcoreapp3.1\ICosts.dll
 D:\Work\PersonalAcounting\PersonalAcounting\AccountsImplement\bin\Debug\netcoreapp3.1\ICosts.pdb
+C:\Users\MaynskiyAP\Source\Repos\PersonalAcounting\PersonalAcounting\AccountsImplement\bin\Debug\netcoreapp3.1\ICosts.dll
+C:\Users\MaynskiyAP\Source\Repos\PersonalAcounting\PersonalAcounting\AccountsImplement\bin\Debug\netcoreapp3.1\ICosts.pdb

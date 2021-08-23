@@ -58,3 +58,5 @@ C:\Users\Alex\source\repos\Alex-RV\PersonalAcounting\PersonalAcounting\AccountFa
 C:\Users\Alex\source\repos\Alex-RV\PersonalAcounting\PersonalAcounting\AccountFabric\obj\Debug\netcoreapp3.1\AccountFabric.pdb
 D:\Work\PersonalAcounting\PersonalAcounting\AccountFabric\bin\Debug\netcoreapp3.1\ICosts.dll
 D:\Work\PersonalAcounting\PersonalAcounting\AccountFabric\bin\Debug\netcoreapp3.1\ICosts.pdb
+C:\Users\MaynskiyAP\Source\Repos\PersonalAcounting\PersonalAcounting\AccountFabric\bin\Debug\netcoreapp3.1\ICosts.dll
+C:\Users\MaynskiyAP\Source\Repos\PersonalAcounting\PersonalAcounting\AccountFabric\bin\Debug\netcoreapp3.1\ICosts.pdb

@@ -110,3 +110,7 @@ D:\Work\PersonalAcounting\PersonalAcounting\AccountsControl\bin\Debug\netcoreapp
 D:\Work\PersonalAcounting\PersonalAcounting\AccountsControl\bin\Debug\netcoreapp3.1\ICosts.dll
 D:\Work\PersonalAcounting\PersonalAcounting\AccountsControl\bin\Debug\netcoreapp3.1\CostsControls.pdb
 D:\Work\PersonalAcounting\PersonalAcounting\AccountsControl\bin\Debug\netcoreapp3.1\ICosts.pdb
+C:\Users\MaynskiyAP\Source\Repos\PersonalAcounting\PersonalAcounting\AccountsControl\bin\Debug\netcoreapp3.1\CostsControls.dll
+C:\Users\MaynskiyAP\Source\Repos\PersonalAcounting\PersonalAcounting\AccountsControl\bin\Debug\netcoreapp3.1\ICosts.dll
+C:\Users\MaynskiyAP\Source\Repos\PersonalAcounting\PersonalAcounting\AccountsControl\bin\Debug\netcoreapp3.1\CostsControls.pdb
+C:\Users\MaynskiyAP\Source\Repos\PersonalAcounting\PersonalAcounting\AccountsControl\bin\Debug\netcoreapp3.1\ICosts.pdb

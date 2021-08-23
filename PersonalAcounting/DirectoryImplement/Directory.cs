@@ -1,4 +1,5 @@
 ﻿using System;
+using System.Collections.Generic;
 
 namespace Directory
 {
@@ -10,8 +11,13 @@ namespace Directory
         #region field
         private string _name;
         private int _id;
-        private DirectoryType _type;
+        private IDirectoryType _type;
         #endregion field
+
+        public Directory(IDirectoryType directoryType)
+        {
+            _type = directoryType;
+        }
 
         #region properties
         ///<summary>
@@ -32,14 +38,17 @@ namespace Directory
             set { _id = value; }
         }
 
-        ///<summary>
-        ///Тип дохода(категория)
-        ///</summary>
-        public DirectoryType Type
+        /// <summary>
+        /// Тип дохода(категория)
+        /// </summary>
+        public IDirectoryType Type
         {
             get { return _type; }
-            set { _type = value; }
         }
+
+        public IEnumerable<IDirectoryItem> Items => throw new NotImplementedException();
+
+        IDirectoryType IDirectory.Type => throw new NotImplementedException();
         #endregion properties
     }
 }

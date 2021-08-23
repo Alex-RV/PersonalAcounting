@@ -4,24 +4,29 @@ using System.Text;
 
 namespace Directory
 {
+    /// <summary>
+    /// Справочник
+    /// </summary>
     public interface IDirectory
     {
         ///<summary>
-        ///Идентификатор категории
+        /// Идентификатор справочника
         ///</summary>
         int ID { get; }
 
         ///<summary>
-        ///Имя категории
+        /// Имя справочника
         ///</summary>
         string Name { get; }
 
         ///<summary>
-        ///Тип категории
+        ///Тип справочника
         ///</summary>
-        DirectoryType Type { get; }
-        
-        // тип сделать как ENUM
+        IDirectoryType Type { get; }
 
+        /// <summary>
+        /// Элементы
+        /// </summary>
+        IEnumerable<IDirectoryItem> Items { get; }
     }
 }

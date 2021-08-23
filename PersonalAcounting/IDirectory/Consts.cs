@@ -8,15 +8,15 @@ namespace Directory
     {
     }
 
-    public enum DirectoryType
-    {
-        /// <summary>
-        /// тип расхода
-        /// </summary>
-        CostType, 
-        /// <summary>
-        /// тип дохода
-        /// </summary>
-        IncomeType
-    }
+    //public enum DirectoryType
+    //{
+    //    /// <summary>
+    //    /// тип расхода
+    //    /// </summary>
+    //    CostType, 
+    //    /// <summary>
+    //    /// тип дохода
+    //    /// </summary>
+    //    IncomeType
+    //}
 }

@@ -67,15 +67,23 @@
         <DatePicker
             Grid.Row="2"
             Grid.Column="1"
+            FontFamily="Candara Light"
+            FontSize="14"
+            SelectedDate="{Binding Path=CreateDate, UpdateSourceTrigger=LostFocus}"
+            >
+        </DatePicker>
+        <!--<DatePicker
+            Grid.Row="2"
+            Grid.Column="1"
             Background="#07021c"
             FontFamily="Candara Light"
             Foreground="#e3dcdf"
             FontSize="14"
             SelectedDate="{Binding Path=CreateDate, UpdateSourceTrigger=LostFocus}"
             >
-        </DatePicker>
+        </DatePicker>-->
 
-            <Button 
+        <Button 
             Grid.Row="3"
             Grid.Column="0"
             Foreground="White"
