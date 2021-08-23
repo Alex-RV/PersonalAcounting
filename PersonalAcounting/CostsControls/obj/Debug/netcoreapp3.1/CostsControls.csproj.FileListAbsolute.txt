@@ -50,13 +50,9 @@ D:\Work\PersonalAcounting\PersonalAcounting\CostsControls\bin\Debug\netcoreapp3.
 D:\Work\PersonalAcounting\PersonalAcounting\CostsControls\bin\Debug\netcoreapp3.1\ICosts.pdb
 D:\Work\PersonalAcounting\PersonalAcounting\CostsControls\bin\Debug\netcoreapp3.1\WPFHelper.pdb
 D:\Work\PersonalAcounting\PersonalAcounting\CostsControls\bin\Debug\netcoreapp3.1\IBase.pdb
-D:\Work\PersonalAcounting\PersonalAcounting\CostsControls\obj\Debug\netcoreapp3.1\View\CostEditorView.g.cs
-D:\Work\PersonalAcounting\PersonalAcounting\CostsControls\obj\Debug\netcoreapp3.1\View\CostView.g.cs
 D:\Work\PersonalAcounting\PersonalAcounting\CostsControls\obj\Debug\netcoreapp3.1\GeneratedInternalTypeHelper.g.cs
 D:\Work\PersonalAcounting\PersonalAcounting\CostsControls\obj\Debug\netcoreapp3.1\CostsControls_MarkupCompile.cache
 D:\Work\PersonalAcounting\PersonalAcounting\CostsControls\obj\Debug\netcoreapp3.1\CostsControls_MarkupCompile.lref
-D:\Work\PersonalAcounting\PersonalAcounting\CostsControls\obj\Debug\netcoreapp3.1\View\CostEditorView.baml
-D:\Work\PersonalAcounting\PersonalAcounting\CostsControls\obj\Debug\netcoreapp3.1\View\CostView.baml
 D:\Work\PersonalAcounting\PersonalAcounting\CostsControls\obj\Debug\netcoreapp3.1\CostsControls.g.resources
 D:\Work\PersonalAcounting\PersonalAcounting\CostsControls\obj\Debug\netcoreapp3.1\CostsControls.Properties.Resources.resources
 D:\Work\PersonalAcounting\PersonalAcounting\CostsControls\obj\Debug\netcoreapp3.1\CostsControls.csproj.GenerateResource.cache
@@ -78,3 +74,7 @@ C:\Users\MaynskiyAP\Source\Repos\PersonalAcounting\PersonalAcounting\CostsContro
 C:\Users\MaynskiyAP\Source\Repos\PersonalAcounting\PersonalAcounting\CostsControls\obj\Debug\netcoreapp3.1\CostsControls.Properties.Resources.resources
 C:\Users\MaynskiyAP\Source\Repos\PersonalAcounting\PersonalAcounting\CostsControls\obj\Debug\netcoreapp3.1\CostsControls.csproj.GenerateResource.cache
 C:\Users\MaynskiyAP\Source\Repos\PersonalAcounting\PersonalAcounting\CostsControls\obj\Debug\netcoreapp3.1\CostsControls.csproj.CopyComplete
+D:\Work\PersonalAcounting\PersonalAcounting\CostsControls\obj\Debug\netcoreapp3.1\Views\CostEditorView.g.cs
+D:\Work\PersonalAcounting\PersonalAcounting\CostsControls\obj\Debug\netcoreapp3.1\Views\CostView.g.cs
+D:\Work\PersonalAcounting\PersonalAcounting\CostsControls\obj\Debug\netcoreapp3.1\Views\CostEditorView.baml
+D:\Work\PersonalAcounting\PersonalAcounting\CostsControls\obj\Debug\netcoreapp3.1\Views\CostView.baml

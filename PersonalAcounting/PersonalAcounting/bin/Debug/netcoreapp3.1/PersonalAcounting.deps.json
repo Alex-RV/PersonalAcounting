@@ -94,7 +94,6 @@
           "CostsImplement": "1.0.0",
           "IAccount": "1.0.0",
           "IDataLoader": "1.0.0",
-          "IIncome": "1.0.0",
           "IncomeImplement": "1.0.0"
         },
         "runtime": {

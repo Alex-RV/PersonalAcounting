@@ -31,3 +31,4 @@ C:\Users\Alex\source\repos\Alex-RV\PersonalAcounting\PersonalAcounting\WPFHelper
 C:\Users\Alex\source\repos\Alex-RV\PersonalAcounting\PersonalAcounting\WPFHelper\obj\Debug\netcoreapp3.1\WPFHelper.csproj.CoreCompileInputs.cache
 C:\Users\Alex\source\repos\Alex-RV\PersonalAcounting\PersonalAcounting\WPFHelper\obj\Debug\netcoreapp3.1\WPFHelper.dll
 C:\Users\Alex\source\repos\Alex-RV\PersonalAcounting\PersonalAcounting\WPFHelper\obj\Debug\netcoreapp3.1\WPFHelper.pdb
+D:\Work\PersonalAcounting\PersonalAcounting\WPFHelper\obj\Debug\netcoreapp3.1\WPFHelper.csproj.AssemblyReference.cache

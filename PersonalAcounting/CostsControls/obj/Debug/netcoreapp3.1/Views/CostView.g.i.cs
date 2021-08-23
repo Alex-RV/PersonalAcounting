@@ -55,7 +55,7 @@ namespace CostsControls.View {
                 return;
             }
             _contentLoaded = true;
-            System.Uri resourceLocater = new System.Uri("/CostsControls;V1.0.0.0;component/views/costview.xaml", System.UriKind.Relative);
+            System.Uri resourceLocater = new System.Uri("/CostsControls;component/views/costview.xaml", System.UriKind.Relative);
             
             #line 1 "..\..\..\..\Views\CostView.xaml"
             System.Windows.Application.LoadComponent(this, resourceLocater);

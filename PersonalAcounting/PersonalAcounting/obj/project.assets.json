@@ -108,6 +108,23 @@
           "bin/placeholder/CostsImplement.dll": {}
         }
       },
+      "DataLoaderImlement/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v3.1",
+        "dependencies": {
+          "AccountImplement": "1.0.0",
+          "CostsImplement": "1.0.0",
+          "IAccount": "1.0.0",
+          "IDataLoader": "1.0.0",
+          "IncomeImplement": "1.0.0"
+        },
+        "compile": {
+          "bin/placeholder/DataLoaderImlement.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/DataLoaderImlement.dll": {}
+        }
+      },
       "IAccount/1.0.0": {
         "type": "project",
         "framework": ".NETCoreApp,Version=v3.1",
@@ -143,6 +160,20 @@
         },
         "runtime": {
           "bin/placeholder/ICosts.dll": {}
+        }
+      },
+      "IDataLoader/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v3.1",
+        "dependencies": {
+          "AccountImplement": "1.0.0",
+          "IAccount": "1.0.0"
+        },
+        "compile": {
+          "bin/placeholder/IDataLoader.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/IDataLoader.dll": {}
         }
       },
       "IIncome/1.0.0": {
@@ -254,6 +285,11 @@
       "path": "../CostsImplements/CostsImplement.csproj",
       "msbuildProject": "../CostsImplements/CostsImplement.csproj"
     },
+    "DataLoaderImlement/1.0.0": {
+      "type": "project",
+      "path": "../DataLoaderImlement/DataLoaderImlement.csproj",
+      "msbuildProject": "../DataLoaderImlement/DataLoaderImlement.csproj"
+    },
     "IAccount/1.0.0": {
       "type": "project",
       "path": "../IAccounts/IAccount.csproj",
@@ -268,6 +304,11 @@
       "type": "project",
       "path": "../ICosts/ICosts.csproj",
       "msbuildProject": "../ICosts/ICosts.csproj"
+    },
+    "IDataLoader/1.0.0": {
+      "type": "project",
+      "path": "../IDataLoader/IDataLoader.csproj",
+      "msbuildProject": "../IDataLoader/IDataLoader.csproj"
     },
     "IIncome/1.0.0": {
       "type": "project",
@@ -300,8 +341,10 @@
       "AccountControl >= 1.0.0",
       "AccountFabric >= 1.0.0",
       "CostsFabric >= 1.0.0",
+      "DataLoaderImlement >= 1.0.0",
       "IAccount >= 1.0.0",
       "ICosts >= 1.0.0",
+      "IDataLoader >= 1.0.0",
       "IIncome >= 1.0.0",
       "IncomeFabric >= 1.0.0",
       "WPFHelper >= 1.0.0"
@@ -345,6 +388,9 @@
             "D:\\Work\\PersonalAcounting\\PersonalAcounting\\AccountsControl\\AccountControl.csproj": {
               "projectPath": "D:\\Work\\PersonalAcounting\\PersonalAcounting\\AccountsControl\\AccountControl.csproj"
             },
+            "D:\\Work\\PersonalAcounting\\PersonalAcounting\\DataLoaderImlement\\DataLoaderImlement.csproj": {
+              "projectPath": "D:\\Work\\PersonalAcounting\\PersonalAcounting\\DataLoaderImlement\\DataLoaderImlement.csproj"
+            },
             "D:\\Work\\PersonalAcounting\\PersonalAcounting\\IAccounts\\IAccount.csproj": {
               "projectPath": "D:\\Work\\PersonalAcounting\\PersonalAcounting\\IAccounts\\IAccount.csproj"
             },
@@ -353,6 +399,9 @@
             },
             "D:\\Work\\PersonalAcounting\\PersonalAcounting\\ICosts\\ICosts.csproj": {
               "projectPath": "D:\\Work\\PersonalAcounting\\PersonalAcounting\\ICosts\\ICosts.csproj"
+            },
+            "D:\\Work\\PersonalAcounting\\PersonalAcounting\\IDataLoader\\IDataLoader.csproj": {
+              "projectPath": "D:\\Work\\PersonalAcounting\\PersonalAcounting\\IDataLoader\\IDataLoader.csproj"
             },
             "D:\\Work\\PersonalAcounting\\PersonalAcounting\\IIncome\\IIncome.csproj": {
               "projectPath": "D:\\Work\\PersonalAcounting\\PersonalAcounting\\IIncome\\IIncome.csproj"

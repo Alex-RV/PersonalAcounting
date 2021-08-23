@@ -101,19 +101,24 @@
     ]
   },
   "packageFolders": {
-    "C:\\Users\\MaynskiyAP\\.nuget\\packages\\": {}
+    "C:\\Users\\alexs\\.nuget\\packages\\": {},
+    "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\MaynskiyAP\\Source\\Repos\\PersonalAcounting\\PersonalAcounting\\IDataLoader\\IDataLoader.csproj",
+      "projectUniqueName": "D:\\Work\\PersonalAcounting\\PersonalAcounting\\IDataLoader\\IDataLoader.csproj",
       "projectName": "IDataLoader",
-      "projectPath": "C:\\Users\\MaynskiyAP\\Source\\Repos\\PersonalAcounting\\PersonalAcounting\\IDataLoader\\IDataLoader.csproj",
-      "packagesPath": "C:\\Users\\MaynskiyAP\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\MaynskiyAP\\Source\\Repos\\PersonalAcounting\\PersonalAcounting\\IDataLoader\\obj\\",
+      "projectPath": "D:\\Work\\PersonalAcounting\\PersonalAcounting\\IDataLoader\\IDataLoader.csproj",
+      "packagesPath": "C:\\Users\\alexs\\.nuget\\packages\\",
+      "outputPath": "D:\\Work\\PersonalAcounting\\PersonalAcounting\\IDataLoader\\obj\\",
       "projectStyle": "PackageReference",
+      "fallbackFolders": [
+        "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
+      ],
       "configFilePaths": [
-        "C:\\Users\\MaynskiyAP\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Users\\alexs\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
       ],
       "originalTargetFrameworks": [
@@ -127,11 +132,11 @@
         "netcoreapp3.1": {
           "targetAlias": "netcoreapp3.1",
           "projectReferences": {
-            "C:\\Users\\MaynskiyAP\\Source\\Repos\\PersonalAcounting\\PersonalAcounting\\AccountsImplement\\AccountImplement.csproj": {
-              "projectPath": "C:\\Users\\MaynskiyAP\\Source\\Repos\\PersonalAcounting\\PersonalAcounting\\AccountsImplement\\AccountImplement.csproj"
+            "D:\\Work\\PersonalAcounting\\PersonalAcounting\\AccountsImplement\\AccountImplement.csproj": {
+              "projectPath": "D:\\Work\\PersonalAcounting\\PersonalAcounting\\AccountsImplement\\AccountImplement.csproj"
             },
-            "C:\\Users\\MaynskiyAP\\Source\\Repos\\PersonalAcounting\\PersonalAcounting\\IAccounts\\IAccount.csproj": {
-              "projectPath": "C:\\Users\\MaynskiyAP\\Source\\Repos\\PersonalAcounting\\PersonalAcounting\\IAccounts\\IAccount.csproj"
+            "D:\\Work\\PersonalAcounting\\PersonalAcounting\\IAccounts\\IAccount.csproj": {
+              "projectPath": "D:\\Work\\PersonalAcounting\\PersonalAcounting\\IAccounts\\IAccount.csproj"
             }
           }
         }
@@ -160,7 +165,7 @@
             "privateAssets": "all"
           }
         },
-        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.206\\RuntimeIdentifierGraph.json"
+        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.400\\RuntimeIdentifierGraph.json"
       }
     }
   }
