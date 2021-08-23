@@ -2,8 +2,16 @@
              xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
              xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
              xmlns:local="clr-namespace:PersonalAcounting"
+             xmlns:viewModel="clr-namespace:AccountControl.Views;assembly=AccountControl"
+             xmlns:view="clr-namespace:AccountControl.Views;assembly=AccountControl"
              StartupUri="MainWindow.xaml">
     <Application.Resources>
-         
+        <ResourceDictionary>
+            <ResourceDictionary.MergedDictionaries>
+                <ResourceDictionary Source="Theme/MenuButtonTheme.xaml"/>
+                <ResourceDictionary Source="Theme/AcceptButtonTheme.xaml"/>
+                <ResourceDictionary Source="Theme/MenuStartButtonTheme.xaml"/>
+            </ResourceDictionary.MergedDictionaries>
+        </ResourceDictionary>
     </Application.Resources>
 </Application>

@@ -22,12 +22,20 @@ namespace Income
 
         public override void SetCreateDate(IIncome correntBase, DateTime createdate)
         {
-            throw new NotImplementedException();
+            Income correntIncome = correntBase as Income;
+            if (correntIncome != null)
+            {
+                correntIncome.CreateDate = createdate;
+            }
         }
 
         public override void SetName(IIncome correntBase, string name)
         {
-            throw new NotImplementedException();
+            Income correntIncome = correntBase as Income;
+            if (correntIncome != null)
+            {
+                correntIncome.Name = name;
+            }
         }
     }
 }

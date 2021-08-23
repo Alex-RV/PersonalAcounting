@@ -5,8 +5,8 @@
              xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
              xmlns:local="clr-namespace:AccountControl.Views"
              xmlns:res="clr-namespace:AccountControl.Properties"
-             xmlns:localI="clr-namespace:IncomeControls.Views;assembly=IncomeControls"
-             
+             xmlns:income="clr-namespace:IncomeControls.Views;assembly=IncomeControls"
+             xmlns:costs="clr-namespace:CostsControls.View;assembly=CostsControls"
              xmlns:conv="clr-namespace:WPFHelper.Converters;assembly=WPFHelper"
              mc:Ignorable="d" 
              d:DesignHeight="450" d:DesignWidth="800">
@@ -19,56 +19,100 @@
                 <Setter Property="BorderBrush" Value="Gray"/>
             </Style.Setters>
         </Style>
-    </UserControl.Resources>
-        
-    <Grid>
-        <Grid.ColumnDefinitions>
-            <ColumnDefinition Width="Auto"/>
-            <ColumnDefinition Width="*"/>
-        </Grid.ColumnDefinitions>
 
-        <Expander
-            Grid.Column="0"
-            IsExpanded="True">
-            <Border
-                BorderBrush="Gray"
-                BorderThickness="1">
-                <Grid>
-                    <Grid.RowDefinitions>
-                        <RowDefinition Height="*"/>
-                        <RowDefinition Height="Auto"/>
-                    </Grid.RowDefinitions>
-                    <StackPanel>
-                        <Button
-                            Command="{Binding Path=IncomeCommand}"
-                            Content="{x:Static res:Resources.Income}"
-                        />
-                        <Button>2</Button>
-                        <Button>3</Button>
+        <Style TargetType="RadioButton" BasedOn="{StaticResource MenuButtonTheme}">
+            <Style.Setters>
+                <Setter Property="Height" Value="50"/>
+                <Setter Property="Foreground" Value="White"/>
+                <Setter Property="FontSize" Value="22"/>
+            </Style.Setters>
+        </Style>
+    </UserControl.Resources>
+    <Border Background="#07021c"
+            CornerRadius="25">
+        <Grid>
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="Auto"/>
+                <ColumnDefinition Width="*"/>
+            </Grid.ColumnDefinitions>
+            <Grid.RowDefinitions>
+                <RowDefinition Height="75"/>
+                <RowDefinition Height="*"/>
+            </Grid.RowDefinitions>
+
+            <TextBlock     Text="Счет"
+                       Grid.Row="0"
+                       VerticalAlignment="Center"
+                       HorizontalAlignment="Left"
+                       Foreground="White"
+                       FontSize="30"
+                       Margin="20,0,0,0"/>
+
+            <Expander
+                Grid.Column="0"
+                Grid.Row="1"
+                IsExpanded="True">
+                <Border
+                    BorderBrush="Gray"
+                    BorderThickness="1">
+                    <Grid>
+                        <Grid.RowDefinitions>
+                            <RowDefinition Height="*"/>
+                            <RowDefinition Height="Auto"/>
+                        </Grid.RowDefinitions>
+                        <StackPanel>
+                            <RadioButton 
+                                Command="{Binding Path=IncomeCommand}"
+                                Content="{x:Static res:Resources.Income}"/>      
+
+                            <RadioButton
+                                Command="{Binding Path=CostsCommand}"
+                                Content="{x:Static res:Resources.Costs}"/>
+
+                            <RadioButton
+                                Command="{Binding Path=AccountShortCommand}"
+                                Content="{x:Static res:Resources.InfoAccount}"/>
+
+                        </StackPanel>
                         
-                    </StackPanel>
-                    <Button 
+                        <RadioButton
                         Grid.Row="1"
                         Command="{Binding Path=ExitCommand}"
-                        Content="{x:Static res:Resources.Exit}"/>
-                </Grid>
-                
-            </Border>
+                        Content="{x:Static res:Resources.Exit}"
+                        Height="50"
+                        Foreground="White"
+                        FontSize="22"
+                        Style="{StaticResource MenuStartButtonTheme}"/>
+                    </Grid>
 
-        </Expander>
-        <Grid 
-            Grid.Column="1">
-            <local:AccountShortView
-                Visibility="{Binding Path=VisibleShortView, Converter={x:Static conv:BoolToVisible.Instance}}"/>
+                </Border>
 
-            <localI:IncomeView
-                DataContext="{Binding Path=Income}"
-                Visibility="{Binding 
-                Path=DataContext.VisibleIncomeView, 
-                Converter={x:Static conv:BoolToVisible.Instance},
-                RelativeSource={RelativeSource Mode=FindAncestor, AncestorType=UserControl}}"/>
+            </Expander>
+            <Grid 
+                Grid.Column="1"
+                Grid.Row="1">
+                <local:AccountShortView
+                    Visibility="{Binding Path=VisibleShortView, Converter={x:Static conv:BoolToVisible.Instance}}"/>
+
+                <income:IncomeView
+                    DataContext="{Binding Path=Income}"
+                    Visibility="{Binding 
+                    Path=DataContext.VisibleIncomeView, 
+                    Converter={x:Static conv:BoolToVisible.Instance},
+                    RelativeSource={RelativeSource Mode=FindAncestor, AncestorType=UserControl}}"/>
+
+                <costs:CostView
+                    DataContext="{Binding Path=Costs}"
+                    Visibility="{Binding 
+                    Path=DataContext.VisibleCostView, 
+                    Converter={x:Static conv:BoolToVisible.Instance},
+                    RelativeSource={RelativeSource Mode=FindAncestor, AncestorType=UserControl}}"/>
+
+            </Grid>
 
         </Grid>
 
-    </Grid>
+
+    </Border>
+    
 </UserControl>

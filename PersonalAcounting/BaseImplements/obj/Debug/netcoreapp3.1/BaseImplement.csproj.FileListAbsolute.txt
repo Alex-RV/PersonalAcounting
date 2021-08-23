@@ -22,4 +22,17 @@ C:\Users\MaynskiyAP\source\repos\PersonalAcounting\PersonalAcounting\BaseImpleme
 D:\Work\PersonalAcounting\PersonalAcounting\BaseImplements\bin\Debug\netcoreapp3.1\IBase.dll
 D:\Work\PersonalAcounting\PersonalAcounting\BaseImplements\bin\Debug\netcoreapp3.1\IBase.pdb
 D:\Work\PersonalAcounting\PersonalAcounting\BaseImplements\obj\Debug\netcoreapp3.1\BaseImplement.csproj.CopyComplete
+C:\Users\Alex\source\repos\Alex-RV\PersonalAcounting\PersonalAcounting\BaseImplements\bin\Debug\netcoreapp3.1\BaseImplement.deps.json
+C:\Users\Alex\source\repos\Alex-RV\PersonalAcounting\PersonalAcounting\BaseImplements\bin\Debug\netcoreapp3.1\BaseImplement.dll
+C:\Users\Alex\source\repos\Alex-RV\PersonalAcounting\PersonalAcounting\BaseImplements\bin\Debug\netcoreapp3.1\BaseImplement.pdb
+C:\Users\Alex\source\repos\Alex-RV\PersonalAcounting\PersonalAcounting\BaseImplements\bin\Debug\netcoreapp3.1\IBase.dll
+C:\Users\Alex\source\repos\Alex-RV\PersonalAcounting\PersonalAcounting\BaseImplements\bin\Debug\netcoreapp3.1\IBase.pdb
+C:\Users\Alex\source\repos\Alex-RV\PersonalAcounting\PersonalAcounting\BaseImplements\obj\Debug\netcoreapp3.1\BaseImplement.csproj.AssemblyReference.cache
+C:\Users\Alex\source\repos\Alex-RV\PersonalAcounting\PersonalAcounting\BaseImplements\obj\Debug\netcoreapp3.1\BaseImplement.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Alex\source\repos\Alex-RV\PersonalAcounting\PersonalAcounting\BaseImplements\obj\Debug\netcoreapp3.1\BaseImplement.AssemblyInfoInputs.cache
+C:\Users\Alex\source\repos\Alex-RV\PersonalAcounting\PersonalAcounting\BaseImplements\obj\Debug\netcoreapp3.1\BaseImplement.AssemblyInfo.cs
+C:\Users\Alex\source\repos\Alex-RV\PersonalAcounting\PersonalAcounting\BaseImplements\obj\Debug\netcoreapp3.1\BaseImplement.csproj.CoreCompileInputs.cache
+C:\Users\Alex\source\repos\Alex-RV\PersonalAcounting\PersonalAcounting\BaseImplements\obj\Debug\netcoreapp3.1\BaseImplement.csproj.CopyComplete
+C:\Users\Alex\source\repos\Alex-RV\PersonalAcounting\PersonalAcounting\BaseImplements\obj\Debug\netcoreapp3.1\BaseImplement.dll
+C:\Users\Alex\source\repos\Alex-RV\PersonalAcounting\PersonalAcounting\BaseImplements\obj\Debug\netcoreapp3.1\BaseImplement.pdb
 D:\Work\PersonalAcounting\PersonalAcounting\BaseImplements\obj\Debug\netcoreapp3.1\BaseImplement.csproj.AssemblyReference.cache

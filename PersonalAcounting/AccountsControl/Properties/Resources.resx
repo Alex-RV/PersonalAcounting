@@ -117,14 +117,32 @@
   <resheader name="writer">
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
+  <data name="Account" xml:space="preserve">
+    <value>Счет</value>
+  </data>
+  <data name="Add" xml:space="preserve">
+    <value>Добавить счет</value>
+  </data>
+  <data name="Costs" xml:space="preserve">
+    <value>Расходы</value>
+  </data>
   <data name="CreateDate" xml:space="preserve">
     <value>Дата создания</value>
+  </data>
+  <data name="Delete" xml:space="preserve">
+    <value>Удалить счет</value>
+  </data>
+  <data name="Edit" xml:space="preserve">
+    <value>Изменить</value>
   </data>
   <data name="Exit" xml:space="preserve">
     <value>Выход</value>
   </data>
   <data name="Income" xml:space="preserve">
     <value>Доходы</value>
+  </data>
+  <data name="InfoAccount" xml:space="preserve">
+    <value>Обзор счета</value>
   </data>
   <data name="Name" xml:space="preserve">
     <value>Название</value>

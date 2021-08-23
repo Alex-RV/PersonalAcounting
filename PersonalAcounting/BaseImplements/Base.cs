@@ -12,6 +12,10 @@ namespace Base
         private double _amount;
         private DateTime _createdate;
         #endregion field
+        public Base()
+        {
+            CreateDate = DateTime.Now.Date;
+        }
 
         #region properties
         ///<summary>

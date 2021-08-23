@@ -61,11 +61,56 @@ namespace AccountControl.Properties {
         }
         
         /// <summary>
+        ///   Looks up a localized string similar to Счет.
+        /// </summary>
+        public static string Account {
+            get {
+                return ResourceManager.GetString("Account", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Добавить счет.
+        /// </summary>
+        public static string Add {
+            get {
+                return ResourceManager.GetString("Add", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Расходы.
+        /// </summary>
+        public static string Costs {
+            get {
+                return ResourceManager.GetString("Costs", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   Looks up a localized string similar to Дата создания.
         /// </summary>
         public static string CreateDate {
             get {
                 return ResourceManager.GetString("CreateDate", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Удалить счет.
+        /// </summary>
+        public static string Delete {
+            get {
+                return ResourceManager.GetString("Delete", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Изменить.
+        /// </summary>
+        public static string Edit {
+            get {
+                return ResourceManager.GetString("Edit", resourceCulture);
             }
         }
         
@@ -84,6 +129,15 @@ namespace AccountControl.Properties {
         public static string Income {
             get {
                 return ResourceManager.GetString("Income", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Обзор счета.
+        /// </summary>
+        public static string InfoAccount {
+            get {
+                return ResourceManager.GetString("InfoAccount", resourceCulture);
             }
         }
         

@@ -20,16 +20,19 @@
             </Style.Setters>
         </Style>
     </UserControl.Resources>
-    <Grid>
+    <Grid
+        Background="#07021c">
         <Grid.RowDefinitions>
             <RowDefinition  Height="Auto"/>
             <RowDefinition  Height="*"/>
         </Grid.RowDefinitions>
         <Label
             Grid.Row="0"
-            HorizontalAlignment="Center"
-            FontSize="16"
+            HorizontalAlignment="Left"
+            Margin="75,0,0,30"
+            FontSize="26"
             FontStyle="Italic"
+            Foreground="White"
             Content="{x:Static res:Resources.ShortViewHeader}"/>
         <Grid
             Grid.Row="1">
@@ -47,19 +50,37 @@
             <Label 
                 Grid.Row="0"
                 Grid.Column="0"
-                Content="{x:Static res:Resources.Name}"/>
+                Margin="5,0,0,0"
+                FontSize="16"
+                FontStyle="Italic"
+                Foreground="White"
+                FontFamily="Franklin Gothic Book"
+                Content="Название счета : "/>
             <TextBlock 
                 Grid.Row="0"
                 Grid.Column="2"
+                Margin="5,0,0,0"
+                FontSize="24"
+                Foreground="White"
+                FontFamily="Gabriola"
                 Text="{Binding Path=Name}"/>
 
             <Label 
                 Grid.Row="1"
                 Grid.Column="0"
-                Content="{x:Static res:Resources.Owner}"/>
+                Margin="5,0,0,0"
+                FontSize="16"
+                FontStyle="Italic"
+                Foreground="White"
+                FontFamily="Franklin Gothic Book"
+                Content="Владелец счета : "/>
             <TextBlock 
                 Grid.Row="1"
                 Grid.Column="2"
+                Margin="5,0,0,0"
+                FontSize="24"
+                Foreground="White"
+                FontFamily="Gabriola"
                 Text="{Binding Path=Owner}"/>
 
         </Grid>

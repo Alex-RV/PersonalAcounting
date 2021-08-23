@@ -1,5 +1,6 @@
 ﻿using Income;
 using System;
+using Costs;
 using System.Collections.Generic;
 using System.Text;
 
@@ -15,6 +16,7 @@ namespace Account
         private string _owner;
         private DateTime _createDate;
         private IIncomeList _incomes;
+        private ICostsList _costs;
         #endregion field
 
         #region constructor
@@ -55,6 +57,12 @@ namespace Account
         { 
             get { return _incomes; }
             set { _incomes = value; }
+        }
+
+        public ICostsList Costs
+        {
+            get { return _costs; }
+            set { _costs = value; }
         }
 
         #endregion properties

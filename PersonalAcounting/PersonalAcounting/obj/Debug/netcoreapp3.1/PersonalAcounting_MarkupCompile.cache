@@ -4,17 +4,17 @@
 winexe
 C#
 .cs
-C:\Users\MaynskiyAP\source\repos\PersonalAcounting\PersonalAcounting\PersonalAcounting\obj\Debug\netcoreapp3.1\
+D:\Work\PersonalAcounting\PersonalAcounting\PersonalAcounting\obj\Debug\netcoreapp3.1\
 PersonalAcounting
 none
 false
 TRACE;DEBUG;NETCOREAPP;NETCOREAPP3_1;
-C:\Users\MaynskiyAP\source\repos\PersonalAcounting\PersonalAcounting\PersonalAcounting\App.xaml
-11407045341
+D:\Work\PersonalAcounting\PersonalAcounting\PersonalAcounting\App.xaml
+41765122069
 
 51474155743
-203-1030528695
-MainWindow.xaml;
+207-2048426455
+MainWindow.xaml;Theme\AcceptButtonTheme.xaml;Theme\MenuButtonTheme.xaml;Theme\MenuStartButtonTheme.xaml;
 
 False
 

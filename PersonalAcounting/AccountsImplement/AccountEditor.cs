@@ -1,5 +1,6 @@
 ﻿using Income;
 using System;
+using Costs;
 using System.Collections.Generic;
 using System.Text;
 
@@ -10,15 +11,18 @@ namespace Account
         #region fields
         private AccountList _list;
         private IIncomeFabric _incomeFabric;
+        private ICostsFabric _costsFabric;
         #endregion fields
 
         #region constructor
-        public AccountEditor(AccountList list, IIncomeFabric incomeFabric)
+        public AccountEditor(AccountList list, IIncomeFabric incomeFabric, ICostsFabric costsFabric)
         {
             _list = list;
             _incomeFabric = incomeFabric;
+            _costsFabric = costsFabric;
         }
         #endregion
+
         #region metods
         public void Add(IAccount addAcount)
         {
@@ -74,6 +78,17 @@ namespace Account
         public IIncomeFabric GetIncomeFabric()
         {
             return _incomeFabric;
+        }
+
+
+        public ICostsEditor GetCostsEditor(IAccount account)
+        {
+            return _costsFabric.GetCostsEditor(account.Costs);
+        }
+
+        public ICostsFabric GetCostsFabric()
+        {
+            return _costsFabric;
         }
     }
         #endregion metods

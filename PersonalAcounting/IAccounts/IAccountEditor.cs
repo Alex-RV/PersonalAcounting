@@ -38,5 +38,9 @@ namespace Account
         Income.IIncomeEditor GetIncomeEditor(IAccount account);
 
         Income.IIncomeFabric GetIncomeFabric();
+
+        Costs.ICostsEditor GetCostsEditor(IAccount account);
+
+        Costs.ICostsFabric GetCostsFabric();
     }
 }

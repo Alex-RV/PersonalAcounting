@@ -7,19 +7,26 @@
         xmlns:conv="clr-namespace:WPFHelper.Converters;assembly=WPFHelper"
         xmlns:local="clr-namespace:PersonalAcounting"
         mc:Ignorable="d"
-        Title="Личная бухгалтерия" Height="450" Width="800">
-    <Grid>
-        <account:AccountsView 
-            DataContext="{Binding Path=Accounts}"
-            Visibility="{Binding 
-                Path=DataContext.VisibleAccounts, 
-                Converter={x:Static conv:BoolToVisible.Instance},
-                RelativeSource={RelativeSource Mode=FindAncestor, AncestorType=Window}}"/>
-        <account:AccountView
-            DataContext="{Binding Path=Accounts.SelectedItem}"
-            Visibility="{Binding 
-                Path=DataContext.VisibleAccount, 
-                Converter={x:Static conv:BoolToVisible.Instance},
-                RelativeSource={RelativeSource Mode=FindAncestor, AncestorType=Window}}"/>
-    </Grid>
+        Background="Transparent"
+        MinHeight="400" MinWidth="825"
+        WindowStyle="ThreeDBorderWindow"        
+        Title="Личная бухгалтерия" Height="600" Width="920">
+
+    <Border Background="#07021c"
+            CornerRadius="25">
+        <Grid>
+            <account:AccountsView 
+                    DataContext="{Binding Path=Accounts}"
+                    Visibility="{Binding 
+                        Path=DataContext.VisibleAccounts, 
+                        Converter={x:Static conv:BoolToVisible.Instance},
+                        RelativeSource={RelativeSource Mode=FindAncestor, AncestorType=Window}}"/>
+            <account:AccountView
+                    DataContext="{Binding Path=Accounts.SelectedItem}"
+                    Visibility="{Binding 
+                        Path=DataContext.VisibleAccount, 
+                        Converter={x:Static conv:BoolToVisible.Instance},
+                        RelativeSource={RelativeSource Mode=FindAncestor, AncestorType=Window}}"/>
+        </Grid>
+    </Border>
 </Window>

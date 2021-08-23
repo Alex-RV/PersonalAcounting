@@ -1,26 +1,87 @@
 {
   "version": 3,
   "targets": {
-    ".NETCoreApp,Version=v3.1": {}
+    ".NETCoreApp,Version=v3.1": {
+      "IBase/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v3.1",
+        "compile": {
+          "bin/placeholder/IBase.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/IBase.dll": {}
+        }
+      },
+      "ICosts/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v3.1",
+        "dependencies": {
+          "IBase": "1.0.0"
+        },
+        "compile": {
+          "bin/placeholder/ICosts.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/ICosts.dll": {}
+        }
+      },
+      "WPFHelper/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v3.1",
+        "compile": {
+          "bin/placeholder/WPFHelper.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/WPFHelper.dll": {}
+        },
+        "frameworkReferences": [
+          "Microsoft.WindowsDesktop.App.WPF"
+        ]
+      }
+    }
   },
-  "libraries": {},
+  "libraries": {
+    "IBase/1.0.0": {
+      "type": "project",
+      "path": "../IBase/IBase.csproj",
+      "msbuildProject": "../IBase/IBase.csproj"
+    },
+    "ICosts/1.0.0": {
+      "type": "project",
+      "path": "../ICosts/ICosts.csproj",
+      "msbuildProject": "../ICosts/ICosts.csproj"
+    },
+    "WPFHelper/1.0.0": {
+      "type": "project",
+      "path": "../WPFHelper/WPFHelper.csproj",
+      "msbuildProject": "../WPFHelper/WPFHelper.csproj"
+    }
+  },
   "projectFileDependencyGroups": {
-    ".NETCoreApp,Version=v3.1": []
+    ".NETCoreApp,Version=v3.1": [
+      "ICosts >= 1.0.0",
+      "WPFHelper >= 1.0.0"
+    ]
   },
   "packageFolders": {
-    "C:\\Users\\MaynskiyAP\\.nuget\\packages\\": {}
+    "C:\\Users\\alexs\\.nuget\\packages\\": {},
+    "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\MaynskiyAP\\source\\repos\\PersonalAcounting\\PersonalAcounting\\CostsControls\\CostsControls.csproj",
+      "projectUniqueName": "D:\\Work\\PersonalAcounting\\PersonalAcounting\\CostsControls\\CostsControls.csproj",
       "projectName": "CostsControls",
-      "projectPath": "C:\\Users\\MaynskiyAP\\source\\repos\\PersonalAcounting\\PersonalAcounting\\CostsControls\\CostsControls.csproj",
-      "packagesPath": "C:\\Users\\MaynskiyAP\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\MaynskiyAP\\source\\repos\\PersonalAcounting\\PersonalAcounting\\CostsControls\\obj\\",
+      "projectPath": "D:\\Work\\PersonalAcounting\\PersonalAcounting\\CostsControls\\CostsControls.csproj",
+      "packagesPath": "C:\\Users\\alexs\\.nuget\\packages\\",
+      "outputPath": "D:\\Work\\PersonalAcounting\\PersonalAcounting\\CostsControls\\obj\\",
       "projectStyle": "PackageReference",
+      "fallbackFolders": [
+        "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
+      ],
       "configFilePaths": [
-        "C:\\Users\\MaynskiyAP\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Users\\alexs\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
       ],
       "originalTargetFrameworks": [
@@ -33,7 +94,14 @@
       "frameworks": {
         "netcoreapp3.1": {
           "targetAlias": "netcoreapp3.1",
-          "projectReferences": {}
+          "projectReferences": {
+            "D:\\Work\\PersonalAcounting\\PersonalAcounting\\ICosts\\ICosts.csproj": {
+              "projectPath": "D:\\Work\\PersonalAcounting\\PersonalAcounting\\ICosts\\ICosts.csproj"
+            },
+            "D:\\Work\\PersonalAcounting\\PersonalAcounting\\WPFHelper\\WPFHelper.csproj": {
+              "projectPath": "D:\\Work\\PersonalAcounting\\PersonalAcounting\\WPFHelper\\WPFHelper.csproj"
+            }
+          }
         }
       },
       "warningProperties": {
@@ -63,7 +131,7 @@
             "privateAssets": "none"
           }
         },
-        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.206\\RuntimeIdentifierGraph.json"
+        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.400\\RuntimeIdentifierGraph.json"
       }
     }
   }

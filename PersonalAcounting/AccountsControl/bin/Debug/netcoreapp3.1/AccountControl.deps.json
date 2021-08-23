@@ -8,7 +8,9 @@
     ".NETCoreApp,Version=v3.1": {
       "AccountControl/1.0.0": {
         "dependencies": {
+          "CostsControls": "1.0.0",
           "IAccount": "1.0.0",
+          "ICosts": "1.0.0",
           "IncomeControls": "1.0.0",
           "WPFHelper": "1.0.0"
         },
@@ -16,8 +18,18 @@
           "AccountControl.dll": {}
         }
       },
+      "CostsControls/1.0.0": {
+        "dependencies": {
+          "ICosts": "1.0.0",
+          "WPFHelper": "1.0.0"
+        },
+        "runtime": {
+          "CostsControls.dll": {}
+        }
+      },
       "IAccount/1.0.0": {
         "dependencies": {
+          "ICosts": "1.0.0",
           "IIncome": "1.0.0"
         },
         "runtime": {
@@ -27,6 +39,14 @@
       "IBase/1.0.0": {
         "runtime": {
           "IBase.dll": {}
+        }
+      },
+      "ICosts/1.0.0": {
+        "dependencies": {
+          "IBase": "1.0.0"
+        },
+        "runtime": {
+          "ICosts.dll": {}
         }
       },
       "IIncome/1.0.0": {
@@ -59,12 +79,22 @@
       "serviceable": false,
       "sha512": ""
     },
+    "CostsControls/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    },
     "IAccount/1.0.0": {
       "type": "project",
       "serviceable": false,
       "sha512": ""
     },
     "IBase/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    },
+    "ICosts/1.0.0": {
       "type": "project",
       "serviceable": false,
       "sha512": ""

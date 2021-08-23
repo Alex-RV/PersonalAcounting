@@ -6,13 +6,15 @@ namespace Account
     {
         #region fields
         private Income.IIncomeFabric _incomeFabric;
+        private Costs.ICostsFabric _costsFabric;
         private AccountList _list;
         #endregion fields
 
         #region constructor
-        public AccountFabric(Income.IIncomeFabric incomeFabric)
+        public AccountFabric(Income.IIncomeFabric incomeFabric, Costs.ICostsFabric costsFabric)
         {
             _incomeFabric = incomeFabric;
+            _costsFabric = costsFabric;
         }
         #endregion
 
@@ -21,6 +23,7 @@ namespace Account
         {
             Account result = new Account();
             result.Incomes = _incomeFabric.CreateNewList();
+            result.Costs = _costsFabric.CreateNewList();
             return result;
         }
 
@@ -35,7 +38,7 @@ namespace Account
 
         public IAccountEditor GetEditor()
         {
-            return new AccountEditor(GetAccountList() as AccountList, _incomeFabric);
+            return new AccountEditor(GetAccountList() as AccountList, _incomeFabric, _costsFabric);
         }
         #endregion metods
 
