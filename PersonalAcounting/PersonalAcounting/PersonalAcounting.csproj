@@ -9,9 +9,11 @@
   <ItemGroup>
     <ProjectReference Include="..\AccountFabric\AccountFabric.csproj" />
     <ProjectReference Include="..\AccountsControl\AccountControl.csproj" />
+    <ProjectReference Include="..\DataLoaderImlement\DataLoaderImlement.csproj" />
     <ProjectReference Include="..\IAccounts\IAccount.csproj" />
     <ProjectReference Include="..\ICostFabric\CostsFabric.csproj" />
     <ProjectReference Include="..\ICosts\ICosts.csproj" />
+    <ProjectReference Include="..\IDataLoader\IDataLoader.csproj" />
     <ProjectReference Include="..\IIncome\IIncome.csproj" />
     <ProjectReference Include="..\IncomeFabric\IncomeFabric.csproj" />
     <ProjectReference Include="..\WPFHelper\WPFHelper.csproj" />

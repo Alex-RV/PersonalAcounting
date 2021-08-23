@@ -16,13 +16,17 @@ namespace PersonalAcounting
         private bool _visibleAccounts = false;
         private bool _visibleAccount = false;
         #endregion fields
-
+        DataLoader.Loader loader;
         #region constructor
         public MainViewModel()
         {
-            _fabricsContainer = new FabricsContainer();
+            loader = new DataLoader.Loader();
+            loader.PathToFile = "C:\\Experiments\\test.ff";
+
+            _fabricsContainer = new FabricsContainer(loader);
 
             InitializeAccouts();
+
         }
         #endregion constructor
 
@@ -90,6 +94,12 @@ namespace PersonalAcounting
             Accounts.ChangedActivAcount += Accounts_ChangedActivAcount;
         }
 
+
+        public void Closing()
+        {
+            _fabricsContainer.Save();
+            
+        }
         #endregion metods
 
         #region event handlers

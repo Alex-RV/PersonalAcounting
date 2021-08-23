@@ -36,6 +36,15 @@ namespace Account
             return _list;
         }
 
+        public void SetAccountList(System.Collections.Generic.IEnumerable<IAccount> accounts)
+        {
+            GetAccountList();
+            foreach (Account item in accounts)
+            {
+                _list.Items.Add(item);
+            }
+        }
+
         public IAccountEditor GetEditor()
         {
             return new AccountEditor(GetAccountList() as AccountList, _incomeFabric, _costsFabric);

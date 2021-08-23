@@ -12,11 +12,13 @@ namespace PersonalAcounting
         #region fields
         private Account.IAccountFabric _accountFabric;
         #endregion fields
-
+        DataLoader.ILoader _loader;
         #region constructor
-        public FabricsContainer()
+        public FabricsContainer(DataLoader.ILoader loader)
         {
+            _loader = loader;
             _accountFabric = new Account.AccountFabric(new Income.IncomeFabric(), new Costs.CostsFabric());
+            (_accountFabric as Account.AccountFabric).SetAccountList(_loader.LoadAccounts());
         }
         #endregion constructor
 
@@ -26,5 +28,10 @@ namespace PersonalAcounting
         /// </summary>
         public Account.IAccountFabric AccountFabric { get { return _accountFabric; } }
         #endregion properties
+
+        public void Save()
+        {
+            _loader.SaveAccounts(_accountFabric.GetAccountList().Items);
+        }
     }
 }

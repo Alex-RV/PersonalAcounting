@@ -1,0 +1,167 @@
+{
+  "version": 3,
+  "targets": {
+    ".NETCoreApp,Version=v3.1": {
+      "AccountImplement/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v3.1",
+        "dependencies": {
+          "IAccount": "1.0.0"
+        },
+        "compile": {
+          "bin/placeholder/AccountImplement.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/AccountImplement.dll": {}
+        }
+      },
+      "IAccount/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v3.1",
+        "dependencies": {
+          "ICosts": "1.0.0",
+          "IIncome": "1.0.0"
+        },
+        "compile": {
+          "bin/placeholder/IAccount.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/IAccount.dll": {}
+        }
+      },
+      "IBase/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v3.1",
+        "compile": {
+          "bin/placeholder/IBase.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/IBase.dll": {}
+        }
+      },
+      "ICosts/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v3.1",
+        "dependencies": {
+          "IBase": "1.0.0"
+        },
+        "compile": {
+          "bin/placeholder/ICosts.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/ICosts.dll": {}
+        }
+      },
+      "IIncome/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v3.1",
+        "dependencies": {
+          "IBase": "1.0.0"
+        },
+        "compile": {
+          "bin/placeholder/IIncome.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/IIncome.dll": {}
+        }
+      }
+    }
+  },
+  "libraries": {
+    "AccountImplement/1.0.0": {
+      "type": "project",
+      "path": "../AccountsImplement/AccountImplement.csproj",
+      "msbuildProject": "../AccountsImplement/AccountImplement.csproj"
+    },
+    "IAccount/1.0.0": {
+      "type": "project",
+      "path": "../IAccounts/IAccount.csproj",
+      "msbuildProject": "../IAccounts/IAccount.csproj"
+    },
+    "IBase/1.0.0": {
+      "type": "project",
+      "path": "../IBase/IBase.csproj",
+      "msbuildProject": "../IBase/IBase.csproj"
+    },
+    "ICosts/1.0.0": {
+      "type": "project",
+      "path": "../ICosts/ICosts.csproj",
+      "msbuildProject": "../ICosts/ICosts.csproj"
+    },
+    "IIncome/1.0.0": {
+      "type": "project",
+      "path": "../IIncome/IIncome.csproj",
+      "msbuildProject": "../IIncome/IIncome.csproj"
+    }
+  },
+  "projectFileDependencyGroups": {
+    ".NETCoreApp,Version=v3.1": [
+      "AccountImplement >= 1.0.0",
+      "IAccount >= 1.0.0"
+    ]
+  },
+  "packageFolders": {
+    "C:\\Users\\MaynskiyAP\\.nuget\\packages\\": {}
+  },
+  "project": {
+    "version": "1.0.0",
+    "restore": {
+      "projectUniqueName": "C:\\Users\\MaynskiyAP\\Source\\Repos\\PersonalAcounting\\PersonalAcounting\\IDataLoader\\IDataLoader.csproj",
+      "projectName": "IDataLoader",
+      "projectPath": "C:\\Users\\MaynskiyAP\\Source\\Repos\\PersonalAcounting\\PersonalAcounting\\IDataLoader\\IDataLoader.csproj",
+      "packagesPath": "C:\\Users\\MaynskiyAP\\.nuget\\packages\\",
+      "outputPath": "C:\\Users\\MaynskiyAP\\Source\\Repos\\PersonalAcounting\\PersonalAcounting\\IDataLoader\\obj\\",
+      "projectStyle": "PackageReference",
+      "configFilePaths": [
+        "C:\\Users\\MaynskiyAP\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+      ],
+      "originalTargetFrameworks": [
+        "netcoreapp3.1"
+      ],
+      "sources": {
+        "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+        "https://api.nuget.org/v3/index.json": {}
+      },
+      "frameworks": {
+        "netcoreapp3.1": {
+          "targetAlias": "netcoreapp3.1",
+          "projectReferences": {
+            "C:\\Users\\MaynskiyAP\\Source\\Repos\\PersonalAcounting\\PersonalAcounting\\AccountsImplement\\AccountImplement.csproj": {
+              "projectPath": "C:\\Users\\MaynskiyAP\\Source\\Repos\\PersonalAcounting\\PersonalAcounting\\AccountsImplement\\AccountImplement.csproj"
+            },
+            "C:\\Users\\MaynskiyAP\\Source\\Repos\\PersonalAcounting\\PersonalAcounting\\IAccounts\\IAccount.csproj": {
+              "projectPath": "C:\\Users\\MaynskiyAP\\Source\\Repos\\PersonalAcounting\\PersonalAcounting\\IAccounts\\IAccount.csproj"
+            }
+          }
+        }
+      },
+      "warningProperties": {
+        "warnAsError": [
+          "NU1605"
+        ]
+      }
+    },
+    "frameworks": {
+      "netcoreapp3.1": {
+        "targetAlias": "netcoreapp3.1",
+        "imports": [
+          "net461",
+          "net462",
+          "net47",
+          "net471",
+          "net472",
+          "net48"
+        ],
+        "assetTargetFallback": true,
+        "warn": true,
+        "frameworkReferences": {
+          "Microsoft.NETCore.App": {
+            "privateAssets": "all"
+          }
+        },
+        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.206\\RuntimeIdentifierGraph.json"
+      }
+    }
+  }
+}

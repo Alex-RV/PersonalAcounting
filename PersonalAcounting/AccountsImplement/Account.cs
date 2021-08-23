@@ -51,6 +51,7 @@ namespace Account
         public DateTime CreateDate
         {
             get { return _createDate; }
+            set { _createDate = value; }
         }
 
         public IIncomeList Incomes
