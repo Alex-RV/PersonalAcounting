@@ -5,8 +5,8 @@
              xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
              xmlns:local="clr-namespace:AccountControl.Views"
              xmlns:res="clr-namespace:AccountControl.Properties"
-             xmlns:localIncome="clr-namespace:IncomeControls.Views;assembly=IncomeControls"
-             xmlns:localCosts="clr-namespace:CostsControls.View;assembly=CostsControls"
+             xmlns:income="clr-namespace:IncomeControls.Views;assembly=IncomeControls"
+             xmlns:costs="clr-namespace:CostsControls.View;assembly=CostsControls"
              xmlns:conv="clr-namespace:WPFHelper.Converters;assembly=WPFHelper"
              mc:Ignorable="d" 
              d:DesignHeight="450" d:DesignWidth="800">
@@ -17,6 +17,14 @@
                 <Setter Property="Padding" Value="5,0"/>
                 <Setter Property="Background" Value="White"/>
                 <Setter Property="BorderBrush" Value="Gray"/>
+            </Style.Setters>
+        </Style>
+
+        <Style TargetType="RadioButton" BasedOn="{StaticResource MenuButtonTheme}">
+            <Style.Setters>
+                <Setter Property="Height" Value="50"/>
+                <Setter Property="Foreground" Value="White"/>
+                <Setter Property="FontSize" Value="22"/>
             </Style.Setters>
         </Style>
     </UserControl.Resources>
@@ -41,12 +49,12 @@
                        Margin="20,0,0,0"/>
 
             <Expander
-            Grid.Column="0"
-            Grid.Row="1"
-            IsExpanded="True">
+                Grid.Column="0"
+                Grid.Row="1"
+                IsExpanded="True">
                 <Border
-                BorderBrush="Gray"
-                BorderThickness="1">
+                    BorderBrush="Gray"
+                    BorderThickness="1">
                     <Grid>
                         <Grid.RowDefinitions>
                             <RowDefinition Height="*"/>
@@ -54,29 +62,16 @@
                         </Grid.RowDefinitions>
                         <StackPanel>
                             <RadioButton 
-                        Command="{Binding Path=IncomeCommand}"
-                        Content="{x:Static res:Resources.Income}"
-                        Height="50"
-                        Foreground="White"
-                        FontSize="22"
-                        Style="{StaticResource MenuButtonTheme}"
-                        />
-
-                        <RadioButton
-                        Command="{Binding Path=CostsCommand}"
-                        Content="{x:Static res:Resources.Costs}"
-                        Height="50"
-                        Foreground="White"
-                        FontSize="22"
-                        Style="{StaticResource MenuButtonTheme}"/>
+                                Command="{Binding Path=IncomeCommand}"
+                                Content="{x:Static res:Resources.Income}"/>      
 
                             <RadioButton
-                        Command="{Binding Path=AccountShortCommand}"
-                        Content="{x:Static res:Resources.InfoAccount}"
-                        Height="50"
-                        Foreground="White"
-                        FontSize="22"
-                        Style="{StaticResource MenuButtonTheme}"/>
+                                Command="{Binding Path=CostsCommand}"
+                                Content="{x:Static res:Resources.Costs}"/>
+
+                            <RadioButton
+                                Command="{Binding Path=AccountShortCommand}"
+                                Content="{x:Static res:Resources.InfoAccount}"/>
 
                         </StackPanel>
                         
@@ -94,24 +89,24 @@
 
             </Expander>
             <Grid 
-            Grid.Column="1"
-            Grid.Row="1">
+                Grid.Column="1"
+                Grid.Row="1">
                 <local:AccountShortView
-                Visibility="{Binding Path=VisibleShortView, Converter={x:Static conv:BoolToVisible.Instance}}"/>
+                    Visibility="{Binding Path=VisibleShortView, Converter={x:Static conv:BoolToVisible.Instance}}"/>
 
-                <localIncome:IncomeView
-                DataContext="{Binding Path=Income}"
-                Visibility="{Binding 
-                Path=DataContext.VisibleIncomeView, 
-                Converter={x:Static conv:BoolToVisible.Instance},
-                RelativeSource={RelativeSource Mode=FindAncestor, AncestorType=UserControl}}"/>
+                <income:IncomeView
+                    DataContext="{Binding Path=Income}"
+                    Visibility="{Binding 
+                    Path=DataContext.VisibleIncomeView, 
+                    Converter={x:Static conv:BoolToVisible.Instance},
+                    RelativeSource={RelativeSource Mode=FindAncestor, AncestorType=UserControl}}"/>
 
-                <localCosts:CostView
-                DataContext="{Binding Path=Costs}"
-                Visibility="{Binding 
-                Path=DataContext.VisibleCostView, 
-                Converter={x:Static conv:BoolToVisible.Instance},
-                RelativeSource={RelativeSource Mode=FindAncestor, AncestorType=UserControl}}"/>
+                <costs:CostView
+                    DataContext="{Binding Path=Costs}"
+                    Visibility="{Binding 
+                    Path=DataContext.VisibleCostView, 
+                    Converter={x:Static conv:BoolToVisible.Instance},
+                    RelativeSource={RelativeSource Mode=FindAncestor, AncestorType=UserControl}}"/>
 
             </Grid>
 

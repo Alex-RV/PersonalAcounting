@@ -35,3 +35,4 @@ C:\Users\Alex\source\repos\Alex-RV\PersonalAcounting\PersonalAcounting\BaseImple
 C:\Users\Alex\source\repos\Alex-RV\PersonalAcounting\PersonalAcounting\BaseImplements\obj\Debug\netcoreapp3.1\BaseImplement.csproj.CopyComplete
 C:\Users\Alex\source\repos\Alex-RV\PersonalAcounting\PersonalAcounting\BaseImplements\obj\Debug\netcoreapp3.1\BaseImplement.dll
 C:\Users\Alex\source\repos\Alex-RV\PersonalAcounting\PersonalAcounting\BaseImplements\obj\Debug\netcoreapp3.1\BaseImplement.pdb
+D:\Work\PersonalAcounting\PersonalAcounting\BaseImplements\obj\Debug\netcoreapp3.1\BaseImplement.csproj.AssemblyReference.cache

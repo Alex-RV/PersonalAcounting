@@ -24,7 +24,6 @@ namespace CostsControls.ViewModels
         #region constructor
         public CostsViewModel(ICostsList list, ICostsEditor CostEditor, ICostsFabric CostFabric)
         {
-            _list = list;
             _costEditor = CostEditor;
             _costFabric = CostFabric;
             InitializeItems(list);

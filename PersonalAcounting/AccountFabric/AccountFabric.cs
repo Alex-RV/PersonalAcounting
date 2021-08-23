@@ -23,6 +23,7 @@ namespace Account
         {
             Account result = new Account();
             result.Incomes = _incomeFabric.CreateNewList();
+            result.Costs = _costsFabric.CreateNewList();
             return result;
         }
 

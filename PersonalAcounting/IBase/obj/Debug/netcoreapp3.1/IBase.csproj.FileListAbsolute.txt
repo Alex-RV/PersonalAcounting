@@ -25,3 +25,4 @@ C:\Users\Alex\source\repos\Alex-RV\PersonalAcounting\PersonalAcounting\IBase\obj
 C:\Users\Alex\source\repos\Alex-RV\PersonalAcounting\PersonalAcounting\IBase\obj\Debug\netcoreapp3.1\IBase.csproj.CoreCompileInputs.cache
 C:\Users\Alex\source\repos\Alex-RV\PersonalAcounting\PersonalAcounting\IBase\obj\Debug\netcoreapp3.1\IBase.dll
 C:\Users\Alex\source\repos\Alex-RV\PersonalAcounting\PersonalAcounting\IBase\obj\Debug\netcoreapp3.1\IBase.pdb
+D:\Work\PersonalAcounting\PersonalAcounting\IBase\obj\Debug\netcoreapp3.1\IBase.csproj.AssemblyReference.cache

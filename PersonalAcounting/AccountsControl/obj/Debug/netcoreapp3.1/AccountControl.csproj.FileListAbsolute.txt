@@ -106,3 +106,7 @@ C:\Users\Alex\source\repos\Alex-RV\PersonalAcounting\PersonalAcounting\AccountsC
 C:\Users\Alex\source\repos\Alex-RV\PersonalAcounting\PersonalAcounting\AccountsControl\obj\Debug\netcoreapp3.1\AccountControl.csproj.CopyComplete
 C:\Users\Alex\source\repos\Alex-RV\PersonalAcounting\PersonalAcounting\AccountsControl\obj\Debug\netcoreapp3.1\AccountControl.dll
 C:\Users\Alex\source\repos\Alex-RV\PersonalAcounting\PersonalAcounting\AccountsControl\obj\Debug\netcoreapp3.1\AccountControl.pdb
+D:\Work\PersonalAcounting\PersonalAcounting\AccountsControl\bin\Debug\netcoreapp3.1\CostsControls.dll
+D:\Work\PersonalAcounting\PersonalAcounting\AccountsControl\bin\Debug\netcoreapp3.1\ICosts.dll
+D:\Work\PersonalAcounting\PersonalAcounting\AccountsControl\bin\Debug\netcoreapp3.1\CostsControls.pdb
+D:\Work\PersonalAcounting\PersonalAcounting\AccountsControl\bin\Debug\netcoreapp3.1\ICosts.pdb

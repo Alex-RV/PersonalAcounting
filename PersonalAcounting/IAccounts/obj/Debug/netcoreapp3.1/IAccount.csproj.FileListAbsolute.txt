@@ -44,3 +44,5 @@ C:\Users\Alex\source\repos\Alex-RV\PersonalAcounting\PersonalAcounting\IAccounts
 C:\Users\Alex\source\repos\Alex-RV\PersonalAcounting\PersonalAcounting\IAccounts\obj\Debug\netcoreapp3.1\IAccount.csproj.CopyComplete
 C:\Users\Alex\source\repos\Alex-RV\PersonalAcounting\PersonalAcounting\IAccounts\obj\Debug\netcoreapp3.1\IAccount.dll
 C:\Users\Alex\source\repos\Alex-RV\PersonalAcounting\PersonalAcounting\IAccounts\obj\Debug\netcoreapp3.1\IAccount.pdb
+D:\Work\PersonalAcounting\PersonalAcounting\IAccounts\bin\Debug\netcoreapp3.1\ICosts.dll
+D:\Work\PersonalAcounting\PersonalAcounting\IAccounts\bin\Debug\netcoreapp3.1\ICosts.pdb

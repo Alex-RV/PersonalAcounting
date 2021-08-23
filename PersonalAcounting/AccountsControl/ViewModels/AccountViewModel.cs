@@ -124,7 +124,7 @@ namespace AccountControl.ViewModels
                     });
                 }
 
-                return _incomeCommand;
+                return _costCommand;
             }
         }
 
