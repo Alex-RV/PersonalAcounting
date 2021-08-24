@@ -16,5 +16,5 @@ TRACE;DEBUG;NETCOREAPP;NETCOREAPP3_1;
 199681526039
 Views\AccountEditorView.xaml;Views\AccountShortView.xaml;Views\AccountsView.xaml;Views\AccountView.xaml;
 
-True
+False
 

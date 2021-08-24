@@ -21,13 +21,13 @@
 
         <StackPanel
             Grid.Row="0"
-            Grid.Column="1"
+            Grid.Column="0"
             VerticalAlignment="Bottom"
             Orientation="Horizontal">
             <Button  
                 Width="Auto"
                 Command="{Binding Path=AddDirectoryCommand}"
-                Content="Добавить категорию"
+                Content="Добавить"
                 BorderBrush="White" 
                 BorderThickness="0.5"
                 Foreground="White"
@@ -37,7 +37,7 @@
             <Button
                 Width="Auto"
                 Command="{Binding Path=DeleteCommand}"
-                Content="Удалить категорию"
+                Content="Удалить"
                 BorderBrush="White" 
                 BorderThickness="0.5"
                 Foreground="White"
@@ -47,7 +47,7 @@
             <Button
                 Width="Auto"
                 Command="{Binding Path=EditorCommand}"
-                Content="Изменить категорию"
+                Content="Изменить"
                 BorderBrush="White" 
                 BorderThickness="0.5"
                 Foreground="White"

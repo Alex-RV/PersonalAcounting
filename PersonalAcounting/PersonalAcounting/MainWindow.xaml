@@ -6,6 +6,7 @@
         xmlns:account="clr-namespace:AccountControl.Views;assembly=AccountControl"
         xmlns:conv="clr-namespace:WPFHelper.Converters;assembly=WPFHelper"
         xmlns:local="clr-namespace:PersonalAcounting"
+        xmlns:directories="clr-namespace:DirectoryControl.Views;assembly=DirectoryControl"
         mc:Ignorable="d"
         Background="Transparent"
         MinHeight="400" MinWidth="825"
@@ -15,6 +16,7 @@
     <Border Background="#07021c"
             CornerRadius="25">
         <Grid>
+            
             <account:AccountsView 
                     DataContext="{Binding Path=Accounts}"
                     Visibility="{Binding 
@@ -25,6 +27,25 @@
                     DataContext="{Binding Path=Accounts.SelectedItem}"
                     Visibility="{Binding 
                         Path=DataContext.VisibleAccount, 
+                        Converter={x:Static conv:BoolToVisible.Instance},
+                        RelativeSource={RelativeSource Mode=FindAncestor, AncestorType=Window}}"/>
+            <Button x:Name="button" 
+                    HorizontalAlignment="Left" 
+                    Margin="36,32,0,70" 
+                    VerticalAlignment="Bottom" 
+                    Width="75"
+                    Background="Transparent"
+                    Command="{Binding Path=OpenDirectoryCommand}" 
+                    Visibility="{Binding 
+                        Path=VisibleButtonOpenDirectory, 
+                        Converter={x:Static conv:BoolToVisible.Instance}}">
+                    
+                <Image Source="/outline_settings_white_48dp.png" RenderTransformOrigin="0.383,5.786" />
+            </Button>
+            <directories:DirectoriesView
+                    DataContext="{Binding Path=Directory}"
+                    Visibility="{Binding 
+                        Path=DataContext.VisibleDirectory, 
                         Converter={x:Static conv:BoolToVisible.Instance},
                         RelativeSource={RelativeSource Mode=FindAncestor, AncestorType=Window}}"/>
         </Grid>

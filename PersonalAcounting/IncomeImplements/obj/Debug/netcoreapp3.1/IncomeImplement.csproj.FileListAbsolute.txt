@@ -29,7 +29,6 @@ D:\Work\PersonalAcounting\PersonalAcounting\IncomeImplements\bin\Debug\netcoreap
 D:\Work\PersonalAcounting\PersonalAcounting\IncomeImplements\bin\Debug\netcoreapp3.1\BaseImplement.pdb
 D:\Work\PersonalAcounting\PersonalAcounting\IncomeImplements\bin\Debug\netcoreapp3.1\IIncome.pdb
 D:\Work\PersonalAcounting\PersonalAcounting\IncomeImplements\bin\Debug\netcoreapp3.1\IBase.pdb
-D:\Work\PersonalAcounting\PersonalAcounting\IncomeImplements\obj\Debug\netcoreapp3.1\IncomeImplement.csproj.AssemblyReference.cache
 D:\Work\PersonalAcounting\PersonalAcounting\IncomeImplements\obj\Debug\netcoreapp3.1\IncomeImplement.csproj.CopyComplete
 C:\Users\Alex\source\repos\Alex-RV\PersonalAcounting\PersonalAcounting\IncomeImplements\bin\Debug\netcoreapp3.1\IncomeImplement.deps.json
 C:\Users\Alex\source\repos\Alex-RV\PersonalAcounting\PersonalAcounting\IncomeImplements\bin\Debug\netcoreapp3.1\IncomeImplement.dll
@@ -48,3 +47,4 @@ C:\Users\Alex\source\repos\Alex-RV\PersonalAcounting\PersonalAcounting\IncomeImp
 C:\Users\Alex\source\repos\Alex-RV\PersonalAcounting\PersonalAcounting\IncomeImplements\obj\Debug\netcoreapp3.1\IncomeImplement.csproj.CopyComplete
 C:\Users\Alex\source\repos\Alex-RV\PersonalAcounting\PersonalAcounting\IncomeImplements\obj\Debug\netcoreapp3.1\IncomeImplement.dll
 C:\Users\Alex\source\repos\Alex-RV\PersonalAcounting\PersonalAcounting\IncomeImplements\obj\Debug\netcoreapp3.1\IncomeImplement.pdb
+D:\Work\PersonalAcounting\PersonalAcounting\IncomeImplements\obj\Debug\netcoreapp3.1\IncomeImplement.csproj.AssemblyReference.cache

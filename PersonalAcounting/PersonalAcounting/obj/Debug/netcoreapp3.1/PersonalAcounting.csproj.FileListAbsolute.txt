@@ -170,3 +170,13 @@ D:\Work\PersonalAcounting\PersonalAcounting\PersonalAcounting\bin\Debug\netcorea
 D:\Work\PersonalAcounting\PersonalAcounting\PersonalAcounting\bin\Debug\netcoreapp3.1\IDataLoader.dll
 D:\Work\PersonalAcounting\PersonalAcounting\PersonalAcounting\bin\Debug\netcoreapp3.1\DataLoaderImlement.pdb
 D:\Work\PersonalAcounting\PersonalAcounting\PersonalAcounting\bin\Debug\netcoreapp3.1\IDataLoader.pdb
+D:\Work\PersonalAcounting\PersonalAcounting\PersonalAcounting\obj\Debug\netcoreapp3.1\PersonalAcounting.Properties.Resources.resources
+D:\Work\PersonalAcounting\PersonalAcounting\PersonalAcounting\obj\Debug\netcoreapp3.1\PersonalAcounting.csproj.GenerateResource.cache
+D:\Work\PersonalAcounting\PersonalAcounting\PersonalAcounting\bin\Debug\netcoreapp3.1\DirectoryControl.dll
+D:\Work\PersonalAcounting\PersonalAcounting\PersonalAcounting\bin\Debug\netcoreapp3.1\DirectoryImplement.dll
+D:\Work\PersonalAcounting\PersonalAcounting\PersonalAcounting\bin\Debug\netcoreapp3.1\FactoryDirectory.dll
+D:\Work\PersonalAcounting\PersonalAcounting\PersonalAcounting\bin\Debug\netcoreapp3.1\IDirectory.dll
+D:\Work\PersonalAcounting\PersonalAcounting\PersonalAcounting\bin\Debug\netcoreapp3.1\DirectoryControl.pdb
+D:\Work\PersonalAcounting\PersonalAcounting\PersonalAcounting\bin\Debug\netcoreapp3.1\DirectoryImplement.pdb
+D:\Work\PersonalAcounting\PersonalAcounting\PersonalAcounting\bin\Debug\netcoreapp3.1\FactoryDirectory.pdb
+D:\Work\PersonalAcounting\PersonalAcounting\PersonalAcounting\bin\Debug\netcoreapp3.1\IDirectory.pdb

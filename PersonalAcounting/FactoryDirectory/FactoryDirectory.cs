@@ -8,7 +8,7 @@ namespace Directory
     {
         #region fields
         private List<DirectoryType> _types;
-
+        private EditorDirectory _editor;
         private List<Directory> _directories;
         #endregion fields
 
@@ -40,6 +40,15 @@ namespace Directory
         public IEnumerable<IDirectory> GetDirectories()
         {
             return _directories;
+        }
+
+        public IEditorDirectory GetEditorDirectory()
+        {
+            if (_editor == null)
+            {
+                _editor = new EditorDirectory();
+            }
+            return _editor;
         }
         #endregion methods
     }

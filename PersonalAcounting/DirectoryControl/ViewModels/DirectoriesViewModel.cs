@@ -9,18 +9,18 @@ namespace DirectoryControl.ViewModels
     public class DirectoriesViewModel : WPFHelper.ViewModelBase
     {
         #region fields
-        private ObservableCollection<DirectoryViewModel> _items;
+        private ObservableCollection<DirectoryViewModel> _items = new ObservableCollection<DirectoryViewModel>();
         private DirectoryViewModel _selectedItem;
 
-        private IDirectoryItem _directoryEditor;
+        private IEditorDirectory _directoryEditor;
         private IFactoryDirectory _directoryFabric;
-        private WPFHelper.RelayCommand _editCommand;
-        private bool _visibleEditor;
+        private WPFHelper.RelayCommand _directoryCommand;
+        private bool _visibleDirectory = false;
         #endregion fields
 
 
         #region constructor
-        public DirectoriesViewModel(IEnumerable<IDirectory> directories, IDirectoryItem directoryEditor, IFactoryDirectory directoryFabric)
+        public DirectoriesViewModel(IEnumerable<IDirectory> directories, IEditorDirectory directoryEditor, IFactoryDirectory directoryFabric)
         {
             _directoryEditor = directoryEditor;
             _directoryFabric = directoryFabric;
@@ -49,33 +49,40 @@ namespace DirectoryControl.ViewModels
             }
         }
 
-        public WPFHelper.RelayCommand EditCommand
+        /// <summary>
+        /// нажатие на кнопку изменить
+        /// </summary>
+        public WPFHelper.RelayCommand ChangeDirectoryItems
         {
             get
             {
-                if (_editCommand == null)
+                if (_directoryCommand == null)
                 {
-                    _editCommand = new WPFHelper.RelayCommand("", (p) =>
+                    _directoryCommand = new WPFHelper.RelayCommand("", (p) =>
                     {
+                        VisibleDirectory = true;
                         if(SelectedItem != null)
                         {
-                            VisibleEditor = true;
+                            
                         }
                     });
                 }
-                return _editCommand;
+                return _directoryCommand;
             }
         }
 
-        public bool VisibleEditor
+        /// <summary>
+        /// Видимость окна эллементов справочника
+        /// </summary>
+        public bool VisibleDirectory
         { 
-            get { return _visibleEditor; }
+            get { return _visibleDirectory; }
             set
             {
-                if (_visibleEditor != value)
+                if (_visibleDirectory != value)
                 {
-                    _visibleEditor = value;
-                    OnPropertyChanged(nameof(VisibleEditor));
+                    _visibleDirectory = value;
+                    OnPropertyChanged(nameof(VisibleDirectory));
                 }
             }
         }

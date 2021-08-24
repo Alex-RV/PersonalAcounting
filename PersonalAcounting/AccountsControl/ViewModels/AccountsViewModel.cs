@@ -80,12 +80,7 @@ namespace AccountControl.ViewModels
                     {
                         VisibleEditor = true;
 
-                        if (Editor == null)
-                        {
-                            Editor = new AccountEditorViewModel(_accountEditor);
-                            Editor.EndEditing += Editor_EndEditing;
-                        }
-
+                        InitEditor();
 
                         Editor.SetEditingAccount(_accountFabric.CreateNew());
                         Editor.IsNew = true;
@@ -134,6 +129,8 @@ namespace AccountControl.ViewModels
                         {
                             return;
                         }
+                        InitEditor();
+
                         VisibleEditor = true;
                         Editor.SetEditingAccount(SelectedItem.GetModel());
                         Editor.IsNew = false;
@@ -183,6 +180,16 @@ namespace AccountControl.ViewModels
         #endregion properties
 
         #region metods
+        private void InitEditor()
+        {
+            if (Editor == null)
+            {
+                Editor = new AccountEditorViewModel(_accountEditor);
+                Editor.EndEditing += Editor_EndEditing;
+            }
+
+        }
+
         /// <summary>
         /// Инициализация коллекции
         /// </summary>

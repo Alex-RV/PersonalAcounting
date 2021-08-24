@@ -12,9 +12,13 @@
           "AccountFabric": "1.0.0",
           "CostsFabric": "1.0.0",
           "DataLoaderImlement": "1.0.0",
+          "DirectoryControl": "1.0.0",
+          "DirectoryImplement": "1.0.0",
+          "FactoryDirectory": "1.0.0",
           "IAccount": "1.0.0",
           "ICosts": "1.0.0",
           "IDataLoader": "1.0.0",
+          "IDirectory": "1.0.0",
           "IIncome": "1.0.0",
           "IncomeFabric": "1.0.0",
           "WPFHelper": "1.0.0"
@@ -100,6 +104,32 @@
           "DataLoaderImlement.dll": {}
         }
       },
+      "DirectoryControl/1.0.0": {
+        "dependencies": {
+          "IDirectory": "1.0.0",
+          "WPFHelper": "1.0.0"
+        },
+        "runtime": {
+          "DirectoryControl.dll": {}
+        }
+      },
+      "DirectoryImplement/1.0.0": {
+        "dependencies": {
+          "IDirectory": "1.0.0"
+        },
+        "runtime": {
+          "DirectoryImplement.dll": {}
+        }
+      },
+      "FactoryDirectory/1.0.0": {
+        "dependencies": {
+          "DirectoryImplement": "1.0.0",
+          "IDirectory": "1.0.0"
+        },
+        "runtime": {
+          "FactoryDirectory.dll": {}
+        }
+      },
       "IAccount/1.0.0": {
         "dependencies": {
           "ICosts": "1.0.0",
@@ -129,6 +159,11 @@
         },
         "runtime": {
           "IDataLoader.dll": {}
+        }
+      },
+      "IDirectory/1.0.0": {
+        "runtime": {
+          "IDirectory.dll": {}
         }
       },
       "IIncome/1.0.0": {
@@ -219,6 +254,21 @@
       "serviceable": false,
       "sha512": ""
     },
+    "DirectoryControl/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    },
+    "DirectoryImplement/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    },
+    "FactoryDirectory/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    },
     "IAccount/1.0.0": {
       "type": "project",
       "serviceable": false,
@@ -235,6 +285,11 @@
       "sha512": ""
     },
     "IDataLoader/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    },
+    "IDirectory/1.0.0": {
       "type": "project",
       "serviceable": false,
       "sha512": ""

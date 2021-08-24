@@ -1,0 +1,47 @@
+{
+  "runtimeTarget": {
+    "name": ".NETCoreApp,Version=v3.1",
+    "signature": ""
+  },
+  "compilationOptions": {},
+  "targets": {
+    ".NETCoreApp,Version=v3.1": {
+      "DirectoryControl/1.0.0": {
+        "dependencies": {
+          "IDirectory": "1.0.0",
+          "WPFHelper": "1.0.0"
+        },
+        "runtime": {
+          "DirectoryControl.dll": {}
+        }
+      },
+      "IDirectory/1.0.0": {
+        "runtime": {
+          "IDirectory.dll": {}
+        }
+      },
+      "WPFHelper/1.0.0": {
+        "runtime": {
+          "WPFHelper.dll": {}
+        }
+      }
+    }
+  },
+  "libraries": {
+    "DirectoryControl/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    },
+    "IDirectory/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    },
+    "WPFHelper/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    }
+  }
+}

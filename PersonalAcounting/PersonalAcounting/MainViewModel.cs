@@ -2,6 +2,7 @@
 using System.Collections.Generic;
 using System.Text;
 using AccountControl.ViewModels;
+using Directory;
 
 namespace PersonalAcounting
 {
@@ -15,13 +16,17 @@ namespace PersonalAcounting
         private AccountsViewModel _accounts;
         private bool _visibleAccounts = false;
         private bool _visibleAccount = false;
+        private bool _visibleDirectory = false;
+        private bool _visibleButtonOpenDirectory = true;
+        private WPFHelper.RelayCommand _openDirectoryCommand;
+        private DirectoryControl.ViewModels.DirectoriesViewModel _directory;
         #endregion fields
         DataLoader.Loader loader;
         #region constructor
         public MainViewModel()
         {
             loader = new DataLoader.Loader();
-            loader.PathToFile = "C:\\Experiments\\test.ff";
+            loader.PathToFile = "C:\\Users\\alexs\\Documents\\test.ff";
 
             _fabricsContainer = new FabricsContainer(loader);
 
@@ -48,6 +53,27 @@ namespace PersonalAcounting
         }
 
         /// <summary>
+        /// Команда для кнопки настройки счета
+        /// </summary>
+        public WPFHelper.RelayCommand OpenDirectoryCommand
+        {
+            get
+            {
+                if (_openDirectoryCommand == null)
+                {
+                    _openDirectoryCommand = new WPFHelper.RelayCommand("", (p) =>
+                    {
+                        VisibleAccounts = false;
+                        VisibleAccount = false;
+                        VisibleDirectory = true;
+                        VisibleButtonOpenDirectory = false;
+                    });
+                }
+                return _openDirectoryCommand;
+            }
+        }
+
+        /// <summary>
         /// Видимость списка счетов
         /// </summary>
         public bool VisibleAccounts
@@ -62,7 +88,62 @@ namespace PersonalAcounting
                 }
             }
         }
-        
+
+        /// <summary>
+        /// Справочники
+        /// </summary>
+        public DirectoryControl.ViewModels.DirectoriesViewModel Directory
+        {
+            get 
+            {
+                if (_directory == null)
+                {
+                    InitlizeDirectories();
+                }
+                return _directory; }
+            set
+            {
+                if (_directory != value)
+                {
+                    VisibleButtonOpenDirectory = false;
+                    _directory = value;
+                    OnPropertyChanged(nameof(Directory));
+                }
+            }
+        }
+
+        /// <summary>
+        /// Видимость директории
+        /// </summary>
+        public bool VisibleDirectory
+        {
+            get { return _visibleDirectory; }
+            set
+            {
+                if (_visibleDirectory != value)
+                {
+                    _visibleDirectory = value;
+                    OnPropertyChanged(nameof(VisibleDirectory));
+                }
+            }
+        }
+
+        /// <summary>
+        /// Видимость кнопки для открытия директории
+        /// </summary>
+        public bool VisibleButtonOpenDirectory
+        {
+            get { return _visibleButtonOpenDirectory; }
+            set
+            {
+                if (_visibleButtonOpenDirectory != value)
+                {
+                    _visibleButtonOpenDirectory = value;
+                    OnPropertyChanged(nameof(VisibleButtonOpenDirectory));
+                }
+            }
+        }
+
         /// <summary>
         /// Видимость счета
         /// </summary>
@@ -92,6 +173,11 @@ namespace PersonalAcounting
                 _fabricsContainer.AccountFabric);
             VisibleAccounts = true;
             Accounts.ChangedActivAcount += Accounts_ChangedActivAcount;
+        }
+
+        private void InitlizeDirectories()
+        {
+            Directory = new DirectoryControl.ViewModels.DirectoriesViewModel(_fabricsContainer.DirectoryFabric.GetDirectories(), _fabricsContainer.DirectoryFabric.GetEditorDirectory(), _fabricsContainer.DirectoryFabric);
         }
 
 

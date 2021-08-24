@@ -11,6 +11,8 @@ namespace Directory
         /// </summary>
         IEnumerable<IDirectory> GetDirectories();
 
+        IEditorDirectory GetEditorDirectory();
+
         /// <summary>
         /// Создает новый элемент спровочника
         /// </summary>
