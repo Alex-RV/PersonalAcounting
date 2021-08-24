@@ -105,7 +105,6 @@ namespace PersonalAcounting
             {
                 if (_directory != value)
                 {
-                    VisibleButtonOpenDirectory = false;
                     _directory = value;
                     OnPropertyChanged(nameof(Directory));
                 }
