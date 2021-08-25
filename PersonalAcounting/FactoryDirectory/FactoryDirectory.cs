@@ -16,16 +16,17 @@ namespace Directory
         public FactoryDirectory()
         {
             _types = new List<DirectoryType>();
-            _types.Add(new DirectoryType(Res.Resources.IncomeType));
-            _types.Add(new DirectoryType(Res.Resources.CostsType));
+            DirectoryType incomeType = new DirectoryType(Res.Resources.IncomeType);
+            _types.Add(incomeType);
+            DirectoryType costsType = new DirectoryType(Res.Resources.CostsType);
+            _types.Add(costsType);
 
              _directories = new List<Directory>();
-            foreach (var item in _types)
+            foreach (DirectoryType directoryType in _types)
             {
-                _directories.Add(new Directory(item)
-                {
-                    Name = item.Name
-                });
+                Directory newDirectory = new Directory(directoryType);
+                newDirectory.Name = directoryType.Name;
+                _directories.Add(newDirectory);
             }
         }
 

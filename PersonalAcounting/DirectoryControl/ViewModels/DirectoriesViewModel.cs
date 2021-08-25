@@ -26,7 +26,7 @@ namespace DirectoryControl.ViewModels
             _directoryFabric = directoryFabric;
             foreach (IDirectory item in directories)
             {
-                DirectoryViewModel newItem = new DirectoryViewModel(item);
+                DirectoryViewModel newItem = new DirectoryViewModel(item,directoryEditor);
                 Items.Add(newItem);
             }
 
@@ -34,8 +34,13 @@ namespace DirectoryControl.ViewModels
         #endregion constructor
 
         #region properies
+
         public ObservableCollection<DirectoryViewModel> Items { get { return _items; } }
 
+
+        /// <summary>
+        /// Выбранный элемент
+        /// </summary>
         public DirectoryViewModel SelectedItem
         {
             get { return _selectedItem; }
@@ -60,10 +65,9 @@ namespace DirectoryControl.ViewModels
                 {
                     _directoryCommand = new WPFHelper.RelayCommand("", (p) =>
                     {
-                        VisibleDirectory = true;
                         if(SelectedItem != null)
                         {
-                            
+                            VisibleDirectory = true;
                         }
                     });
                 }
@@ -87,6 +91,7 @@ namespace DirectoryControl.ViewModels
             }
         }
         #endregion properies
+
 
     }
 }

@@ -1,12 +1,3 @@
-D:\Work\PersonalAcounting\PersonalAcounting\DataImplements\bin\Debug\netcoreapp3.1\DataImplement.deps.json
-D:\Work\PersonalAcounting\PersonalAcounting\DataImplements\bin\Debug\netcoreapp3.1\DataImplement.dll
-D:\Work\PersonalAcounting\PersonalAcounting\DataImplements\bin\Debug\netcoreapp3.1\DataImplement.pdb
-D:\Work\PersonalAcounting\PersonalAcounting\DataImplements\obj\Debug\netcoreapp3.1\DataImplement.GeneratedMSBuildEditorConfig.editorconfig
-D:\Work\PersonalAcounting\PersonalAcounting\DataImplements\obj\Debug\netcoreapp3.1\DataImplement.AssemblyInfoInputs.cache
-D:\Work\PersonalAcounting\PersonalAcounting\DataImplements\obj\Debug\netcoreapp3.1\DataImplement.AssemblyInfo.cs
-D:\Work\PersonalAcounting\PersonalAcounting\DataImplements\obj\Debug\netcoreapp3.1\DataImplement.csproj.CoreCompileInputs.cache
-D:\Work\PersonalAcounting\PersonalAcounting\DataImplements\obj\Debug\netcoreapp3.1\DataImplement.dll
-D:\Work\PersonalAcounting\PersonalAcounting\DataImplements\obj\Debug\netcoreapp3.1\DataImplement.pdb
 C:\Users\MaynskiyAP\source\repos\PersonalAcounting\PersonalAcounting\DataImplements\bin\Debug\netcoreapp3.1\DataImplement.deps.json
 C:\Users\MaynskiyAP\source\repos\PersonalAcounting\PersonalAcounting\DataImplements\bin\Debug\netcoreapp3.1\DataImplement.dll
 C:\Users\MaynskiyAP\source\repos\PersonalAcounting\PersonalAcounting\DataImplements\bin\Debug\netcoreapp3.1\DataImplement.pdb
@@ -15,7 +6,6 @@ C:\Users\MaynskiyAP\source\repos\PersonalAcounting\PersonalAcounting\DataImpleme
 C:\Users\MaynskiyAP\source\repos\PersonalAcounting\PersonalAcounting\DataImplements\obj\Debug\netcoreapp3.1\DataImplement.csproj.CoreCompileInputs.cache
 C:\Users\MaynskiyAP\source\repos\PersonalAcounting\PersonalAcounting\DataImplements\obj\Debug\netcoreapp3.1\DataImplement.dll
 C:\Users\MaynskiyAP\source\repos\PersonalAcounting\PersonalAcounting\DataImplements\obj\Debug\netcoreapp3.1\DataImplement.pdb
-D:\Work\PersonalAcounting\PersonalAcounting\DataImplements\obj\Debug\netcoreapp3.1\DataImplement.csproj.AssemblyReference.cache
 C:\Users\Alex\source\repos\Alex-RV\PersonalAcounting\PersonalAcounting\DataImplements\bin\Debug\netcoreapp3.1\DataImplement.deps.json
 C:\Users\Alex\source\repos\Alex-RV\PersonalAcounting\PersonalAcounting\DataImplements\bin\Debug\netcoreapp3.1\DataImplement.dll
 C:\Users\Alex\source\repos\Alex-RV\PersonalAcounting\PersonalAcounting\DataImplements\bin\Debug\netcoreapp3.1\DataImplement.pdb
@@ -25,3 +15,12 @@ C:\Users\Alex\source\repos\Alex-RV\PersonalAcounting\PersonalAcounting\DataImple
 C:\Users\Alex\source\repos\Alex-RV\PersonalAcounting\PersonalAcounting\DataImplements\obj\Debug\netcoreapp3.1\DataImplement.csproj.CoreCompileInputs.cache
 C:\Users\Alex\source\repos\Alex-RV\PersonalAcounting\PersonalAcounting\DataImplements\obj\Debug\netcoreapp3.1\DataImplement.dll
 C:\Users\Alex\source\repos\Alex-RV\PersonalAcounting\PersonalAcounting\DataImplements\obj\Debug\netcoreapp3.1\DataImplement.pdb
+D:\Work\PersonalAcounting\PersonalAcounting\DataImplements\bin\Debug\netcoreapp3.1\DataImplement.deps.json
+D:\Work\PersonalAcounting\PersonalAcounting\DataImplements\bin\Debug\netcoreapp3.1\DataImplement.dll
+D:\Work\PersonalAcounting\PersonalAcounting\DataImplements\bin\Debug\netcoreapp3.1\DataImplement.pdb
+D:\Work\PersonalAcounting\PersonalAcounting\DataImplements\obj\Debug\netcoreapp3.1\DataImplement.GeneratedMSBuildEditorConfig.editorconfig
+D:\Work\PersonalAcounting\PersonalAcounting\DataImplements\obj\Debug\netcoreapp3.1\DataImplement.AssemblyInfoInputs.cache
+D:\Work\PersonalAcounting\PersonalAcounting\DataImplements\obj\Debug\netcoreapp3.1\DataImplement.AssemblyInfo.cs
+D:\Work\PersonalAcounting\PersonalAcounting\DataImplements\obj\Debug\netcoreapp3.1\DataImplement.csproj.CoreCompileInputs.cache
+D:\Work\PersonalAcounting\PersonalAcounting\DataImplements\obj\Debug\netcoreapp3.1\DataImplement.dll
+D:\Work\PersonalAcounting\PersonalAcounting\DataImplements\obj\Debug\netcoreapp3.1\DataImplement.pdb

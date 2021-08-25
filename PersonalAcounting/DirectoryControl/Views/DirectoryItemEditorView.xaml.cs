@@ -16,9 +16,9 @@ namespace DirectoryControl.Views
     /// <summary>
     /// Interaction logic for EditorDirectoryView.xaml
     /// </summary>
-    public partial class EditorDirectoryView : UserControl
+    public partial class DirectoryItemEditorView : UserControl
     {
-        public EditorDirectoryView()
+        public DirectoryItemEditorView()
         {
             InitializeComponent();
         }

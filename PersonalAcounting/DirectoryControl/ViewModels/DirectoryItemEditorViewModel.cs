@@ -5,7 +5,7 @@ using Directory;
 
 namespace DirectoryControl.ViewModels
 {
-    class DirectoryItemEditorViewModel : WPFHelper.ViewModelBase
+    public class DirectoryItemEditorViewModel : WPFHelper.ViewModelBase
     {
         #region fields
         private IDirectoryItem _directory;
@@ -13,6 +13,7 @@ namespace DirectoryControl.ViewModels
         private int _id;
         private IEditorDirectory _directoryEditor;
         private bool _isNew;
+        private WPFHelper.RelayCommand _acceptDirectoryItemCommand;
         #endregion fields
 
         #region constructor
@@ -49,17 +50,18 @@ namespace DirectoryControl.ViewModels
         }
 
 
-
-        WPFHelper.RelayCommand _acceptCommand;
-        public WPFHelper.RelayCommand AcceptDirectoryCommand
+        /// <summary>
+        /// При нажатии на кнопку применить Directory
+        /// </summary>
+        public WPFHelper.RelayCommand AcceptDirectoryItemCommand
         {
             get
             {
-                if (_acceptCommand == null)
+                if (_acceptDirectoryItemCommand == null)
                 {
-                    _acceptCommand = new WPFHelper.RelayCommand("", (p) => { Accept(); });
+                    _acceptDirectoryItemCommand = new WPFHelper.RelayCommand("", (p) => { Accept(); });
                 }
-                return _acceptCommand;
+                return _acceptDirectoryItemCommand;
             }
         }
 
@@ -70,10 +72,10 @@ namespace DirectoryControl.ViewModels
         /// <summary>
         /// Установка редактируемой категории
         /// </summary>
-        /// <param name="Directory"></param>
-        public void SetEditingDirectory(IDirectoryItem Directory)
+        /// <param name="directory"></param>
+        public void SetEditingDirectory(IDirectoryItem directory)
         {
-            _directory = Directory;
+            _directory = directory;
             Name = _directory.Name;
         }
 

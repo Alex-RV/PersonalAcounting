@@ -83,23 +83,23 @@
     ]
   },
   "packageFolders": {
-    "C:\\Users\\Alex\\.nuget\\packages\\": {},
+    "C:\\Users\\alexs\\.nuget\\packages\\": {},
     "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\Alex\\source\\repos\\Alex-RV\\PersonalAcounting\\PersonalAcounting\\ICostFabric\\CostsFabric.csproj",
+      "projectUniqueName": "D:\\Work\\PersonalAcounting\\PersonalAcounting\\ICostFabric\\CostsFabric.csproj",
       "projectName": "CostsFabric",
-      "projectPath": "C:\\Users\\Alex\\source\\repos\\Alex-RV\\PersonalAcounting\\PersonalAcounting\\ICostFabric\\CostsFabric.csproj",
-      "packagesPath": "C:\\Users\\Alex\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\Alex\\source\\repos\\Alex-RV\\PersonalAcounting\\PersonalAcounting\\ICostFabric\\obj\\",
+      "projectPath": "D:\\Work\\PersonalAcounting\\PersonalAcounting\\ICostFabric\\CostsFabric.csproj",
+      "packagesPath": "C:\\Users\\alexs\\.nuget\\packages\\",
+      "outputPath": "D:\\Work\\PersonalAcounting\\PersonalAcounting\\ICostFabric\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
       ],
       "configFilePaths": [
-        "C:\\Users\\Alex\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Users\\alexs\\AppData\\Roaming\\NuGet\\NuGet.Config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
       ],
@@ -114,11 +114,11 @@
         "netcoreapp3.1": {
           "targetAlias": "netcoreapp3.1",
           "projectReferences": {
-            "C:\\Users\\Alex\\source\\repos\\Alex-RV\\PersonalAcounting\\PersonalAcounting\\CostsImplements\\CostsImplement.csproj": {
-              "projectPath": "C:\\Users\\Alex\\source\\repos\\Alex-RV\\PersonalAcounting\\PersonalAcounting\\CostsImplements\\CostsImplement.csproj"
+            "D:\\Work\\PersonalAcounting\\PersonalAcounting\\CostsImplements\\CostsImplement.csproj": {
+              "projectPath": "D:\\Work\\PersonalAcounting\\PersonalAcounting\\CostsImplements\\CostsImplement.csproj"
             },
-            "C:\\Users\\Alex\\source\\repos\\Alex-RV\\PersonalAcounting\\PersonalAcounting\\ICosts\\ICosts.csproj": {
-              "projectPath": "C:\\Users\\Alex\\source\\repos\\Alex-RV\\PersonalAcounting\\PersonalAcounting\\ICosts\\ICosts.csproj"
+            "D:\\Work\\PersonalAcounting\\PersonalAcounting\\ICosts\\ICosts.csproj": {
+              "projectPath": "D:\\Work\\PersonalAcounting\\PersonalAcounting\\ICosts\\ICosts.csproj"
             }
           }
         }

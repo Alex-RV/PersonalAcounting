@@ -4,6 +4,8 @@
              xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
              xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
              xmlns:local="clr-namespace:DirectoryControl.Views"
+             xmlns:locall="clr-namespace:DirectoryControl.Views"
+             xmlns:conv="clr-namespace:WPFHelper.Converters;assembly=WPFHelper"
              mc:Ignorable="d" 
              d:DesignHeight="450" d:DesignWidth="800">
     <Grid>
@@ -60,7 +62,7 @@
             <ListView 
                     Grid.Row="1"
                     Grid.Column="1"
-                    ItemsSource="{Binding Path=Items}" 
+                    ItemsSource="{Binding Path=ItemsSource}" 
                     SelectedItem="{Binding Path=SelectedItem}"
                     Background="#16224f"
                     ScrollViewer.HorizontalScrollBarVisibility="Visible">
@@ -81,5 +83,16 @@
                 </ListView.View>
             </ListView>
         </ContentControl>
+
+        <local:DirectoryItemEditorView 
+                Grid.Row="3"
+                Grid.ColumnSpan="2"
+                Visibility="{Binding 
+                        Path=DataContext.VisibleDirectoryItemEditor,
+                        Converter={x:Static conv:BoolToVisible.Instance},
+                        RelativeSource={RelativeSource Mode=FindAncestor, 
+                        AncestorType=UserControl}}"
+                DataContext="{Binding Path=Editor}"
+                />
     </Grid>
 </UserControl>
