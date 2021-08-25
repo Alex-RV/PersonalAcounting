@@ -36,16 +36,11 @@ namespace DirectoryControl.ViewModels
         {
             _directory = item;
             _directoryEditor = editor;
-            //foreach (IDirectory item in directories)
-            //{
-            //    DirectoryViewModel newItem = new DirectoryViewModel(item);
-            //    Items.Add(newItem);
-            //}
         }
 
         public DirectoryViewModel(Directory.IDirectory directory, IDirectoryItem directoryItem, IDirectoryType directoryType, IEditorDirectory editor)
         {
-            //_directoryEditor = editor;
+            
             _directoryType = directoryType;
             _directoryItem = directoryItem;
 
@@ -53,9 +48,14 @@ namespace DirectoryControl.ViewModels
         #endregion contructor
 
         #region properies
-
+        /// <summary>
+        /// Добавление коллекции
+        /// </summary>
         public ObservableCollection<DirectoryItemViewModel> ItemsSource { get { return _items; } }
 
+        /// <summary>
+        /// Выбранный справочник
+        /// </summary>
         public DirectoryItemViewModel SelectedItem
         {
             get { return _selectedItem; }
@@ -69,7 +69,6 @@ namespace DirectoryControl.ViewModels
             }
         }
 
-        //public ObservableCollection<DirectoryItemViewModel> Type { get { return _type; } }
 
         /// <summary>
         /// Действие при нажатии на кнопку ДОБАВИТЬ
@@ -87,6 +86,7 @@ namespace DirectoryControl.ViewModels
                         if (Editor == null)
                         {
                             Editor = new DirectoryItemEditorViewModel(_directoryEditor);
+                            Editor.EndEditing += Editor_EndEditing;
                         }
 
 
@@ -187,8 +187,34 @@ namespace DirectoryControl.ViewModels
         }
         #endregion properies
 
+        #region event handlers
+
+        private void Editor_EndEditing(object sender, EventArgs e)
+        {
+            //IDirectoryItem newItem = Editor.GetEditingItem();
+            //IEditorDirectory editorDirectory = Editor.GetEditingItem();
+            if (Editor.IsNew)
+            {
+                 //_directoryEditor.AddDirectoryItem(editorDirectory);
+            }
+            //UpdateItems();
+            VisibleDirectoryItemEditor = false;
+        }
+
+        #endregion event handlers
+
         #region metods
 
+        /// <summary>
+        /// Наполение списка
+        /// </summary>
+        private void FillItems()
+        {
+            foreach (IDirectory item in ItemsSource)
+            {
+                //_items.Add(new DirectoryItemViewModel(item));
+            }
+        }
 
         /// <summary>
         /// Возвращает модель строки - счет
