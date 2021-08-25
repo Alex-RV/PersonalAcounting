@@ -27,3 +27,6 @@ C:\Users\Alex\source\repos\Alex-RV\PersonalAcounting\PersonalAcounting\IDirector
 C:\Users\Alex\source\repos\Alex-RV\PersonalAcounting\PersonalAcounting\IDirectory\obj\Debug\netcoreapp3.1\IDirectory.pdb
 D:\Work\PersonalAcounting\PersonalAcounting\IDirectory\obj\Debug\netcoreapp3.1\Directory.Properties.Resources.resources
 D:\Work\PersonalAcounting\PersonalAcounting\IDirectory\obj\Debug\netcoreapp3.1\IDirectory.csproj.GenerateResource.cache
+C:\Users\Alex\source\repos\Alex-RV\PersonalAcounting\PersonalAcounting\IDirectory\obj\Debug\netcoreapp3.1\IDirectory.csproj.AssemblyReference.cache
+C:\Users\Alex\source\repos\Alex-RV\PersonalAcounting\PersonalAcounting\IDirectory\obj\Debug\netcoreapp3.1\Directory.Properties.Resources.resources
+C:\Users\Alex\source\repos\Alex-RV\PersonalAcounting\PersonalAcounting\IDirectory\obj\Debug\netcoreapp3.1\IDirectory.csproj.GenerateResource.cache

@@ -1,23 +1,23 @@
 {
   "format": 1,
   "restore": {
-    "D:\\Work\\PersonalAcounting\\PersonalAcounting\\AccountsControl\\AccountControl.csproj": {}
+    "C:\\Users\\Alex\\source\\repos\\Alex-RV\\PersonalAcounting\\PersonalAcounting\\AccountsControl\\AccountControl.csproj": {}
   },
   "projects": {
-    "D:\\Work\\PersonalAcounting\\PersonalAcounting\\AccountsControl\\AccountControl.csproj": {
+    "C:\\Users\\Alex\\source\\repos\\Alex-RV\\PersonalAcounting\\PersonalAcounting\\AccountsControl\\AccountControl.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "D:\\Work\\PersonalAcounting\\PersonalAcounting\\AccountsControl\\AccountControl.csproj",
+        "projectUniqueName": "C:\\Users\\Alex\\source\\repos\\Alex-RV\\PersonalAcounting\\PersonalAcounting\\AccountsControl\\AccountControl.csproj",
         "projectName": "AccountControl",
-        "projectPath": "D:\\Work\\PersonalAcounting\\PersonalAcounting\\AccountsControl\\AccountControl.csproj",
-        "packagesPath": "C:\\Users\\alexs\\.nuget\\packages\\",
-        "outputPath": "D:\\Work\\PersonalAcounting\\PersonalAcounting\\AccountsControl\\obj\\",
+        "projectPath": "C:\\Users\\Alex\\source\\repos\\Alex-RV\\PersonalAcounting\\PersonalAcounting\\AccountsControl\\AccountControl.csproj",
+        "packagesPath": "C:\\Users\\Alex\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\Alex\\source\\repos\\Alex-RV\\PersonalAcounting\\PersonalAcounting\\AccountsControl\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
         ],
         "configFilePaths": [
-          "C:\\Users\\alexs\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\Alex\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
@@ -32,20 +32,20 @@
           "netcoreapp3.1": {
             "targetAlias": "netcoreapp3.1",
             "projectReferences": {
-              "D:\\Work\\PersonalAcounting\\PersonalAcounting\\CostsControls\\CostsControls.csproj": {
-                "projectPath": "D:\\Work\\PersonalAcounting\\PersonalAcounting\\CostsControls\\CostsControls.csproj"
+              "C:\\Users\\Alex\\source\\repos\\Alex-RV\\PersonalAcounting\\PersonalAcounting\\CostsControls\\CostsControls.csproj": {
+                "projectPath": "C:\\Users\\Alex\\source\\repos\\Alex-RV\\PersonalAcounting\\PersonalAcounting\\CostsControls\\CostsControls.csproj"
               },
-              "D:\\Work\\PersonalAcounting\\PersonalAcounting\\IAccounts\\IAccount.csproj": {
-                "projectPath": "D:\\Work\\PersonalAcounting\\PersonalAcounting\\IAccounts\\IAccount.csproj"
+              "C:\\Users\\Alex\\source\\repos\\Alex-RV\\PersonalAcounting\\PersonalAcounting\\IAccounts\\IAccount.csproj": {
+                "projectPath": "C:\\Users\\Alex\\source\\repos\\Alex-RV\\PersonalAcounting\\PersonalAcounting\\IAccounts\\IAccount.csproj"
               },
-              "D:\\Work\\PersonalAcounting\\PersonalAcounting\\ICosts\\ICosts.csproj": {
-                "projectPath": "D:\\Work\\PersonalAcounting\\PersonalAcounting\\ICosts\\ICosts.csproj"
+              "C:\\Users\\Alex\\source\\repos\\Alex-RV\\PersonalAcounting\\PersonalAcounting\\ICosts\\ICosts.csproj": {
+                "projectPath": "C:\\Users\\Alex\\source\\repos\\Alex-RV\\PersonalAcounting\\PersonalAcounting\\ICosts\\ICosts.csproj"
               },
-              "D:\\Work\\PersonalAcounting\\PersonalAcounting\\IncomeControls\\IncomeControls.csproj": {
-                "projectPath": "D:\\Work\\PersonalAcounting\\PersonalAcounting\\IncomeControls\\IncomeControls.csproj"
+              "C:\\Users\\Alex\\source\\repos\\Alex-RV\\PersonalAcounting\\PersonalAcounting\\IncomeControls\\IncomeControls.csproj": {
+                "projectPath": "C:\\Users\\Alex\\source\\repos\\Alex-RV\\PersonalAcounting\\PersonalAcounting\\IncomeControls\\IncomeControls.csproj"
               },
-              "D:\\Work\\PersonalAcounting\\PersonalAcounting\\WPFHelper\\WPFHelper.csproj": {
-                "projectPath": "D:\\Work\\PersonalAcounting\\PersonalAcounting\\WPFHelper\\WPFHelper.csproj"
+              "C:\\Users\\Alex\\source\\repos\\Alex-RV\\PersonalAcounting\\PersonalAcounting\\WPFHelper\\WPFHelper.csproj": {
+                "projectPath": "C:\\Users\\Alex\\source\\repos\\Alex-RV\\PersonalAcounting\\PersonalAcounting\\WPFHelper\\WPFHelper.csproj"
               }
             }
           }
@@ -81,20 +81,20 @@
         }
       }
     },
-    "D:\\Work\\PersonalAcounting\\PersonalAcounting\\CostsControls\\CostsControls.csproj": {
+    "C:\\Users\\Alex\\source\\repos\\Alex-RV\\PersonalAcounting\\PersonalAcounting\\CostsControls\\CostsControls.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "D:\\Work\\PersonalAcounting\\PersonalAcounting\\CostsControls\\CostsControls.csproj",
+        "projectUniqueName": "C:\\Users\\Alex\\source\\repos\\Alex-RV\\PersonalAcounting\\PersonalAcounting\\CostsControls\\CostsControls.csproj",
         "projectName": "CostsControls",
-        "projectPath": "D:\\Work\\PersonalAcounting\\PersonalAcounting\\CostsControls\\CostsControls.csproj",
-        "packagesPath": "C:\\Users\\alexs\\.nuget\\packages\\",
-        "outputPath": "D:\\Work\\PersonalAcounting\\PersonalAcounting\\CostsControls\\obj\\",
+        "projectPath": "C:\\Users\\Alex\\source\\repos\\Alex-RV\\PersonalAcounting\\PersonalAcounting\\CostsControls\\CostsControls.csproj",
+        "packagesPath": "C:\\Users\\Alex\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\Alex\\source\\repos\\Alex-RV\\PersonalAcounting\\PersonalAcounting\\CostsControls\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
         ],
         "configFilePaths": [
-          "C:\\Users\\alexs\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\Alex\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
@@ -109,11 +109,11 @@
           "netcoreapp3.1": {
             "targetAlias": "netcoreapp3.1",
             "projectReferences": {
-              "D:\\Work\\PersonalAcounting\\PersonalAcounting\\ICosts\\ICosts.csproj": {
-                "projectPath": "D:\\Work\\PersonalAcounting\\PersonalAcounting\\ICosts\\ICosts.csproj"
+              "C:\\Users\\Alex\\source\\repos\\Alex-RV\\PersonalAcounting\\PersonalAcounting\\ICosts\\ICosts.csproj": {
+                "projectPath": "C:\\Users\\Alex\\source\\repos\\Alex-RV\\PersonalAcounting\\PersonalAcounting\\ICosts\\ICosts.csproj"
               },
-              "D:\\Work\\PersonalAcounting\\PersonalAcounting\\WPFHelper\\WPFHelper.csproj": {
-                "projectPath": "D:\\Work\\PersonalAcounting\\PersonalAcounting\\WPFHelper\\WPFHelper.csproj"
+              "C:\\Users\\Alex\\source\\repos\\Alex-RV\\PersonalAcounting\\PersonalAcounting\\WPFHelper\\WPFHelper.csproj": {
+                "projectPath": "C:\\Users\\Alex\\source\\repos\\Alex-RV\\PersonalAcounting\\PersonalAcounting\\WPFHelper\\WPFHelper.csproj"
               }
             }
           }
@@ -149,20 +149,20 @@
         }
       }
     },
-    "D:\\Work\\PersonalAcounting\\PersonalAcounting\\IAccounts\\IAccount.csproj": {
+    "C:\\Users\\Alex\\source\\repos\\Alex-RV\\PersonalAcounting\\PersonalAcounting\\IAccounts\\IAccount.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "D:\\Work\\PersonalAcounting\\PersonalAcounting\\IAccounts\\IAccount.csproj",
+        "projectUniqueName": "C:\\Users\\Alex\\source\\repos\\Alex-RV\\PersonalAcounting\\PersonalAcounting\\IAccounts\\IAccount.csproj",
         "projectName": "IAccount",
-        "projectPath": "D:\\Work\\PersonalAcounting\\PersonalAcounting\\IAccounts\\IAccount.csproj",
-        "packagesPath": "C:\\Users\\alexs\\.nuget\\packages\\",
-        "outputPath": "D:\\Work\\PersonalAcounting\\PersonalAcounting\\IAccounts\\obj\\",
+        "projectPath": "C:\\Users\\Alex\\source\\repos\\Alex-RV\\PersonalAcounting\\PersonalAcounting\\IAccounts\\IAccount.csproj",
+        "packagesPath": "C:\\Users\\Alex\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\Alex\\source\\repos\\Alex-RV\\PersonalAcounting\\PersonalAcounting\\IAccounts\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
         ],
         "configFilePaths": [
-          "C:\\Users\\alexs\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\Alex\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
@@ -177,11 +177,11 @@
           "netcoreapp3.1": {
             "targetAlias": "netcoreapp3.1",
             "projectReferences": {
-              "D:\\Work\\PersonalAcounting\\PersonalAcounting\\ICosts\\ICosts.csproj": {
-                "projectPath": "D:\\Work\\PersonalAcounting\\PersonalAcounting\\ICosts\\ICosts.csproj"
+              "C:\\Users\\Alex\\source\\repos\\Alex-RV\\PersonalAcounting\\PersonalAcounting\\ICosts\\ICosts.csproj": {
+                "projectPath": "C:\\Users\\Alex\\source\\repos\\Alex-RV\\PersonalAcounting\\PersonalAcounting\\ICosts\\ICosts.csproj"
               },
-              "D:\\Work\\PersonalAcounting\\PersonalAcounting\\IIncome\\IIncome.csproj": {
-                "projectPath": "D:\\Work\\PersonalAcounting\\PersonalAcounting\\IIncome\\IIncome.csproj"
+              "C:\\Users\\Alex\\source\\repos\\Alex-RV\\PersonalAcounting\\PersonalAcounting\\IIncome\\IIncome.csproj": {
+                "projectPath": "C:\\Users\\Alex\\source\\repos\\Alex-RV\\PersonalAcounting\\PersonalAcounting\\IIncome\\IIncome.csproj"
               }
             }
           }
@@ -214,20 +214,20 @@
         }
       }
     },
-    "D:\\Work\\PersonalAcounting\\PersonalAcounting\\IBase\\IBase.csproj": {
+    "C:\\Users\\Alex\\source\\repos\\Alex-RV\\PersonalAcounting\\PersonalAcounting\\IBase\\IBase.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "D:\\Work\\PersonalAcounting\\PersonalAcounting\\IBase\\IBase.csproj",
+        "projectUniqueName": "C:\\Users\\Alex\\source\\repos\\Alex-RV\\PersonalAcounting\\PersonalAcounting\\IBase\\IBase.csproj",
         "projectName": "IBase",
-        "projectPath": "D:\\Work\\PersonalAcounting\\PersonalAcounting\\IBase\\IBase.csproj",
-        "packagesPath": "C:\\Users\\alexs\\.nuget\\packages\\",
-        "outputPath": "D:\\Work\\PersonalAcounting\\PersonalAcounting\\IBase\\obj\\",
+        "projectPath": "C:\\Users\\Alex\\source\\repos\\Alex-RV\\PersonalAcounting\\PersonalAcounting\\IBase\\IBase.csproj",
+        "packagesPath": "C:\\Users\\Alex\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\Alex\\source\\repos\\Alex-RV\\PersonalAcounting\\PersonalAcounting\\IBase\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
         ],
         "configFilePaths": [
-          "C:\\Users\\alexs\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\Alex\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
@@ -272,20 +272,20 @@
         }
       }
     },
-    "D:\\Work\\PersonalAcounting\\PersonalAcounting\\ICosts\\ICosts.csproj": {
+    "C:\\Users\\Alex\\source\\repos\\Alex-RV\\PersonalAcounting\\PersonalAcounting\\ICosts\\ICosts.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "D:\\Work\\PersonalAcounting\\PersonalAcounting\\ICosts\\ICosts.csproj",
+        "projectUniqueName": "C:\\Users\\Alex\\source\\repos\\Alex-RV\\PersonalAcounting\\PersonalAcounting\\ICosts\\ICosts.csproj",
         "projectName": "ICosts",
-        "projectPath": "D:\\Work\\PersonalAcounting\\PersonalAcounting\\ICosts\\ICosts.csproj",
-        "packagesPath": "C:\\Users\\alexs\\.nuget\\packages\\",
-        "outputPath": "D:\\Work\\PersonalAcounting\\PersonalAcounting\\ICosts\\obj\\",
+        "projectPath": "C:\\Users\\Alex\\source\\repos\\Alex-RV\\PersonalAcounting\\PersonalAcounting\\ICosts\\ICosts.csproj",
+        "packagesPath": "C:\\Users\\Alex\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\Alex\\source\\repos\\Alex-RV\\PersonalAcounting\\PersonalAcounting\\ICosts\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
         ],
         "configFilePaths": [
-          "C:\\Users\\alexs\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\Alex\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
@@ -300,8 +300,8 @@
           "netcoreapp3.1": {
             "targetAlias": "netcoreapp3.1",
             "projectReferences": {
-              "D:\\Work\\PersonalAcounting\\PersonalAcounting\\IBase\\IBase.csproj": {
-                "projectPath": "D:\\Work\\PersonalAcounting\\PersonalAcounting\\IBase\\IBase.csproj"
+              "C:\\Users\\Alex\\source\\repos\\Alex-RV\\PersonalAcounting\\PersonalAcounting\\IBase\\IBase.csproj": {
+                "projectPath": "C:\\Users\\Alex\\source\\repos\\Alex-RV\\PersonalAcounting\\PersonalAcounting\\IBase\\IBase.csproj"
               }
             }
           }
@@ -334,20 +334,20 @@
         }
       }
     },
-    "D:\\Work\\PersonalAcounting\\PersonalAcounting\\IIncome\\IIncome.csproj": {
+    "C:\\Users\\Alex\\source\\repos\\Alex-RV\\PersonalAcounting\\PersonalAcounting\\IIncome\\IIncome.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "D:\\Work\\PersonalAcounting\\PersonalAcounting\\IIncome\\IIncome.csproj",
+        "projectUniqueName": "C:\\Users\\Alex\\source\\repos\\Alex-RV\\PersonalAcounting\\PersonalAcounting\\IIncome\\IIncome.csproj",
         "projectName": "IIncome",
-        "projectPath": "D:\\Work\\PersonalAcounting\\PersonalAcounting\\IIncome\\IIncome.csproj",
-        "packagesPath": "C:\\Users\\alexs\\.nuget\\packages\\",
-        "outputPath": "D:\\Work\\PersonalAcounting\\PersonalAcounting\\IIncome\\obj\\",
+        "projectPath": "C:\\Users\\Alex\\source\\repos\\Alex-RV\\PersonalAcounting\\PersonalAcounting\\IIncome\\IIncome.csproj",
+        "packagesPath": "C:\\Users\\Alex\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\Alex\\source\\repos\\Alex-RV\\PersonalAcounting\\PersonalAcounting\\IIncome\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
         ],
         "configFilePaths": [
-          "C:\\Users\\alexs\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\Alex\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
@@ -362,8 +362,8 @@
           "netcoreapp3.1": {
             "targetAlias": "netcoreapp3.1",
             "projectReferences": {
-              "D:\\Work\\PersonalAcounting\\PersonalAcounting\\IBase\\IBase.csproj": {
-                "projectPath": "D:\\Work\\PersonalAcounting\\PersonalAcounting\\IBase\\IBase.csproj"
+              "C:\\Users\\Alex\\source\\repos\\Alex-RV\\PersonalAcounting\\PersonalAcounting\\IBase\\IBase.csproj": {
+                "projectPath": "C:\\Users\\Alex\\source\\repos\\Alex-RV\\PersonalAcounting\\PersonalAcounting\\IBase\\IBase.csproj"
               }
             }
           }
@@ -396,20 +396,20 @@
         }
       }
     },
-    "D:\\Work\\PersonalAcounting\\PersonalAcounting\\IncomeControls\\IncomeControls.csproj": {
+    "C:\\Users\\Alex\\source\\repos\\Alex-RV\\PersonalAcounting\\PersonalAcounting\\IncomeControls\\IncomeControls.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "D:\\Work\\PersonalAcounting\\PersonalAcounting\\IncomeControls\\IncomeControls.csproj",
+        "projectUniqueName": "C:\\Users\\Alex\\source\\repos\\Alex-RV\\PersonalAcounting\\PersonalAcounting\\IncomeControls\\IncomeControls.csproj",
         "projectName": "IncomeControls",
-        "projectPath": "D:\\Work\\PersonalAcounting\\PersonalAcounting\\IncomeControls\\IncomeControls.csproj",
-        "packagesPath": "C:\\Users\\alexs\\.nuget\\packages\\",
-        "outputPath": "D:\\Work\\PersonalAcounting\\PersonalAcounting\\IncomeControls\\obj\\",
+        "projectPath": "C:\\Users\\Alex\\source\\repos\\Alex-RV\\PersonalAcounting\\PersonalAcounting\\IncomeControls\\IncomeControls.csproj",
+        "packagesPath": "C:\\Users\\Alex\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\Alex\\source\\repos\\Alex-RV\\PersonalAcounting\\PersonalAcounting\\IncomeControls\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
         ],
         "configFilePaths": [
-          "C:\\Users\\alexs\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\Alex\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
@@ -424,11 +424,11 @@
           "netcoreapp3.1": {
             "targetAlias": "netcoreapp3.1",
             "projectReferences": {
-              "D:\\Work\\PersonalAcounting\\PersonalAcounting\\IIncome\\IIncome.csproj": {
-                "projectPath": "D:\\Work\\PersonalAcounting\\PersonalAcounting\\IIncome\\IIncome.csproj"
+              "C:\\Users\\Alex\\source\\repos\\Alex-RV\\PersonalAcounting\\PersonalAcounting\\IIncome\\IIncome.csproj": {
+                "projectPath": "C:\\Users\\Alex\\source\\repos\\Alex-RV\\PersonalAcounting\\PersonalAcounting\\IIncome\\IIncome.csproj"
               },
-              "D:\\Work\\PersonalAcounting\\PersonalAcounting\\WPFHelper\\WPFHelper.csproj": {
-                "projectPath": "D:\\Work\\PersonalAcounting\\PersonalAcounting\\WPFHelper\\WPFHelper.csproj"
+              "C:\\Users\\Alex\\source\\repos\\Alex-RV\\PersonalAcounting\\PersonalAcounting\\WPFHelper\\WPFHelper.csproj": {
+                "projectPath": "C:\\Users\\Alex\\source\\repos\\Alex-RV\\PersonalAcounting\\PersonalAcounting\\WPFHelper\\WPFHelper.csproj"
               }
             }
           }
@@ -464,20 +464,20 @@
         }
       }
     },
-    "D:\\Work\\PersonalAcounting\\PersonalAcounting\\WPFHelper\\WPFHelper.csproj": {
+    "C:\\Users\\Alex\\source\\repos\\Alex-RV\\PersonalAcounting\\PersonalAcounting\\WPFHelper\\WPFHelper.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "D:\\Work\\PersonalAcounting\\PersonalAcounting\\WPFHelper\\WPFHelper.csproj",
+        "projectUniqueName": "C:\\Users\\Alex\\source\\repos\\Alex-RV\\PersonalAcounting\\PersonalAcounting\\WPFHelper\\WPFHelper.csproj",
         "projectName": "WPFHelper",
-        "projectPath": "D:\\Work\\PersonalAcounting\\PersonalAcounting\\WPFHelper\\WPFHelper.csproj",
-        "packagesPath": "C:\\Users\\alexs\\.nuget\\packages\\",
-        "outputPath": "D:\\Work\\PersonalAcounting\\PersonalAcounting\\WPFHelper\\obj\\",
+        "projectPath": "C:\\Users\\Alex\\source\\repos\\Alex-RV\\PersonalAcounting\\PersonalAcounting\\WPFHelper\\WPFHelper.csproj",
+        "packagesPath": "C:\\Users\\Alex\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\Alex\\source\\repos\\Alex-RV\\PersonalAcounting\\PersonalAcounting\\WPFHelper\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
         ],
         "configFilePaths": [
-          "C:\\Users\\alexs\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\Alex\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],

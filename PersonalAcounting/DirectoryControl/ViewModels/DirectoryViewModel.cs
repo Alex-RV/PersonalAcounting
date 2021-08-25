@@ -15,17 +15,25 @@ namespace DirectoryControl.ViewModels
         Directory.IDirectory _directory;
         private DirectoryItemViewModel _selectedItem = null;
         private WPFHelper.RelayCommand _editItemCommand;
+        private ObservableCollection<DirectoryItemViewModel> _items = new ObservableCollection<DirectoryItemViewModel>();
+        private IDirectory item;
+
+        public DirectoryViewModel(IDirectory item)
+        {
+            this.item = item;
+        }
         #endregion fields
 
 
         #region contructor
-        public DirectoryViewModel(Directory.IDirectory directory)
+        public DirectoryViewModel(Directory.IDirectory directory, IDirectoryItem directoryItem, IDirectoryType directoryType)
         {
             _directory = directory;
         }
         #endregion contructor
 
         #region properies
+        public ObservableCollection<DirectoryItemViewModel> Items { get { return _items; } }
         public DirectoryItemViewModel SelectedItem
         {
             get { return _selectedItem; }

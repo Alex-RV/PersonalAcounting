@@ -180,3 +180,17 @@ D:\Work\PersonalAcounting\PersonalAcounting\PersonalAcounting\bin\Debug\netcorea
 D:\Work\PersonalAcounting\PersonalAcounting\PersonalAcounting\bin\Debug\netcoreapp3.1\DirectoryImplement.pdb
 D:\Work\PersonalAcounting\PersonalAcounting\PersonalAcounting\bin\Debug\netcoreapp3.1\FactoryDirectory.pdb
 D:\Work\PersonalAcounting\PersonalAcounting\PersonalAcounting\bin\Debug\netcoreapp3.1\IDirectory.pdb
+C:\Users\Alex\source\repos\Alex-RV\PersonalAcounting\PersonalAcounting\PersonalAcounting\bin\Debug\netcoreapp3.1\DataLoaderImlement.dll
+C:\Users\Alex\source\repos\Alex-RV\PersonalAcounting\PersonalAcounting\PersonalAcounting\bin\Debug\netcoreapp3.1\DirectoryControl.dll
+C:\Users\Alex\source\repos\Alex-RV\PersonalAcounting\PersonalAcounting\PersonalAcounting\bin\Debug\netcoreapp3.1\DirectoryImplement.dll
+C:\Users\Alex\source\repos\Alex-RV\PersonalAcounting\PersonalAcounting\PersonalAcounting\bin\Debug\netcoreapp3.1\FactoryDirectory.dll
+C:\Users\Alex\source\repos\Alex-RV\PersonalAcounting\PersonalAcounting\PersonalAcounting\bin\Debug\netcoreapp3.1\IDataLoader.dll
+C:\Users\Alex\source\repos\Alex-RV\PersonalAcounting\PersonalAcounting\PersonalAcounting\bin\Debug\netcoreapp3.1\IDirectory.dll
+C:\Users\Alex\source\repos\Alex-RV\PersonalAcounting\PersonalAcounting\PersonalAcounting\bin\Debug\netcoreapp3.1\DataLoaderImlement.pdb
+C:\Users\Alex\source\repos\Alex-RV\PersonalAcounting\PersonalAcounting\PersonalAcounting\bin\Debug\netcoreapp3.1\DirectoryControl.pdb
+C:\Users\Alex\source\repos\Alex-RV\PersonalAcounting\PersonalAcounting\PersonalAcounting\bin\Debug\netcoreapp3.1\DirectoryImplement.pdb
+C:\Users\Alex\source\repos\Alex-RV\PersonalAcounting\PersonalAcounting\PersonalAcounting\bin\Debug\netcoreapp3.1\FactoryDirectory.pdb
+C:\Users\Alex\source\repos\Alex-RV\PersonalAcounting\PersonalAcounting\PersonalAcounting\bin\Debug\netcoreapp3.1\IDataLoader.pdb
+C:\Users\Alex\source\repos\Alex-RV\PersonalAcounting\PersonalAcounting\PersonalAcounting\bin\Debug\netcoreapp3.1\IDirectory.pdb
+C:\Users\Alex\source\repos\Alex-RV\PersonalAcounting\PersonalAcounting\PersonalAcounting\obj\Debug\netcoreapp3.1\PersonalAcounting.Properties.Resources.resources
+C:\Users\Alex\source\repos\Alex-RV\PersonalAcounting\PersonalAcounting\PersonalAcounting\obj\Debug\netcoreapp3.1\PersonalAcounting.csproj.GenerateResource.cache

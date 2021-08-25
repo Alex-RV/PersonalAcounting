@@ -18,8 +18,6 @@ C:\Users\MaynskiyAP\source\repos\PersonalAcounting\PersonalAcounting\CostsContro
 C:\Users\MaynskiyAP\source\repos\PersonalAcounting\PersonalAcounting\CostsControls\obj\Debug\netcoreapp3.1\CostsControls.pdb
 D:\Work\PersonalAcounting\PersonalAcounting\CostsControls\obj\Debug\netcoreapp3.1\CostsControls.csproj.AssemblyReference.cache
 C:\Users\Alex\source\repos\Alex-RV\PersonalAcounting\PersonalAcounting\CostsControls\obj\Debug\netcoreapp3.1\CostsControls.csproj.AssemblyReference.cache
-C:\Users\Alex\source\repos\Alex-RV\PersonalAcounting\PersonalAcounting\CostsControls\obj\Debug\netcoreapp3.1\View\CostEditorView.g.cs
-C:\Users\Alex\source\repos\Alex-RV\PersonalAcounting\PersonalAcounting\CostsControls\obj\Debug\netcoreapp3.1\View\CostView.g.cs
 C:\Users\Alex\source\repos\Alex-RV\PersonalAcounting\PersonalAcounting\CostsControls\obj\Debug\netcoreapp3.1\GeneratedInternalTypeHelper.g.cs
 C:\Users\Alex\source\repos\Alex-RV\PersonalAcounting\PersonalAcounting\CostsControls\obj\Debug\netcoreapp3.1\CostsControls_MarkupCompile.cache
 C:\Users\Alex\source\repos\Alex-RV\PersonalAcounting\PersonalAcounting\CostsControls\obj\Debug\netcoreapp3.1\CostsControls_MarkupCompile.lref
@@ -32,8 +30,6 @@ C:\Users\Alex\source\repos\Alex-RV\PersonalAcounting\PersonalAcounting\CostsCont
 C:\Users\Alex\source\repos\Alex-RV\PersonalAcounting\PersonalAcounting\CostsControls\bin\Debug\netcoreapp3.1\ICosts.pdb
 C:\Users\Alex\source\repos\Alex-RV\PersonalAcounting\PersonalAcounting\CostsControls\bin\Debug\netcoreapp3.1\WPFHelper.pdb
 C:\Users\Alex\source\repos\Alex-RV\PersonalAcounting\PersonalAcounting\CostsControls\bin\Debug\netcoreapp3.1\IBase.pdb
-C:\Users\Alex\source\repos\Alex-RV\PersonalAcounting\PersonalAcounting\CostsControls\obj\Debug\netcoreapp3.1\View\CostEditorView.baml
-C:\Users\Alex\source\repos\Alex-RV\PersonalAcounting\PersonalAcounting\CostsControls\obj\Debug\netcoreapp3.1\View\CostView.baml
 C:\Users\Alex\source\repos\Alex-RV\PersonalAcounting\PersonalAcounting\CostsControls\obj\Debug\netcoreapp3.1\CostsControls.g.resources
 C:\Users\Alex\source\repos\Alex-RV\PersonalAcounting\PersonalAcounting\CostsControls\obj\Debug\netcoreapp3.1\CostsControls.Properties.Resources.resources
 C:\Users\Alex\source\repos\Alex-RV\PersonalAcounting\PersonalAcounting\CostsControls\obj\Debug\netcoreapp3.1\CostsControls.csproj.GenerateResource.cache
@@ -78,3 +74,7 @@ D:\Work\PersonalAcounting\PersonalAcounting\CostsControls\obj\Debug\netcoreapp3.
 D:\Work\PersonalAcounting\PersonalAcounting\CostsControls\obj\Debug\netcoreapp3.1\Views\CostView.g.cs
 D:\Work\PersonalAcounting\PersonalAcounting\CostsControls\obj\Debug\netcoreapp3.1\Views\CostEditorView.baml
 D:\Work\PersonalAcounting\PersonalAcounting\CostsControls\obj\Debug\netcoreapp3.1\Views\CostView.baml
+C:\Users\Alex\source\repos\Alex-RV\PersonalAcounting\PersonalAcounting\CostsControls\obj\Debug\netcoreapp3.1\Views\CostEditorView.g.cs
+C:\Users\Alex\source\repos\Alex-RV\PersonalAcounting\PersonalAcounting\CostsControls\obj\Debug\netcoreapp3.1\Views\CostView.g.cs
+C:\Users\Alex\source\repos\Alex-RV\PersonalAcounting\PersonalAcounting\CostsControls\obj\Debug\netcoreapp3.1\Views\CostEditorView.baml
+C:\Users\Alex\source\repos\Alex-RV\PersonalAcounting\PersonalAcounting\CostsControls\obj\Debug\netcoreapp3.1\Views\CostView.baml

@@ -26,7 +26,7 @@ namespace PersonalAcounting
         public MainViewModel()
         {
             loader = new DataLoader.Loader();
-            loader.PathToFile = "C:\\Users\\alexs\\Documents\\test.ff";
+            loader.PathToFile = "C:\\Users\\Alex\\Documents\\test.ff";
 
             _fabricsContainer = new FabricsContainer(loader);
 
