@@ -31,11 +31,11 @@
                     <BeginStoryboard>
                         <Storyboard Storyboard.TargetProperty="Background.Color">
                             <ColorAnimation To="Blue" Duration="0:0:0.5" />
-                            <ColorAnimation To="Red" BeginTime="0:0:0.7" Duration="0:0:1" />
+                            <ColorAnimation To="#FE2838" BeginTime="0:0:0.7" Duration="0:0:1" />
                         </Storyboard>
                     </BeginStoryboard>
                 </Trigger.EnterActions>
-                <Setter Property="Background" Value="#22202f" />
+                <Setter Property="Background" Value="#282553" />
             </Trigger>
         </Style.Triggers>
 

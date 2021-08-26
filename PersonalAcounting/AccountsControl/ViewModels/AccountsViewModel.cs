@@ -103,10 +103,19 @@ namespace AccountControl.ViewModels
                     {
                         if (SelectedItem == null)
                         {
+
+                            if (VisibleEditor == true)
+                            {
+                                VisibleEditor = false;
+                            }
                             return;
                         }
                         _accountEditor.Remove(SelectedItem.GetModel());
                         UpdateItems();
+                        if (VisibleEditor == true)
+                        {
+                            VisibleEditor = false;
+                        }
                         //Editor.SetEditingAccount(_accountFabric.CreateNew());
                     });
                 }

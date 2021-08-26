@@ -31,8 +31,8 @@ namespace PersonalAcounting
             
 
             loader = new DataLoader.Loader(_fabricsContainer.AccountFabric as Account.AccountFabric, _fabricsContainer.DirectoryFabric);
-            //loader.PathToFile = "C:\\Users\\Alex\\Documents\\test.ff";
-            loader.PathToFile = "C:\\Users\\alexs\\Documents\\test.ff";
+            loader.PathToFile = "C:\\Users\\Alex\\Documents\\test.ff";
+            //loader.PathToFile = "C:\\Users\\alexs\\Documents\\test.ff";
             loader.Load();
 
 

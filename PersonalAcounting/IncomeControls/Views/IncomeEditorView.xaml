@@ -25,7 +25,7 @@
         <Label 
             Grid.Row="0"
             Grid.Column="0"
-            Background="#07021c"
+            Background="#282553"
             FontFamily="Candara Light"
             Foreground="#e3dcdf"
             FontSize="14"
@@ -35,14 +35,14 @@
             Grid.Row="0"
             Grid.Column="1"
             Margin="0,0,10,0"
-            Background="#14235c"
+            Background="#6787CB"
             Foreground="White"
             Text="{Binding Path=Name, UpdateSourceTrigger=PropertyChanged}"></TextBox>
 
         <Label 
             Grid.Row="1"
             Grid.Column="0"
-            Background="#07021c"
+            Background="#282553"
             FontFamily="Candara Light"
             Foreground="#e3dcdf"
             FontSize="14"
@@ -51,7 +51,7 @@
         <TextBox
             Grid.Row="1"
             Grid.Column="1"
-            Background="#14235c"
+            Background="#6787CB"
             Foreground="White"
             Margin="0,0,10,0"
             Text="{Binding Path=Amount, UpdateSourceTrigger=PropertyChanged}"></TextBox>
@@ -59,7 +59,7 @@
         <Label 
             Grid.Row="2"
             Grid.Column="0"
-            Background="#07021c"
+            Background="#282553"
             FontFamily="Candara Light"
             Foreground="#e3dcdf"
             FontSize="14"
@@ -71,6 +71,8 @@
             FontFamily="Candara Light"
             FontSize="14"
             Margin="0,0,10,0"
+            Background="#6787CB"
+            Foreground="Black"
             SelectedDate="{Binding Path=CreateDate, UpdateSourceTrigger=LostFocus}"
             >
         </DatePicker>
@@ -78,7 +80,7 @@
         <Label
             Grid.Row="3"
             Grid.Column="0"
-            Background="#07021c"
+            Background="#282553"
             FontFamily="Candara Light"
             Foreground="#e3dcdf"
             FontSize="14"

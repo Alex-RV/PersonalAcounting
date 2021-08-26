@@ -21,7 +21,7 @@
         </Style>
     </UserControl.Resources>
     <Grid
-        Background="#07021c">
+        Background="#6787CB">
         <Grid.RowDefinitions>
             <RowDefinition  Height="Auto"/>
             <RowDefinition  Height="*"/>

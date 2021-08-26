@@ -57,11 +57,11 @@
                     Grid.Row="0"
                     ItemsSource="{Binding Path=Items}" 
                     SelectedItem="{Binding Path=SelectedItem}"
-                    Background="#16224f"
+                    Background="#6787CB"
                     ScrollViewer.HorizontalScrollBarVisibility="Visible">
                 <ListView.View>
                     <GridView>
-                        <GridViewColumn Width="Auto"
+                        <GridViewColumn Width="200"
                                             Header="Директория">
                             <GridViewColumn.CellTemplate>
                                 <DataTemplate>

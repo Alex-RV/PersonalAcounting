@@ -26,3 +26,4 @@ D:\Work\PersonalAcounting\PersonalAcounting\IBase\obj\Debug\netcoreapp3.1\IBase.
 D:\Work\PersonalAcounting\PersonalAcounting\IBase\obj\Debug\netcoreapp3.1\IBase.dll
 D:\Work\PersonalAcounting\PersonalAcounting\IBase\obj\Debug\netcoreapp3.1\IBase.pdb
 D:\Work\PersonalAcounting\PersonalAcounting\IBase\obj\Debug\netcoreapp3.1\IBase.csproj.AssemblyReference.cache
+C:\Users\Alex\source\repos\Alex-RV\PersonalAcounting\PersonalAcounting\IBase\obj\Debug\netcoreapp3.1\IBase.csproj.AssemblyReference.cache

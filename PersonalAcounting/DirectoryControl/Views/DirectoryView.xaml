@@ -64,12 +64,12 @@
                     Grid.Column="1"
                     ItemsSource="{Binding Path=ItemsSource}" 
                     SelectedItem="{Binding Path=SelectedItem}"
-                    Background="#16224f"
+                    Background="#6787CB"
                     ScrollViewer.HorizontalScrollBarVisibility="Visible">
                 <ListView.View>
                     <GridView>
-                        <GridViewColumn Width="Auto"
-                                            Header="Название">
+                        <GridViewColumn Width="300"
+                                            Header="Название категории">
                             <GridViewColumn.CellTemplate>
                                 <DataTemplate>
                                     <TextBlock Text="{Binding Path=Name}"

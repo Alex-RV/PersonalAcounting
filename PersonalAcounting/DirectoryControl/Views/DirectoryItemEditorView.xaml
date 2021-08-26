@@ -20,7 +20,7 @@
         <Label 
             Grid.Row="0"
             Grid.Column="0"
-            Background="#07021c"
+            Background="#282553"
             FontFamily="Candara Light"
             Foreground="#e3dcdf"
             FontSize="14"
@@ -30,7 +30,7 @@
             Grid.Row="0"
             Grid.Column="1"
             Margin="0,0,10,0"
-            Background="#14235c"
+            Background="#6787CB"
             Foreground="White"
             Text="{Binding Path=Name, UpdateSourceTrigger=PropertyChanged}"></TextBox>
 
@@ -40,6 +40,8 @@
             Padding="5"
             Margin="1,10,1,10"
             Content="Применить"
-            Command="{Binding Path=AcceptDirectoryItemCommand}"/>
+            Command="{Binding Path=AcceptDirectoryItemCommand}"
+            Style="{DynamicResource RoundCorner}" 
+            Foreground="White"/>
     </Grid>
 </UserControl>

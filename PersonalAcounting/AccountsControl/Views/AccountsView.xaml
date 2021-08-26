@@ -9,7 +9,7 @@
              mc:Ignorable="d" 
              d:DesignHeight="600"  d:DesignWidth="920">
 
-    <Border Background="#07021c"
+    <Border Background="#282553"
             CornerRadius="25">
         <Grid>
             <Grid.ColumnDefinitions>
@@ -37,7 +37,7 @@
                         Command="{Binding Path=AddCommand}"
                         Content="{x:Static res:Resources.Add}"
                         Height="50"
-                        Foreground="White"
+                        Foreground="#FFA65E"
                         FontSize="22"
                         Style="{StaticResource MenuStartButtonTheme}"
                         />
@@ -46,7 +46,7 @@
                         Command="{Binding Path=DeleteCommand}"
                         Content="{x:Static res:Resources.Delete}"
                         Height="50"
-                        Foreground="White"
+                        Foreground="#FFA65E"
                         FontSize="22"
                         Style="{StaticResource MenuStartButtonTheme}"/>
 
@@ -54,7 +54,7 @@
                         Command="{Binding Path=EditorCommand}"
                         Content="{x:Static res:Resources.Edit}"
                         Height="50"
-                        Foreground="White"
+                        Foreground="#FFA65E"
                         FontSize="22"
                         Style="{StaticResource MenuStartButtonTheme}"/>
 
@@ -62,7 +62,7 @@
                         Content="{x:Static res:Resources.OpenAccount}"
                         Command="{Binding Path=OpenAccountCommand}"
                         Height="50"
-                        Foreground="White"
+                        Foreground="#FFA65E"
                         FontSize="22"
                         Style="{StaticResource MenuStartButtonTheme}"/>
             </StackPanel>
@@ -74,7 +74,7 @@
                     Grid.Row="1"
                     ItemsSource="{Binding Path=Items}" 
                     SelectedItem="{Binding Path=SelectedItem}"
-                    Background="#16224f"
+                    Background="#6787CB"
                     ScrollViewer.HorizontalScrollBarVisibility="Visible">
                     <ListView.View>
                         <GridView>
@@ -83,7 +83,7 @@
                                 <GridViewColumn.CellTemplate>
                                     <DataTemplate>
                                         <TextBlock Text="{Binding Path=Name}"
-                                                   Foreground="White"
+                                                   Foreground="#000B40"
                                                    FontSize="18"/>
                                     </DataTemplate>
                                 </GridViewColumn.CellTemplate>
@@ -93,7 +93,7 @@
                                 <GridViewColumn.CellTemplate>
                                     <DataTemplate>
                                         <TextBlock Text="{Binding Path=Owner}"
-                                                   Foreground="White"
+                                                   Foreground="#000B40"
                                                    FontSize="18"/>
                                     </DataTemplate>
                                 </GridViewColumn.CellTemplate>
@@ -103,7 +103,7 @@
                                 <GridViewColumn.CellTemplate>
                                     <DataTemplate>
                                         <TextBlock Text="{Binding Path=CreateDate}"
-                                                   Foreground="White"
+                                                   Foreground="#000B40"
                                                    FontSize="18"/>
                                     </DataTemplate>
                                 </GridViewColumn.CellTemplate>
