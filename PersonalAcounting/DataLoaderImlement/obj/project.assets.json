@@ -2,6 +2,21 @@
   "version": 3,
   "targets": {
     ".NETCoreApp,Version=v3.1": {
+      "AccountFabric/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v3.1",
+        "dependencies": {
+          "AccountImplement": "1.0.0",
+          "IAccount": "1.0.0",
+          "IIncome": "1.0.0"
+        },
+        "compile": {
+          "bin/placeholder/AccountFabric.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/AccountFabric.dll": {}
+        }
+      },
       "AccountImplement/1.0.0": {
         "type": "project",
         "framework": ".NETCoreApp,Version=v3.1",
@@ -40,6 +55,33 @@
         },
         "runtime": {
           "bin/placeholder/CostsImplement.dll": {}
+        }
+      },
+      "DirectoryImplement/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v3.1",
+        "dependencies": {
+          "IDirectory": "1.0.0"
+        },
+        "compile": {
+          "bin/placeholder/DirectoryImplement.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/DirectoryImplement.dll": {}
+        }
+      },
+      "FactoryDirectory/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v3.1",
+        "dependencies": {
+          "DirectoryImplement": "1.0.0",
+          "IDirectory": "1.0.0"
+        },
+        "compile": {
+          "bin/placeholder/FactoryDirectory.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/FactoryDirectory.dll": {}
         }
       },
       "IAccount/1.0.0": {
@@ -84,13 +126,25 @@
         "framework": ".NETCoreApp,Version=v3.1",
         "dependencies": {
           "AccountImplement": "1.0.0",
-          "IAccount": "1.0.0"
+          "DirectoryImplement": "1.0.0",
+          "IAccount": "1.0.0",
+          "IDirectory": "1.0.0"
         },
         "compile": {
           "bin/placeholder/IDataLoader.dll": {}
         },
         "runtime": {
           "bin/placeholder/IDataLoader.dll": {}
+        }
+      },
+      "IDirectory/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v3.1",
+        "compile": {
+          "bin/placeholder/IDirectory.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/IDirectory.dll": {}
         }
       },
       "IIncome/1.0.0": {
@@ -123,6 +177,11 @@
     }
   },
   "libraries": {
+    "AccountFabric/1.0.0": {
+      "type": "project",
+      "path": "../AccountFabric/AccountFabric.csproj",
+      "msbuildProject": "../AccountFabric/AccountFabric.csproj"
+    },
     "AccountImplement/1.0.0": {
       "type": "project",
       "path": "../AccountsImplement/AccountImplement.csproj",
@@ -137,6 +196,16 @@
       "type": "project",
       "path": "../CostsImplements/CostsImplement.csproj",
       "msbuildProject": "../CostsImplements/CostsImplement.csproj"
+    },
+    "DirectoryImplement/1.0.0": {
+      "type": "project",
+      "path": "../DirectoryImplement/DirectoryImplement.csproj",
+      "msbuildProject": "../DirectoryImplement/DirectoryImplement.csproj"
+    },
+    "FactoryDirectory/1.0.0": {
+      "type": "project",
+      "path": "../FactoryDirectory/FactoryDirectory.csproj",
+      "msbuildProject": "../FactoryDirectory/FactoryDirectory.csproj"
     },
     "IAccount/1.0.0": {
       "type": "project",
@@ -158,6 +227,11 @@
       "path": "../IDataLoader/IDataLoader.csproj",
       "msbuildProject": "../IDataLoader/IDataLoader.csproj"
     },
+    "IDirectory/1.0.0": {
+      "type": "project",
+      "path": "../IDirectory/IDirectory.csproj",
+      "msbuildProject": "../IDirectory/IDirectory.csproj"
+    },
     "IIncome/1.0.0": {
       "type": "project",
       "path": "../IIncome/IIncome.csproj",
@@ -171,31 +245,33 @@
   },
   "projectFileDependencyGroups": {
     ".NETCoreApp,Version=v3.1": [
+      "AccountFabric >= 1.0.0",
       "AccountImplement >= 1.0.0",
       "CostsImplement >= 1.0.0",
+      "FactoryDirectory >= 1.0.0",
       "IAccount >= 1.0.0",
       "IDataLoader >= 1.0.0",
       "IncomeImplement >= 1.0.0"
     ]
   },
   "packageFolders": {
-    "C:\\Users\\Alex\\.nuget\\packages\\": {},
+    "C:\\Users\\alexs\\.nuget\\packages\\": {},
     "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\Alex\\source\\repos\\Alex-RV\\PersonalAcounting\\PersonalAcounting\\DataLoaderImlement\\DataLoaderImlement.csproj",
+      "projectUniqueName": "D:\\Work\\PersonalAcounting\\PersonalAcounting\\DataLoaderImlement\\DataLoaderImlement.csproj",
       "projectName": "DataLoaderImlement",
-      "projectPath": "C:\\Users\\Alex\\source\\repos\\Alex-RV\\PersonalAcounting\\PersonalAcounting\\DataLoaderImlement\\DataLoaderImlement.csproj",
-      "packagesPath": "C:\\Users\\Alex\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\Alex\\source\\repos\\Alex-RV\\PersonalAcounting\\PersonalAcounting\\DataLoaderImlement\\obj\\",
+      "projectPath": "D:\\Work\\PersonalAcounting\\PersonalAcounting\\DataLoaderImlement\\DataLoaderImlement.csproj",
+      "packagesPath": "C:\\Users\\alexs\\.nuget\\packages\\",
+      "outputPath": "D:\\Work\\PersonalAcounting\\PersonalAcounting\\DataLoaderImlement\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
       ],
       "configFilePaths": [
-        "C:\\Users\\Alex\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Users\\alexs\\AppData\\Roaming\\NuGet\\NuGet.Config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
       ],
@@ -210,20 +286,26 @@
         "netcoreapp3.1": {
           "targetAlias": "netcoreapp3.1",
           "projectReferences": {
-            "C:\\Users\\Alex\\source\\repos\\Alex-RV\\PersonalAcounting\\PersonalAcounting\\AccountsImplement\\AccountImplement.csproj": {
-              "projectPath": "C:\\Users\\Alex\\source\\repos\\Alex-RV\\PersonalAcounting\\PersonalAcounting\\AccountsImplement\\AccountImplement.csproj"
+            "D:\\Work\\PersonalAcounting\\PersonalAcounting\\AccountFabric\\AccountFabric.csproj": {
+              "projectPath": "D:\\Work\\PersonalAcounting\\PersonalAcounting\\AccountFabric\\AccountFabric.csproj"
             },
-            "C:\\Users\\Alex\\source\\repos\\Alex-RV\\PersonalAcounting\\PersonalAcounting\\CostsImplements\\CostsImplement.csproj": {
-              "projectPath": "C:\\Users\\Alex\\source\\repos\\Alex-RV\\PersonalAcounting\\PersonalAcounting\\CostsImplements\\CostsImplement.csproj"
+            "D:\\Work\\PersonalAcounting\\PersonalAcounting\\AccountsImplement\\AccountImplement.csproj": {
+              "projectPath": "D:\\Work\\PersonalAcounting\\PersonalAcounting\\AccountsImplement\\AccountImplement.csproj"
             },
-            "C:\\Users\\Alex\\source\\repos\\Alex-RV\\PersonalAcounting\\PersonalAcounting\\IAccounts\\IAccount.csproj": {
-              "projectPath": "C:\\Users\\Alex\\source\\repos\\Alex-RV\\PersonalAcounting\\PersonalAcounting\\IAccounts\\IAccount.csproj"
+            "D:\\Work\\PersonalAcounting\\PersonalAcounting\\CostsImplements\\CostsImplement.csproj": {
+              "projectPath": "D:\\Work\\PersonalAcounting\\PersonalAcounting\\CostsImplements\\CostsImplement.csproj"
             },
-            "C:\\Users\\Alex\\source\\repos\\Alex-RV\\PersonalAcounting\\PersonalAcounting\\IDataLoader\\IDataLoader.csproj": {
-              "projectPath": "C:\\Users\\Alex\\source\\repos\\Alex-RV\\PersonalAcounting\\PersonalAcounting\\IDataLoader\\IDataLoader.csproj"
+            "D:\\Work\\PersonalAcounting\\PersonalAcounting\\FactoryDirectory\\FactoryDirectory.csproj": {
+              "projectPath": "D:\\Work\\PersonalAcounting\\PersonalAcounting\\FactoryDirectory\\FactoryDirectory.csproj"
             },
-            "C:\\Users\\Alex\\source\\repos\\Alex-RV\\PersonalAcounting\\PersonalAcounting\\IncomeImplements\\IncomeImplement.csproj": {
-              "projectPath": "C:\\Users\\Alex\\source\\repos\\Alex-RV\\PersonalAcounting\\PersonalAcounting\\IncomeImplements\\IncomeImplement.csproj"
+            "D:\\Work\\PersonalAcounting\\PersonalAcounting\\IAccounts\\IAccount.csproj": {
+              "projectPath": "D:\\Work\\PersonalAcounting\\PersonalAcounting\\IAccounts\\IAccount.csproj"
+            },
+            "D:\\Work\\PersonalAcounting\\PersonalAcounting\\IDataLoader\\IDataLoader.csproj": {
+              "projectPath": "D:\\Work\\PersonalAcounting\\PersonalAcounting\\IDataLoader\\IDataLoader.csproj"
+            },
+            "D:\\Work\\PersonalAcounting\\PersonalAcounting\\IncomeImplements\\IncomeImplement.csproj": {
+              "projectPath": "D:\\Work\\PersonalAcounting\\PersonalAcounting\\IncomeImplements\\IncomeImplement.csproj"
             }
           }
         }

@@ -84,3 +84,11 @@ D:\Work\PersonalAcounting\PersonalAcounting\DataLoaderImlement\obj\Debug\netcore
 D:\Work\PersonalAcounting\PersonalAcounting\DataLoaderImlement\obj\Debug\netcoreapp3.1\DataLoaderImlement.csproj.CopyComplete
 D:\Work\PersonalAcounting\PersonalAcounting\DataLoaderImlement\obj\Debug\netcoreapp3.1\DataLoaderImlement.dll
 D:\Work\PersonalAcounting\PersonalAcounting\DataLoaderImlement\obj\Debug\netcoreapp3.1\DataLoaderImlement.pdb
+D:\Work\PersonalAcounting\PersonalAcounting\DataLoaderImlement\bin\Debug\netcoreapp3.1\DirectoryImplement.dll
+D:\Work\PersonalAcounting\PersonalAcounting\DataLoaderImlement\bin\Debug\netcoreapp3.1\IDirectory.dll
+D:\Work\PersonalAcounting\PersonalAcounting\DataLoaderImlement\bin\Debug\netcoreapp3.1\DirectoryImplement.pdb
+D:\Work\PersonalAcounting\PersonalAcounting\DataLoaderImlement\bin\Debug\netcoreapp3.1\IDirectory.pdb
+D:\Work\PersonalAcounting\PersonalAcounting\DataLoaderImlement\bin\Debug\netcoreapp3.1\FactoryDirectory.dll
+D:\Work\PersonalAcounting\PersonalAcounting\DataLoaderImlement\bin\Debug\netcoreapp3.1\FactoryDirectory.pdb
+D:\Work\PersonalAcounting\PersonalAcounting\DataLoaderImlement\bin\Debug\netcoreapp3.1\AccountFabric.dll
+D:\Work\PersonalAcounting\PersonalAcounting\DataLoaderImlement\bin\Debug\netcoreapp3.1\AccountFabric.pdb

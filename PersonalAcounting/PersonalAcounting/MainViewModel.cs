@@ -25,14 +25,21 @@ namespace PersonalAcounting
         #region constructor
         public MainViewModel()
         {
-            loader = new DataLoader.Loader();
-            loader.PathToFile = "C:\\Users\\Alex\\Documents\\test.ff";
-            //loader.PathToFile = "C:\\Users\\alexs\\Documents\\test.ff";
 
-            _fabricsContainer = new FabricsContainer(loader);
+            _fabricsContainer = new FabricsContainer();
+
+            
+
+            loader = new DataLoader.Loader(_fabricsContainer.AccountFabric as Account.AccountFabric, _fabricsContainer.DirectoryFabric);
+            //loader.PathToFile = "C:\\Users\\Alex\\Documents\\test.ff";
+            loader.PathToFile = "C:\\Users\\alexs\\Documents\\test.ff";
+            loader.Load();
+
+
+            _fabricsContainer.SetLoader(loader);
+
 
             InitializeAccouts();
-
         }
         #endregion constructor
 
@@ -173,6 +180,8 @@ namespace PersonalAcounting
                 _fabricsContainer.AccountFabric);
             VisibleAccounts = true;
             Accounts.ChangedActivAcount += Accounts_ChangedActivAcount;
+            Accounts.ChangedButtonVisible += OnChangedButtonVisible;
+            Directory.ExitDirectory += OnExitDirectory;
         }
 
         private void InitlizeDirectories()
@@ -188,6 +197,11 @@ namespace PersonalAcounting
         }
         #endregion metods
 
+        /// <summary>
+        /// обработчик события Входа в выбранный счет
+        /// </summary>
+        /// <param name="sender"></param>
+        /// <param name="e"></param>
         #region event handlers
         private void Accounts_ChangedActivAcount(object sender, EventArgs e)
         {
@@ -196,12 +210,41 @@ namespace PersonalAcounting
             Accounts.SelectedItem.Exit += Account_Exit;
         }
 
+        /// <summary>
+        /// обработчик события Выхода из счета
+        /// </summary>
+        /// <param name="sender"></param>
+        /// <param name="e"></param>
         private void Account_Exit(object sender, EventArgs e)
         {
             VisibleAccount = false;
             VisibleAccounts = true;
+            VisibleButtonOpenDirectory = true;
             Accounts.SelectedItem.Exit -= Account_Exit;
         }
+
+        /// <summary>
+        /// обработчик события видемости кнопки настройки справочника
+        /// </summary>
+        /// <param name="sender"></param>
+        /// <param name="e"></param>
+        private void OnChangedButtonVisible(object sender, EventArgs e)
+        {
+            VisibleButtonOpenDirectory = false;
+        }
+
+        /// <summary>
+        /// обработчик события выхода из справочника
+        /// </summary>
+        /// <param name="sender"></param>
+        /// <param name="e"></param>
+        private void OnExitDirectory(object sender, EventArgs e)
+        {
+            VisibleDirectory = false;
+            VisibleAccounts = true;
+            VisibleButtonOpenDirectory = true;
+        }
+
         #endregion event handlers
     }
 }

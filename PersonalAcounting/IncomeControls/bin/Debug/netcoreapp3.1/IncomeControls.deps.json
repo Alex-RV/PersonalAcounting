@@ -8,6 +8,7 @@
     ".NETCoreApp,Version=v3.1": {
       "IncomeControls/1.0.0": {
         "dependencies": {
+          "IDirectory": "1.0.0",
           "IIncome": "1.0.0",
           "WPFHelper": "1.0.0"
         },
@@ -18,6 +19,11 @@
       "IBase/1.0.0": {
         "runtime": {
           "IBase.dll": {}
+        }
+      },
+      "IDirectory/1.0.0": {
+        "runtime": {
+          "IDirectory.dll": {}
         }
       },
       "IIncome/1.0.0": {
@@ -42,6 +48,11 @@
       "sha512": ""
     },
     "IBase/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    },
+    "IDirectory/1.0.0": {
       "type": "project",
       "serviceable": false,
       "sha512": ""

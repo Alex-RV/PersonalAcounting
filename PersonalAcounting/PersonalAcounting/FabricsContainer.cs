@@ -15,11 +15,9 @@ namespace PersonalAcounting
         #endregion fields
         DataLoader.ILoader _loader;
         #region constructor
-        public FabricsContainer(DataLoader.ILoader loader)
+        public FabricsContainer()
         {
-            _loader = loader;
             _accountFabric = new Account.AccountFabric(new Income.IncomeFabric(), new Costs.CostsFabric());
-            (_accountFabric as Account.AccountFabric).SetAccountList(_loader.LoadAccounts());
             _directoryFabric = new Directory.FactoryDirectory();
         }
         #endregion constructor
@@ -33,9 +31,14 @@ namespace PersonalAcounting
         public Directory.IFactoryDirectory DirectoryFabric { get { return _directoryFabric; } }
         #endregion properties
 
+        public void SetLoader(DataLoader.ILoader loader)
+        {
+            _loader = loader;
+        }
+
         public void Save()
         {
-            _loader.SaveAccounts(_accountFabric.GetAccountList().Items);
+            _loader.Save();
         }
     }
 }

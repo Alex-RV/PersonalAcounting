@@ -60,3 +60,7 @@ D:\Work\PersonalAcounting\PersonalAcounting\IDataLoader\obj\Debug\netcoreapp3.1\
 D:\Work\PersonalAcounting\PersonalAcounting\IDataLoader\obj\Debug\netcoreapp3.1\IDataLoader.csproj.CopyComplete
 D:\Work\PersonalAcounting\PersonalAcounting\IDataLoader\obj\Debug\netcoreapp3.1\IDataLoader.dll
 D:\Work\PersonalAcounting\PersonalAcounting\IDataLoader\obj\Debug\netcoreapp3.1\IDataLoader.pdb
+D:\Work\PersonalAcounting\PersonalAcounting\IDataLoader\bin\Debug\netcoreapp3.1\DirectoryImplement.dll
+D:\Work\PersonalAcounting\PersonalAcounting\IDataLoader\bin\Debug\netcoreapp3.1\IDirectory.dll
+D:\Work\PersonalAcounting\PersonalAcounting\IDataLoader\bin\Debug\netcoreapp3.1\DirectoryImplement.pdb
+D:\Work\PersonalAcounting\PersonalAcounting\IDataLoader\bin\Debug\netcoreapp3.1\IDirectory.pdb

@@ -15,6 +15,7 @@ namespace DirectoryControl.ViewModels
         private IEditorDirectory _directoryEditor;
         private IFactoryDirectory _directoryFabric;
         private WPFHelper.RelayCommand _directoryCommand;
+        private WPFHelper.RelayCommand _exitDirectoryCommand;
         private bool _visibleDirectory = false;
         #endregion fields
 
@@ -26,7 +27,7 @@ namespace DirectoryControl.ViewModels
             _directoryFabric = directoryFabric;
             foreach (IDirectory item in directories)
             {
-                DirectoryViewModel newItem = new DirectoryViewModel(item,directoryEditor);
+                DirectoryViewModel newItem = new DirectoryViewModel(item, directoryEditor, directoryFabric);
                 Items.Add(newItem);
             }
 
@@ -75,6 +76,24 @@ namespace DirectoryControl.ViewModels
             }
         }
 
+        ///<summary>
+        ///нажатие на кнопку выход
+        ///</summary>
+        public WPFHelper.RelayCommand ExitDirectoryCommand
+        {
+            get
+            {
+                if (_exitDirectoryCommand == null)
+                {
+                    _exitDirectoryCommand = new WPFHelper.RelayCommand("", (p) =>
+                    {
+                        OnExitDirectory();
+                    });
+                }
+                return _exitDirectoryCommand;
+            }
+        }
+
         /// <summary>
         /// Видимость окна эллементов справочника
         /// </summary>
@@ -92,6 +111,24 @@ namespace DirectoryControl.ViewModels
         }
         #endregion properies
 
+        #region events
+        private void OnExitDirectory()
+        {
+            if (ExitDirectory != null)
+            {
+                ExitDirectory(this, EventArgs.Empty);
+            }
+        }
+
+
+        /// <summary>
+        /// Выполнен выход из счета
+        /// </summary>
+        public event EventHandler ExitDirectory;
+
+
+
+        #endregion
 
     }
 }

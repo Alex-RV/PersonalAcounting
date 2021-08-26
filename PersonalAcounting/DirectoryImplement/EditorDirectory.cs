@@ -14,6 +14,7 @@ namespace Directory
             DirectoryItem addItem = newItem as DirectoryItem;
             if (addItem != null)
             {
+                addItem.DirectoryType = target.Type;
                 (target as Directory).Items.Add(addItem);
             }
 
@@ -24,7 +25,7 @@ namespace Directory
             DirectoryItem removedI = removedItem as DirectoryItem;
             if (removedI != null)
             {
-                (source as Directory).Items.Add(removedI);
+                (source as Directory).Items.Remove(removedI);
             }
         }
 

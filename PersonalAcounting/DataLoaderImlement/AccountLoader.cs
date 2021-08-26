@@ -35,9 +35,14 @@ namespace DataLoader
             return result;
         }
 
-        public static void Save(BinaryWriter writer, List<Account.Account> accounts)
+        public static void Save(BinaryWriter writer, IEnumerable<Account.IAccount> accounts)
         {
-            writer.Write(accounts.Count);
+            int countt = 0;
+            foreach (Account.Account item in accounts)
+            {
+                countt++;
+            }
+            writer.Write(countt);
             foreach (Account.Account item in accounts)
             {
                 writer.Write(item.Name);

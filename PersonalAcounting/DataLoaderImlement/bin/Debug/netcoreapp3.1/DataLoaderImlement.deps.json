@@ -8,14 +8,26 @@
     ".NETCoreApp,Version=v3.1": {
       "DataLoaderImlement/1.0.0": {
         "dependencies": {
+          "AccountFabric": "1.0.0",
           "AccountImplement": "1.0.0",
           "CostsImplement": "1.0.0",
+          "FactoryDirectory": "1.0.0",
           "IAccount": "1.0.0",
           "IDataLoader": "1.0.0",
           "IncomeImplement": "1.0.0"
         },
         "runtime": {
           "DataLoaderImlement.dll": {}
+        }
+      },
+      "AccountFabric/1.0.0": {
+        "dependencies": {
+          "AccountImplement": "1.0.0",
+          "IAccount": "1.0.0",
+          "IIncome": "1.0.0"
+        },
+        "runtime": {
+          "AccountFabric.dll": {}
         }
       },
       "AccountImplement/1.0.0": {
@@ -43,6 +55,23 @@
           "CostsImplement.dll": {}
         }
       },
+      "DirectoryImplement/1.0.0": {
+        "dependencies": {
+          "IDirectory": "1.0.0"
+        },
+        "runtime": {
+          "DirectoryImplement.dll": {}
+        }
+      },
+      "FactoryDirectory/1.0.0": {
+        "dependencies": {
+          "DirectoryImplement": "1.0.0",
+          "IDirectory": "1.0.0"
+        },
+        "runtime": {
+          "FactoryDirectory.dll": {}
+        }
+      },
       "IAccount/1.0.0": {
         "dependencies": {
           "ICosts": "1.0.0",
@@ -68,10 +97,17 @@
       "IDataLoader/1.0.0": {
         "dependencies": {
           "AccountImplement": "1.0.0",
-          "IAccount": "1.0.0"
+          "DirectoryImplement": "1.0.0",
+          "IAccount": "1.0.0",
+          "IDirectory": "1.0.0"
         },
         "runtime": {
           "IDataLoader.dll": {}
+        }
+      },
+      "IDirectory/1.0.0": {
+        "runtime": {
+          "IDirectory.dll": {}
         }
       },
       "IIncome/1.0.0": {
@@ -99,6 +135,11 @@
       "serviceable": false,
       "sha512": ""
     },
+    "AccountFabric/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    },
     "AccountImplement/1.0.0": {
       "type": "project",
       "serviceable": false,
@@ -110,6 +151,16 @@
       "sha512": ""
     },
     "CostsImplement/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    },
+    "DirectoryImplement/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    },
+    "FactoryDirectory/1.0.0": {
       "type": "project",
       "serviceable": false,
       "sha512": ""
@@ -130,6 +181,11 @@
       "sha512": ""
     },
     "IDataLoader/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    },
+    "IDirectory/1.0.0": {
       "type": "project",
       "serviceable": false,
       "sha512": ""

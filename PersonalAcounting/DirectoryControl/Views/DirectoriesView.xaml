@@ -35,6 +35,20 @@
                 BorderThickness="0.5"
                 Foreground="Blue"
                 />
+
+            <Button  
+                Width="Auto"
+                Height="Auto"
+                Padding="3"
+                Margin="10,5,0,0"
+                VerticalAlignment="Top"
+                HorizontalAlignment="Left"
+                Command="{Binding Path=ExitDirectoryCommand}"
+                Content="Выход"
+                BorderBrush="White" 
+                BorderThickness="0.5"
+                Foreground="Blue"
+                />
         </StackPanel>
 
         <ContentControl Grid.Row="0"

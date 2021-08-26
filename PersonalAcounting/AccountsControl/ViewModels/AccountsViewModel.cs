@@ -154,7 +154,9 @@ namespace AccountControl.ViewModels
                     {
                         if (SelectedItem != null)
                         {
+                            OnChangedButtonVisible();
                             OnChangedActivAcount();
+                            
                         }
                     });
                 }
@@ -240,6 +242,20 @@ namespace AccountControl.ViewModels
         #endregion event handlers
 
         #region events
+
+        /// <summary>
+        /// Событие отключение видимости кнопки
+        /// </summary>
+        public event EventHandler ChangedButtonVisible;
+
+        private void OnChangedButtonVisible()
+        {
+            if (ChangedButtonVisible != null)
+            {
+                ChangedButtonVisible(this, EventArgs.Empty);
+            }
+        }
+
         public event EventHandler ChangedActivAcount;
         private void OnChangedActivAcount()
         {

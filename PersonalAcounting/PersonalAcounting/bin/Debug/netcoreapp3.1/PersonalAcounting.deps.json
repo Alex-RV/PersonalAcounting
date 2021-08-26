@@ -94,8 +94,10 @@
       },
       "DataLoaderImlement/1.0.0": {
         "dependencies": {
+          "AccountFabric": "1.0.0",
           "AccountImplement": "1.0.0",
           "CostsImplement": "1.0.0",
+          "FactoryDirectory": "1.0.0",
           "IAccount": "1.0.0",
           "IDataLoader": "1.0.0",
           "IncomeImplement": "1.0.0"
@@ -155,7 +157,9 @@
       "IDataLoader/1.0.0": {
         "dependencies": {
           "AccountImplement": "1.0.0",
-          "IAccount": "1.0.0"
+          "DirectoryImplement": "1.0.0",
+          "IAccount": "1.0.0",
+          "IDirectory": "1.0.0"
         },
         "runtime": {
           "IDataLoader.dll": {}
@@ -176,6 +180,7 @@
       },
       "IncomeControls/1.0.0": {
         "dependencies": {
+          "IDirectory": "1.0.0",
           "IIncome": "1.0.0",
           "WPFHelper": "1.0.0"
         },

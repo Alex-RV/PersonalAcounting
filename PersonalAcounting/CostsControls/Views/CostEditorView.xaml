@@ -93,7 +93,7 @@
             Margin="1,10,1,10"
             Style="{DynamicResource RoundCorner}" 
             Content="{x:Static resCom:Resources.Accept}"
-            Command="{Binding Path=AcceptIncomeCommand}"/>
+            Command="{Binding Path=AcceptCostCommand}"/>
 
     </Grid>
 </UserControl>

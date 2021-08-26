@@ -15,10 +15,14 @@ namespace Directory
         #region contructor
         public FactoryDirectory()
         {
+            int idDirectoryType = 1;
+
             _types = new List<DirectoryType>();
             DirectoryType incomeType = new DirectoryType(Res.Resources.IncomeType);
+            incomeType.ID = idDirectoryType++;
             _types.Add(incomeType);
             DirectoryType costsType = new DirectoryType(Res.Resources.CostsType);
+            costsType.ID = idDirectoryType++;
             _types.Add(costsType);
 
              _directories = new List<Directory>();

@@ -9,6 +9,8 @@ namespace Directory
     /// </summary>
     public interface IDirectoryType
     {
+        int ID { get; }
+
         /// <summary>
         /// Название
         /// </summary>

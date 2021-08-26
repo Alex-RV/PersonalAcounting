@@ -26,24 +26,18 @@ namespace DirectoryControl.ViewModels
         private ObservableCollection<DirectoryItemViewModel> _items = new ObservableCollection<DirectoryItemViewModel>();
         private ObservableCollection<DirectoryItemViewModel> _type = new ObservableCollection<DirectoryItemViewModel>();
         private IDirectory item;
-
+        private IFactoryDirectory _factoryDirectory;
 
         #endregion fields
 
 
         #region contructor
-        public DirectoryViewModel(IDirectory item, IEditorDirectory editor)
+        public DirectoryViewModel(IDirectory item, IEditorDirectory editor, IFactoryDirectory factoryDirectory)
         {
             _directory = item;
             _directoryEditor = editor;
-        }
-
-        public DirectoryViewModel(Directory.IDirectory directory, IDirectoryItem directoryItem, IDirectoryType directoryType, IEditorDirectory editor)
-        {
-            
-            _directoryType = directoryType;
-            _directoryItem = directoryItem;
-
+            _factoryDirectory = factoryDirectory;
+            UpdateItems();
         }
         #endregion contructor
 
@@ -74,7 +68,7 @@ namespace DirectoryControl.ViewModels
         /// Действие при нажатии на кнопку ДОБАВИТЬ
         /// </summary>
         public WPFHelper.RelayCommand AddDirectoryCommand
-        { 
+        {
             get
             {
                 if (_addDirectoryCommand == null)
@@ -89,8 +83,8 @@ namespace DirectoryControl.ViewModels
                             Editor.EndEditing += Editor_EndEditing;
                         }
 
-
-                        //Editor.SetEditingIncome(_incomeFabric.CreateNew());
+                        IDirectoryItem newDirectoryItem = _factoryDirectory.CreateNewDirectoryItem();
+                        Editor.SetEditingDirectory(newDirectoryItem);
                         Editor.IsNew = true;
                     });
                 }
@@ -114,9 +108,10 @@ namespace DirectoryControl.ViewModels
                         {
                             return;
                         }
-                        //_incomeEditor.Remove(SelectedItem.GetModel());
-                        //UpdateItems();
-                        //Editor.SetEditingIncome(_incomeFabric.CreateNew());
+                        _directoryEditor.RemoveDirectoryItem(_directory, SelectedItem.GetModel());
+                        IDirectoryItem newDirectoryItem = _factoryDirectory.CreateNewDirectoryItem();
+                        Editor.SetEditingDirectory(newDirectoryItem);
+                        UpdateItems();
                     });
                 }
                 return _deleteCommand;
@@ -136,12 +131,12 @@ namespace DirectoryControl.ViewModels
                     {
                         if (SelectedItem == null)
                         {
-                            //Editor.SetEditingDirectory(SelectedItem.GetModel());
                             return;
                         }
-                        //Editor.SetEditingIncome(SelectedItem.GetModel());
-                        //Editor.IsNew = false;
-                        //UpdateItems();
+                        VisibleDirectoryItemEditor = true;
+                        Editor.SetEditingDirectory(SelectedItem.GetModel());
+                        Editor.IsNew = false;
+                        UpdateItems();
                     });
                 }
                 return _editorCommand;
@@ -180,24 +175,37 @@ namespace DirectoryControl.ViewModels
 
         public string Name
         {
-            get 
+            get
             {
-                return _directory.Name; 
+                return _directory.Name;
             }
         }
         #endregion properies
+
+        /// <summary>
+        /// Обнровление отображаемой коллекции
+        /// </summary>
+        private void UpdateItems()
+        {
+            ItemsSource.Clear();
+
+            foreach (IDirectoryItem directioryItem in _directory.Items)
+            {
+                DirectoryItemViewModel newItem = new DirectoryItemViewModel(directioryItem);
+                ItemsSource.Add(newItem);
+            }
+        }
 
         #region event handlers
 
         private void Editor_EndEditing(object sender, EventArgs e)
         {
-            //IDirectoryItem newItem = Editor.GetEditingItem();
-            //IEditorDirectory editorDirectory = Editor.GetEditingItem();
+            IDirectoryItem newItem = Editor.GetEditingItem();
             if (Editor.IsNew)
             {
-                 //_directoryEditor.AddDirectoryItem(editorDirectory);
+                _directoryEditor.AddDirectoryItem(_directory, newItem);
             }
-            //UpdateItems();
+            UpdateItems();
             VisibleDirectoryItemEditor = false;
         }
 
@@ -216,14 +224,7 @@ namespace DirectoryControl.ViewModels
             }
         }
 
-        /// <summary>
-        /// Возвращает модель строки - счет
-        /// </summary>
-        /// <returns></returns>
-        public IDirectory GetModel()
-        {
-            return _directory;
-        }
+
         #endregion metods
 
     }
