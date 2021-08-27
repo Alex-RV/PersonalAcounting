@@ -15,6 +15,7 @@ namespace IncomeControls.ViewModels
         private double _amount;
         private DateTime _createdate;
         private IIncomeEditor _incomeEditor;
+        WPFHelper.RelayCommand _acceptCommand;
         private bool _isNew;
         private ObservableCollection<DirectoryItemViewModel> _directoryItems = new ObservableCollection<DirectoryItemViewModel>();
         private DirectoryItemViewModel _selectedItem;
@@ -29,12 +30,12 @@ namespace IncomeControls.ViewModels
 
         #region properties
         /// <summary>
-        /// Элементы справочника типы расходов
+        /// Элементы справочника типы дохода
         /// </summary>
         public ObservableCollection<DirectoryItemViewModel> DirectoryItems { get { return _directoryItems; } }
 
         /// <summary>
-        /// Выбранный тип расхода
+        /// Выбранный тип дохода
         /// </summary>
         public DirectoryItemViewModel SelectedItem 
         { 
@@ -108,8 +109,10 @@ namespace IncomeControls.ViewModels
         }
 
 
-
-        WPFHelper.RelayCommand _acceptCommand;
+        /// <summary>
+        /// Действие при нажатии на кнопку применить
+        /// </summary>
+        /// 
         public WPFHelper.RelayCommand AcceptIncomeCommand
         {
             get
@@ -121,7 +124,6 @@ namespace IncomeControls.ViewModels
                 return _acceptCommand;
             }
         }
-
 
         #endregion properties
 
@@ -198,7 +200,6 @@ namespace IncomeControls.ViewModels
 
             return true;
         }
-
         #endregion
 
         private void OnEndEditing()

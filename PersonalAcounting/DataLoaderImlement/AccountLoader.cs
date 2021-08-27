@@ -31,8 +31,18 @@ namespace DataLoader
                         }
                     }
 
+                    Directory.IDirectory costTypes = null;
+
+                    foreach (Directory.IDirectory dir in directories)
+                    {
+                        if (dir.Name == Directory.Properties.Resources.CostsType)
+                        {
+                            costTypes = dir;
+                        }
+                    }
+
                     account.Incomes = IncomeLoader.Load(reader, incomeTypes.Items);
-                    account.Costs = CostsLoader.Load(reader);
+                    account.Costs = CostsLoader.Load(reader, costTypes.Items);
 
                     result.Add(account);
                 }

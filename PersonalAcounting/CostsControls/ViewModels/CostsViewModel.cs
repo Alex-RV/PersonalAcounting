@@ -19,13 +19,16 @@ namespace CostsControls.ViewModels
         private ICostsFabric _costFabric;
         private WPFHelper.RelayCommand _deleteCommand;
         private WPFHelper.RelayCommand _editorCommand;
+        private Directory.IDirectory _costTypes;
         #endregion fields
 
         #region constructor
-        public CostsViewModel(ICostsList list, ICostsEditor CostEditor, ICostsFabric CostFabric)
+        public CostsViewModel(ICostsList list, ICostsEditor CostEditor, ICostsFabric CostFabric, Directory.IDirectory costTypes)
         {
+            _list = list;
             _costEditor = CostEditor;
             _costFabric = CostFabric;
+            _costTypes = costTypes;
             InitializeItems(list);
         }
         #endregion constructor
@@ -68,7 +71,6 @@ namespace CostsControls.ViewModels
             }
         }
 
-
         /// <summary>
         /// редактор метод
         /// </summary>
@@ -97,14 +99,7 @@ namespace CostsControls.ViewModels
                     _addCostCommand = new WPFHelper.RelayCommand("", (p) =>
                     {
                         VisibleEditorCost = true;
-
-                        if (Editor == null)
-                        {
-                            Editor = new CostEditorViewModel(_costEditor);
-                            Editor.EndEditing += Editor_EndEditing;
-                        }
-
-
+                        InitEditor();
                         Editor.SetEditingCost(_costFabric.CreateNew());
                         Editor.IsNew = true;
                     });
@@ -153,6 +148,7 @@ namespace CostsControls.ViewModels
                         {
                             return;
                         }
+                        InitEditor();
                         VisibleEditorCost = true;
                         Editor.SetEditingCost(SelectedItem.GetModel());
                         Editor.IsNew = false;
@@ -196,6 +192,15 @@ namespace CostsControls.ViewModels
             }
         }
 
+        private void InitEditor()
+        {
+            if (Editor == null)
+            {
+                Editor = new CostEditorViewModel(_costEditor);
+                Editor.EndEditing += Editor_EndEditing;
+                Editor.FillDirectioryItems(_costTypes.Items);
+            }
+        }
         #endregion metods
 
         #region event handlers

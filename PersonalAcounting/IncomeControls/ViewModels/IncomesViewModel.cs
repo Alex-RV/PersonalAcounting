@@ -55,6 +55,9 @@ namespace IncomeControls.ViewModels
             }
         }
 
+        /// <summary>
+        /// Видимость редактора
+        /// </summary>
         public bool VisibleEditorIncome
         {
             get { return _visibleEditorIncome; }
@@ -68,6 +71,9 @@ namespace IncomeControls.ViewModels
             }
         }
 
+        /// <summary>
+        /// редактор метод
+        /// </summary>
         public IncomeEditorViewModel Editor
         {
             get { return _editor; }
@@ -195,7 +201,6 @@ namespace IncomeControls.ViewModels
                 Editor.FillDirectioryItems(_incomeTypes.Items);
             }
         }
-
         #endregion metods
 
         #region event handlers

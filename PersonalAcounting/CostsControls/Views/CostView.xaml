@@ -64,6 +64,17 @@
                         </GridViewColumn.CellTemplate>
                     </GridViewColumn>
 
+
+                    <GridViewColumn Width="200" Header="Категория">
+                        <GridViewColumn.CellTemplate>
+                            <DataTemplate>
+                                <TextBlock Text="{Binding Path=TypeName}"
+                                           Foreground="White"
+                                           FontSize="13"/>
+                            </DataTemplate>
+                        </GridViewColumn.CellTemplate>
+                    </GridViewColumn>
+
                     <GridViewColumn Width="200" Header="Сумма" ><!--Header="{x:Static res:Resources.Amount}"-->
                         <GridViewColumn.CellTemplate>
                             <DataTemplate>
@@ -75,7 +86,7 @@
                         </GridViewColumn.CellTemplate>
                     </GridViewColumn>
 
-                    <GridViewColumn Width="225" Header="Дата дохода">
+                    <GridViewColumn Width="150" Header="Дата дохода">
                         <GridViewColumn.CellTemplate>
                             <DataTemplate>
                                 <TextBlock Text="{Binding Path=CreateDate, StringFormat=dd.MM.yyyy}"

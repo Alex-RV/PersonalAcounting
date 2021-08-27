@@ -18,6 +18,7 @@
             <RowDefinition Height="Auto"/>
             <RowDefinition Height="Auto"/>
             <RowDefinition Height="Auto"/>
+            <RowDefinition Height="Auto"/>
         </Grid.RowDefinitions>
 
         <Label 
@@ -80,13 +81,32 @@
             Grid.Column="1"
             FontFamily="Candara Light"
             FontSize="14"
+            Margin="0,0,10,0"
+            Background="#6787CB"
+            Foreground="Black"
             SelectedDate="{Binding Path=CreateDate, UpdateSourceTrigger=LostFocus}"
             >
         </DatePicker>
 
+        <Label
+            Grid.Row="3"
+            Grid.Column="0"
+            Background="#282553"
+            FontFamily="Candara Light"
+            Foreground="#e3dcdf"
+            FontSize="14"
+            Content="Категория расхода"/>
+        <ComboBox
+            Grid.Row="3"
+            Grid.Column="1"
+            Margin="0,0,10,0"
+            ItemsSource="{Binding Path=DirectoryItems}"
+            SelectedItem="{Binding Path=SelectedItem}"/>
+
+
 
         <Button 
-            Grid.Row="3"
+            Grid.Row="4"
             Grid.Column="0"
             Foreground="White"
             Padding="5"

@@ -10,11 +10,11 @@ none
 false
 TRACE;DEBUG;NETCOREAPP;NETCOREAPP3_1;
 D:\Work\PersonalAcounting\PersonalAcounting\PersonalAcounting\App.xaml
-41765122069
+51680922517
 
 8-1344547938
 214815406391
-MainWindow.xaml;Theme\AcceptButtonTheme.xaml;Theme\MenuButtonTheme.xaml;Theme\MenuStartButtonTheme.xaml;
+MainWindow.xaml;Theme\AcceptButtonTheme.xaml;Theme\ListViewTheme.xaml;Theme\MenuButtonTheme.xaml;Theme\MenuStartButtonTheme.xaml;
 
-True
+False
 

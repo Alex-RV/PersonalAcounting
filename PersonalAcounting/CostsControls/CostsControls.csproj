@@ -8,6 +8,7 @@
 
   <ItemGroup>
     <ProjectReference Include="..\ICosts\ICosts.csproj" />
+    <ProjectReference Include="..\IDirectory\IDirectory.csproj" />
     <ProjectReference Include="..\WPFHelper\WPFHelper.csproj" />
   </ItemGroup>
 

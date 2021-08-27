@@ -38,6 +38,11 @@ namespace CostsControls.ViewModels
             get { return _costs.CreateDate; }
         }
 
+        public string TypeName
+        {
+            get { return _costs.Type.Name; }
+        }
+
         #region metods
         /// <summary>
         /// Возвращает модель строки - счет

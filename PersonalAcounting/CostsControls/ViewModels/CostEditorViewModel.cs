@@ -2,6 +2,8 @@
 using System.Collections.Generic;
 using System.Text;
 using Costs;
+using System.Collections.ObjectModel;
+using Directory;
 
 namespace CostsControls.ViewModels
 {
@@ -14,7 +16,9 @@ namespace CostsControls.ViewModels
         private DateTime _createdate;
         private ICostsEditor _costEditor;
         WPFHelper.RelayCommand _acceptCommand;
+        private ObservableCollection<DirectoryItemCostViewModel> _directoryItems = new ObservableCollection<DirectoryItemCostViewModel>();
         private bool _isNew;
+        private DirectoryItemCostViewModel _selectedItem;
         #endregion fields
 
         #region constructor
@@ -25,6 +29,27 @@ namespace CostsControls.ViewModels
         #endregion constructor
 
         #region properties
+        /// <summary>
+        /// Элементы справочника типы расходов
+        /// </summary>
+        public ObservableCollection<DirectoryItemCostViewModel> DirectoryItems { get { return _directoryItems; } }
+
+        /// <summary>
+        /// Выбранный тип расхода
+        /// </summary>
+        public DirectoryItemCostViewModel SelectedItem
+        {
+            get { return _selectedItem; }
+            set
+            {
+                if (_selectedItem != value)
+                {
+                    _selectedItem = value;
+                    OnPropertyChanged(nameof(SelectedItem));
+                }
+            }
+        }
+
         /// <summary>
         /// Добавление или удаление
         /// </summary>
@@ -100,7 +125,6 @@ namespace CostsControls.ViewModels
             }
         }
 
-
         #endregion properties
 
         #region methods
@@ -114,6 +138,14 @@ namespace CostsControls.ViewModels
             Name = _cost.Name;
             Amount = _cost.Amount;
             CreateDate = _cost.CreateDate;
+
+            foreach (DirectoryItemCostViewModel item in _directoryItems)
+            {
+                if (item.Model == сost.Type)
+                {
+                    SelectedItem = item;
+                }
+            }
         }
 
         /// <summary>
@@ -126,14 +158,47 @@ namespace CostsControls.ViewModels
         }
 
         /// <summary>
+        /// Наполение списка
+        /// </summary>
+        public void FillDirectioryItems(IEnumerable<IDirectoryItem> items)
+        {
+            _directoryItems.Add(new DirectoryItemCostViewModel(null));
+            foreach (IDirectoryItem item in items)
+            {
+                _directoryItems.Add(new DirectoryItemCostViewModel(item));
+            }
+        }
+
+        /// <summary>
         /// Метод выполняющийся при нажатии на кнопку Применить
         /// </summary>
         private void Accept()
         {
+            if (CheckCorrectValues() == false)
+            {
+                return;
+            }
             _costEditor.SetName(_cost, _name);
             _costEditor.SetAmount(_cost, _amount);
             _costEditor.SetCreateDate(_cost, _createdate);
+            _costEditor.SetType(_cost, _selectedItem.Model);
             OnEndEditing();
+        }
+
+        /// <summary>
+        /// Проверка формы на кооретность ввода данных
+        /// </summary>
+        /// <returns></returns>
+        private bool CheckCorrectValues()
+        {
+            if ((_name == null || _name == "") ||
+               _selectedItem.Model == null)
+            {
+                System.Windows.MessageBox.Show(Properties.Resources.IncorectData, Properties.Resources.Error, System.Windows.MessageBoxButton.OK, System.Windows.MessageBoxImage.Error);
+                return false;
+            }
+
+            return true;
         }
         #endregion
 
@@ -149,6 +214,4 @@ namespace CostsControls.ViewModels
         /// </summary>
         public event EventHandler EndEditing;
     }
-    
-    
 }
