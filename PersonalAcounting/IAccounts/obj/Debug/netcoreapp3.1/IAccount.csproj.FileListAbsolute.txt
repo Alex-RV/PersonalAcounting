@@ -48,3 +48,5 @@ D:\Work\PersonalAcounting\PersonalAcounting\IAccounts\obj\Debug\netcoreapp3.1\IA
 D:\Work\PersonalAcounting\PersonalAcounting\IAccounts\obj\Debug\netcoreapp3.1\IAccount.csproj.CopyComplete
 D:\Work\PersonalAcounting\PersonalAcounting\IAccounts\obj\Debug\netcoreapp3.1\IAccount.dll
 D:\Work\PersonalAcounting\PersonalAcounting\IAccounts\obj\Debug\netcoreapp3.1\IAccount.pdb
+C:\Users\MaynskiyAP\Source\Repos\PersonalAcounting\PersonalAcounting\IAccounts\bin\Debug\netcoreapp3.1\IDirectory.dll
+C:\Users\MaynskiyAP\Source\Repos\PersonalAcounting\PersonalAcounting\IAccounts\bin\Debug\netcoreapp3.1\IDirectory.pdb

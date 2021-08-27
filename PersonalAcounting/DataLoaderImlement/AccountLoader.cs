@@ -7,7 +7,7 @@ namespace DataLoader
 {
     internal class AccountLoader
     {
-        public static List<Account.Account> Load(BinaryReader reader)
+        public static List<Account.Account> Load(BinaryReader reader, IEnumerable<Directory.IDirectory> directories)
         {
             List<Account.Account> result = new List<Account.Account>();
 
@@ -21,7 +21,17 @@ namespace DataLoader
                     account.Owner = reader.ReadString();
                     account.CreateDate = new DateTime(reader.ReadInt64());
 
-                    account.Incomes = IncomeLoader.Load(reader);
+                    Directory.IDirectory incomeTypes = null;
+
+                    foreach (Directory.IDirectory dir in directories)
+                    {
+                        if (dir.Name == Directory.Properties.Resources.IncomeType)
+                        {
+                            incomeTypes = dir;
+                        }
+                    }
+
+                    account.Incomes = IncomeLoader.Load(reader, incomeTypes.Items);
                     account.Costs = CostsLoader.Load(reader);
 
                     result.Add(account);

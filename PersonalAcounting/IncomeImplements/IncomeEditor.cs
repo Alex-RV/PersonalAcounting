@@ -1,4 +1,5 @@
-﻿using System;
+﻿using Directory;
+using System;
 using System.Collections.Generic;
 using System.Text;
 
@@ -35,6 +36,15 @@ namespace Income
             if (correntIncome != null)
             {
                 correntIncome.Name = name;
+            }
+        }
+
+        public override void SetType(IIncome changeItem, IDirectoryItem type)
+        {
+            Income correntIncome = changeItem as Income;
+            if (correntIncome != null)
+            {
+                correntIncome.Type = type;
             }
         }
     }

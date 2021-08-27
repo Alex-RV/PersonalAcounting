@@ -17,7 +17,7 @@ namespace Directory
         /// Создает новый элемент спровочника
         /// </summary>
         /// <returns></returns>
-        IDirectoryItem CreateNewDirectoryItem();
+        IDirectoryItem CreateNewDirectoryItem(int? id= null);
 
     }
 }

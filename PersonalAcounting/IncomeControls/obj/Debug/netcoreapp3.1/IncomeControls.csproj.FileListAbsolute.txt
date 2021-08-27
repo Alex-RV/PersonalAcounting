@@ -82,3 +82,5 @@ D:\Work\PersonalAcounting\PersonalAcounting\IncomeControls\bin\Debug\netcoreapp3
 D:\Work\PersonalAcounting\PersonalAcounting\IncomeControls\bin\Debug\netcoreapp3.1\IDirectory.pdb
 C:\Users\Alex\source\repos\Alex-RV\PersonalAcounting\PersonalAcounting\IncomeControls\bin\Debug\netcoreapp3.1\IDirectory.dll
 C:\Users\Alex\source\repos\Alex-RV\PersonalAcounting\PersonalAcounting\IncomeControls\bin\Debug\netcoreapp3.1\IDirectory.pdb
+C:\Users\MaynskiyAP\Source\Repos\PersonalAcounting\PersonalAcounting\IncomeControls\bin\Debug\netcoreapp3.1\IDirectory.dll
+C:\Users\MaynskiyAP\Source\Repos\PersonalAcounting\PersonalAcounting\IncomeControls\bin\Debug\netcoreapp3.1\IDirectory.pdb

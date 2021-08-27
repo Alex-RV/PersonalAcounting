@@ -31,7 +31,7 @@ namespace PersonalAcounting
             
 
             loader = new DataLoader.Loader(_fabricsContainer.AccountFabric as Account.AccountFabric, _fabricsContainer.DirectoryFabric);
-            loader.PathToFile = "C:\\Users\\Alex\\Documents\\test.ff";
+            loader.PathToFile = "C:\\Experiments\\test.ff";
             //loader.PathToFile = "C:\\Users\\alexs\\Documents\\test.ff";
             loader.Load();
 
@@ -177,7 +177,8 @@ namespace PersonalAcounting
             Accounts = new AccountsViewModel(
                 _fabricsContainer.AccountFabric.GetAccountList(),
                 _fabricsContainer.AccountFabric.GetEditor(),
-                _fabricsContainer.AccountFabric);
+                _fabricsContainer.AccountFabric,
+                _fabricsContainer.DirectoryFabric.GetDirectories());
             VisibleAccounts = true;
             Accounts.ChangedActivAcount += Accounts_ChangedActivAcount;
             Accounts.ChangedButtonVisible += OnChangedButtonVisible;

@@ -17,6 +17,9 @@
         }
       },
       "IBase/1.0.0": {
+        "dependencies": {
+          "IDirectory": "1.0.0"
+        },
         "runtime": {
           "IBase.dll": {}
         }

@@ -66,6 +66,7 @@
       "FactoryDirectory/1.0.0": {
         "dependencies": {
           "DirectoryImplement": "1.0.0",
+          "IDGenerator": "1.0.0",
           "IDirectory": "1.0.0"
         },
         "runtime": {
@@ -82,6 +83,9 @@
         }
       },
       "IBase/1.0.0": {
+        "dependencies": {
+          "IDirectory": "1.0.0"
+        },
         "runtime": {
           "IBase.dll": {}
         }
@@ -103,6 +107,11 @@
         },
         "runtime": {
           "IDataLoader.dll": {}
+        }
+      },
+      "IDGenerator/1.0.0": {
+        "runtime": {
+          "IDGenerator.dll": {}
         }
       },
       "IDirectory/1.0.0": {
@@ -181,6 +190,11 @@
       "sha512": ""
     },
     "IDataLoader/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    },
+    "IDGenerator/1.0.0": {
       "type": "project",
       "serviceable": false,
       "sha512": ""

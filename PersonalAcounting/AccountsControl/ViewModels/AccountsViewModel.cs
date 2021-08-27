@@ -1,5 +1,6 @@
 ﻿using Account;
 using System;
+using System.Collections.Generic;
 using System.Collections.ObjectModel;
 
 namespace AccountControl.ViewModels
@@ -18,13 +19,15 @@ namespace AccountControl.ViewModels
         private WPFHelper.RelayCommand _deleteCommand;
         private WPFHelper.RelayCommand _editorCommand;
         private WPFHelper.RelayCommand _openAccountCommand;
+        private IEnumerable<Directory.IDirectory> _directories;
         #endregion fields
 
         #region constructor
-        public AccountsViewModel(IAccountList list, IAccountEditor accountEditor, IAccountFabric accountFabric)
+        public AccountsViewModel(IAccountList list, IAccountEditor accountEditor, IAccountFabric accountFabric, IEnumerable<Directory.IDirectory> directories)
         {
             _accountEditor = accountEditor;
             _accountFabric = accountFabric;
+            _directories = directories;
             InitializeItems(list);
         }
         #endregion constructor
@@ -228,7 +231,7 @@ namespace AccountControl.ViewModels
         {
             foreach (IAccount item in _list.Items)
             {
-                _items.Add(new AccountViewModel(item, _accountEditor));
+                _items.Add(new AccountViewModel(item, _accountEditor, _directories));
             }
         }
 

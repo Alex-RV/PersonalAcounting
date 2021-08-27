@@ -34,5 +34,12 @@ namespace Base
         /// добавление даты получения дохода или расхода
         /// </summary>
         void SetCreateDate(T changeItem, DateTime createdate);
+
+        /// <summary>
+        /// Установить тип
+        /// </summary>
+        /// <param name="changeItem"></param>
+        /// <param name="type"></param>
+        void SetType(T changeItem, Directory.IDirectoryItem type);
     }
 }

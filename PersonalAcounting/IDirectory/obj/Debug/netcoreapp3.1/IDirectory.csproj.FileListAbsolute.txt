@@ -30,3 +30,6 @@ D:\Work\PersonalAcounting\PersonalAcounting\IDirectory\obj\Debug\netcoreapp3.1\I
 D:\Work\PersonalAcounting\PersonalAcounting\IDirectory\obj\Debug\netcoreapp3.1\IDirectory.csproj.CoreCompileInputs.cache
 D:\Work\PersonalAcounting\PersonalAcounting\IDirectory\obj\Debug\netcoreapp3.1\IDirectory.dll
 D:\Work\PersonalAcounting\PersonalAcounting\IDirectory\obj\Debug\netcoreapp3.1\IDirectory.pdb
+C:\Users\MaynskiyAP\Source\Repos\PersonalAcounting\PersonalAcounting\IDirectory\obj\Debug\netcoreapp3.1\IDirectory.csprojAssemblyReference.cache
+C:\Users\MaynskiyAP\Source\Repos\PersonalAcounting\PersonalAcounting\IDirectory\obj\Debug\netcoreapp3.1\Directory.Properties.Resources.resources
+C:\Users\MaynskiyAP\Source\Repos\PersonalAcounting\PersonalAcounting\IDirectory\obj\Debug\netcoreapp3.1\IDirectory.csproj.GenerateResource.cache

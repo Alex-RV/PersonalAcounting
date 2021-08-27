@@ -36,3 +36,5 @@ D:\Work\PersonalAcounting\PersonalAcounting\BaseImplements\obj\Debug\netcoreapp3
 D:\Work\PersonalAcounting\PersonalAcounting\BaseImplements\obj\Debug\netcoreapp3.1\BaseImplement.dll
 D:\Work\PersonalAcounting\PersonalAcounting\BaseImplements\obj\Debug\netcoreapp3.1\BaseImplement.pdb
 D:\Work\PersonalAcounting\PersonalAcounting\BaseImplements\obj\Debug\netcoreapp3.1\BaseImplement.csproj.AssemblyReference.cache
+C:\Users\MaynskiyAP\Source\Repos\PersonalAcounting\PersonalAcounting\BaseImplements\bin\Debug\netcoreapp3.1\IDirectory.dll
+C:\Users\MaynskiyAP\Source\Repos\PersonalAcounting\PersonalAcounting\BaseImplements\bin\Debug\netcoreapp3.1\IDirectory.pdb

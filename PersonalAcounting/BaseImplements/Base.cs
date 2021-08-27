@@ -1,4 +1,5 @@
-﻿using System;
+﻿using Directory;
+using System;
 
 namespace Base
 {
@@ -11,7 +12,9 @@ namespace Base
         private string _name;
         private double _amount;
         private DateTime _createdate;
+        private IDirectoryItem _type;
         #endregion field
+       
         public Base()
         {
             CreateDate = DateTime.Now.Date;
@@ -43,6 +46,15 @@ namespace Base
         {
             get { return _createdate; }
             set { _createdate = value; }
+        }
+
+        /// <summary>
+        /// Тип элемента
+        /// </summary>
+        public IDirectoryItem Type
+        { 
+            get { return _type; }
+            set { _type = value; }
         }
 
         #endregion properties

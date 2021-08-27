@@ -10,11 +10,13 @@ namespace Directory
         private List<DirectoryType> _types;
         private EditorDirectory _editor;
         private List<Directory> _directories;
+        private IDGenerator.IDGenerator _IDGenerator;
         #endregion fields
 
         #region contructor
         public FactoryDirectory()
         {
+            _IDGenerator = new IDGenerator.IDGenerator();
             int idDirectoryType = 1;
 
             _types = new List<DirectoryType>();
@@ -37,9 +39,19 @@ namespace Directory
         #endregion contructor
 
         #region methods
-        public IDirectoryItem CreateNewDirectoryItem()
+        public IDirectoryItem CreateNewDirectoryItem(int? id = null)
         {
-            return new DirectoryItem();
+            var result = new DirectoryItem();
+            if (id.HasValue)
+            {
+                result.ID = id.Value;
+                _IDGenerator.SetLastID(result.ID);
+            }
+            else
+            {
+                result.ID = _IDGenerator.GetNewID();
+            }
+            return result;
         }
 
         public IEnumerable<IDirectory> GetDirectories()

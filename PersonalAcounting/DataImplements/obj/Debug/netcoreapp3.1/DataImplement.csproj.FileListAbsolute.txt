@@ -25,3 +25,4 @@ D:\Work\PersonalAcounting\PersonalAcounting\DataImplements\obj\Debug\netcoreapp3
 D:\Work\PersonalAcounting\PersonalAcounting\DataImplements\obj\Debug\netcoreapp3.1\DataImplement.dll
 D:\Work\PersonalAcounting\PersonalAcounting\DataImplements\obj\Debug\netcoreapp3.1\DataImplement.pdb
 D:\Work\PersonalAcounting\PersonalAcounting\DataImplements\obj\Debug\netcoreapp3.1\DataImplement.csproj.AssemblyReference.cache
+C:\Users\MaynskiyAP\Source\Repos\PersonalAcounting\PersonalAcounting\DataImplements\obj\Debug\netcoreapp3.1\DataImplement.csprojAssemblyReference.cache

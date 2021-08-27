@@ -1,0 +1,9 @@
+C:\Users\MaynskiyAP\Source\Repos\PersonalAcounting\PersonalAcounting\IDGenerator\bin\Debug\netcoreapp3.1\IDGenerator.deps.json
+C:\Users\MaynskiyAP\Source\Repos\PersonalAcounting\PersonalAcounting\IDGenerator\bin\Debug\netcoreapp3.1\IDGenerator.dll
+C:\Users\MaynskiyAP\Source\Repos\PersonalAcounting\PersonalAcounting\IDGenerator\bin\Debug\netcoreapp3.1\IDGenerator.pdb
+C:\Users\MaynskiyAP\Source\Repos\PersonalAcounting\PersonalAcounting\IDGenerator\obj\Debug\netcoreapp3.1\IDGenerator.csprojAssemblyReference.cache
+C:\Users\MaynskiyAP\Source\Repos\PersonalAcounting\PersonalAcounting\IDGenerator\obj\Debug\netcoreapp3.1\IDGenerator.AssemblyInfoInputs.cache
+C:\Users\MaynskiyAP\Source\Repos\PersonalAcounting\PersonalAcounting\IDGenerator\obj\Debug\netcoreapp3.1\IDGenerator.AssemblyInfo.cs
+C:\Users\MaynskiyAP\Source\Repos\PersonalAcounting\PersonalAcounting\IDGenerator\obj\Debug\netcoreapp3.1\IDGenerator.csproj.CoreCompileInputs.cache
+C:\Users\MaynskiyAP\Source\Repos\PersonalAcounting\PersonalAcounting\IDGenerator\obj\Debug\netcoreapp3.1\IDGenerator.dll
+C:\Users\MaynskiyAP\Source\Repos\PersonalAcounting\PersonalAcounting\IDGenerator\obj\Debug\netcoreapp3.1\IDGenerator.pdb

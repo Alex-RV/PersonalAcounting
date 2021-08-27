@@ -20,5 +20,10 @@ namespace Base
         ///дата дохода или расхода
         ///</summary>
         DateTime CreateDate { get; }
+
+        /// <summary>
+        /// Тип элемнеты
+        /// </summary>
+        Directory.IDirectoryItem Type { get; } 
     }
 }

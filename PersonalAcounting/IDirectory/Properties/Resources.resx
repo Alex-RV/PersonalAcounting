@@ -118,9 +118,9 @@
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
   <data name="CostsType" xml:space="preserve">
-    <value>Расходы</value>
+    <value>Типы расходов</value>
   </data>
   <data name="IncomeType" xml:space="preserve">
-    <value>Доходы</value>
+    <value>Типы доходов</value>
   </data>
 </root>

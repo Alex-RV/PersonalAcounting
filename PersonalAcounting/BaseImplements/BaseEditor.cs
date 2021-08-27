@@ -1,4 +1,5 @@
-﻿using System;
+﻿using Directory;
+using System;
 using System.Collections.Generic;
 using System.Text;
 
@@ -41,6 +42,8 @@ namespace Base
                 _list.Items.Remove(delete);
             }
         }
+
+        public abstract void SetType(T changeItem, IDirectoryItem type);
         #endregion
     }
 }

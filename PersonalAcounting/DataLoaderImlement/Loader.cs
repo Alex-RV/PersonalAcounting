@@ -24,17 +24,16 @@ namespace DataLoader
         {
             using (BinaryReader reader = new BinaryReader(File.Open(PathToFile, FileMode.OpenOrCreate)))
             {
-                _accountFabric.SetAccountList(LoadAccounts(reader));
-
                 LoadDictionary(reader);
+                _accountFabric.SetAccountList(LoadAccounts(reader, _factoryDirectory.GetDirectories()));
             }
         }
 
-        public IEnumerable<Account.IAccount> LoadAccounts(BinaryReader reader)
+        public IEnumerable<Account.IAccount> LoadAccounts(BinaryReader reader, IEnumerable<Directory.IDirectory> directories)
         {
             List<Account.Account> accounts = new List<Account.Account>();
 
-            accounts = AccountLoader.Load(reader);
+            accounts = AccountLoader.Load(reader, directories);
 
             return accounts;
         }
@@ -43,7 +42,7 @@ namespace DataLoader
         {
             IEnumerable<Directory.IDirectory> dictionaries = _factoryDirectory.GetDirectories();
 
-            DirectoryItemLoader.Load(reader, dictionaries, _factoryDirectory.GetEditorDirectory());
+            DirectoryItemLoader.Load(reader, dictionaries, _factoryDirectory.GetEditorDirectory(), _factoryDirectory);
 
             return dictionaries;
         }
@@ -52,8 +51,9 @@ namespace DataLoader
         {
             using (BinaryWriter writer = new BinaryWriter(File.Open(PathToFile, FileMode.OpenOrCreate)))
             {
-                AccountLoader.Save(writer, _accountFabric.GetAccountList().Items);
                 DirectoryItemLoader.Save(writer, _factoryDirectory.GetDirectories());
+                AccountLoader.Save(writer, _accountFabric.GetAccountList().Items);
+                
             }
         }
     }

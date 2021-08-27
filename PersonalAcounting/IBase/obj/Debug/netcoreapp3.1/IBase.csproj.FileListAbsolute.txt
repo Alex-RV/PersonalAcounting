@@ -27,3 +27,6 @@ D:\Work\PersonalAcounting\PersonalAcounting\IBase\obj\Debug\netcoreapp3.1\IBase.
 D:\Work\PersonalAcounting\PersonalAcounting\IBase\obj\Debug\netcoreapp3.1\IBase.pdb
 D:\Work\PersonalAcounting\PersonalAcounting\IBase\obj\Debug\netcoreapp3.1\IBase.csproj.AssemblyReference.cache
 C:\Users\Alex\source\repos\Alex-RV\PersonalAcounting\PersonalAcounting\IBase\obj\Debug\netcoreapp3.1\IBase.csproj.AssemblyReference.cache
+C:\Users\MaynskiyAP\Source\Repos\PersonalAcounting\PersonalAcounting\IBase\bin\Debug\netcoreapp3.1\IDirectory.dll
+C:\Users\MaynskiyAP\Source\Repos\PersonalAcounting\PersonalAcounting\IBase\bin\Debug\netcoreapp3.1\IDirectory.pdb
+C:\Users\MaynskiyAP\Source\Repos\PersonalAcounting\PersonalAcounting\IBase\obj\Debug\netcoreapp3.1\IBase.csproj.CopyComplete

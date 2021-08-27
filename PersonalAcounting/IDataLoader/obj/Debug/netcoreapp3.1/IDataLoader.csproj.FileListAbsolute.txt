@@ -68,3 +68,7 @@ C:\Users\Alex\source\repos\Alex-RV\PersonalAcounting\PersonalAcounting\IDataLoad
 C:\Users\Alex\source\repos\Alex-RV\PersonalAcounting\PersonalAcounting\IDataLoader\bin\Debug\netcoreapp3.1\IDirectory.dll
 C:\Users\Alex\source\repos\Alex-RV\PersonalAcounting\PersonalAcounting\IDataLoader\bin\Debug\netcoreapp3.1\DirectoryImplement.pdb
 C:\Users\Alex\source\repos\Alex-RV\PersonalAcounting\PersonalAcounting\IDataLoader\bin\Debug\netcoreapp3.1\IDirectory.pdb
+C:\Users\MaynskiyAP\Source\Repos\PersonalAcounting\PersonalAcounting\IDataLoader\bin\Debug\netcoreapp3.1\DirectoryImplement.dll
+C:\Users\MaynskiyAP\Source\Repos\PersonalAcounting\PersonalAcounting\IDataLoader\bin\Debug\netcoreapp3.1\IDirectory.dll
+C:\Users\MaynskiyAP\Source\Repos\PersonalAcounting\PersonalAcounting\IDataLoader\bin\Debug\netcoreapp3.1\DirectoryImplement.pdb
+C:\Users\MaynskiyAP\Source\Repos\PersonalAcounting\PersonalAcounting\IDataLoader\bin\Debug\netcoreapp3.1\IDirectory.pdb

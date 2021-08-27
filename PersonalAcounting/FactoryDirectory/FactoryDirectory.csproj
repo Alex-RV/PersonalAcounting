@@ -7,6 +7,7 @@
 
   <ItemGroup>
     <ProjectReference Include="..\DirectoryImplement\DirectoryImplement.csproj" />
+    <ProjectReference Include="..\IDGenerator\IDGenerator.csproj" />
     <ProjectReference Include="..\IDirectory\IDirectory.csproj" />
   </ItemGroup>
 

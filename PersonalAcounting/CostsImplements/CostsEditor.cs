@@ -1,4 +1,5 @@
-﻿using System;
+﻿using Directory;
+using System;
 using System.Collections.Generic;
 using System.Text;
 
@@ -38,5 +39,13 @@ namespace Costs
             }
         }
 
+        public override void SetType(ICosts changeItem, IDirectoryItem type)
+        {
+            Costs correntIncome = changeItem as Costs;
+            if (correntIncome != null)
+            {
+                correntIncome.Type = type;
+            }
+        }
     }
 }

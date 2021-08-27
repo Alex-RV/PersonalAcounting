@@ -34,6 +34,9 @@
         }
       },
       "IBase/1.0.0": {
+        "dependencies": {
+          "IDirectory": "1.0.0"
+        },
         "runtime": {
           "IBase.dll": {}
         }
@@ -44,6 +47,11 @@
         },
         "runtime": {
           "ICosts.dll": {}
+        }
+      },
+      "IDirectory/1.0.0": {
+        "runtime": {
+          "IDirectory.dll": {}
         }
       },
       "IIncome/1.0.0": {
@@ -78,6 +86,11 @@
       "sha512": ""
     },
     "ICosts/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    },
+    "IDirectory/1.0.0": {
       "type": "project",
       "serviceable": false,
       "sha512": ""

@@ -7,7 +7,7 @@ namespace DataLoader
 {
     internal class IncomeLoader
     {
-        public static Income.IIncomeList Load(BinaryReader reader)
+        public static Income.IIncomeList Load(BinaryReader reader, IEnumerable<Directory.IDirectoryItem> directoryItems)
         {
             Income.IncomeList result = new Income.IncomeList();
 
@@ -20,6 +20,16 @@ namespace DataLoader
                     income.Name = reader.ReadString();
                     income.Amount = reader.ReadDouble();
                     income.CreateDate = new DateTime(reader.ReadInt64());
+
+                    int typeID = reader.ReadInt32();
+                    foreach (Directory.IDirectoryItem directoryItem in directoryItems)
+                    {
+                        if (directoryItem.ID == typeID)
+                        {
+                            income.Type = directoryItem;
+                            break;
+                        }
+                    }
 
                     //result.Add(income);
                     result.Items.Add(income);
@@ -41,6 +51,7 @@ namespace DataLoader
                 writer.Write(item.Name);
                 writer.Write(item.Amount);
                 writer.Write(item.CreateDate.Ticks);
+                writer.Write(item.Type.ID);
 
             }
 

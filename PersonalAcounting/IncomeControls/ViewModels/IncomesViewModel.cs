@@ -19,14 +19,16 @@ namespace IncomeControls.ViewModels
         private IIncomeFabric _incomeFabric;
         private WPFHelper.RelayCommand _deleteCommand;
         private WPFHelper.RelayCommand _editorCommand;
+        private Directory.IDirectory _incomeTypes;
         #endregion fields
 
         #region constructor
-        public IncomesViewModel(IIncomeList list, IIncomeEditor incomeEditor, IIncomeFabric incomeFabric)
+        public IncomesViewModel(IIncomeList list, IIncomeEditor incomeEditor, IIncomeFabric incomeFabric, Directory.IDirectory incomeTypes)
         {
             _list = list;
             _incomeEditor = incomeEditor;
             _incomeFabric = incomeFabric;
+            _incomeTypes = incomeTypes;
             InitializeItems(list);
         }
         #endregion constructor
@@ -91,14 +93,7 @@ namespace IncomeControls.ViewModels
                     _addIncomeCommand = new WPFHelper.RelayCommand("", (p) =>
                     {
                         VisibleEditorIncome = true;
-
-                        if (Editor == null)
-                        {
-                            Editor = new IncomeEditorViewModel(_incomeEditor);
-                            Editor.EndEditing += Editor_EndEditing;
-                        }
-
-
+                        InitEditor();
                         Editor.SetEditingIncome(_incomeFabric.CreateNew());
                         Editor.IsNew = true;
                     });
@@ -147,6 +142,7 @@ namespace IncomeControls.ViewModels
                         {
                             return;
                         }
+                        InitEditor();
                         VisibleEditorIncome = true;
                         Editor.SetEditingIncome(SelectedItem.GetModel());
                         Editor.IsNew = false;
@@ -187,6 +183,16 @@ namespace IncomeControls.ViewModels
             foreach (IIncome item in _list.Items)
             {
                 _items.Add(new IncomeViewModel(item));
+            }
+        }
+
+        private void InitEditor()
+        {
+            if (Editor == null)
+            {
+                Editor = new IncomeEditorViewModel(_incomeEditor);
+                Editor.EndEditing += Editor_EndEditing;
+                Editor.FillDirectioryItems(_incomeTypes.Items);
             }
         }
 

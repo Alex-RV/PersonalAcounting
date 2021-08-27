@@ -89,10 +89,10 @@
             Grid.Row="3"
             Grid.Column="1"
             Margin="0,0,10,0"
-            ItemsSource="{Binding Path=DirectoryItems}">
-            
-            
-        </ComboBox>
+            ItemsSource="{Binding Path=DirectoryItems}"
+            SelectedItem="{Binding Path=SelectedItem}"/>
+
+
         <!--<DatePicker
             Grid.Row="2"
             Grid.Column="1"

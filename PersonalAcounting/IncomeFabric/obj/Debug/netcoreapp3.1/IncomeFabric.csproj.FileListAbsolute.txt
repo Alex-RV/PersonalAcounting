@@ -54,3 +54,5 @@ D:\Work\PersonalAcounting\PersonalAcounting\IncomeFabric\obj\Debug\netcoreapp3.1
 D:\Work\PersonalAcounting\PersonalAcounting\IncomeFabric\obj\Debug\netcoreapp3.1\IncomeFabric.csproj.CopyComplete
 D:\Work\PersonalAcounting\PersonalAcounting\IncomeFabric\obj\Debug\netcoreapp3.1\IncomeFabric.dll
 D:\Work\PersonalAcounting\PersonalAcounting\IncomeFabric\obj\Debug\netcoreapp3.1\IncomeFabric.pdb
+C:\Users\MaynskiyAP\Source\Repos\PersonalAcounting\PersonalAcounting\IncomeFabric\bin\Debug\netcoreapp3.1\IDirectory.dll
+C:\Users\MaynskiyAP\Source\Repos\PersonalAcounting\PersonalAcounting\IncomeFabric\bin\Debug\netcoreapp3.1\IDirectory.pdb

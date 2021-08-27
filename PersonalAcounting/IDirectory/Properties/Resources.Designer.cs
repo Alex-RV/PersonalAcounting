@@ -61,7 +61,7 @@ namespace Directory.Properties {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to Расходы.
+        ///   Looks up a localized string similar to Типы расходов.
         /// </summary>
         public static string CostsType {
             get {
@@ -70,7 +70,7 @@ namespace Directory.Properties {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to Доходы.
+        ///   Looks up a localized string similar to Типы доходов.
         /// </summary>
         public static string IncomeType {
             get {

@@ -23,13 +23,15 @@ namespace AccountControl.ViewModels
         private CostsControls.ViewModels.CostsViewModel _costs;
         private AccountControl.ViewModels.AccountViewModel _accountInfo;
         private IAccountEditor _accountEditor;
+        private IEnumerable<Directory.IDirectory> _directories;
         #endregion fields
 
         #region contructor
-        public AccountViewModel(IAccount account, IAccountEditor accountEditor)
+        public AccountViewModel(IAccount account, IAccountEditor accountEditor, IEnumerable<Directory.IDirectory> directories)
         {
             _account = account;
             _accountEditor = accountEditor;
+            _directories = directories;
         }
         #endregion contructor
 
@@ -91,7 +93,15 @@ namespace AccountControl.ViewModels
                     {
                         if (Income == null)
                         {
-                            Income = new IncomeControls.ViewModels.IncomesViewModel(_account.Incomes, _accountEditor.GetIncomeEditor(_account), _accountEditor.GetIncomeFabric());
+                            Directory.IDirectory incomeTypes = null;  
+                            foreach (var item in _directories)
+                            {
+                                if (item.Name == Directory.Properties.Resources.IncomeType)
+                                {
+                                    incomeTypes = item;
+                                }
+                            }
+                            Income = new IncomeControls.ViewModels.IncomesViewModel(_account.Incomes, _accountEditor.GetIncomeEditor(_account), _accountEditor.GetIncomeFabric(), incomeTypes);
                         }
                         VisibleShortView = false;
                         VisibleIncomeView = true;

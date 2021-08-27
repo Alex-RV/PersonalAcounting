@@ -48,3 +48,5 @@ D:\Work\PersonalAcounting\PersonalAcounting\IncomeImplements\obj\Debug\netcoreap
 D:\Work\PersonalAcounting\PersonalAcounting\IncomeImplements\obj\Debug\netcoreapp3.1\IncomeImplement.csproj.CopyComplete
 D:\Work\PersonalAcounting\PersonalAcounting\IncomeImplements\obj\Debug\netcoreapp3.1\IncomeImplement.dll
 D:\Work\PersonalAcounting\PersonalAcounting\IncomeImplements\obj\Debug\netcoreapp3.1\IncomeImplement.pdb
+C:\Users\MaynskiyAP\Source\Repos\PersonalAcounting\PersonalAcounting\IncomeImplements\bin\Debug\netcoreapp3.1\IDirectory.dll
+C:\Users\MaynskiyAP\Source\Repos\PersonalAcounting\PersonalAcounting\IncomeImplements\bin\Debug\netcoreapp3.1\IDirectory.pdb

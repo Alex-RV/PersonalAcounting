@@ -10,7 +10,7 @@ namespace DataLoader
     {
         private static IDirectoryType directoryType;
 
-        public static void  Load(BinaryReader reader, IEnumerable<IDirectory> directories, IEditorDirectory editor)
+        public static void  Load(BinaryReader reader, IEnumerable<IDirectory> directories, IEditorDirectory editor, IFactoryDirectory factoryDirectory)
         {
 
             try
@@ -20,9 +20,9 @@ namespace DataLoader
                 int count = reader.ReadInt32();
                 for (int i = 0; i < count; i++)
                 {
-                    Directory.DirectoryItem directoryItem = new Directory.DirectoryItem();
-                    directoryItem.ID = reader.ReadInt32();
-                    directoryItem.Name = reader.ReadString();
+                    int id = reader.ReadInt32();
+                    IDirectoryItem directoryItem = factoryDirectory.CreateNewDirectoryItem(id);
+                    editor.SetNameDirectoryItem(directoryItem, reader.ReadString());
 
                     int typeID = reader.ReadInt32();
 

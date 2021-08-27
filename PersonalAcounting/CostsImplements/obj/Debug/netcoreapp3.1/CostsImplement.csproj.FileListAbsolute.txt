@@ -48,3 +48,5 @@ D:\Work\PersonalAcounting\PersonalAcounting\CostsImplements\obj\Debug\netcoreapp
 D:\Work\PersonalAcounting\PersonalAcounting\CostsImplements\obj\Debug\netcoreapp3.1\CostsImplement.csproj.CopyComplete
 D:\Work\PersonalAcounting\PersonalAcounting\CostsImplements\obj\Debug\netcoreapp3.1\CostsImplement.dll
 D:\Work\PersonalAcounting\PersonalAcounting\CostsImplements\obj\Debug\netcoreapp3.1\CostsImplement.pdb
+C:\Users\MaynskiyAP\Source\Repos\PersonalAcounting\PersonalAcounting\CostsImplements\bin\Debug\netcoreapp3.1\IDirectory.dll
+C:\Users\MaynskiyAP\Source\Repos\PersonalAcounting\PersonalAcounting\CostsImplements\bin\Debug\netcoreapp3.1\IDirectory.pdb
