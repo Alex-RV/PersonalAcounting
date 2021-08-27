@@ -38,3 +38,5 @@ D:\Work\PersonalAcounting\PersonalAcounting\ICosts\obj\Debug\netcoreapp3.1\ICost
 D:\Work\PersonalAcounting\PersonalAcounting\ICosts\obj\Debug\netcoreapp3.1\ICosts.pdb
 C:\Users\MaynskiyAP\Source\Repos\PersonalAcounting\PersonalAcounting\ICosts\bin\Debug\netcoreapp3.1\IDirectory.dll
 C:\Users\MaynskiyAP\Source\Repos\PersonalAcounting\PersonalAcounting\ICosts\bin\Debug\netcoreapp3.1\IDirectory.pdb
+D:\Work\PersonalAcounting\PersonalAcounting\ICosts\bin\Debug\netcoreapp3.1\IDirectory.dll
+D:\Work\PersonalAcounting\PersonalAcounting\ICosts\bin\Debug\netcoreapp3.1\IDirectory.pdb

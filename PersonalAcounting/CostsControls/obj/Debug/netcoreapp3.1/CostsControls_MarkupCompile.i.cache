@@ -4,7 +4,7 @@
 library
 C#
 .cs
-C:\Users\MaynskiyAP\Source\Repos\PersonalAcounting\PersonalAcounting\CostsControls\obj\Debug\netcoreapp3.1\
+D:\Work\PersonalAcounting\PersonalAcounting\CostsControls\obj\Debug\netcoreapp3.1\
 CostsControls
 none
 false
@@ -13,7 +13,7 @@ TRACE;DEBUG;NETCOREAPP;NETCOREAPP3_1;
 2-761162254
 
 82048872060
-196-1086315396
+19648272771
 Views\CostEditorView.xaml;Views\CostView.xaml;
 
 True

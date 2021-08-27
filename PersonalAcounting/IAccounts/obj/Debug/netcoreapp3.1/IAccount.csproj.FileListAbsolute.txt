@@ -50,3 +50,5 @@ D:\Work\PersonalAcounting\PersonalAcounting\IAccounts\obj\Debug\netcoreapp3.1\IA
 D:\Work\PersonalAcounting\PersonalAcounting\IAccounts\obj\Debug\netcoreapp3.1\IAccount.pdb
 C:\Users\MaynskiyAP\Source\Repos\PersonalAcounting\PersonalAcounting\IAccounts\bin\Debug\netcoreapp3.1\IDirectory.dll
 C:\Users\MaynskiyAP\Source\Repos\PersonalAcounting\PersonalAcounting\IAccounts\bin\Debug\netcoreapp3.1\IDirectory.pdb
+D:\Work\PersonalAcounting\PersonalAcounting\IAccounts\bin\Debug\netcoreapp3.1\IDirectory.dll
+D:\Work\PersonalAcounting\PersonalAcounting\IAccounts\bin\Debug\netcoreapp3.1\IDirectory.pdb

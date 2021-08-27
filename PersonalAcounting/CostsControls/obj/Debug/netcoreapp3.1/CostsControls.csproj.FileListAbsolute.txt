@@ -80,3 +80,5 @@ C:\Users\MaynskiyAP\Source\Repos\PersonalAcounting\PersonalAcounting\CostsContro
 C:\Users\MaynskiyAP\Source\Repos\PersonalAcounting\PersonalAcounting\CostsControls\obj\Debug\netcoreapp3.1\Views\CostView.baml
 C:\Users\MaynskiyAP\Source\Repos\PersonalAcounting\PersonalAcounting\CostsControls\bin\Debug\netcoreapp3.1\IDirectory.dll
 C:\Users\MaynskiyAP\Source\Repos\PersonalAcounting\PersonalAcounting\CostsControls\bin\Debug\netcoreapp3.1\IDirectory.pdb
+D:\Work\PersonalAcounting\PersonalAcounting\CostsControls\bin\Debug\netcoreapp3.1\IDirectory.dll
+D:\Work\PersonalAcounting\PersonalAcounting\CostsControls\bin\Debug\netcoreapp3.1\IDirectory.pdb

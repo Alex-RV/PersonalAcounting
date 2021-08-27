@@ -44,3 +44,5 @@ C:\Users\MaynskiyAP\Source\Repos\PersonalAcounting\PersonalAcounting\FactoryDire
 C:\Users\MaynskiyAP\Source\Repos\PersonalAcounting\PersonalAcounting\FactoryDirectory\bin\Debug\netcoreapp3.1\DirectoryImplement.pdb
 C:\Users\MaynskiyAP\Source\Repos\PersonalAcounting\PersonalAcounting\FactoryDirectory\bin\Debug\netcoreapp3.1\IDGenerator.dll
 C:\Users\MaynskiyAP\Source\Repos\PersonalAcounting\PersonalAcounting\FactoryDirectory\bin\Debug\netcoreapp3.1\IDGenerator.pdb
+D:\Work\PersonalAcounting\PersonalAcounting\FactoryDirectory\bin\Debug\netcoreapp3.1\IDGenerator.dll
+D:\Work\PersonalAcounting\PersonalAcounting\FactoryDirectory\bin\Debug\netcoreapp3.1\IDGenerator.pdb

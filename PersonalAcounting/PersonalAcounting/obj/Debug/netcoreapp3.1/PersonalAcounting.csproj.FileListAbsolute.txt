@@ -206,3 +206,5 @@ C:\Users\MaynskiyAP\Source\Repos\PersonalAcounting\PersonalAcounting\PersonalAco
 C:\Users\MaynskiyAP\Source\Repos\PersonalAcounting\PersonalAcounting\PersonalAcounting\obj\Debug\netcoreapp3.1\PersonalAcounting.csproj.GenerateResource.cache
 C:\Users\MaynskiyAP\Source\Repos\PersonalAcounting\PersonalAcounting\PersonalAcounting\bin\Debug\netcoreapp3.1\IDGenerator.dll
 C:\Users\MaynskiyAP\Source\Repos\PersonalAcounting\PersonalAcounting\PersonalAcounting\bin\Debug\netcoreapp3.1\IDGenerator.pdb
+D:\Work\PersonalAcounting\PersonalAcounting\PersonalAcounting\bin\Debug\netcoreapp3.1\IDGenerator.dll
+D:\Work\PersonalAcounting\PersonalAcounting\PersonalAcounting\bin\Debug\netcoreapp3.1\IDGenerator.pdb

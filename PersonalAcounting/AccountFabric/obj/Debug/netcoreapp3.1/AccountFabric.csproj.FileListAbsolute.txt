@@ -62,3 +62,5 @@ D:\Work\PersonalAcounting\PersonalAcounting\AccountFabric\obj\Debug\netcoreapp3.
 D:\Work\PersonalAcounting\PersonalAcounting\AccountFabric\obj\Debug\netcoreapp3.1\AccountFabric.pdb
 C:\Users\MaynskiyAP\Source\Repos\PersonalAcounting\PersonalAcounting\AccountFabric\bin\Debug\netcoreapp3.1\IDirectory.dll
 C:\Users\MaynskiyAP\Source\Repos\PersonalAcounting\PersonalAcounting\AccountFabric\bin\Debug\netcoreapp3.1\IDirectory.pdb
+D:\Work\PersonalAcounting\PersonalAcounting\AccountFabric\bin\Debug\netcoreapp3.1\IDirectory.dll
+D:\Work\PersonalAcounting\PersonalAcounting\AccountFabric\bin\Debug\netcoreapp3.1\IDirectory.pdb

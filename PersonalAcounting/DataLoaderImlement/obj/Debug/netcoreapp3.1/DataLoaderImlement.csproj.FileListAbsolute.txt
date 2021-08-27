@@ -110,3 +110,5 @@ C:\Users\MaynskiyAP\Source\Repos\PersonalAcounting\PersonalAcounting\DataLoaderI
 C:\Users\MaynskiyAP\Source\Repos\PersonalAcounting\PersonalAcounting\DataLoaderImlement\bin\Debug\netcoreapp3.1\IDirectory.pdb
 C:\Users\MaynskiyAP\Source\Repos\PersonalAcounting\PersonalAcounting\DataLoaderImlement\bin\Debug\netcoreapp3.1\IDGenerator.dll
 C:\Users\MaynskiyAP\Source\Repos\PersonalAcounting\PersonalAcounting\DataLoaderImlement\bin\Debug\netcoreapp3.1\IDGenerator.pdb
+D:\Work\PersonalAcounting\PersonalAcounting\DataLoaderImlement\bin\Debug\netcoreapp3.1\IDGenerator.dll
+D:\Work\PersonalAcounting\PersonalAcounting\DataLoaderImlement\bin\Debug\netcoreapp3.1\IDGenerator.pdb

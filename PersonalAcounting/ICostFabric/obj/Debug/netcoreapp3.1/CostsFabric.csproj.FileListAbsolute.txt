@@ -56,3 +56,5 @@ D:\Work\PersonalAcounting\PersonalAcounting\ICostFabric\obj\Debug\netcoreapp3.1\
 D:\Work\PersonalAcounting\PersonalAcounting\ICostFabric\obj\Debug\netcoreapp3.1\CostsFabric.pdb
 C:\Users\MaynskiyAP\Source\Repos\PersonalAcounting\PersonalAcounting\ICostFabric\bin\Debug\netcoreapp3.1\IDirectory.dll
 C:\Users\MaynskiyAP\Source\Repos\PersonalAcounting\PersonalAcounting\ICostFabric\bin\Debug\netcoreapp3.1\IDirectory.pdb
+D:\Work\PersonalAcounting\PersonalAcounting\ICostFabric\bin\Debug\netcoreapp3.1\IDirectory.dll
+D:\Work\PersonalAcounting\PersonalAcounting\ICostFabric\bin\Debug\netcoreapp3.1\IDirectory.pdb

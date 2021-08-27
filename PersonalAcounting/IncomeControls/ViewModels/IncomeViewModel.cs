@@ -38,6 +38,11 @@ namespace IncomeControls.ViewModels
             get { return _income.CreateDate; }
         }
 
+        public string TypeName
+        { 
+            get { return _income.Type.Name; }
+        }
+
         #region metods
         /// <summary>
         /// Возвращает модель строки - счет
