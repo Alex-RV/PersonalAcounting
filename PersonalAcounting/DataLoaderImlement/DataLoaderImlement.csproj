@@ -5,8 +5,10 @@
   </PropertyGroup>
 
   <ItemGroup>
+    <ProjectReference Include="..\AccountFabric\AccountFabric.csproj" />
     <ProjectReference Include="..\AccountsImplement\AccountImplement.csproj" />
     <ProjectReference Include="..\CostsImplements\CostsImplement.csproj" />
+    <ProjectReference Include="..\FactoryDirectory\FactoryDirectory.csproj" />
     <ProjectReference Include="..\IAccounts\IAccount.csproj" />
     <ProjectReference Include="..\IDataLoader\IDataLoader.csproj" />
     <ProjectReference Include="..\IncomeImplements\IncomeImplement.csproj" />

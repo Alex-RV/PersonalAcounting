@@ -10,7 +10,7 @@ namespace Directory
 
         void RemoveDirectoryItem(IDirectory source, IDirectoryItem removedItem);
 
-        void SetNameDirectory(IDirectory directory, string name);
+        //void SetNameDirectory(IDirectory directory, string name);
 
         void SetNameDirectoryItem(IDirectoryItem item, string name);
     }

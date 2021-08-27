@@ -6,6 +6,7 @@
   </PropertyGroup>
 
   <ItemGroup>
+    <ProjectReference Include="..\IDirectory\IDirectory.csproj" />
     <ProjectReference Include="..\IIncome\IIncome.csproj" />
     <ProjectReference Include="..\WPFHelper\WPFHelper.csproj" />
   </ItemGroup>

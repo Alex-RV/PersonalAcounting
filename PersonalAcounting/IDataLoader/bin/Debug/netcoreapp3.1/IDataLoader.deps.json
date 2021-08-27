@@ -9,7 +9,9 @@
       "IDataLoader/1.0.0": {
         "dependencies": {
           "AccountImplement": "1.0.0",
-          "IAccount": "1.0.0"
+          "DirectoryImplement": "1.0.0",
+          "IAccount": "1.0.0",
+          "IDirectory": "1.0.0"
         },
         "runtime": {
           "IDataLoader.dll": {}
@@ -21,6 +23,14 @@
         },
         "runtime": {
           "AccountImplement.dll": {}
+        }
+      },
+      "DirectoryImplement/1.0.0": {
+        "dependencies": {
+          "IDirectory": "1.0.0"
+        },
+        "runtime": {
+          "DirectoryImplement.dll": {}
         }
       },
       "IAccount/1.0.0": {
@@ -45,6 +55,11 @@
           "ICosts.dll": {}
         }
       },
+      "IDirectory/1.0.0": {
+        "runtime": {
+          "IDirectory.dll": {}
+        }
+      },
       "IIncome/1.0.0": {
         "dependencies": {
           "IBase": "1.0.0"
@@ -66,6 +81,11 @@
       "serviceable": false,
       "sha512": ""
     },
+    "DirectoryImplement/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    },
     "IAccount/1.0.0": {
       "type": "project",
       "serviceable": false,
@@ -77,6 +97,11 @@
       "sha512": ""
     },
     "ICosts/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    },
+    "IDirectory/1.0.0": {
       "type": "project",
       "serviceable": false,
       "sha512": ""

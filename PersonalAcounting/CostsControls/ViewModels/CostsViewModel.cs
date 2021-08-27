@@ -52,6 +52,9 @@ namespace CostsControls.ViewModels
             }
         }
 
+        /// <summary>
+        /// Видимость редактора
+        /// </summary>
         public bool VisibleEditorCost
         {
             get { return _visibleEditorCost; }
@@ -65,6 +68,10 @@ namespace CostsControls.ViewModels
             }
         }
 
+
+        /// <summary>
+        /// редактор метод
+        /// </summary>
         public CostEditorViewModel Editor
         {
             get { return _editor; }

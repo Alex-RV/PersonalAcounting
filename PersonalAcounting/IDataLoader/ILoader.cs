@@ -10,8 +10,8 @@ namespace DataLoader
     {
         string PathToFile { get; set; }
 
-        IEnumerable<Account.IAccount> LoadAccounts();
+        void Load();
 
-        void SaveAccounts(IEnumerable<Account.IAccount> accounts);
+        void Save();
     }
 }

@@ -30,7 +30,7 @@
                     <BeginStoryboard>
                         <Storyboard Storyboard.TargetProperty="Background.Color">
                             <ColorAnimation To="Blue" Duration="0:0:0.5" />
-                            <ColorAnimation To="#07021c" BeginTime="0:0:0.5" Duration="0:0:1" />
+                            <ColorAnimation To="#282553" BeginTime="0:0:0.5" Duration="0:0:1" />
                         </Storyboard>
                     </BeginStoryboard>
                 </Trigger.EnterActions>

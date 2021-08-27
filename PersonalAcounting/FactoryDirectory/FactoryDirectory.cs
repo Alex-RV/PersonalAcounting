@@ -8,24 +8,29 @@ namespace Directory
     {
         #region fields
         private List<DirectoryType> _types;
-
+        private EditorDirectory _editor;
         private List<Directory> _directories;
         #endregion fields
 
         #region contructor
         public FactoryDirectory()
         {
+            int idDirectoryType = 1;
+
             _types = new List<DirectoryType>();
-            _types.Add(new DirectoryType(Res.Resources.IncomeType));
-            _types.Add(new DirectoryType(Res.Resources.CostsType));
+            DirectoryType incomeType = new DirectoryType(Res.Resources.IncomeType);
+            incomeType.ID = idDirectoryType++;
+            _types.Add(incomeType);
+            DirectoryType costsType = new DirectoryType(Res.Resources.CostsType);
+            costsType.ID = idDirectoryType++;
+            _types.Add(costsType);
 
              _directories = new List<Directory>();
-            foreach (var item in _types)
+            foreach (DirectoryType directoryType in _types)
             {
-                _directories.Add(new Directory(item)
-                {
-                    Name = item.Name
-                });
+                Directory newDirectory = new Directory(directoryType);
+                newDirectory.Name = directoryType.Name;
+                _directories.Add(newDirectory);
             }
         }
 
@@ -40,6 +45,15 @@ namespace Directory
         public IEnumerable<IDirectory> GetDirectories()
         {
             return _directories;
+        }
+
+        public IEditorDirectory GetEditorDirectory()
+        {
+            if (_editor == null)
+            {
+                _editor = new EditorDirectory();
+            }
+            return _editor;
         }
         #endregion methods
     }

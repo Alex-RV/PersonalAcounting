@@ -13,6 +13,7 @@ namespace CostsControls.ViewModels
         private double _amount;
         private DateTime _createdate;
         private ICostsEditor _costEditor;
+        WPFHelper.RelayCommand _acceptCommand;
         private bool _isNew;
         #endregion fields
 
@@ -83,8 +84,10 @@ namespace CostsControls.ViewModels
         }
 
 
-
-        WPFHelper.RelayCommand _acceptCommand;
+        /// <summary>
+        /// Действие при нажатии на кнопку применить
+        /// </summary>
+        
         public WPFHelper.RelayCommand AcceptCostCommand
         {
             get
@@ -104,10 +107,10 @@ namespace CostsControls.ViewModels
         /// <summary>
         /// Установка редактируемого дохода
         /// </summary>
-        /// <param name="Cost"></param>
-        public void SetEditingCost(ICosts Cost)
+        /// <param name="сost"></param>
+        public void SetEditingCost(ICosts сost)
         {
-            _cost = Cost;
+            _cost = сost;
             Name = _cost.Name;
             Amount = _cost.Amount;
             CreateDate = _cost.CreateDate;

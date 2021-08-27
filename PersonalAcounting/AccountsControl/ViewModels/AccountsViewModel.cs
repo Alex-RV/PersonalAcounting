@@ -80,12 +80,7 @@ namespace AccountControl.ViewModels
                     {
                         VisibleEditor = true;
 
-                        if (Editor == null)
-                        {
-                            Editor = new AccountEditorViewModel(_accountEditor);
-                            Editor.EndEditing += Editor_EndEditing;
-                        }
-
+                        InitEditor();
 
                         Editor.SetEditingAccount(_accountFabric.CreateNew());
                         Editor.IsNew = true;
@@ -108,10 +103,19 @@ namespace AccountControl.ViewModels
                     {
                         if (SelectedItem == null)
                         {
+
+                            if (VisibleEditor == true)
+                            {
+                                VisibleEditor = false;
+                            }
                             return;
                         }
                         _accountEditor.Remove(SelectedItem.GetModel());
                         UpdateItems();
+                        if (VisibleEditor == true)
+                        {
+                            VisibleEditor = false;
+                        }
                         //Editor.SetEditingAccount(_accountFabric.CreateNew());
                     });
                 }
@@ -134,6 +138,8 @@ namespace AccountControl.ViewModels
                         {
                             return;
                         }
+                        InitEditor();
+
                         VisibleEditor = true;
                         Editor.SetEditingAccount(SelectedItem.GetModel());
                         Editor.IsNew = false;
@@ -157,7 +163,9 @@ namespace AccountControl.ViewModels
                     {
                         if (SelectedItem != null)
                         {
+                            OnChangedButtonVisible();
                             OnChangedActivAcount();
+                            
                         }
                     });
                 }
@@ -183,6 +191,16 @@ namespace AccountControl.ViewModels
         #endregion properties
 
         #region metods
+        private void InitEditor()
+        {
+            if (Editor == null)
+            {
+                Editor = new AccountEditorViewModel(_accountEditor);
+                Editor.EndEditing += Editor_EndEditing;
+            }
+
+        }
+
         /// <summary>
         /// Инициализация коллекции
         /// </summary>
@@ -233,6 +251,20 @@ namespace AccountControl.ViewModels
         #endregion event handlers
 
         #region events
+
+        /// <summary>
+        /// Событие отключение видимости кнопки
+        /// </summary>
+        public event EventHandler ChangedButtonVisible;
+
+        private void OnChangedButtonVisible()
+        {
+            if (ChangedButtonVisible != null)
+            {
+                ChangedButtonVisible(this, EventArgs.Empty);
+            }
+        }
+
         public event EventHandler ChangedActivAcount;
         private void OnChangedActivAcount()
         {

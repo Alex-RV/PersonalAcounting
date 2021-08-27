@@ -28,7 +28,7 @@
             </Style.Setters>
         </Style>
     </UserControl.Resources>
-    <Border Background="#07021c"
+    <Border Background="#282553"
             CornerRadius="25">
         <Grid>
             <Grid.ColumnDefinitions>
@@ -54,7 +54,7 @@
                 IsExpanded="True">
                 <Border
                     BorderBrush="Gray"
-                    BorderThickness="1">
+                    BorderThickness="0">
                     <Grid>
                         <Grid.RowDefinitions>
                             <RowDefinition Height="*"/>

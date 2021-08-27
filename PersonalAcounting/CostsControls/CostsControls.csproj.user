@@ -2,18 +2,18 @@
 <Project ToolsVersion="Current" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
   <PropertyGroup />
   <ItemGroup>
-    <Compile Update="View\CostEditorView.xaml.cs">
+    <Compile Update="Views\CostEditorView.xaml.cs">
       <SubType>Code</SubType>
     </Compile>
-    <Compile Update="View\CostView.xaml.cs">
+    <Compile Update="Views\CostView.xaml.cs">
       <SubType>Code</SubType>
     </Compile>
   </ItemGroup>
   <ItemGroup>
-    <Page Update="View\CostEditorView.xaml">
+    <Page Update="Views\CostEditorView.xaml">
       <SubType>Designer</SubType>
     </Page>
-    <Page Update="View\CostView.xaml">
+    <Page Update="Views\CostView.xaml">
       <SubType>Designer</SubType>
     </Page>
   </ItemGroup>

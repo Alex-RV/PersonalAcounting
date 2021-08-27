@@ -7,16 +7,43 @@
   </PropertyGroup>
 
   <ItemGroup>
+    <None Remove="outline_settings_white_48dp.png" />
+  </ItemGroup>
+
+  <ItemGroup>
     <ProjectReference Include="..\AccountFabric\AccountFabric.csproj" />
     <ProjectReference Include="..\AccountsControl\AccountControl.csproj" />
     <ProjectReference Include="..\DataLoaderImlement\DataLoaderImlement.csproj" />
+    <ProjectReference Include="..\DirectoryControl\DirectoryControl.csproj" />
+    <ProjectReference Include="..\DirectoryImplement\DirectoryImplement.csproj" />
+    <ProjectReference Include="..\FactoryDirectory\FactoryDirectory.csproj" />
     <ProjectReference Include="..\IAccounts\IAccount.csproj" />
     <ProjectReference Include="..\ICostFabric\CostsFabric.csproj" />
     <ProjectReference Include="..\ICosts\ICosts.csproj" />
     <ProjectReference Include="..\IDataLoader\IDataLoader.csproj" />
+    <ProjectReference Include="..\IDirectory\IDirectory.csproj" />
     <ProjectReference Include="..\IIncome\IIncome.csproj" />
     <ProjectReference Include="..\IncomeFabric\IncomeFabric.csproj" />
     <ProjectReference Include="..\WPFHelper\WPFHelper.csproj" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Resource Include="outline_settings_white_48dp.png" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Compile Update="Properties\Resources.Designer.cs">
+      <DesignTime>True</DesignTime>
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+  </ItemGroup>
+
+  <ItemGroup>
+    <EmbeddedResource Update="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
   </ItemGroup>
 
 </Project>

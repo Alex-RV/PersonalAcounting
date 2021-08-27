@@ -25,6 +25,7 @@
                 BorderBrush="White" 
                 BorderThickness="0.5"
                 Foreground="White"
+                Style="{StaticResource MenuStartButtonTheme}"
                 />
             <RadioButton
                 Width="Auto"
@@ -33,6 +34,7 @@
                 BorderBrush="White" 
                 BorderThickness="0.5"
                 Foreground="White"
+                Style="{StaticResource MenuStartButtonTheme}"
                 />
             <RadioButton
                 Width="Auto"
@@ -41,14 +43,14 @@
                 BorderBrush="White" 
                 BorderThickness="0.5"
                 Foreground="White"
-                /><!--Style="{StaticResource MenuStartButtonTheme}"-->
+                Style="{StaticResource MenuStartButtonTheme}"/>
         </StackPanel>
 
         <ListView 
             Grid.Row="1"
             ItemsSource="{Binding Path=Items}" 
             SelectedItem="{Binding Path=SelectedItem}"
-            Background="#16224f"
+            Background="#6787CB"
             ScrollViewer.HorizontalScrollBarVisibility="Visible">
             <ListView.View>
                 <GridView>
@@ -89,8 +91,10 @@
 
         <local:CostEditorView
             Grid.Row="2"
-            Visibility="{Binding Path=DataContext.VisibleEditorCosts,
-                        Converter={x:Static conv:BoolToVisible.Instance},RelativeSource={RelativeSource Mode=FindAncestor, AncestorType=UserControl}}"
+            Visibility="{Binding Path=DataContext.VisibleEditorCost,
+                        Converter={x:Static conv:BoolToVisible.Instance},
+                        RelativeSource={RelativeSource Mode=FindAncestor, 
+                        AncestorType=UserControl}}"
             DataContext="{Binding Path=Editor}"
         />
 

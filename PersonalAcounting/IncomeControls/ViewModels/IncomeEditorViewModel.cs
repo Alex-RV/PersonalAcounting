@@ -1,19 +1,23 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.Collections.ObjectModel;
 using System.Text;
 using Income;
+using Directory;
 
 namespace IncomeControls.ViewModels
 {
     public class IncomeEditorViewModel : WPFHelper.ViewModelBase
     {
         #region fields
+        private IDirectory _list;
         private IIncome _income;
         private string _name;
         private double _amount;
         private DateTime _createdate;
         private IIncomeEditor _incomeEditor;
         private bool _isNew;
+        private ObservableCollection<Directory.IDirectory> _directoryItems = new ObservableCollection<Directory.IDirectory>();
         #endregion fields
 
         #region constructor
@@ -24,6 +28,21 @@ namespace IncomeControls.ViewModels
         #endregion constructor
 
         #region properties
+
+        public ObservableCollection<Directory.IDirectory> DirectoryItems { get { return _directoryItems; } }
+
+        /// <summary>
+        /// Наполение списка
+        /// </summary>
+        private void FillItems()
+        {
+            foreach (IDirectory item in DirectoryItems)
+            {
+                _directoryItems.Add(item);
+                //_directoryItems.Add(new IncomeEditorViewModel(item));
+            }
+        }
+
         /// <summary>
         /// Добавление или удаление
         /// </summary>
