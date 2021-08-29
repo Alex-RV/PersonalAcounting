@@ -105,6 +105,7 @@ namespace DirectoryControl.ViewModels
                         {
                             return;
                         }
+                        InitEditor();
                         _directoryEditor.RemoveDirectoryItem(_directory, SelectedItem.GetModel());
                         IDirectoryItem newDirectoryItem = _factoryDirectory.CreateNewDirectoryItem();
                         Editor.SetEditingDirectory(newDirectoryItem);
@@ -195,6 +196,15 @@ namespace DirectoryControl.ViewModels
             VisibleDirectoryItemEditor = false;
         }
 
+        /// <summary>
+        /// обработчик события нажатия на кнопку отмена
+        /// </summary>
+        /// <param name="sender"></param>
+        /// <param name="e"></param>
+        private void OnCancelEditor(object sender, EventArgs e)
+        {
+            VisibleDirectoryItemEditor = false;
+        }
         #endregion event handlers
 
         #region metods
@@ -218,6 +228,7 @@ namespace DirectoryControl.ViewModels
             if (Editor == null)
             {
                 Editor = new DirectoryItemEditorViewModel(_directoryEditor);
+                Editor.CancelEditor += OnCancelEditor;
                 Editor.EndEditing += Editor_EndEditing;
             }
 

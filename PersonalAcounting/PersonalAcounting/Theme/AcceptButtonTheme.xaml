@@ -4,12 +4,11 @@
         
         <Setter Property="HorizontalContentAlignment" Value="Center"/>
         <Setter Property="VerticalContentAlignment" Value="Center"/>
-        <Setter Property="Padding" Value="50"/>
         <Setter Property="Template">
             <Setter.Value>
                 <ControlTemplate TargetType="{x:Type Button}">
                     <Grid x:Name="grid">
-                        <Border x:Name="border" CornerRadius="3" BorderBrush="Red" Padding="6" BorderThickness="0.5">
+                        <Border x:Name="border" CornerRadius="4" BorderBrush="White" Padding="6" BorderThickness="0.5">
                             <Border.Background>
                                 <RadialGradientBrush GradientOrigin="0.496,1.052">
                                     <RadialGradientBrush.RelativeTransform>
@@ -49,6 +48,8 @@
                         </Trigger>
                         <Trigger Property="IsMouseOver" Value="True">
                             <Setter Property="BorderBrush" TargetName="border" Value="Red"/>
+                            <Setter Property="Padding" TargetName="border"  Value="5.35"/>
+                            <Setter Property="FontSize" Value="13"/>
                         </Trigger>
                         <Trigger Property="IsEnabled" Value="False">
                             <Setter Property="Opacity" TargetName="grid" Value="0.25"/>

@@ -28,6 +28,11 @@ namespace CostsControls.ViewModels
             get { return _costs.Name; }
         }
 
+        public string Comment
+        {
+            get { return _costs.Comment; }
+        }
+
         public double Amount
         {
             get { return _costs.Amount; }

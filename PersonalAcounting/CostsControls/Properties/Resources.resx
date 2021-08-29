@@ -135,6 +135,9 @@
   <data name="IncorectData" xml:space="preserve">
     <value>Не корректно заполенные данные</value>
   </data>
+  <data name="Name" xml:space="preserve">
+    <value>Название</value>
+  </data>
   <data name="NotSelected" xml:space="preserve">
     <value>Не выбрано</value>
   </data>

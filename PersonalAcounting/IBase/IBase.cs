@@ -12,6 +12,11 @@ namespace Base
         string Name { get; }
 
         ///<summary>
+        ///комментарий дохода или расхода 
+        ///</summary>
+        string Comment { get; }
+
+        ///<summary>
         ///сумма дохода или расхода
         ///</summary>
         double Amount { get; }

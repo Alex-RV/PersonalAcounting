@@ -25,6 +25,8 @@
                 <Setter Property="Height" Value="50"/>
                 <Setter Property="Foreground" Value="White"/>
                 <Setter Property="FontSize" Value="22"/>
+                <Setter Property="FontFamily" Value="Century Gothic"/>
+                <Setter Property="FontWeight" Value="ExtraBold"/>
             </Style.Setters>
         </Style>
     </UserControl.Resources>

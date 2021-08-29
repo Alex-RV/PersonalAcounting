@@ -31,6 +31,8 @@ namespace Base
 
         public abstract void SetName(T correntBase, string name);
 
+        public abstract void SetComment(T correntBase, string comment);
+
         public abstract void SetAmount(T correntBase, double amount);
 
         public abstract void SetCreateDate(T correntBase, DateTime createdate);

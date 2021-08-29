@@ -68,7 +68,7 @@
                             <GridViewColumn.CellTemplate>
                                 <DataTemplate>
                                     <TextBlock Text="{Binding Path=Name}"
-                                                   Foreground="White"
+                                                   Foreground="#000442"
                                                    FontSize="18"/>
                                 </DataTemplate>
                             </GridViewColumn.CellTemplate>

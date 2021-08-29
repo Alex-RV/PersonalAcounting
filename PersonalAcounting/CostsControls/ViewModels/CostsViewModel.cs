@@ -123,6 +123,7 @@ namespace CostsControls.ViewModels
                         {
                             return;
                         }
+                        InitEditor();
                         _costEditor.Remove(SelectedItem.GetModel());
                         UpdateItems();
                         Editor.SetEditingCost(_costFabric.CreateNew());
@@ -198,6 +199,7 @@ namespace CostsControls.ViewModels
             {
                 Editor = new CostEditorViewModel(_costEditor);
                 Editor.EndEditing += Editor_EndEditing;
+                Editor.CancelEditor += OnCancelEditor;
                 Editor.FillDirectioryItems(_costTypes.Items);
             }
         }
@@ -214,6 +216,16 @@ namespace CostsControls.ViewModels
                 _costEditor.Add(edditingCost);
             }
             UpdateItems();
+            VisibleEditorCost = false;
+        }
+
+        /// <summary>
+        /// обработчик события нажатия на кнопку отмена
+        /// </summary>
+        /// <param name="sender"></param>
+        /// <param name="e"></param>
+        private void OnCancelEditor(object sender, EventArgs e)
+        {
             VisibleEditorCost = false;
         }
 

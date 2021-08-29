@@ -18,6 +18,7 @@ namespace DataLoader
                 {
                     Costs.Costs cost = new Costs.Costs();
                     cost.Name = reader.ReadString();
+                    cost.Comment = reader.ReadString();
                     cost.Amount = reader.ReadDouble();
                     cost.CreateDate = new DateTime(reader.ReadInt64());
 
@@ -48,6 +49,7 @@ namespace DataLoader
             foreach (Costs.Costs item in list.Items)
             {
                 writer.Write(item.Name);
+                writer.Write(item.Comment);
                 writer.Write(item.Amount);
                 writer.Write(item.CreateDate.Ticks);
                 writer.Write(item.Type.ID);

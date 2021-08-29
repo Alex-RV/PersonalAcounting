@@ -20,6 +20,7 @@
             <RowDefinition Height="Auto"/>
             <RowDefinition Height="Auto"/>
             <RowDefinition Height="Auto"/>
+            <RowDefinition Height="Auto"/>
         </Grid.RowDefinitions>
 
         <Label 
@@ -35,8 +36,7 @@
             Grid.Row="0"
             Grid.Column="1"
             Margin="0,0,10,0"
-            Background="#6787CB"
-            Foreground="White"
+            Foreground="Black"
             Text="{Binding Path=Name, UpdateSourceTrigger=PropertyChanged}"></TextBox>
 
         <Label 
@@ -46,18 +46,33 @@
             FontFamily="Candara Light"
             Foreground="#e3dcdf"
             FontSize="14"
-            Content="Сумма"/>
+            Content="Комментарий"/>
 
         <TextBox
             Grid.Row="1"
             Grid.Column="1"
-            Background="#6787CB"
-            Foreground="White"
+            Margin="0,0,10,0"
+            Foreground="Black"
+            Text="{Binding Path=Comment, UpdateSourceTrigger=PropertyChanged}"></TextBox>
+        
+        <Label 
+            Grid.Row="2"
+            Grid.Column="0"
+            Background="#282553"
+            FontFamily="Candara Light"
+            Foreground="#e3dcdf"
+            FontSize="14"
+            Content="Сумма"/>
+
+        <TextBox
+            Grid.Row="2"
+            Grid.Column="1"
+            Foreground="Black"
             Margin="0,0,10,0"
             Text="{Binding Path=Amount, UpdateSourceTrigger=PropertyChanged}"></TextBox>
 
         <Label 
-            Grid.Row="2"
+            Grid.Row="3"
             Grid.Column="0"
             Background="#282553"
             FontFamily="Candara Light"
@@ -66,7 +81,7 @@
             Content="Дата получения дохода"/>
 
         <DatePicker
-            Grid.Row="2"
+            Grid.Row="3"
             Grid.Column="1"
             FontFamily="Candara Light"
             FontSize="14"
@@ -78,7 +93,7 @@
         </DatePicker>
 
         <Label
-            Grid.Row="3"
+            Grid.Row="4"
             Grid.Column="0"
             Background="#282553"
             FontFamily="Candara Light"
@@ -86,33 +101,33 @@
             FontSize="14"
             Content="Категория дохода"/>
         <ComboBox
-            Grid.Row="3"
+            Grid.Row="4"
             Grid.Column="1"
             Margin="0,0,10,0"
             ItemsSource="{Binding Path=DirectoryItems}"
             SelectedItem="{Binding Path=SelectedItem}"/>
 
-
-        <!--<DatePicker
-            Grid.Row="2"
-            Grid.Column="1"
-            Background="#07021c"
-            FontFamily="Candara Light"
-            Foreground="#e3dcdf"
-            FontSize="14"
-            SelectedDate="{Binding Path=CreateDate, UpdateSourceTrigger=LostFocus}"
-            >
-        </DatePicker>-->
-
         <Button 
-            Grid.Row="4"
+            Grid.Row="5"
             Grid.Column="0"
             Foreground="White"
             Padding="5"
-            Margin="1,10,1,10"
+            Margin="1,10,5,10"
             Style="{DynamicResource RoundCorner}" 
             Content="{x:Static resCom:Resources.Accept}"
             Command="{Binding Path=AcceptIncomeCommand}"/>
+
+        <Button 
+            Grid.Row="5"
+            Grid.Column="1"
+            Height="Auto"
+            HorizontalAlignment="Left"
+            Width="100"
+            Padding="5"
+            Margin="15,10,10,10"
+            Style="{DynamicResource CornerButtonTheme}" 
+            Content="{x:Static resCom:Resources.Cancel}"
+            Command="{Binding Path=CancelIncomeCommand}"/>
 
     </Grid>
 </UserControl>

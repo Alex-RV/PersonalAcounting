@@ -198,6 +198,7 @@ namespace IncomeControls.ViewModels
             {
                 Editor = new IncomeEditorViewModel(_incomeEditor);
                 Editor.EndEditing += Editor_EndEditing;
+                Editor.CancelEditor += OnCancelEditor;
                 Editor.FillDirectioryItems(_incomeTypes.Items);
             }
         }
@@ -214,6 +215,16 @@ namespace IncomeControls.ViewModels
                 _incomeEditor.Add(edditingIncome);
             }
             UpdateItems();
+            VisibleEditorIncome = false;
+        }
+
+        /// <summary>
+        /// обработчик события нажатия на кнопку отмена
+        /// </summary>
+        /// <param name="sender"></param>
+        /// <param name="e"></param>
+        private void OnCancelEditor(object sender, EventArgs e)
+        {
             VisibleEditorIncome = false;
         }
 

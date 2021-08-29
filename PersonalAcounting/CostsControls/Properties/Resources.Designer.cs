@@ -115,6 +115,15 @@ namespace CostsControls.Properties {
         }
         
         /// <summary>
+        ///   Looks up a localized string similar to Название.
+        /// </summary>
+        internal static string Name {
+            get {
+                return ResourceManager.GetString("Name", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   Looks up a localized string similar to Не выбрано.
         /// </summary>
         internal static string NotSelected {

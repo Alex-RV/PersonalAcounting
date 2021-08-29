@@ -39,6 +39,15 @@ namespace Income
             }
         }
 
+        public override void SetComment(IIncome correntBase, string comment)
+        {
+            Income correntIncome = correntBase as Income;
+            if (correntIncome != null)
+            {
+                correntIncome.Comment = comment;
+            }
+        }
+
         public override void SetType(IIncome changeItem, IDirectoryItem type)
         {
             Income correntIncome = changeItem as Income;

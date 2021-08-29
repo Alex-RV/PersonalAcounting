@@ -12,10 +12,12 @@ namespace CostsControls.ViewModels
         #region fields
         private ICosts _cost;
         private string _name;
+        private string _comment;
         private double _amount;
         private DateTime _createdate;
         private ICostsEditor _costEditor;
         WPFHelper.RelayCommand _acceptCommand;
+        WPFHelper.RelayCommand _cancelCommand;
         private ObservableCollection<DirectoryItemCostViewModel> _directoryItems = new ObservableCollection<DirectoryItemCostViewModel>();
         private bool _isNew;
         private DirectoryItemCostViewModel _selectedItem;
@@ -76,6 +78,22 @@ namespace CostsControls.ViewModels
         }
 
         /// <summary>
+        /// Название дохода
+        /// </summary>
+        public string Comment
+        {
+            get { return _comment; }
+            set
+            {
+                if (_comment != value)
+                {
+                    _comment = value;
+                    OnPropertyChanged(nameof(Comment));
+                }
+            }
+        }
+
+        /// <summary>
         /// Сумма дохода
         /// </summary>
         public double Amount
@@ -125,6 +143,24 @@ namespace CostsControls.ViewModels
             }
         }
 
+        /// <summary>
+        /// Действие при нажатии на кнопку Отмена
+        /// </summary>
+        public WPFHelper.RelayCommand CancelCostsCommand
+        {
+            get
+            {
+                if (_cancelCommand == null)
+                {
+                    _cancelCommand = new WPFHelper.RelayCommand("", (p) =>
+                    {
+                        OnCancelEditor();
+                    });
+                }
+                return _cancelCommand;
+            }
+        }
+
         #endregion properties
 
         #region methods
@@ -136,6 +172,7 @@ namespace CostsControls.ViewModels
         {
             _cost = сost;
             Name = _cost.Name;
+            Comment = _cost.Comment;
             Amount = _cost.Amount;
             CreateDate = _cost.CreateDate;
 
@@ -179,6 +216,7 @@ namespace CostsControls.ViewModels
                 return;
             }
             _costEditor.SetName(_cost, _name);
+            _costEditor.SetComment(_cost, _comment);
             _costEditor.SetAmount(_cost, _amount);
             _costEditor.SetCreateDate(_cost, _createdate);
             _costEditor.SetType(_cost, _selectedItem.Model);
@@ -209,9 +247,22 @@ namespace CostsControls.ViewModels
                 EndEditing(this, EventArgs.Empty);
             }
         }
+
+        private void OnCancelEditor()
+        {
+            if (CancelEditor != null)
+            {
+                CancelEditor(this, EventArgs.Empty);
+            }
+        }
         /// <summary>
         /// Завершено редактирование
         /// </summary>
         public event EventHandler EndEditing;
+
+        /// <summary>
+        /// Кнопка отмена
+        /// </summary>
+        public event EventHandler CancelEditor;
     }
 }

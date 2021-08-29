@@ -26,6 +26,11 @@ namespace Base
         void SetName(T changeItem, string name);
 
         /// <summary>
+        /// редактирование комментария дохода или расхода
+        /// </summary>
+        void SetComment(T changeItem, string comment);
+
+        /// <summary>
         /// редактирование суммы дохода
         /// </summary>
         void SetAmount(T changeItem, double amount);

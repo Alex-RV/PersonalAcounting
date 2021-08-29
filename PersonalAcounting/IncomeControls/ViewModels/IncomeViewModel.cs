@@ -28,6 +28,11 @@ namespace IncomeControls.ViewModels
             get { return _income.Name; }
         }
 
+        public string Comment
+        {
+            get { return _income.Comment; }
+        }
+
         public double Amount
         {
             get { return _income.Amount; }

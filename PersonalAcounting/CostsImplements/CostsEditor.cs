@@ -39,6 +39,15 @@ namespace Costs
             }
         }
 
+        public override void SetComment(ICosts correntBase, string comment)
+        {
+            Costs correntCost = correntBase as Costs;
+            if (correntCost != null)
+            {
+                correntCost.Comment = comment;
+            }
+        }
+
         public override void SetType(ICosts changeItem, IDirectoryItem type)
         {
             Costs correntCost = changeItem as Costs;
