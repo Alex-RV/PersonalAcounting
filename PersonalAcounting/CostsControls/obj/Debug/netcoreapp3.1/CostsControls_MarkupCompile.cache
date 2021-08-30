@@ -16,5 +16,5 @@ TRACE;DEBUG;NETCOREAPP;NETCOREAPP3_1;
 196-1086315396
 Views\CostEditorView.xaml;Views\CostView.xaml;
 
-True
+False
 

@@ -49,12 +49,23 @@ namespace DirectoryControl.ViewModels
             {
                 if (_selectedItem != value)
                 {
+                    if (_selectedItem != null)
+                    {
+                        _selectedItem.DeleteDirItem -= SelectedItem_DeleteDirItem;
+                    }
+
                     _selectedItem = value;
+
+                    if (_selectedItem != null)
+                    {
+                        _selectedItem.DeleteDirItem += SelectedItem_DeleteDirItem;
+                    }
                     OnPropertyChanged(nameof(SelectedItem));
                 }
             }
         }
 
+  
         /// <summary>
         /// нажатие на кнопку изменить
         /// </summary>
@@ -111,6 +122,16 @@ namespace DirectoryControl.ViewModels
         }
         #endregion properies
 
+
+        #region event handlers
+
+        private void SelectedItem_DeleteDirItem(object sender, DeleteDirItemEventArgs e)
+        {
+            OnDeleteDirItem(sender, e);
+        }
+        #endregion event handlers
+
+
         #region events
         private void OnExitDirectory()
         {
@@ -127,7 +148,14 @@ namespace DirectoryControl.ViewModels
         public event EventHandler ExitDirectory;
 
 
-
+        public event EventHandler<DeleteDirItemEventArgs> DeleteDirItem;
+        private void OnDeleteDirItem(object sender, DeleteDirItemEventArgs arg)
+        {
+            if (DeleteDirItem != null)
+            {
+                DeleteDirItem(sender, arg);
+            }
+        }
         #endregion
 
     }

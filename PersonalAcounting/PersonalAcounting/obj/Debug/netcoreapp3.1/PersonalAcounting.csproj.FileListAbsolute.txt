@@ -214,3 +214,6 @@ C:\Users\Alex\source\repos\Alex-RV\PersonalAcounting\PersonalAcounting\PersonalA
 C:\Users\Alex\source\repos\Alex-RV\PersonalAcounting\PersonalAcounting\PersonalAcounting\obj\Debug\netcoreapp3.1\PersonalAcounting.pdb
 C:\Users\Alex\source\repos\Alex-RV\PersonalAcounting\PersonalAcounting\PersonalAcounting\obj\Debug\netcoreapp3.1\PersonalAcounting.genruntimeconfig.cache
 C:\Users\Alex\source\repos\Alex-RV\PersonalAcounting\PersonalAcounting\PersonalAcounting\obj\Debug\netcoreapp3.1\Theme\RadioButtonTheme.baml
+C:\Users\MaynskiyAP\Source\Repos\PersonalAcounting\PersonalAcounting\PersonalAcounting\obj\Debug\netcoreapp3.1\Theme\CancelButtonTheme.baml
+C:\Users\MaynskiyAP\Source\Repos\PersonalAcounting\PersonalAcounting\PersonalAcounting\obj\Debug\netcoreapp3.1\Theme\ListViewTheme.baml
+C:\Users\MaynskiyAP\Source\Repos\PersonalAcounting\PersonalAcounting\PersonalAcounting\obj\Debug\netcoreapp3.1\Theme\RadioButtonTheme.baml

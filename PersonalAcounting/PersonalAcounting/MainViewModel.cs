@@ -186,8 +186,10 @@ namespace PersonalAcounting
         private void InitlizeDirectories()
         {
             Directory = new DirectoryControl.ViewModels.DirectoriesViewModel(_fabricsContainer.DirectoryFabric.GetDirectories(), _fabricsContainer.DirectoryFabric.GetEditorDirectory(), _fabricsContainer.DirectoryFabric);
+            Directory.DeleteDirItem += Directory_DeleteDirItem;
         }
 
+      
 
         public void Closing()
         {
@@ -243,6 +245,43 @@ namespace PersonalAcounting
             VisibleDirectory = false;
             VisibleAccounts = true;
             VisibleButtonOpenDirectory = true;
+        }
+
+        private void Directory_DeleteDirItem(object sender, DeleteDirItemEventArgs e)
+        {
+
+            Account.IAccountList accountList = _fabricsContainer.AccountFabric.GetAccountList();
+
+            foreach (var account in accountList.Items)
+            {
+                foreach (var item in account.Costs.Items)
+                {
+                    if (item.Type == e.Item)
+                    {
+                        e.EnabledDelete = false;
+                        break;
+                    }
+                }
+
+                if (e.EnabledDelete == false)
+                {
+                    break;
+                }
+
+                foreach (var item in account.Incomes.Items)
+                {
+                    if (item.Type == e.Item)
+                    {
+                        e.EnabledDelete = false;
+                        break;
+                    }
+                }
+
+                if (e.EnabledDelete == false)
+                {
+                    break;
+                }
+            }
         }
 
         #endregion event handlers

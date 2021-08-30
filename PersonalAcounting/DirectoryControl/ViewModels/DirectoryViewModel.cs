@@ -105,11 +105,18 @@ namespace DirectoryControl.ViewModels
                         {
                             return;
                         }
-                        InitEditor();
-                        _directoryEditor.RemoveDirectoryItem(_directory, SelectedItem.GetModel());
-                        IDirectoryItem newDirectoryItem = _factoryDirectory.CreateNewDirectoryItem();
-                        Editor.SetEditingDirectory(newDirectoryItem);
-                        UpdateItems();
+                        if (OnDeleteDirItem(SelectedItem.GetModel()))
+                        {
+                            InitEditor(); //объяснить зачем он здесь!!
+                            _directoryEditor.RemoveDirectoryItem(_directory, SelectedItem.GetModel());
+                            IDirectoryItem newDirectoryItem = _factoryDirectory.CreateNewDirectoryItem(); //объяснить зачем он здесь!!
+                            Editor.SetEditingDirectory(newDirectoryItem);//объяснить зачем он здесь!!
+                            UpdateItems();
+                        }
+                        else
+                        {
+                            System.Windows.MessageBox.Show(Properties.Resources.NotEnableRemove, Properties.Resources.Information, System.Windows.MessageBoxButton.OK, System.Windows.MessageBoxImage.Information);
+                        }
                     });
                 }
                 return _deleteCommand;
@@ -235,6 +242,24 @@ namespace DirectoryControl.ViewModels
         }
 
         #endregion metods
+
+        #region events
+        public event EventHandler<DeleteDirItemEventArgs> DeleteDirItem;
+        private bool OnDeleteDirItem(IDirectoryItem directoryItem)
+        {
+            if (DeleteDirItem != null)
+            {
+                DeleteDirItemEventArgs eventArg = new DeleteDirItemEventArgs();
+                eventArg.Directory = _directory;
+                eventArg.Item = directoryItem;
+                eventArg.EnabledDelete = true;
+                DeleteDirItem(this, eventArg);
+                return eventArg.EnabledDelete;
+            }
+
+            return true;
+        }
+        #endregion
 
     }
 }
