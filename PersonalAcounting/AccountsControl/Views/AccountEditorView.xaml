@@ -8,6 +8,27 @@
              xmlns:resCom="clr-namespace:WPFHelper.Properties;assembly=WPFHelper"
              mc:Ignorable="d" 
              d:DesignHeight="450" d:DesignWidth="800">
+
+    <UserControl.Resources>
+        <Style x:Key="TextBoxStyle" TargetType="TextBox">
+            <Style.Triggers>
+                <!--<Trigger Property="IsMouseOver" Value="True">
+                    <Setter Property="Cursor" Value="Pen" />
+                </Trigger>
+                <Trigger Property="IsMouseOver" Value="False">
+                    <Setter Property="Cursor" Value="Arrow" />
+                </Trigger>-->
+                <Trigger Property="IsMouseOver" Value="True">
+                    <Setter Property="CaretBrush" Value="White" />
+                </Trigger>
+                <Trigger Property="IsKeyboardFocusWithin" Value="True">
+                    <Setter Property="CaretBrush" Value="White"/>
+                </Trigger>
+                
+            </Style.Triggers>
+
+        </Style>
+    </UserControl.Resources>
     <Grid>
         <Grid.ColumnDefinitions>
             <ColumnDefinition Width="Auto"/>
@@ -35,6 +56,8 @@
             Margin="0,0,10,0"
             Background="#6787CB"
             Foreground="White"
+            Style="{StaticResource TextBoxStyle}"
+            CaretBrush ="White"
             Text="{Binding Path=Name, UpdateSourceTrigger=PropertyChanged}"></TextBox>
 
         <Label 
@@ -51,6 +74,8 @@
             Grid.Column="1"
             Background="#6787CB"
             Foreground="White"
+            CaretBrush ="White"
+            Style="{StaticResource TextBoxStyle}"
             Margin="0,0,10,0"
             Text="{Binding Path=Owner, UpdateSourceTrigger=PropertyChanged}"></TextBox>
 

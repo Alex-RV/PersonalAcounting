@@ -44,6 +44,11 @@ namespace Income
             Income correntIncome = correntBase as Income;
             if (correntIncome != null)
             {
+                if (comment == null)
+                {
+                    comment = "Без комментариев";
+                    correntIncome.Comment = comment;
+                }
                 correntIncome.Comment = comment;
             }
         }

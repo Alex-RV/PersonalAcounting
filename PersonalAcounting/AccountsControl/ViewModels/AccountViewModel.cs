@@ -243,18 +243,6 @@ namespace AccountControl.ViewModels
             }
         }
 
-        //public AccountControl.ViewModels.AccountViewModel Account
-        //{
-        //    get { return _accountInfo; }
-        //    set
-        //    {
-        //        if (_accountInfo != value)
-        //        {
-        //            _accountInfo = value;
-        //            OnPropertyChanged(nameof(Account));
-        //        }
-        //    }
-        //}
         #endregion properties
 
         #region metods

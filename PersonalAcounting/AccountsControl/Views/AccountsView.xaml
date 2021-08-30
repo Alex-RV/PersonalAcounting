@@ -102,7 +102,7 @@
                             <GridViewColumn Width="225" Header="{x:Static res:Resources.CreateDate}">
                                 <GridViewColumn.CellTemplate>
                                     <DataTemplate>
-                                        <TextBlock Text="{Binding Path=CreateDate}"
+                                        <TextBlock Text="{Binding Path=CreateDate, StringFormat=dd.MM.yyyy}"
                                                    Foreground="#000B40"
                                                    FontSize="18"/>
                                     </DataTemplate>

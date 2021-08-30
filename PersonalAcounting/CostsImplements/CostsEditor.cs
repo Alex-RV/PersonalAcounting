@@ -44,6 +44,11 @@ namespace Costs
             Costs correntCost = correntBase as Costs;
             if (correntCost != null)
             {
+                if (comment == null)
+                {
+                    comment = "Без комментариев";
+                    correntCost.Comment = comment;
+                }
                 correntCost.Comment = comment;
             }
         }

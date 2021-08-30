@@ -107,10 +107,7 @@ namespace DirectoryControl.ViewModels
                         }
                         if (OnDeleteDirItem(SelectedItem.GetModel()))
                         {
-                            InitEditor(); //объяснить зачем он здесь!!
                             _directoryEditor.RemoveDirectoryItem(_directory, SelectedItem.GetModel());
-                            IDirectoryItem newDirectoryItem = _factoryDirectory.CreateNewDirectoryItem(); //объяснить зачем он здесь!!
-                            Editor.SetEditingDirectory(newDirectoryItem);//объяснить зачем он здесь!!
                             UpdateItems();
                         }
                         else

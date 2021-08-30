@@ -74,3 +74,5 @@ C:\Users\Alex\source\repos\Alex-RV\PersonalAcounting\PersonalAcounting\Directory
 C:\Users\Alex\source\repos\Alex-RV\PersonalAcounting\PersonalAcounting\DirectoryControl\obj\Debug\netcoreapp3.1\DirectoryControl.pdb
 C:\Users\MaynskiyAP\Source\Repos\PersonalAcounting\PersonalAcounting\DirectoryControl\obj\Debug\netcoreapp3.1\DirectoryControl.Properties.Resources.resources
 C:\Users\MaynskiyAP\Source\Repos\PersonalAcounting\PersonalAcounting\DirectoryControl\obj\Debug\netcoreapp3.1\DirectoryControl.csproj.GenerateResource.cache
+D:\Work\PersonalAcounting\PersonalAcounting\DirectoryControl\obj\Debug\netcoreapp3.1\DirectoryControl.Properties.Resources.resources
+D:\Work\PersonalAcounting\PersonalAcounting\DirectoryControl\obj\Debug\netcoreapp3.1\DirectoryControl.csproj.GenerateResource.cache

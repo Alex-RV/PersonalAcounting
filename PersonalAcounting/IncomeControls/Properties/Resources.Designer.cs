@@ -106,7 +106,7 @@ namespace IncomeControls.Properties {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to Не корректно заполенные данные.
+        ///   Looks up a localized string similar to Не корректно заполенные данные.                                        Обязательно для заполнения: Наименование, Категория.
         /// </summary>
         public static string IncorectData {
             get {

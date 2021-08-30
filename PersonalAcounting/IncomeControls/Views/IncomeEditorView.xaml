@@ -37,6 +37,7 @@
             Grid.Column="1"
             Margin="0,0,10,0"
             Foreground="Black"
+            MaxLength="40"
             Text="{Binding Path=Name, UpdateSourceTrigger=PropertyChanged}"></TextBox>
 
         <Label 
@@ -53,6 +54,7 @@
             Grid.Column="1"
             Margin="0,0,10,0"
             Foreground="Black"
+            MaxLength="120"
             Text="{Binding Path=Comment, UpdateSourceTrigger=PropertyChanged}"></TextBox>
         
         <Label 
@@ -65,10 +67,13 @@
             Content="Сумма"/>
 
         <TextBox
+            x:Name="shomaretextBox" 
             Grid.Row="2"
             Grid.Column="1"
             Foreground="Black"
             Margin="0,0,10,0"
+            MaxLength="16"
+            TextCompositionManager.PreviewTextInput="shomaretextBox_PreviewTextInput"
             Text="{Binding Path=Amount, UpdateSourceTrigger=PropertyChanged}"></TextBox>
 
         <Label 

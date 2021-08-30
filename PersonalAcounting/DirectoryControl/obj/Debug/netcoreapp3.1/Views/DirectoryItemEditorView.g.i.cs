@@ -53,7 +53,7 @@ namespace DirectoryControl.Views {
                 return;
             }
             _contentLoaded = true;
-            System.Uri resourceLocater = new System.Uri("/DirectoryControl;component/views/directoryitemeditorview.xaml", System.UriKind.Relative);
+            System.Uri resourceLocater = new System.Uri("/DirectoryControl;V1.0.0.0;component/views/directoryitemeditorview.xaml", System.UriKind.Relative);
             
             #line 1 "..\..\..\..\Views\DirectoryItemEditorView.xaml"
             System.Windows.Application.LoadComponent(this, resourceLocater);

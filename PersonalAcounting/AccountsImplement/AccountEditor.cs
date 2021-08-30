@@ -38,6 +38,11 @@ namespace Account
             Account correntAccount = account as Account;
             if (correntAccount != null)
             {
+                if(name == null)
+                {
+                    name = "Не задано значение";
+                    correntAccount.Name = name;
+                }
                 correntAccount.Name = name;
             }
         }
@@ -48,6 +53,11 @@ namespace Account
             Account correntAccount = account as Account;
             if (correntAccount != null)
             {
+                if (owner == null)
+                {
+                    owner = "Не задано значение";
+                    correntAccount.Owner = owner;
+                }
                 correntAccount.Owner = owner;
             }
         }

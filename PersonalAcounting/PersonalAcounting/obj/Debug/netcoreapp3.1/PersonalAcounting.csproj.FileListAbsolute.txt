@@ -217,3 +217,5 @@ C:\Users\Alex\source\repos\Alex-RV\PersonalAcounting\PersonalAcounting\PersonalA
 C:\Users\MaynskiyAP\Source\Repos\PersonalAcounting\PersonalAcounting\PersonalAcounting\obj\Debug\netcoreapp3.1\Theme\CancelButtonTheme.baml
 C:\Users\MaynskiyAP\Source\Repos\PersonalAcounting\PersonalAcounting\PersonalAcounting\obj\Debug\netcoreapp3.1\Theme\ListViewTheme.baml
 C:\Users\MaynskiyAP\Source\Repos\PersonalAcounting\PersonalAcounting\PersonalAcounting\obj\Debug\netcoreapp3.1\Theme\RadioButtonTheme.baml
+D:\Work\PersonalAcounting\PersonalAcounting\PersonalAcounting\obj\Debug\netcoreapp3.1\Theme\CancelButtonTheme.baml
+D:\Work\PersonalAcounting\PersonalAcounting\PersonalAcounting\obj\Debug\netcoreapp3.1\Theme\RadioButtonTheme.baml
