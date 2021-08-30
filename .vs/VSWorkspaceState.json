@@ -2,15 +2,15 @@
   "ExpandedNodes": [
     "",
     "\\PersonalAcounting",
-    "\\PersonalAcounting\\AccountsControl",
-    "\\PersonalAcounting\\AccountsControl\\ViewModels",
     "\\PersonalAcounting\\BaseImplements",
+    "\\PersonalAcounting\\CostsControls",
+    "\\PersonalAcounting\\CostsControls\\Views",
     "\\PersonalAcounting\\CostsImplements",
     "\\PersonalAcounting\\IDGenerator",
     "\\PersonalAcounting\\IncomeControls",
     "\\PersonalAcounting\\IncomeControls\\Views",
     "\\PersonalAcounting\\IncomeImplements"
   ],
-  "SelectedNode": "\\PersonalAcounting\\PersonalAcounting\\MainViewModel.cs",
+  "SelectedNode": "\\PersonalAcounting\\CostsControls\\Views\\CostView.xaml",
   "PreviewInSolutionExplorer": false
 }

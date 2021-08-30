@@ -4,17 +4,17 @@
 winexe
 C#
 .cs
-C:\Users\Alex\source\repos\Alex-RV\PersonalAcounting\PersonalAcounting\PersonalAcounting\obj\Debug\netcoreapp3.1\
+C:\Users\MaynskiyAP\Source\Repos\PersonalAcounting\PersonalAcounting\PersonalAcounting\obj\Debug\netcoreapp3.1\
 PersonalAcounting
 none
 false
 TRACE;DEBUG;NETCOREAPP;NETCOREAPP3_1;
-C:\Users\Alex\source\repos\Alex-RV\PersonalAcounting\PersonalAcounting\PersonalAcounting\App.xaml
+C:\Users\MaynskiyAP\Source\Repos\PersonalAcounting\PersonalAcounting\PersonalAcounting\App.xaml
 7241259017
 
 8-1344547938
-214-500728845
+214-58700375
 MainWindow.xaml;Theme\AcceptButtonTheme.xaml;Theme\CancelButtonTheme.xaml;Theme\ListViewTheme.xaml;Theme\MenuButtonTheme.xaml;Theme\MenuStartButtonTheme.xaml;Theme\RadioButtonTheme.xaml;
 
-False
+True
 

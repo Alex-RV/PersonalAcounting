@@ -101,24 +101,19 @@
     ]
   },
   "packageFolders": {
-    "C:\\Users\\Alex\\.nuget\\packages\\": {},
-    "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages": {}
+    "C:\\Users\\MaynskiyAP\\.nuget\\packages\\": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\Alex\\source\\repos\\Alex-RV\\PersonalAcounting\\PersonalAcounting\\IncomeFabric\\IncomeFabric.csproj",
+      "projectUniqueName": "C:\\Users\\MaynskiyAP\\Source\\Repos\\PersonalAcounting\\PersonalAcounting\\IncomeFabric\\IncomeFabric.csproj",
       "projectName": "IncomeFabric",
-      "projectPath": "C:\\Users\\Alex\\source\\repos\\Alex-RV\\PersonalAcounting\\PersonalAcounting\\IncomeFabric\\IncomeFabric.csproj",
-      "packagesPath": "C:\\Users\\Alex\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\Alex\\source\\repos\\Alex-RV\\PersonalAcounting\\PersonalAcounting\\IncomeFabric\\obj\\",
+      "projectPath": "C:\\Users\\MaynskiyAP\\Source\\Repos\\PersonalAcounting\\PersonalAcounting\\IncomeFabric\\IncomeFabric.csproj",
+      "packagesPath": "C:\\Users\\MaynskiyAP\\.nuget\\packages\\",
+      "outputPath": "C:\\Users\\MaynskiyAP\\Source\\Repos\\PersonalAcounting\\PersonalAcounting\\IncomeFabric\\obj\\",
       "projectStyle": "PackageReference",
-      "fallbackFolders": [
-        "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
-      ],
       "configFilePaths": [
-        "C:\\Users\\Alex\\AppData\\Roaming\\NuGet\\NuGet.Config",
-        "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
+        "C:\\Users\\MaynskiyAP\\AppData\\Roaming\\NuGet\\NuGet.Config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
       ],
       "originalTargetFrameworks": [
@@ -132,11 +127,11 @@
         "netcoreapp3.1": {
           "targetAlias": "netcoreapp3.1",
           "projectReferences": {
-            "C:\\Users\\Alex\\source\\repos\\Alex-RV\\PersonalAcounting\\PersonalAcounting\\IIncome\\IIncome.csproj": {
-              "projectPath": "C:\\Users\\Alex\\source\\repos\\Alex-RV\\PersonalAcounting\\PersonalAcounting\\IIncome\\IIncome.csproj"
+            "C:\\Users\\MaynskiyAP\\Source\\Repos\\PersonalAcounting\\PersonalAcounting\\IIncome\\IIncome.csproj": {
+              "projectPath": "C:\\Users\\MaynskiyAP\\Source\\Repos\\PersonalAcounting\\PersonalAcounting\\IIncome\\IIncome.csproj"
             },
-            "C:\\Users\\Alex\\source\\repos\\Alex-RV\\PersonalAcounting\\PersonalAcounting\\IncomeImplements\\IncomeImplement.csproj": {
-              "projectPath": "C:\\Users\\Alex\\source\\repos\\Alex-RV\\PersonalAcounting\\PersonalAcounting\\IncomeImplements\\IncomeImplement.csproj"
+            "C:\\Users\\MaynskiyAP\\Source\\Repos\\PersonalAcounting\\PersonalAcounting\\IncomeImplements\\IncomeImplement.csproj": {
+              "projectPath": "C:\\Users\\MaynskiyAP\\Source\\Repos\\PersonalAcounting\\PersonalAcounting\\IncomeImplements\\IncomeImplement.csproj"
             }
           }
         }
@@ -165,7 +160,7 @@
             "privateAssets": "all"
           }
         },
-        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.400\\RuntimeIdentifierGraph.json"
+        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.206\\RuntimeIdentifierGraph.json"
       }
     }
   }
