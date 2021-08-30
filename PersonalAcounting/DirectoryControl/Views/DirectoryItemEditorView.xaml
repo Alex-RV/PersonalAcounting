@@ -43,5 +43,17 @@
             Command="{Binding Path=AcceptDirectoryItemCommand}"
             Style="{DynamicResource RoundCorner}" 
             Foreground="White"/>
+
+        <Button 
+            Grid.Row="1"
+            Grid.Column="1"
+            Height="Auto"
+            HorizontalAlignment="Left"
+            Width="100"
+            Padding="5"
+            Margin="15,10,10,10"
+            Style="{DynamicResource CornerButtonTheme}" 
+            Content="Отмена"
+            Command="{Binding Path=CancelDirectoryCommand}"/>
     </Grid>
 </UserControl>

@@ -77,12 +77,7 @@ namespace DirectoryControl.ViewModels
                     {
                         VisibleDirectoryItemEditor = true;
 
-                        if (Editor == null)
-                        {
-                            Editor = new DirectoryItemEditorViewModel(_directoryEditor);
-                            Editor.EndEditing += Editor_EndEditing;
-                        }
-
+                        InitEditor();
                         IDirectoryItem newDirectoryItem = _factoryDirectory.CreateNewDirectoryItem();
                         Editor.SetEditingDirectory(newDirectoryItem);
                         Editor.IsNew = true;
@@ -92,6 +87,8 @@ namespace DirectoryControl.ViewModels
 
             }
         }
+
+  
 
         /// <summary>
         /// Действие при нажатии на кнопку УДАЛИТЬ строку дохода
@@ -108,6 +105,7 @@ namespace DirectoryControl.ViewModels
                         {
                             return;
                         }
+                        InitEditor();
                         _directoryEditor.RemoveDirectoryItem(_directory, SelectedItem.GetModel());
                         IDirectoryItem newDirectoryItem = _factoryDirectory.CreateNewDirectoryItem();
                         Editor.SetEditingDirectory(newDirectoryItem);
@@ -133,6 +131,7 @@ namespace DirectoryControl.ViewModels
                         {
                             return;
                         }
+                        InitEditor();
                         VisibleDirectoryItemEditor = true;
                         Editor.SetEditingDirectory(SelectedItem.GetModel());
                         Editor.IsNew = false;
@@ -182,19 +181,7 @@ namespace DirectoryControl.ViewModels
         }
         #endregion properies
 
-        /// <summary>
-        /// Обнровление отображаемой коллекции
-        /// </summary>
-        private void UpdateItems()
-        {
-            ItemsSource.Clear();
-
-            foreach (IDirectoryItem directioryItem in _directory.Items)
-            {
-                DirectoryItemViewModel newItem = new DirectoryItemViewModel(directioryItem);
-                ItemsSource.Add(newItem);
-            }
-        }
+        
 
         #region event handlers
 
@@ -209,21 +196,43 @@ namespace DirectoryControl.ViewModels
             VisibleDirectoryItemEditor = false;
         }
 
+        /// <summary>
+        /// обработчик события нажатия на кнопку отмена
+        /// </summary>
+        /// <param name="sender"></param>
+        /// <param name="e"></param>
+        private void OnCancelEditor(object sender, EventArgs e)
+        {
+            VisibleDirectoryItemEditor = false;
+        }
         #endregion event handlers
 
         #region metods
 
         /// <summary>
-        /// Наполение списка
+        /// Обнровление отображаемой коллекции
         /// </summary>
-        private void FillItems()
+        private void UpdateItems()
         {
-            foreach (IDirectory item in ItemsSource)
+            ItemsSource.Clear();
+
+            foreach (IDirectoryItem directioryItem in _directory.Items)
             {
-                //_items.Add(new DirectoryItemViewModel(item));
+                DirectoryItemViewModel newItem = new DirectoryItemViewModel(directioryItem);
+                ItemsSource.Add(newItem);
             }
         }
 
+        private void InitEditor()
+        {
+            if (Editor == null)
+            {
+                Editor = new DirectoryItemEditorViewModel(_directoryEditor);
+                Editor.CancelEditor += OnCancelEditor;
+                Editor.EndEditing += Editor_EndEditing;
+            }
+
+        }
 
         #endregion metods
 

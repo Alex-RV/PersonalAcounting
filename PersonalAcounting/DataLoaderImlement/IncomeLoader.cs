@@ -18,6 +18,7 @@ namespace DataLoader
                 {
                     Income.Income income = new Income.Income();
                     income.Name = reader.ReadString();
+                    income.Comment = reader.ReadString();
                     income.Amount = reader.ReadDouble();
                     income.CreateDate = new DateTime(reader.ReadInt64());
 
@@ -49,6 +50,7 @@ namespace DataLoader
             foreach (Income.Income item in list.Items)
             {
                 writer.Write(item.Name);
+                writer.Write(item.Comment);
                 writer.Write(item.Amount);
                 writer.Write(item.CreateDate.Ticks);
                 writer.Write(item.Type.ID);

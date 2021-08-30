@@ -55,6 +55,9 @@ namespace IncomeControls.ViewModels
             }
         }
 
+        /// <summary>
+        /// Видимость редактора
+        /// </summary>
         public bool VisibleEditorIncome
         {
             get { return _visibleEditorIncome; }
@@ -68,6 +71,9 @@ namespace IncomeControls.ViewModels
             }
         }
 
+        /// <summary>
+        /// редактор метод
+        /// </summary>
         public IncomeEditorViewModel Editor
         {
             get { return _editor; }
@@ -192,10 +198,10 @@ namespace IncomeControls.ViewModels
             {
                 Editor = new IncomeEditorViewModel(_incomeEditor);
                 Editor.EndEditing += Editor_EndEditing;
+                Editor.CancelEditor += OnCancelEditor;
                 Editor.FillDirectioryItems(_incomeTypes.Items);
             }
         }
-
         #endregion metods
 
         #region event handlers
@@ -209,6 +215,16 @@ namespace IncomeControls.ViewModels
                 _incomeEditor.Add(edditingIncome);
             }
             UpdateItems();
+            VisibleEditorIncome = false;
+        }
+
+        /// <summary>
+        /// обработчик события нажатия на кнопку отмена
+        /// </summary>
+        /// <param name="sender"></param>
+        /// <param name="e"></param>
+        private void OnCancelEditor(object sender, EventArgs e)
+        {
             VisibleEditorIncome = false;
         }
 

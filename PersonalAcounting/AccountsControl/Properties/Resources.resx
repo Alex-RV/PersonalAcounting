@@ -123,6 +123,9 @@
   <data name="Add" xml:space="preserve">
     <value>Добавить счет</value>
   </data>
+  <data name="Cancel" xml:space="preserve">
+    <value>Отмена</value>
+  </data>
   <data name="Costs" xml:space="preserve">
     <value>Расходы</value>
   </data>

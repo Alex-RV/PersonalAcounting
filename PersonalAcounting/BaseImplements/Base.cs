@@ -10,6 +10,7 @@ namespace Base
     {
         #region field
         private string _name;
+        private string _comment;
         private double _amount;
         private DateTime _createdate;
         private IDirectoryItem _type;
@@ -28,6 +29,15 @@ namespace Base
         {
             get { return _name; }
             set { _name = value; }
+        }
+
+        ///<summary>
+        ///Комментарий дохода или расхода
+        ///</summary>
+        public string Comment
+        {
+            get { return _comment; }
+            set { _comment = value; }
         }
 
         ///<summary>

@@ -33,7 +33,8 @@
                 Content="Изменить категории"
                 BorderBrush="White" 
                 BorderThickness="0.5"
-                Foreground="Blue"
+                Foreground="White"
+                Background="Transparent"
                 />
 
             <Button  
@@ -44,10 +45,11 @@
                 VerticalAlignment="Top"
                 HorizontalAlignment="Left"
                 Command="{Binding Path=ExitDirectoryCommand}"
-                Content="Выход"
+                Content="Назад"
                 BorderBrush="White" 
                 BorderThickness="0.5"
-                Foreground="Blue"
+                Foreground="White"
+                Background="Transparent"
                 />
         </StackPanel>
 
@@ -66,7 +68,7 @@
                             <GridViewColumn.CellTemplate>
                                 <DataTemplate>
                                     <TextBlock Text="{Binding Path=Name}"
-                                                   Foreground="White"
+                                                   Foreground="#000442"
                                                    FontSize="18"/>
                                 </DataTemplate>
                             </GridViewColumn.CellTemplate>

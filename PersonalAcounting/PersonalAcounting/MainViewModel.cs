@@ -196,12 +196,13 @@ namespace PersonalAcounting
         }
         #endregion metods
 
+
+        #region event handlers
         /// <summary>
         /// обработчик события Входа в выбранный счет
         /// </summary>
         /// <param name="sender"></param>
         /// <param name="e"></param>
-        #region event handlers
         private void Accounts_ChangedActivAcount(object sender, EventArgs e)
         {
             VisibleAccounts = false;

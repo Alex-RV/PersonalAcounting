@@ -126,7 +126,19 @@
   <data name="CreateDate" xml:space="preserve">
     <value>Дата создания</value>
   </data>
+  <data name="Error" xml:space="preserve">
+    <value>Ошибка</value>
+  </data>
   <data name="Exit" xml:space="preserve">
     <value>Выход</value>
+  </data>
+  <data name="IncorectData" xml:space="preserve">
+    <value>Не корректно заполенные данные</value>
+  </data>
+  <data name="Name" xml:space="preserve">
+    <value>Название</value>
+  </data>
+  <data name="NotSelected" xml:space="preserve">
+    <value>Не выбрано</value>
   </data>
 </root>

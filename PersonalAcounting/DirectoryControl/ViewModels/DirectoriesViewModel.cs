@@ -122,7 +122,7 @@ namespace DirectoryControl.ViewModels
 
 
         /// <summary>
-        /// Выполнен выход из счета
+        /// Выход из настроек
         /// </summary>
         public event EventHandler ExitDirectory;
 

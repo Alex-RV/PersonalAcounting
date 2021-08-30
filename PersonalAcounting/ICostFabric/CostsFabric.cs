@@ -16,7 +16,7 @@ namespace Costs
         {
             return new CostsList();
         }
-        //ВАЖНО ЧТО-ТО СДЕЛАТЬ
+
         public ICostsEditor GetCostsEditor(ICostsList list)
         {
             return new CostsEditor(list as CostsList);

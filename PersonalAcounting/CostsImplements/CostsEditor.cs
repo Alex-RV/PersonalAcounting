@@ -23,28 +23,37 @@ namespace Costs
 
         public override void SetCreateDate(ICosts correntBase, DateTime createdate)
         {
-            Costs correntIncome = correntBase as Costs;
-            if (correntIncome != null)
+            Costs correntCost = correntBase as Costs;
+            if (correntCost != null)
             {
-                correntIncome.CreateDate = createdate;
+                correntCost.CreateDate = createdate;
             }
         }
 
         public override void SetName(ICosts correntBase, string name)
         {
-            Costs correntIncome = correntBase as Costs;
-            if (correntIncome != null)
+            Costs correntCost = correntBase as Costs;
+            if (correntCost != null)
             {
-                correntIncome.Name = name;
+                correntCost.Name = name;
+            }
+        }
+
+        public override void SetComment(ICosts correntBase, string comment)
+        {
+            Costs correntCost = correntBase as Costs;
+            if (correntCost != null)
+            {
+                correntCost.Comment = comment;
             }
         }
 
         public override void SetType(ICosts changeItem, IDirectoryItem type)
         {
-            Costs correntIncome = changeItem as Costs;
-            if (correntIncome != null)
+            Costs correntCost = changeItem as Costs;
+            if (correntCost != null)
             {
-                correntIncome.Type = type;
+                correntCost.Type = type;
             }
         }
     }

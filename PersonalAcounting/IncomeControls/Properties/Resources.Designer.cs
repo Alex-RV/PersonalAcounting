@@ -70,6 +70,15 @@ namespace IncomeControls.Properties {
         }
         
         /// <summary>
+        ///   Looks up a localized string similar to Отмена.
+        /// </summary>
+        public static string Cancel {
+            get {
+                return ResourceManager.GetString("Cancel", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   Looks up a localized string similar to Дата создания.
         /// </summary>
         public static string CreateDate {
@@ -120,15 +129,6 @@ namespace IncomeControls.Properties {
         public static string NotSelected {
             get {
                 return ResourceManager.GetString("NotSelected", resourceCulture);
-            }
-        }
-        
-        /// <summary>
-        ///   Looks up a localized string similar to Открыть сессию.
-        /// </summary>
-        public static string OpenAccount {
-            get {
-                return ResourceManager.GetString("OpenAccount", resourceCulture);
             }
         }
     }

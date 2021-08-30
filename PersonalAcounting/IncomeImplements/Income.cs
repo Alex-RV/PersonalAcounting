@@ -10,5 +10,4 @@ namespace Income
     public class Income : Base.Base, IIncome
     {
     }
-
 }

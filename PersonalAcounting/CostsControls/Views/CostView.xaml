@@ -8,6 +8,75 @@
              xmlns:conv="clr-namespace:WPFHelper.Converters;assembly=WPFHelper"
              mc:Ignorable="d" 
              d:DesignHeight="450" d:DesignWidth="800">
+
+    <UserControl.Resources>
+
+        <LinearGradientBrush x:Key="HeaderBrush" StartPoint="0.5,0" EndPoint="0.5,1">
+            <GradientStop Color="Blue" Offset="0"/>
+            <GradientStop Color="Black" Offset="1"/>
+        </LinearGradientBrush>
+        <LinearGradientBrush x:Key="HeaderBorderBrush" StartPoint="0.5,0" EndPoint="0.5,1">
+            <GradientStop Color="#0033cc" Offset="0.614"/>
+            <GradientStop Color="#6699ff" Offset="0.853"/>
+        </LinearGradientBrush>
+
+        <Style x:Key="LastColumnHeaderStyle" TargetType="GridViewColumnHeader">
+            <Setter Property="Background" Value="{StaticResource HeaderBrush}" />
+            <Setter Property="Foreground" Value="White" />
+            <Setter Property="BorderBrush" Value="{StaticResource HeaderBorderBrush}" />
+            <Setter Property="BorderThickness" Value="0" />
+            <Setter Property="SnapsToDevicePixels" Value="True" />
+            <Setter Property="HorizontalContentAlignment" Value="Stretch" />
+            <Setter Property="MinWidth" Value="0" />
+            <Setter Property="MinHeight" Value="30" />
+            <Setter Property="FontSize" Value="17"/>
+            <Setter Property="FontFamily" Value="Century Gothic"/>
+            <Setter Property="FontWeight" Value="Bold"/>
+            <Style.Triggers>
+                <MultiTrigger>
+                    <MultiTrigger.Conditions>
+                        <Condition Property="IsMouseOver" Value="True" />
+                        <Condition Property="IsPressed" Value="False" />
+                    </MultiTrigger.Conditions>
+                    <MultiTrigger.Setters>
+                        <Setter Property="Foreground" Value="Black"/>
+
+                        <Setter Property="Background" Value="{StaticResource HeaderBrush}"/>
+                    </MultiTrigger.Setters>
+                </MultiTrigger>
+            </Style.Triggers>
+
+        </Style>
+
+        <Style x:Key="HeaderStyle" TargetType="GridViewColumnHeader">
+            <Setter Property="Background" Value="{StaticResource HeaderBrush}" />
+            <Setter Property="Foreground" Value="White" />
+            <Setter Property="BorderBrush" Value="{StaticResource HeaderBorderBrush}" />
+            <Setter Property="BorderThickness" Value="0" />
+            <Setter Property="SnapsToDevicePixels" Value="True" />
+            <Setter Property="HorizontalContentAlignment" Value="Left" />
+            <Setter Property="MinWidth" Value="0" />
+            <Setter Property="MinHeight" Value="30" />
+            <Setter Property="FontSize" Value="17"/>
+            <Setter Property="FontFamily" Value="Century Gothic"/>
+            <Setter Property="FontWeight" Value="Bold"/>
+            <Style.Triggers>
+                <MultiTrigger>
+                    <MultiTrigger.Conditions>
+                        <Condition Property="IsMouseOver" Value="True" />
+                        <Condition Property="IsPressed" Value="False" />
+                    </MultiTrigger.Conditions>
+                    <MultiTrigger.Setters>
+                        <Setter Property="Foreground" Value="Black"/>
+
+                        <Setter Property="Background" Value="{StaticResource HeaderBrush}"/>
+                    </MultiTrigger.Setters>
+                </MultiTrigger>
+            </Style.Triggers>
+
+        </Style>
+    </UserControl.Resources>
+
     <Grid>
         <Grid.RowDefinitions>
             <RowDefinition Height="Auto"/>
@@ -15,35 +84,44 @@
             <RowDefinition Height="Auto"/>
         </Grid.RowDefinitions>
 
+        <Grid Visibility="Hidden">
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="{Binding ElementName=col1, Path=ActualWidth}"/>
+                <ColumnDefinition Width="*"/>
+                <ColumnDefinition Width="10"/>
+            </Grid.ColumnDefinitions>
+            <Grid Grid.Column="1" x:Name="helperField"/>
+        </Grid>
+
         <StackPanel
             Grid.Row="0"
             Orientation="Horizontal">
             <RadioButton  
+                Cursor="Hand"
                 Width="Auto"
                 Command="{Binding Path=AddCostCommand}"
                 Content="Добавить расход"
-                BorderBrush="White" 
-                BorderThickness="0.5"
+                Margin="0,0,10,0"
                 Foreground="White"
-                Style="{StaticResource MenuStartButtonTheme}"
+                Style="{StaticResource RadioButtonTheme}"
                 />
             <RadioButton
+                Cursor="Hand"
                 Width="Auto"
                 Command="{Binding Path=DeleteCommand}"
                 Content="Удалить расход"
-                BorderBrush="White" 
-                BorderThickness="0.5"
+                Margin="0,0,10,0"
                 Foreground="White"
-                Style="{StaticResource MenuStartButtonTheme}"
+                Style="{StaticResource RadioButtonTheme}"
                 />
             <RadioButton
+                Cursor="Hand"
                 Width="Auto"
                 Command="{Binding Path=EditorCommand}"
                 Content="Изменить расход"
-                BorderBrush="White" 
-                BorderThickness="0.5"
+                Margin="0,0,10,0"
                 Foreground="White"
-                Style="{StaticResource MenuStartButtonTheme}"/>
+                Style="{StaticResource RadioButtonTheme}"/>
         </StackPanel>
 
         <ListView 
@@ -54,36 +132,146 @@
             ScrollViewer.HorizontalScrollBarVisibility="Visible">
             <ListView.View>
                 <GridView>
-                    <GridViewColumn Width="200" Header="Название" ><!--Header="{x:Static res:Resources.Name}"-->
+                    <GridViewColumn Width="250" Header="Название" 
+                                    HeaderContainerStyle="{StaticResource HeaderStyle}">
                         <GridViewColumn.CellTemplate>
                             <DataTemplate>
-                                <TextBlock Text="{Binding Path=Name}"
-                                           Foreground="White"
-                                           FontSize="13"/>
+                                <WrapPanel>
+                                    <Ellipse
+                                    Height="7" Width="7"
+                                    Margin="5,0" Fill="Red"/>
+                                    <TextBlock Text="{Binding Path=Name}"
+                                     Foreground="#000442"
+                                     FontFamily="Century Gothic"
+                                     FontWeight="ExtraBold"
+                                     FontSize="15"/>
+                                </WrapPanel>
                             </DataTemplate>
                         </GridViewColumn.CellTemplate>
                     </GridViewColumn>
 
-                    <GridViewColumn Width="200" Header="Сумма" ><!--Header="{x:Static res:Resources.Amount}"-->
+                    <GridViewColumn Width="180" Header="Категория"
+                                    HeaderContainerStyle="{StaticResource HeaderStyle}">
+                        <GridViewColumn.CellTemplate>
+                            <DataTemplate>
+                                <TextBlock Text="{Binding Path=TypeName}"
+                                           Foreground="#000442"
+                                           FontFamily="Century Gothic"
+                                           FontWeight="ExtraBold"
+                                           FontSize="15"/>
+                            </DataTemplate>
+                        </GridViewColumn.CellTemplate>
+                    </GridViewColumn>
+
+                    <GridViewColumn Width="110" Header="Сумма"
+                                    HeaderContainerStyle="{StaticResource HeaderStyle}">
                         <GridViewColumn.CellTemplate>
                             <DataTemplate>
                                 <TextBlock Text="{Binding Path=Amount}"
-                                           Foreground="Red"
+                                           Foreground="#990000"
                                            HorizontalAlignment="Center"
-                                           FontSize="14"/>
+                                           FontFamily="Century Gothic"
+                                           FontWeight="ExtraBold"
+                                           FontSize="17"/>
                             </DataTemplate>
                         </GridViewColumn.CellTemplate>
                     </GridViewColumn>
 
-                    <GridViewColumn Width="225" Header="Дата дохода">
+                    <GridViewColumn Width="130" Header="Дата расхода"
+                                    x:Name="col1"
+                                    HeaderContainerStyle="{StaticResource HeaderStyle}">
                         <GridViewColumn.CellTemplate>
                             <DataTemplate>
                                 <TextBlock Text="{Binding Path=CreateDate, StringFormat=dd.MM.yyyy}"
-                                           Foreground="White"
-                                           FontSize="13"/>
+                                           Foreground="#000442"
+                                           FontFamily="Century Gothic"
+                                           FontWeight="ExtraBold"
+                                           FontSize="15"/>
                             </DataTemplate>
                         </GridViewColumn.CellTemplate>
                     </GridViewColumn>
+
+                    <GridViewColumn Width="{Binding ElementName=helperField, Path=ActualWidth}"
+                                    Header="Комментарий"
+                                    HeaderContainerStyle="{StaticResource LastColumnHeaderStyle}">
+                        <GridViewColumn.CellTemplate>
+                            <DataTemplate>
+                                <TextBlock Text="{Binding Path=Comment}"
+                                           Foreground="#000442"
+                                           FontFamily="Century Gothic"
+                                           FontWeight="ExtraBold"
+                                           FontSize="15"/>
+                            </DataTemplate>
+                        </GridViewColumn.CellTemplate>
+                    </GridViewColumn>
+                    <!--<GridViewColumn Width="200" Header="Название"
+                                    HeaderContainerStyle="{StaticResource HeaderStyle}">
+                        <GridViewColumn.CellTemplate>
+                            <DataTemplate>
+                                <TextBlock Text="{Binding Path=Name}"
+                                           Foreground="#000442"
+                                           FontFamily="Century Gothic"
+                                           FontWeight="ExtraBold"
+                                           FontSize="15"/>
+                            </DataTemplate>
+                        </GridViewColumn.CellTemplate>
+                    </GridViewColumn>
+
+
+                    <GridViewColumn Width="180" Header="Категория"
+                                    HeaderContainerStyle="{StaticResource HeaderStyle}">
+                        <GridViewColumn.CellTemplate>
+                            <DataTemplate>
+                                <TextBlock Text="{Binding Path=TypeName}"
+                                           Foreground="#000442"
+                                           FontFamily="Century Gothic"
+                                           FontWeight="ExtraBold"
+                                           FontSize="15"/>
+                            </DataTemplate>
+                        </GridViewColumn.CellTemplate>
+                    </GridViewColumn>
+
+                    <GridViewColumn Width="110" Header="Сумма" 
+                                    HeaderContainerStyle="{StaticResource HeaderStyle}">
+                        <GridViewColumn.CellTemplate>
+                            <DataTemplate>
+                                <TextBlock Text="{Binding Path=Amount}"
+                                           Foreground="#990000"
+                                           HorizontalAlignment="Center"
+                                           FontFamily="Century Gothic"
+                                           FontWeight="ExtraBold"
+                                           FontSize="17"/>
+                            </DataTemplate>
+                        </GridViewColumn.CellTemplate>
+                    </GridViewColumn>
+
+                    <GridViewColumn Width="130" Header="Дата расхода"
+                                    x:Name="col1"
+                                    HeaderContainerStyle="{StaticResource HeaderStyle}">
+                        <GridViewColumn.CellTemplate>
+                            <DataTemplate>
+                                <TextBlock Text="{Binding Path=CreateDate, StringFormat=dd.MM.yyyy}"
+                                           Foreground="#000442"
+                                           FontFamily="Century Gothic"
+                                           FontWeight="ExtraBold"
+                                           FontSize="15"/>
+                            </DataTemplate>
+                        </GridViewColumn.CellTemplate>
+                    </GridViewColumn>
+
+                    <GridViewColumn Width="{Binding ElementName=helperField, Path=ActualWidth}"
+                                    Header="Комментарий"
+                                    HeaderContainerStyle="{StaticResource LastColumnHeaderStyle}">
+                        <GridViewColumn.CellTemplate>
+                            <DataTemplate>
+                                <TextBlock Text="{Binding Path=Comment}"
+                                           Foreground="#000442"
+                                           FontFamily="Century Gothic"
+                                           FontWeight="ExtraBold"
+                                           FontSize="15"/>
+                            </DataTemplate>
+                        </GridViewColumn.CellTemplate>
+                    </GridViewColumn>-->
                 </GridView>
             </ListView.View>
         </ListView>
@@ -99,4 +287,6 @@
         />
 
     </Grid>
+
+    
 </UserControl>

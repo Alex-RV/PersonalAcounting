@@ -28,6 +28,11 @@ namespace IncomeControls.ViewModels
             get { return _income.Name; }
         }
 
+        public string Comment
+        {
+            get { return _income.Comment; }
+        }
+
         public double Amount
         {
             get { return _income.Amount; }
@@ -36,6 +41,11 @@ namespace IncomeControls.ViewModels
         public DateTime CreateDate
         {
             get { return _income.CreateDate; }
+        }
+
+        public string TypeName
+        { 
+            get { return _income.Type.Name; }
         }
 
         #region metods

@@ -16,6 +16,7 @@ namespace AccountControl.ViewModels
         private string _owner;
         private IAccountEditor _accountEditor;
         private bool _isNew;
+        WPFHelper.RelayCommand _cancelCommand;
         #endregion fields
 
         #region constructor
@@ -81,6 +82,25 @@ namespace AccountControl.ViewModels
                 return _acceptCommand;
             }
         }
+
+        /// <summary>
+        /// Действие при нажатии на кнопку Отмена
+        /// </summary>
+        /// 
+        public WPFHelper.RelayCommand CancelAccountCommand
+        {
+            get
+            {
+                if (_cancelCommand == null)
+                {
+                    _cancelCommand = new WPFHelper.RelayCommand("", (p) =>
+                    {
+                        OnCancelEditor();
+                    });
+                }
+                return _cancelCommand;
+            }
+        }
         #endregion properties
 
         #region methods
@@ -122,9 +142,24 @@ namespace AccountControl.ViewModels
                 EndEditing(this, EventArgs.Empty);
             }
         }
+
+        #region events
+        private void OnCancelEditor()
+        {
+            if (CancelEditor != null)
+            {
+                CancelEditor(this, EventArgs.Empty);
+            }
+        }
         /// <summary>
         /// Завершено редактирование
         /// </summary>
         public event EventHandler EndEditing;
+
+        /// <summary>
+        /// Кнопка отмена
+        /// </summary>
+        public event EventHandler CancelEditor;
+        #endregion events
     }
 }

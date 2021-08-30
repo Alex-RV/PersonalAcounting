@@ -126,7 +126,15 @@ namespace AccountControl.ViewModels
                     {
                         if (Costs == null)
                         {
-                            Costs = new CostsControls.ViewModels.CostsViewModel(_account.Costs, _accountEditor.GetCostsEditor(_account), _accountEditor.GetCostsFabric());
+                            Directory.IDirectory costsTypes = null;
+                            foreach (var item in _directories)
+                            {
+                                if (item.Name == Directory.Properties.Resources.CostsType)
+                                {
+                                    costsTypes = item;
+                                }
+                            }
+                            Costs = new CostsControls.ViewModels.CostsViewModel(_account.Costs, _accountEditor.GetCostsEditor(_account), _accountEditor.GetCostsFabric(), costsTypes);
                         }
                         VisibleShortView = false;
                         VisibleIncomeView = false;

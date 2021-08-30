@@ -59,10 +59,23 @@
             Grid.Column="0"
             Foreground="White"
             Padding="5"
+            Width="100"
             Margin="1,10,1,10"
             Style="{DynamicResource RoundCorner}" 
             Content="{x:Static resCom:Resources.Accept}"
             Command="{Binding Path=AcceptCommand}"/>
+
+        <Button 
+            Grid.Row="2"
+            Grid.Column="1"
+            Height="Auto"
+            HorizontalAlignment="Left"
+            Width="100"
+            Padding="5"
+            Margin="15,10,10,10"
+            Style="{DynamicResource CornerButtonTheme}" 
+            Content="{x:Static resCom:Resources.Cancel}"
+            Command="{Binding Path=CancelAccountCommand}"/>
 
     </Grid>
 </UserControl>

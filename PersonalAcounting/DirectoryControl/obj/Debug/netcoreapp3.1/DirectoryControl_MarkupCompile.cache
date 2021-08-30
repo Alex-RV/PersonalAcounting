@@ -4,7 +4,7 @@
 library
 C#
 .cs
-C:\Users\MaynskiyAP\Source\Repos\PersonalAcounting\PersonalAcounting\DirectoryControl\obj\Debug\netcoreapp3.1\
+C:\Users\Alex\source\repos\Alex-RV\PersonalAcounting\PersonalAcounting\DirectoryControl\obj\Debug\netcoreapp3.1\
 DirectoryControl
 none
 false
@@ -13,7 +13,7 @@ TRACE;DEBUG;NETCOREAPP;NETCOREAPP3_1;
 3-2123259190
 
 7-362797764
-1941344548372
+194686289159
 Views\DirectoriesView.xaml;Views\DirectoryItemEditorView.xaml;Views\DirectoryView.xaml;
 
 False

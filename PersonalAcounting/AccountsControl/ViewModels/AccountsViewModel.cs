@@ -199,6 +199,7 @@ namespace AccountControl.ViewModels
             if (Editor == null)
             {
                 Editor = new AccountEditorViewModel(_accountEditor);
+                Editor.CancelEditor += OnCancelEditor;
                 Editor.EndEditing += Editor_EndEditing;
             }
 
@@ -248,6 +249,16 @@ namespace AccountControl.ViewModels
                 _accountEditor.Add(edditingAcount);
             }
             UpdateItems();
+            VisibleEditor = false;
+        }
+
+        /// <summary>
+        /// обработчик события нажатия на кнопку отмена
+        /// </summary>
+        /// <param name="sender"></param>
+        /// <param name="e"></param>
+        private void OnCancelEditor(object sender, EventArgs e)
+        {
             VisibleEditor = false;
         }
 

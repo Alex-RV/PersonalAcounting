@@ -12,9 +12,12 @@ namespace IncomeControls.ViewModels
         #region fields
         private IIncome _income;
         private string _name;
+        private string _comment;
         private double _amount;
         private DateTime _createdate;
         private IIncomeEditor _incomeEditor;
+        WPFHelper.RelayCommand _acceptCommand;
+        WPFHelper.RelayCommand _cancelCommand;
         private bool _isNew;
         private ObservableCollection<DirectoryItemViewModel> _directoryItems = new ObservableCollection<DirectoryItemViewModel>();
         private DirectoryItemViewModel _selectedItem;
@@ -29,12 +32,12 @@ namespace IncomeControls.ViewModels
 
         #region properties
         /// <summary>
-        /// Элементы справочника типы расходов
+        /// Элементы справочника типы дохода
         /// </summary>
         public ObservableCollection<DirectoryItemViewModel> DirectoryItems { get { return _directoryItems; } }
 
         /// <summary>
-        /// Выбранный тип расхода
+        /// Выбранный тип дохода
         /// </summary>
         public DirectoryItemViewModel SelectedItem 
         { 
@@ -75,6 +78,22 @@ namespace IncomeControls.ViewModels
         }
 
         /// <summary>
+        /// Название дохода
+        /// </summary>
+        public string Comment
+        {
+            get { return _comment; }
+            set
+            {
+                if (_comment != value)
+                {
+                    _comment = value;
+                    OnPropertyChanged(nameof(Comment));
+                }
+            }
+        }
+
+        /// <summary>
         /// Сумма дохода
         /// </summary>
         public double Amount
@@ -108,8 +127,9 @@ namespace IncomeControls.ViewModels
         }
 
 
-
-        WPFHelper.RelayCommand _acceptCommand;
+        /// <summary>
+        /// Действие при нажатии на кнопку применить
+        /// </summary> 
         public WPFHelper.RelayCommand AcceptIncomeCommand
         {
             get
@@ -122,6 +142,23 @@ namespace IncomeControls.ViewModels
             }
         }
 
+        /// <summary>
+        /// Действие при нажатии на кнопку Отмена
+        /// </summary>
+        public WPFHelper.RelayCommand CancelIncomeCommand
+        {
+            get
+            {
+                if (_cancelCommand == null)
+                {
+                    _cancelCommand = new WPFHelper.RelayCommand("", (p) =>
+                    {
+                        OnCancelEditor();
+                    });
+                }
+                return _cancelCommand;
+            }
+        }
 
         #endregion properties
 
@@ -134,6 +171,7 @@ namespace IncomeControls.ViewModels
         {
             _income = income;
             Name = _income.Name;
+            Comment = _income.Comment;
             Amount = _income.Amount;
             CreateDate = _income.CreateDate;
 
@@ -177,11 +215,13 @@ namespace IncomeControls.ViewModels
                 return;
             }
             _incomeEditor.SetName(_income, _name);
+            _incomeEditor.SetComment(_income, _comment);
             _incomeEditor.SetAmount(_income, _amount);
             _incomeEditor.SetCreateDate(_income, _createdate);
             _incomeEditor.SetType(_income, _selectedItem.Model);
             OnEndEditing();
         }
+
 
         /// <summary>
         /// Проверка формы на кооретность ввода данных
@@ -198,9 +238,9 @@ namespace IncomeControls.ViewModels
 
             return true;
         }
-
         #endregion
 
+        #region events
         private void OnEndEditing()
         {
             if (EndEditing != null)
@@ -208,9 +248,24 @@ namespace IncomeControls.ViewModels
                 EndEditing(this, EventArgs.Empty);
             }
         }
+
+        private void OnCancelEditor()
+        {
+            if (CancelEditor != null)
+            {
+                CancelEditor(this, EventArgs.Empty);
+            }
+        }
+
         /// <summary>
         /// Завершено редактирование
         /// </summary>
         public event EventHandler EndEditing;
+
+        /// <summary>
+        /// Кнопка отмена
+        /// </summary>
+        public event EventHandler CancelEditor;
+        #endregion events
     }
 }

@@ -13,10 +13,19 @@
     <Page Update="Theme\AcceptButtonTheme.xaml">
       <SubType>Designer</SubType>
     </Page>
+    <Page Update="Theme\CancelButtonTheme.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Update="Theme\ListViewTheme.xaml">
+      <SubType>Designer</SubType>
+    </Page>
     <Page Update="Theme\MenuButtonTheme.xaml">
       <SubType>Designer</SubType>
     </Page>
     <Page Update="Theme\MenuStartButtonTheme.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Update="Theme\RadioButtonTheme.xaml">
       <SubType>Designer</SubType>
     </Page>
   </ItemGroup>

@@ -21,6 +21,7 @@
       "CostsControls/1.0.0": {
         "dependencies": {
           "ICosts": "1.0.0",
+          "IDirectory": "1.0.0",
           "WPFHelper": "1.0.0"
         },
         "runtime": {
