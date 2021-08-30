@@ -2,15 +2,15 @@
   "ExpandedNodes": [
     "",
     "\\PersonalAcounting",
-    "\\PersonalAcounting\\CostsControls",
-    "\\PersonalAcounting\\CostsControls\\View",
-    "\\PersonalAcounting\\DataLoaderImlement",
-    "\\PersonalAcounting\\DirectoryImplement",
-    "\\PersonalAcounting\\FactoryDirectory",
-    "\\PersonalAcounting\\IDataLoader",
-    "\\PersonalAcounting\\IDirectory",
-    "\\PersonalAcounting\\IDirectory\\Properties"
+    "\\PersonalAcounting\\AccountsControl",
+    "\\PersonalAcounting\\AccountsControl\\ViewModels",
+    "\\PersonalAcounting\\BaseImplements",
+    "\\PersonalAcounting\\CostsImplements",
+    "\\PersonalAcounting\\IDGenerator",
+    "\\PersonalAcounting\\IncomeControls",
+    "\\PersonalAcounting\\IncomeControls\\Views",
+    "\\PersonalAcounting\\IncomeImplements"
   ],
-  "SelectedNode": "\\PersonalAcounting\\DataLoaderImlement\\AccountLoader.cs",
+  "SelectedNode": "\\PersonalAcounting\\PersonalAcounting\\MainViewModel.cs",
   "PreviewInSolutionExplorer": false
 }
