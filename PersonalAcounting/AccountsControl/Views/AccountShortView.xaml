@@ -20,6 +20,8 @@
             </Style.Setters>
         </Style>
     </UserControl.Resources>
+    
+    
     <Grid
         Background="#6787CB">
         <Grid.RowDefinitions>
@@ -39,6 +41,10 @@
             <Grid.RowDefinitions>
                 <RowDefinition Height="Auto"/>
                 <RowDefinition Height="Auto"/>
+                <RowDefinition  Height="Auto"/>
+                <RowDefinition  Height="Auto"/>
+                <RowDefinition  Height="Auto"/>
+                <RowDefinition  Height="Auto"/>
             </Grid.RowDefinitions>
             <Grid.ColumnDefinitions>
                 <ColumnDefinition Width="Auto"/>
@@ -82,6 +88,78 @@
                 Foreground="White"
                 FontFamily="Gabriola"
                 Text="{Binding Path=Owner}"/>
+
+            <Label 
+                Grid.Row="2"
+                Grid.Column="0"
+                Margin="5,0,0,0"
+                FontSize="16"
+                FontStyle="Italic"
+                Foreground="White"
+                FontFamily="Franklin Gothic Book"
+                Content="Сумма доходов за текущий месяц"/>
+            <TextBlock 
+                Grid.Row="2"
+                Grid.Column="2"
+                Margin="5,0,0,0"
+                FontSize="26"
+                Foreground="LawnGreen"
+                FontFamily="Gabriola"
+                Text="{Binding Path=sumMonthIncome}"/>
+
+            <Label 
+                Grid.Row="3"
+                Grid.Column="0"
+                Margin="5,0,0,0"
+                FontSize="16"
+                FontStyle="Italic"
+                Foreground="White"
+                FontFamily="Franklin Gothic Book"
+                Content="Сумма доходов за текущий год"/>
+            <TextBlock 
+                Grid.Row="3"
+                Grid.Column="2"
+                Margin="5,0,0,0"
+                FontSize="26"
+                Foreground="LawnGreen"
+                FontFamily="Gabriola"
+                Text="{Binding Path=sumYearIncome}"/>
+
+            <Label 
+                Grid.Row="4"
+                Grid.Column="0"
+                Margin="5,0,0,0"
+                FontSize="16"
+                FontStyle="Italic"
+                Foreground="White"
+                FontFamily="Franklin Gothic Book"
+                Content="Сумма расходов за текущий месяц"/>
+            <TextBlock 
+                Grid.Row="4"
+                Grid.Column="2"
+                Margin="5,0,0,0"
+                FontSize="24"
+                Foreground="DarkRed"
+                FontFamily="Gabriola"
+                Text="{Binding Path=sumMonthCosts}"/>
+
+            <Label 
+                Grid.Row="5"
+                Grid.Column="0"
+                Margin="5,0,0,0"
+                FontSize="16"
+                FontStyle="Italic"
+                Foreground="White"
+                FontFamily="Franklin Gothic Book"
+                Content="Сумма расходов за текущий год"/>
+            <TextBlock 
+                Grid.Row="5"
+                Grid.Column="2"
+                Margin="5,0,0,0"
+                FontSize="24"
+                Foreground="DarkRed"
+                FontFamily="Gabriola"
+                Text="{Binding Path=sumYearCosts}"/>
 
         </Grid>
     </Grid>

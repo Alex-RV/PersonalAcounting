@@ -47,6 +47,7 @@
       "IncomeImplement/1.0.0": {
         "dependencies": {
           "BaseImplement": "1.0.0",
+          "IBase": "1.0.0",
           "IIncome": "1.0.0"
         },
         "runtime": {

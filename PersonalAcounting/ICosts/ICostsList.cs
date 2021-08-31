@@ -6,5 +6,6 @@ namespace Costs
 {
     public interface ICostsList : Base.IBaseList<ICosts>
     {
+        ICostsAccountShort ShortInfo { get; }
     }
 }

@@ -24,6 +24,7 @@ namespace AccountControl.ViewModels
         private AccountControl.ViewModels.AccountViewModel _accountInfo;
         private IAccountEditor _accountEditor;
         private IEnumerable<Directory.IDirectory> _directories;
+        private double _sum;
         #endregion fields
 
         #region contructor
@@ -34,7 +35,26 @@ namespace AccountControl.ViewModels
             _directories = directories;
         }
         #endregion contructor
+        
+        public double sumMonthIncome
+        {
+            get { return _account.Incomes.ShortInfo.sumMonthIncome; }
+        }
 
+        public double sumYearIncome
+        {
+            get { return _account.Incomes.ShortInfo.sumYearIncome; }
+        }
+
+        public double sumMonthCosts
+        {
+            get { return _account.Costs.ShortInfo.sumMonthCosts; }
+        }
+
+        public double sumYearCosts
+        {
+            get { return _account.Costs.ShortInfo.sumYearCosts; }
+        }
         #region properties
         /// <summary>
         /// Название счета
@@ -157,7 +177,6 @@ namespace AccountControl.ViewModels
                 {
                     _accountInfoCommand = new WPFHelper.RelayCommand("", (p) =>
                     {
-                       
                         VisibleShortView = true;
                         VisibleIncomeView = false;
                         VisibleCostView = false;

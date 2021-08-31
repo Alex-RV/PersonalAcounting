@@ -1,44 +1,62 @@
-﻿   using System;
+﻿using System;
 using System.Collections.Generic;
 using System.Text;
 using System.Collections.ObjectModel;
+using System.Collections;
 
 namespace Income
 {
-    public class IncomeAccountShort
+    public class IncomeAccountShort : IIncomeAccountShort
     {
-        private int _dateTime;
-        private IIncomeList _item;
-        private ObservableCollection<IncomeList> _items = new ObservableCollection<IncomeList>();
-        private ObservableCollection<IIncomeList> _itemss = new ObservableCollection<IIncomeList>();
-        private IEnumerable<IIncomeList> _incomeList;
 
+        #region fields
+        private IIncomeList _item;
+        #endregion fields
+
+        #region contructors
         public IncomeAccountShort(IIncomeList item)
         {
             _item = item;
         }
+        #endregion contructors
 
-        public ObservableCollection<IncomeList> Items { get { return _items; } }
-        public ObservableCollection<IIncomeList> Itemss { get { return _itemss; } }
-        public IEnumerable<IIncomeList> incomeLists { get { return _incomeList; } }
+        #region properties
+        public double sumMonthIncome { get { return MonthIncome(); } }
+        public double sumYearIncome { get { return YearIncome(); } }
+        #endregion  properties
 
-        //public IIncomeList Item { get; }
-
-        public void MonthIncome()
+        #region metods
+        private double MonthIncome()
         {
-            _dateTime = DateTime.Now.Day;
-            for (int i = 0; i < _dateTime; i++)
-            {
-                foreach (IIncomeList item in Items)
-                {
-                    if (item.Items == _items)
-                    {
+            DateTime startInterval = new DateTime(DateTime.Now.Year, DateTime.Now.Month, 1);
+            DateTime endInterval = startInterval.AddMonths(1);
+            double sum = 0;
 
-                    }
-                    Console.Write(i);
+            foreach (Income item in _item.Items)
+            {
+                if (startInterval <= item.CreateDate && item.CreateDate <= endInterval)
+                {
+                    sum += item.Amount;
                 }
             }
-           
+            return sum;
         }
+
+        private double YearIncome()
+        {
+            DateTime startInterval = new DateTime(DateTime.Now.Year, 1, 1);
+            DateTime endInterval = startInterval.AddYears(1);
+            double sum = 0;
+
+            foreach (Income item in _item.Items)
+            {
+                if (startInterval <= item.CreateDate && item.CreateDate <= endInterval)
+                {
+                    sum += item.Amount;
+                }
+            }
+            return sum;
+        }
+        #endregion metods
     }
 }

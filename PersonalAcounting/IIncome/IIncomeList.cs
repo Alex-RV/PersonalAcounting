@@ -6,5 +6,6 @@ namespace Income
 {
     public interface IIncomeList : Base.IBaseList<IIncome>
     {
+        IIncomeAccountShort ShortInfo { get; }
     }
 }

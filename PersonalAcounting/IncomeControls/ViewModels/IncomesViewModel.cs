@@ -125,7 +125,6 @@ namespace IncomeControls.ViewModels
                         }
                         _incomeEditor.Remove(SelectedItem.GetModel());
                         UpdateItems();
-                        Editor.SetEditingIncome(_incomeFabric.CreateNew());
                     });
                 }
                 return _deleteCommand;
@@ -229,12 +228,6 @@ namespace IncomeControls.ViewModels
         }
 
         #endregion event handlers
-
-        #region events
-
-
-
-        #endregion events
 
     }
 }
