@@ -13,6 +13,7 @@ namespace IncomeControls.ViewModels
         private ObservableCollection<IncomeViewModel> _items = new ObservableCollection<IncomeViewModel>();
         private IncomeViewModel _selectedItem = null;
         private WPFHelper.RelayCommand _addIncomeCommand;
+        private WPFHelper.RelayCommand _incomeDirectoryAmountCommand;
         private bool _visibleEditorIncome = false;
         private IncomeEditorViewModel _editor;
         private IIncomeEditor _incomeEditor;
@@ -87,6 +88,24 @@ namespace IncomeControls.ViewModels
             }
         }
 
+        /// <summary>
+        /// Действие при нажатии на кнопку сумма по категориям
+        /// </summary>
+        public WPFHelper.RelayCommand DirectoryAmount
+        {
+            get
+            {
+                if (_incomeDirectoryAmountCommand == null)
+                {
+                    _incomeDirectoryAmountCommand = new WPFHelper.RelayCommand("", (p) =>
+                    {
+                        OnOpenIncomeDirectoryAmount();
+                    });
+                }
+                return _incomeDirectoryAmountCommand;
+            }
+        }
+        
         /// <summary>
         /// Действие при нажатии на кнопку ДОБАВИТЬ доход
         /// </summary>
@@ -226,6 +245,19 @@ namespace IncomeControls.ViewModels
         {
             VisibleEditorIncome = false;
         }
+
+        private void OnOpenIncomeDirectoryAmount()
+        {
+            if (OpenIncomeDirectoryAmount != null)
+            {
+                OpenIncomeDirectoryAmount(this, EventArgs.Empty);
+            }
+        }
+
+        /// <summary>
+        /// Открытие суммы по категориям
+        /// </summary>
+        public event EventHandler OpenIncomeDirectoryAmount;
 
         #endregion event handlers
 

@@ -26,34 +26,26 @@
             Grid.Column="0"
             VerticalAlignment="Bottom"
             Orientation="Horizontal">
-            <Button  
+            <RadioButton  
                 Width="Auto"
                 Command="{Binding Path=AddDirectoryCommand}"
                 Content="Добавить"
-                BorderBrush="White" 
-                BorderThickness="0.5"
-                Foreground="White"
                 Background="Transparent"
+                Style="{StaticResource RadioButtonTheme}"
                 Margin="5"
                 />
-            <Button
+            <RadioButton
                 Width="Auto"
                 Command="{Binding Path=DeleteCommand}"
                 Content="Удалить"
-                BorderBrush="White" 
-                BorderThickness="0.5"
-                Foreground="White"
-                Background="Transparent"
+                Style="{StaticResource RadioButtonTheme}"
                 Margin="5"
                 />
-            <Button
+            <RadioButton
                 Width="Auto"
                 Command="{Binding Path=EditorCommand}"
                 Content="Изменить"
-                BorderBrush="White" 
-                BorderThickness="0.5"
-                Foreground="White"
-                Background="Transparent"
+                Style="{StaticResource RadioButtonTheme}"
                 Margin="5"
                 />
         </StackPanel>
@@ -64,7 +56,7 @@
                     Grid.Column="1"
                     ItemsSource="{Binding Path=ItemsSource}" 
                     SelectedItem="{Binding Path=SelectedItem}"
-                    Background="#6787CB"
+                    Background="#FFE3D9"
                     ScrollViewer.HorizontalScrollBarVisibility="Visible">
                 <ListView.View>
                     <GridView>

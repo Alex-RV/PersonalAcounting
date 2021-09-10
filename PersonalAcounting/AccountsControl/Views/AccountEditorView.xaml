@@ -44,9 +44,9 @@
         <Label 
             Grid.Row="0"
             Grid.Column="0"
-            Background="#282553"
+            Background="#A8BFA8"
             FontFamily="Candara Light"
-            Foreground="#e3dcdf"
+            Foreground="Black"
             FontSize="14"
             Content="{x:Static res:Resources.Name}"/>
 
@@ -54,8 +54,8 @@
             Grid.Row="0"
             Grid.Column="1"
             Margin="0,0,10,0"
-            Background="#6787CB"
-            Foreground="White"
+            Background="White"
+            Foreground="Black"
             Style="{StaticResource TextBoxStyle}"
             CaretBrush ="White"
             Text="{Binding Path=Name, UpdateSourceTrigger=PropertyChanged}"></TextBox>
@@ -63,18 +63,18 @@
         <Label 
             Grid.Row="1"
             Grid.Column="0"
-            Background="#282553"
+            Background="#A8BFA8"
             FontFamily="Candara Light"
-            Foreground="#e3dcdf"
+            Foreground="Black"
             FontSize="14"
             Content="{x:Static res:Resources.Owner}"/>
 
         <TextBox
             Grid.Row="1"
             Grid.Column="1"
-            Background="#6787CB"
-            Foreground="White"
-            CaretBrush ="White"
+            Background="White"
+            Foreground="Black"
+            CaretBrush ="Black"
             Style="{StaticResource TextBoxStyle}"
             Margin="0,0,10,0"
             Text="{Binding Path=Owner, UpdateSourceTrigger=PropertyChanged}"></TextBox>

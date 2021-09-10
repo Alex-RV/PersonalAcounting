@@ -17,6 +17,7 @@ namespace AccountControl.ViewModels
         private WPFHelper.RelayCommand _accountInfoCommand;
         private WPFHelper.RelayCommand _costCommand;
         private bool _visibleIncomeView = false;
+        private bool _visibleIncomeDirectoryAmountView = false;
         private bool _visibleCostView = false;
         private bool _visibleShortView = true;
         private IncomeControls.ViewModels.IncomesViewModel _income;
@@ -33,6 +34,7 @@ namespace AccountControl.ViewModels
             _account = account;
             _accountEditor = accountEditor;
             _directories = directories;
+            //Income.OpenIncomeDirectoryAmount += OnOpenIncomeDirectoryAmount;
         }
         #endregion contructor
         
@@ -180,6 +182,7 @@ namespace AccountControl.ViewModels
                         VisibleShortView = true;
                         VisibleIncomeView = false;
                         VisibleCostView = false;
+                        Income.OpenIncomeDirectoryAmount += OnOpenIncomeDirectoryAmount;
                     });
                 }
 
@@ -221,6 +224,22 @@ namespace AccountControl.ViewModels
         }
 
         /// <summary>
+        /// Видимость окна суммы по категориям доходов
+        /// </summary>
+        public bool VisibleIncomeDirectoryAmountView
+        {
+            get { return _visibleIncomeDirectoryAmountView; }
+            set
+            {
+                if (_visibleIncomeDirectoryAmountView != value)
+                {
+                    _visibleIncomeDirectoryAmountView = value;
+                    OnPropertyChanged(nameof(VisibleIncomeDirectoryAmountView));
+                }
+            }
+        }
+
+        /// <summary>
         /// Видимость окна расходов
         /// </summary>
         public bool VisibleCostView
@@ -244,6 +263,7 @@ namespace AccountControl.ViewModels
                 if (_income != value)
                 {
                     _income = value;
+                    
                     OnPropertyChanged(nameof(Income));
                 }
             }
@@ -283,13 +303,20 @@ namespace AccountControl.ViewModels
                 Exit(this, EventArgs.Empty);
             }
         }
-
-
         /// <summary>
         /// Выполнен выход из счета
         /// </summary>
         public event EventHandler Exit;
 
+        /// <summary>
+        /// обработчик события нажатия на кнопку открытие суммы по категориям
+        /// </summary>
+        /// <param name="sender"></param>
+        /// <param name="e"></param>
+        private void OnOpenIncomeDirectoryAmount(object sender, EventArgs e)
+        {
+            VisibleIncomeView = true;
+        }
 
 
         #endregion

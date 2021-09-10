@@ -1,8 +1,10 @@
 {
   "version": 2,
-  "dgSpecHash": "NZ7Uqy6Lm1D7Ps5BBzn/X+mhGWWrm5y7/GFNKNHGrMlMFRH/DAVlZNWVGaLI4GZ72GS0czo+ON8rToL4gA3tdQ==",
+  "dgSpecHash": "KVwa45AadY1p5s1m5mrm/NyJrtFGQjy+5/bSaBf7od9W+G5oK4yYB/D5E4op1AjsAz7MHR406x6IkzOw9JKZlg==",
   "success": true,
-  "projectFilePath": "D:\\Work\\PersonalAcounting\\PersonalAcounting\\PersonalAcounting\\PersonalAcounting.csproj",
-  "expectedPackageFiles": [],
+  "projectFilePath": "C:\\Users\\Alex\\source\\repos\\Alex-RV\\PersonalAcounting\\PersonalAcounting\\PersonalAcounting\\PersonalAcounting.csproj",
+  "expectedPackageFiles": [
+    "C:\\Users\\Alex\\.nuget\\packages\\ilmerge\\3.0.41\\ilmerge.3.0.41.nupkg.sha512"
+  ],
   "logs": []
 }

@@ -15,7 +15,7 @@
             <Style.Setters>
                 <Setter Property="Margin" Value="-1"/>
                 <Setter Property="Padding" Value="5,0"/>
-                <Setter Property="Background" Value="White"/>
+                <Setter Property="Background" Value="Black"/>
                 <Setter Property="BorderBrush" Value="Gray"/>
             </Style.Setters>
         </Style>
@@ -30,7 +30,7 @@
             </Style.Setters>
         </Style>
     </UserControl.Resources>
-    <Border Background="#282553"
+    <Border Background="#A8BFA8 "
             CornerRadius="25">
         <Grid>
             <Grid.ColumnDefinitions>
@@ -46,7 +46,7 @@
                        Grid.Row="0"
                        VerticalAlignment="Center"
                        HorizontalAlignment="Left"
-                       Foreground="White"
+                       Foreground="Black"
                        FontSize="30"
                        Margin="20,0,0,0"/>
 
@@ -54,9 +54,7 @@
                 Grid.Column="0"
                 Grid.Row="1"
                 IsExpanded="True">
-                <Border
-                    BorderBrush="Gray"
-                    BorderThickness="0">
+                <Border>
                     <Grid>
                         <Grid.RowDefinitions>
                             <RowDefinition Height="*"/>
@@ -65,14 +63,21 @@
                         <StackPanel>
                             <RadioButton 
                                 Command="{Binding Path=IncomeCommand}"
-                                Content="{x:Static res:Resources.Income}"/>      
+                                Foreground="#312A40"
+                                FontSize="18"
+                                Content="{x:Static res:Resources.Income}"
+                                Margin="0,4,0,0"/>      
 
                             <RadioButton
                                 Command="{Binding Path=CostsCommand}"
+                                Foreground="#312A40"
+                                FontSize="18"
                                 Content="{x:Static res:Resources.Costs}"/>
 
                             <RadioButton
                                 Command="{Binding Path=AccountShortCommand}"
+                                Foreground="#312A40"
+                                FontSize="18"
                                 Content="{x:Static res:Resources.InfoAccount}"/>
 
                         </StackPanel>
@@ -107,6 +112,13 @@
                     DataContext="{Binding Path=Costs}"
                     Visibility="{Binding 
                     Path=DataContext.VisibleCostView, 
+                    Converter={x:Static conv:BoolToVisible.Instance},
+                    RelativeSource={RelativeSource Mode=FindAncestor, AncestorType=UserControl}}"/>
+
+                <income:IncomeDirectoryAmountView
+                    DataContext="{Binding Path=Income}"
+                    Visibility="{Binding 
+                    Path=DataContext.VisibleIncomeDirectoryAmountView, 
                     Converter={x:Static conv:BoolToVisible.Instance},
                     RelativeSource={RelativeSource Mode=FindAncestor, AncestorType=UserControl}}"/>
 

@@ -16,11 +16,11 @@
 
                             
 
-                            <Border x:Name="border" CornerRadius="5" BorderBrush="White" Padding="4" BorderThickness="0.5">
+                            <Border x:Name="border" CornerRadius="5" BorderBrush="Black" Padding="4" BorderThickness="0.5">
                                <TextBlock Text="{TemplateBinding Property=Content}"
                                        VerticalAlignment="Center"
                                        HorizontalAlignment="Center"
-                                       FontFamily="Candara Light"/> 
+                                       FontFamily="Lucida Console"/> 
                             </Border>
 
                         </Grid>
@@ -36,8 +36,8 @@
                 <Trigger.EnterActions>
                     <BeginStoryboard>
                         <Storyboard Storyboard.TargetProperty="Background.Color">
-                            <ColorAnimation To="Blue" Duration="0:0:0.5" />
-                            <ColorAnimation To="#282553" BeginTime="0:0:0.5" Duration="0:0:1" />
+                            <ColorAnimation To="#FFE3D9" Duration="0:0:0.5" />
+                            <ColorAnimation To="#A8BFA8" BeginTime="0:0:0.5" Duration="0:0:1" />
                         </Storyboard>
                     </BeginStoryboard>
                 </Trigger.EnterActions>

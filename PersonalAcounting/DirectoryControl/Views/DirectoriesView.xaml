@@ -32,8 +32,9 @@
                 Command="{Binding Path=ChangeDirectoryItems}"
                 Content="Изменить категории"
                 BorderBrush="White" 
-                BorderThickness="0.5"
-                Foreground="White"
+                BorderThickness="0.7"
+                Foreground="Black"
+                FontSize="16"
                 Background="Transparent"
                 />
 
@@ -47,8 +48,9 @@
                 Command="{Binding Path=ExitDirectoryCommand}"
                 Content="Назад"
                 BorderBrush="White" 
-                BorderThickness="0.5"
-                Foreground="White"
+                BorderThickness="0.7"
+                FontSize="16"
+                Foreground="Black"
                 Background="Transparent"
                 />
         </StackPanel>
@@ -59,7 +61,7 @@
                     Grid.Row="0"
                     ItemsSource="{Binding Path=Items}" 
                     SelectedItem="{Binding Path=SelectedItem}"
-                    Background="#6787CB"
+                    Background="#FFE3D9"
                     ScrollViewer.HorizontalScrollBarVisibility="Visible">
                 <ListView.View>
                     <GridView>

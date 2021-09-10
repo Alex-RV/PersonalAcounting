@@ -4,10 +4,17 @@
     <OutputType>WinExe</OutputType>
     <TargetFramework>netcoreapp3.1</TargetFramework>
     <UseWPF>true</UseWPF>
+    <ApplicationIcon>my_tree.ico</ApplicationIcon>
   </PropertyGroup>
 
   <ItemGroup>
+    <None Remove="123.png" />
+    <None Remove="70115.png" />
     <None Remove="outline_settings_white_48dp.png" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <PackageReference Include="ilmerge" Version="3.0.41" />
   </ItemGroup>
 
   <ItemGroup>
@@ -28,6 +35,8 @@
   </ItemGroup>
 
   <ItemGroup>
+    <Resource Include="123.png" />
+    <Resource Include="70115.png" />
     <Resource Include="outline_settings_white_48dp.png" />
   </ItemGroup>
 
@@ -45,5 +54,8 @@
       <LastGenOutput>Resources.Designer.cs</LastGenOutput>
     </EmbeddedResource>
   </ItemGroup>
+
+  <Target Name="PostBuild" AfterTargets="PostBuildEvent">
+  </Target>
 
 </Project>

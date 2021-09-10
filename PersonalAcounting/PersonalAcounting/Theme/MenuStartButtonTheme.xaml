@@ -13,7 +13,7 @@
 
                             <TextBlock Text="{TemplateBinding Property=Content}"
                                        VerticalAlignment="Center"
-                                       FontFamily="Candara Light"
+                                       FontFamily="Lucida Console"
                                        Margin="30,5,10,0"/>
 
                         </Grid>
@@ -29,8 +29,8 @@
                 <Trigger.EnterActions>
                     <BeginStoryboard>
                         <Storyboard Storyboard.TargetProperty="Background.Color">
-                            <ColorAnimation To="Blue" Duration="0:0:0.5" />
-                            <ColorAnimation To="#282553" BeginTime="0:0:0.5" Duration="0:0:1" />
+                            <ColorAnimation To="#6787CB" Duration="0:0:0.5" />
+                            <ColorAnimation To="#A8BFA8" BeginTime="0:0:0.5" Duration="0:0:1" />
                         </Storyboard>
                     </BeginStoryboard>
                 </Trigger.EnterActions>

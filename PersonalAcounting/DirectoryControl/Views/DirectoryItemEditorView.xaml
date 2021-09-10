@@ -20,9 +20,9 @@
         <Label 
             Grid.Row="0"
             Grid.Column="0"
-            Background="#282553"
+            Background="#A8BFA8"
             FontFamily="Candara Light"
-            Foreground="#e3dcdf"
+            Foreground="Black"
             FontSize="14"
             Content="Наименование"/>
 
@@ -30,8 +30,8 @@
             Grid.Row="0"
             Grid.Column="1"
             Margin="0,0,10,0"
-            Background="#6787CB"
-            Foreground="White"
+            Background="White"
+            Foreground="Black"
             Text="{Binding Path=Name, UpdateSourceTrigger=PropertyChanged}"></TextBox>
 
         <Button 

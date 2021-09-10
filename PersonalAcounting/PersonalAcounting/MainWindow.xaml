@@ -13,7 +13,7 @@
         WindowStyle="ThreeDBorderWindow"        
         Title="Личная бухгалтерия" Height="600" Width="1080">
 
-    <Border Background="#282553"
+    <Border Background="#A8BFA8"
             CornerRadius="25">
         <Grid>
             
@@ -42,7 +42,7 @@
                         Path=VisibleButtonOpenDirectory, 
                         Converter={x:Static conv:BoolToVisible.Instance}}">
                     
-                <Image Source="/outline_settings_white_48dp.png" /><!--RenderTransformOrigin="0.383,5.786"-->
+                <Image Source="/123.png" />
             </Button>
             <directories:DirectoriesView
                     DataContext="{Binding Path=Directory}"

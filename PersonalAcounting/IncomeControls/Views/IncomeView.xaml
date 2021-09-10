@@ -21,8 +21,8 @@
         </LinearGradientBrush>
 
         <Style x:Key="LastColumnHeaderStyle" TargetType="GridViewColumnHeader">
-            <Setter Property="Background" Value="{StaticResource HeaderBrush}" />
-            <Setter Property="Foreground" Value="White" />
+            <!--<Setter Property="Background" Value="#F2E6DA  " />
+            <Setter Property="Foreground" Value="Black" />
             <Setter Property="BorderBrush" Value="{StaticResource HeaderBorderBrush}" />
             <Setter Property="BorderThickness" Value="0" />
             <Setter Property="SnapsToDevicePixels" Value="True" />
@@ -44,13 +44,14 @@
                         <Setter Property="Background" Value="{StaticResource HeaderBrush}"/>
                     </MultiTrigger.Setters>
                 </MultiTrigger>
-            </Style.Triggers>
+            </Style.Triggers>-->
 
         </Style>
 
         <Style x:Key="HeaderStyle" TargetType="GridViewColumnHeader">
-            <Setter Property="Background" Value="{StaticResource HeaderBrush}" />
-            <Setter Property="Foreground" Value="White" />
+            <Setter Property="Background" Value="#F2E6DA  " />
+            <!--<Setter Property="Background" Value="{StaticResource HeaderBrush}" />-->
+            <Setter Property="Foreground" Value="Black" />
             <Setter Property="BorderBrush" Value="{StaticResource HeaderBorderBrush}" />
             <Setter Property="BorderThickness" Value="0" />
             <Setter Property="SnapsToDevicePixels" Value="True" />
@@ -68,11 +69,17 @@
                     </MultiTrigger.Conditions>
                     <MultiTrigger.Setters>
                         <Setter Property="Foreground" Value="Black"/>
-                        
+
                         <Setter Property="Background" Value="{StaticResource HeaderBrush}"/>
                     </MultiTrigger.Setters>
                 </MultiTrigger>
             </Style.Triggers>
+        </Style>
+        
+        <Style x:Key="ListStyle" TargetType="ListView">
+            <Setter Property="BorderBrush" Value="Black"/>
+            <Setter Property="BorderThickness" Value="1"/>
+            <Setter Property="RibbonTwoLineText.LineHeight" Value="1"/>
 
         </Style>
     </UserControl.Resources>
@@ -103,14 +110,14 @@
                 Margin="0,0,10,0"
                 Command="{Binding Path=AddIncomeCommand}"
                 Content="Добавить доход"
-                Foreground="White"
+                Foreground="Black"
                 Style="{StaticResource RadioButtonTheme}"/>
             <RadioButton
                 Cursor="Hand"
                 Width="Auto"
                 Command="{Binding Path=DeleteCommand}"
                 Content="Удалить доход"
-                Foreground="White"
+                Foreground="Black"
                 Margin="0,0,10,0"
                 Style="{StaticResource RadioButtonTheme}"/>
             <RadioButton
@@ -119,23 +126,31 @@
                 Command="{Binding Path=EditorCommand}"
                 Content="Изменить доход"
                 Margin="0,0,10,0"
-                Foreground="White"
+                Foreground="Black"
+                Style="{StaticResource RadioButtonTheme}"/>
+            <RadioButton
+                Cursor="Hand"
+                Width="Auto"
+                Command="{Binding Path=DirectoryAmount}"
+                Content="Доход по каждой категории"
+                Margin="100,0,10,0"
+                Foreground="Black"
                 Style="{StaticResource RadioButtonTheme}"/>
         </StackPanel>
-
 
         <ListView 
             Grid.Row="1"
             ItemsSource="{Binding Path=Items}" 
             SelectedItem="{Binding Path=SelectedItem}"
-            Background="#6787CB"
+            Background="#FFE3D9"
             ScrollViewer.HorizontalScrollBarVisibility="Visible"
             Height="Auto"
-            Width="Auto">
+            Width="Auto"
+            Style="{StaticResource ListStyle}">
             <ListView.View>
                 <GridView>
                     <GridViewColumn Width="250" Header="{x:Static res:Resources.Name}" 
-                                    HeaderContainerStyle="{StaticResource HeaderStyle}">
+                                    ><!--HeaderContainerStyle="{StaticResource HeaderStyle}"-->
                         <GridViewColumn.CellTemplate>
                             <DataTemplate>
                                 <WrapPanel>
@@ -152,8 +167,7 @@
                         </GridViewColumn.CellTemplate>
                     </GridViewColumn>
 
-                    <GridViewColumn Width="180" Header="Категория"
-                                    HeaderContainerStyle="{StaticResource HeaderStyle}">
+                    <GridViewColumn Width="180" Header="Категория">
                         <GridViewColumn.CellTemplate>
                             <DataTemplate>
                                 <TextBlock Text="{Binding Path=TypeName}"
@@ -165,8 +179,7 @@
                         </GridViewColumn.CellTemplate>
                     </GridViewColumn>
 
-                    <GridViewColumn Width="110" Header="{x:Static res:Resources.Amount}"
-                                    HeaderContainerStyle="{StaticResource HeaderStyle}">
+                    <GridViewColumn Width="110" Header="{x:Static res:Resources.Amount}">
                         <GridViewColumn.CellTemplate>
                             <DataTemplate>
                                 <TextBlock Text="{Binding Path=Amount}"
@@ -180,8 +193,7 @@
                     </GridViewColumn>
 
                     <GridViewColumn Width="120" Header="Дата дохода"
-                                    x:Name="col1"
-                                    HeaderContainerStyle="{StaticResource HeaderStyle}">
+                                    x:Name="col1">
                         <GridViewColumn.CellTemplate>
                             <DataTemplate>
                                 <TextBlock Text="{Binding Path=CreateDate, StringFormat=dd.MM.yyyy}"
@@ -193,7 +205,7 @@
                         </GridViewColumn.CellTemplate>
                     </GridViewColumn>
 
-                    <GridViewColumn Width="{Binding ElementName=helperField, Path=ActualWidth}"
+                    <GridViewColumn Width="150"
                                     Header="Комментарий"
                                     HeaderContainerStyle="{StaticResource LastColumnHeaderStyle}">
                         <GridViewColumn.CellTemplate>

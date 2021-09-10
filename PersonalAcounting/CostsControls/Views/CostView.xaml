@@ -102,7 +102,6 @@
                 Command="{Binding Path=AddCostCommand}"
                 Content="Добавить расход"
                 Margin="0,0,10,0"
-                Foreground="White"
                 Style="{StaticResource RadioButtonTheme}"
                 />
             <RadioButton
@@ -111,7 +110,6 @@
                 Command="{Binding Path=DeleteCommand}"
                 Content="Удалить расход"
                 Margin="0,0,10,0"
-                Foreground="White"
                 Style="{StaticResource RadioButtonTheme}"
                 />
             <RadioButton
@@ -120,7 +118,6 @@
                 Command="{Binding Path=EditorCommand}"
                 Content="Изменить расход"
                 Margin="0,0,10,0"
-                Foreground="White"
                 Style="{StaticResource RadioButtonTheme}"/>
         </StackPanel>
 
@@ -128,12 +125,11 @@
             Grid.Row="1"
             ItemsSource="{Binding Path=Items}" 
             SelectedItem="{Binding Path=SelectedItem}"
-            Background="#6787CB"
+            Background="#FFE3D9"
             ScrollViewer.HorizontalScrollBarVisibility="Visible">
             <ListView.View>
                 <GridView>
-                    <GridViewColumn Width="250" Header="Название" 
-                                    HeaderContainerStyle="{StaticResource HeaderStyle}">
+                    <GridViewColumn Width="250" Header="Название" >
                         <GridViewColumn.CellTemplate>
                             <DataTemplate>
                                 <WrapPanel>
@@ -150,8 +146,7 @@
                         </GridViewColumn.CellTemplate>
                     </GridViewColumn>
 
-                    <GridViewColumn Width="180" Header="Категория"
-                                    HeaderContainerStyle="{StaticResource HeaderStyle}">
+                    <GridViewColumn Width="180" Header="Категория">
                         <GridViewColumn.CellTemplate>
                             <DataTemplate>
                                 <TextBlock Text="{Binding Path=TypeName}"
@@ -163,8 +158,7 @@
                         </GridViewColumn.CellTemplate>
                     </GridViewColumn>
 
-                    <GridViewColumn Width="110" Header="Сумма"
-                                    HeaderContainerStyle="{StaticResource HeaderStyle}">
+                    <GridViewColumn Width="110" Header="Сумма">
                         <GridViewColumn.CellTemplate>
                             <DataTemplate>
                                 <TextBlock Text="{Binding Path=Amount}"
@@ -178,8 +172,7 @@
                     </GridViewColumn>
 
                     <GridViewColumn Width="130" Header="Дата расхода"
-                                    x:Name="col1"
-                                    HeaderContainerStyle="{StaticResource HeaderStyle}">
+                                    x:Name="col1">
                         <GridViewColumn.CellTemplate>
                             <DataTemplate>
                                 <TextBlock Text="{Binding Path=CreateDate, StringFormat=dd.MM.yyyy}"
@@ -191,9 +184,8 @@
                         </GridViewColumn.CellTemplate>
                     </GridViewColumn>
 
-                    <GridViewColumn Width="{Binding ElementName=helperField, Path=ActualWidth}"
-                                    Header="Комментарий"
-                                    HeaderContainerStyle="{StaticResource LastColumnHeaderStyle}">
+                    <GridViewColumn Width="Auto"
+                                    Header="Комментарий">
                         <GridViewColumn.CellTemplate>
                             <DataTemplate>
                                 <TextBlock Text="{Binding Path=Comment}"
@@ -204,74 +196,6 @@
                             </DataTemplate>
                         </GridViewColumn.CellTemplate>
                     </GridViewColumn>
-                    <!--<GridViewColumn Width="200" Header="Название"
-                                    HeaderContainerStyle="{StaticResource HeaderStyle}">
-                        <GridViewColumn.CellTemplate>
-                            <DataTemplate>
-                                <TextBlock Text="{Binding Path=Name}"
-                                           Foreground="#000442"
-                                           FontFamily="Century Gothic"
-                                           FontWeight="ExtraBold"
-                                           FontSize="15"/>
-                            </DataTemplate>
-                        </GridViewColumn.CellTemplate>
-                    </GridViewColumn>
-
-
-                    <GridViewColumn Width="180" Header="Категория"
-                                    HeaderContainerStyle="{StaticResource HeaderStyle}">
-                        <GridViewColumn.CellTemplate>
-                            <DataTemplate>
-                                <TextBlock Text="{Binding Path=TypeName}"
-                                           Foreground="#000442"
-                                           FontFamily="Century Gothic"
-                                           FontWeight="ExtraBold"
-                                           FontSize="15"/>
-                            </DataTemplate>
-                        </GridViewColumn.CellTemplate>
-                    </GridViewColumn>
-
-                    <GridViewColumn Width="110" Header="Сумма" 
-                                    HeaderContainerStyle="{StaticResource HeaderStyle}">
-                        <GridViewColumn.CellTemplate>
-                            <DataTemplate>
-                                <TextBlock Text="{Binding Path=Amount}"
-                                           Foreground="#990000"
-                                           HorizontalAlignment="Center"
-                                           FontFamily="Century Gothic"
-                                           FontWeight="ExtraBold"
-                                           FontSize="17"/>
-                            </DataTemplate>
-                        </GridViewColumn.CellTemplate>
-                    </GridViewColumn>
-
-                    <GridViewColumn Width="130" Header="Дата расхода"
-                                    x:Name="col1"
-                                    HeaderContainerStyle="{StaticResource HeaderStyle}">
-                        <GridViewColumn.CellTemplate>
-                            <DataTemplate>
-                                <TextBlock Text="{Binding Path=CreateDate, StringFormat=dd.MM.yyyy}"
-                                           Foreground="#000442"
-                                           FontFamily="Century Gothic"
-                                           FontWeight="ExtraBold"
-                                           FontSize="15"/>
-                            </DataTemplate>
-                        </GridViewColumn.CellTemplate>
-                    </GridViewColumn>
-
-                    <GridViewColumn Width="{Binding ElementName=helperField, Path=ActualWidth}"
-                                    Header="Комментарий"
-                                    HeaderContainerStyle="{StaticResource LastColumnHeaderStyle}">
-                        <GridViewColumn.CellTemplate>
-                            <DataTemplate>
-                                <TextBlock Text="{Binding Path=Comment}"
-                                           Foreground="#000442"
-                                           FontFamily="Century Gothic"
-                                           FontWeight="ExtraBold"
-                                           FontSize="15"/>
-                            </DataTemplate>
-                        </GridViewColumn.CellTemplate>
-                    </GridViewColumn>-->
                 </GridView>
             </ListView.View>
         </ListView>

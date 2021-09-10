@@ -2,6 +2,12 @@
   "version": 3,
   "targets": {
     ".NETCoreApp,Version=v3.1": {
+      "ILMerge/3.0.41": {
+        "type": "package",
+        "build": {
+          "build/ILMerge.props": {}
+        }
+      },
       "AccountControl/1.0.0": {
         "type": "project",
         "framework": ".NETCoreApp,Version=v3.1",
@@ -326,6 +332,22 @@
     }
   },
   "libraries": {
+    "ILMerge/3.0.41": {
+      "sha512": "u9n45xs40bSGoNFcmMYJkh3zkGYKR4BqzQaX2uHc2Ay4drdiQOTeo/1ECps3ttDXOu4Q6qbTnsIbQWb/06ShqA==",
+      "type": "package",
+      "path": "ilmerge/3.0.41",
+      "hasTools": true,
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "build/ILMerge.props",
+        "docs/ilmerge-manual.md",
+        "ilmerge.3.0.41.nupkg.sha512",
+        "ilmerge.nuspec",
+        "tools/net452/ILMerge.exe",
+        "tools/net452/System.Compiler.dll"
+      ]
+    },
     "AccountControl/1.0.0": {
       "type": "project",
       "path": "../AccountsControl/AccountControl.csproj",
@@ -452,27 +474,28 @@
       "IDirectory >= 1.0.0",
       "IIncome >= 1.0.0",
       "IncomeFabric >= 1.0.0",
-      "WPFHelper >= 1.0.0"
+      "WPFHelper >= 1.0.0",
+      "ilmerge >= 3.0.41"
     ]
   },
   "packageFolders": {
-    "C:\\Users\\alexs\\.nuget\\packages\\": {},
+    "C:\\Users\\Alex\\.nuget\\packages\\": {},
     "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "D:\\Work\\PersonalAcounting\\PersonalAcounting\\PersonalAcounting\\PersonalAcounting.csproj",
+      "projectUniqueName": "C:\\Users\\Alex\\source\\repos\\Alex-RV\\PersonalAcounting\\PersonalAcounting\\PersonalAcounting\\PersonalAcounting.csproj",
       "projectName": "PersonalAcounting",
-      "projectPath": "D:\\Work\\PersonalAcounting\\PersonalAcounting\\PersonalAcounting\\PersonalAcounting.csproj",
-      "packagesPath": "C:\\Users\\alexs\\.nuget\\packages\\",
-      "outputPath": "D:\\Work\\PersonalAcounting\\PersonalAcounting\\PersonalAcounting\\obj\\",
+      "projectPath": "C:\\Users\\Alex\\source\\repos\\Alex-RV\\PersonalAcounting\\PersonalAcounting\\PersonalAcounting\\PersonalAcounting.csproj",
+      "packagesPath": "C:\\Users\\Alex\\.nuget\\packages\\",
+      "outputPath": "C:\\Users\\Alex\\source\\repos\\Alex-RV\\PersonalAcounting\\PersonalAcounting\\PersonalAcounting\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
       ],
       "configFilePaths": [
-        "C:\\Users\\alexs\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Users\\Alex\\AppData\\Roaming\\NuGet\\NuGet.Config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
       ],
@@ -487,47 +510,47 @@
         "netcoreapp3.1": {
           "targetAlias": "netcoreapp3.1",
           "projectReferences": {
-            "D:\\Work\\PersonalAcounting\\PersonalAcounting\\AccountFabric\\AccountFabric.csproj": {
-              "projectPath": "D:\\Work\\PersonalAcounting\\PersonalAcounting\\AccountFabric\\AccountFabric.csproj"
+            "C:\\Users\\Alex\\source\\repos\\Alex-RV\\PersonalAcounting\\PersonalAcounting\\AccountFabric\\AccountFabric.csproj": {
+              "projectPath": "C:\\Users\\Alex\\source\\repos\\Alex-RV\\PersonalAcounting\\PersonalAcounting\\AccountFabric\\AccountFabric.csproj"
             },
-            "D:\\Work\\PersonalAcounting\\PersonalAcounting\\AccountsControl\\AccountControl.csproj": {
-              "projectPath": "D:\\Work\\PersonalAcounting\\PersonalAcounting\\AccountsControl\\AccountControl.csproj"
+            "C:\\Users\\Alex\\source\\repos\\Alex-RV\\PersonalAcounting\\PersonalAcounting\\AccountsControl\\AccountControl.csproj": {
+              "projectPath": "C:\\Users\\Alex\\source\\repos\\Alex-RV\\PersonalAcounting\\PersonalAcounting\\AccountsControl\\AccountControl.csproj"
             },
-            "D:\\Work\\PersonalAcounting\\PersonalAcounting\\DataLoaderImlement\\DataLoaderImlement.csproj": {
-              "projectPath": "D:\\Work\\PersonalAcounting\\PersonalAcounting\\DataLoaderImlement\\DataLoaderImlement.csproj"
+            "C:\\Users\\Alex\\source\\repos\\Alex-RV\\PersonalAcounting\\PersonalAcounting\\DataLoaderImlement\\DataLoaderImlement.csproj": {
+              "projectPath": "C:\\Users\\Alex\\source\\repos\\Alex-RV\\PersonalAcounting\\PersonalAcounting\\DataLoaderImlement\\DataLoaderImlement.csproj"
             },
-            "D:\\Work\\PersonalAcounting\\PersonalAcounting\\DirectoryControl\\DirectoryControl.csproj": {
-              "projectPath": "D:\\Work\\PersonalAcounting\\PersonalAcounting\\DirectoryControl\\DirectoryControl.csproj"
+            "C:\\Users\\Alex\\source\\repos\\Alex-RV\\PersonalAcounting\\PersonalAcounting\\DirectoryControl\\DirectoryControl.csproj": {
+              "projectPath": "C:\\Users\\Alex\\source\\repos\\Alex-RV\\PersonalAcounting\\PersonalAcounting\\DirectoryControl\\DirectoryControl.csproj"
             },
-            "D:\\Work\\PersonalAcounting\\PersonalAcounting\\DirectoryImplement\\DirectoryImplement.csproj": {
-              "projectPath": "D:\\Work\\PersonalAcounting\\PersonalAcounting\\DirectoryImplement\\DirectoryImplement.csproj"
+            "C:\\Users\\Alex\\source\\repos\\Alex-RV\\PersonalAcounting\\PersonalAcounting\\DirectoryImplement\\DirectoryImplement.csproj": {
+              "projectPath": "C:\\Users\\Alex\\source\\repos\\Alex-RV\\PersonalAcounting\\PersonalAcounting\\DirectoryImplement\\DirectoryImplement.csproj"
             },
-            "D:\\Work\\PersonalAcounting\\PersonalAcounting\\FactoryDirectory\\FactoryDirectory.csproj": {
-              "projectPath": "D:\\Work\\PersonalAcounting\\PersonalAcounting\\FactoryDirectory\\FactoryDirectory.csproj"
+            "C:\\Users\\Alex\\source\\repos\\Alex-RV\\PersonalAcounting\\PersonalAcounting\\FactoryDirectory\\FactoryDirectory.csproj": {
+              "projectPath": "C:\\Users\\Alex\\source\\repos\\Alex-RV\\PersonalAcounting\\PersonalAcounting\\FactoryDirectory\\FactoryDirectory.csproj"
             },
-            "D:\\Work\\PersonalAcounting\\PersonalAcounting\\IAccounts\\IAccount.csproj": {
-              "projectPath": "D:\\Work\\PersonalAcounting\\PersonalAcounting\\IAccounts\\IAccount.csproj"
+            "C:\\Users\\Alex\\source\\repos\\Alex-RV\\PersonalAcounting\\PersonalAcounting\\IAccounts\\IAccount.csproj": {
+              "projectPath": "C:\\Users\\Alex\\source\\repos\\Alex-RV\\PersonalAcounting\\PersonalAcounting\\IAccounts\\IAccount.csproj"
             },
-            "D:\\Work\\PersonalAcounting\\PersonalAcounting\\ICostFabric\\CostsFabric.csproj": {
-              "projectPath": "D:\\Work\\PersonalAcounting\\PersonalAcounting\\ICostFabric\\CostsFabric.csproj"
+            "C:\\Users\\Alex\\source\\repos\\Alex-RV\\PersonalAcounting\\PersonalAcounting\\ICostFabric\\CostsFabric.csproj": {
+              "projectPath": "C:\\Users\\Alex\\source\\repos\\Alex-RV\\PersonalAcounting\\PersonalAcounting\\ICostFabric\\CostsFabric.csproj"
             },
-            "D:\\Work\\PersonalAcounting\\PersonalAcounting\\ICosts\\ICosts.csproj": {
-              "projectPath": "D:\\Work\\PersonalAcounting\\PersonalAcounting\\ICosts\\ICosts.csproj"
+            "C:\\Users\\Alex\\source\\repos\\Alex-RV\\PersonalAcounting\\PersonalAcounting\\ICosts\\ICosts.csproj": {
+              "projectPath": "C:\\Users\\Alex\\source\\repos\\Alex-RV\\PersonalAcounting\\PersonalAcounting\\ICosts\\ICosts.csproj"
             },
-            "D:\\Work\\PersonalAcounting\\PersonalAcounting\\IDataLoader\\IDataLoader.csproj": {
-              "projectPath": "D:\\Work\\PersonalAcounting\\PersonalAcounting\\IDataLoader\\IDataLoader.csproj"
+            "C:\\Users\\Alex\\source\\repos\\Alex-RV\\PersonalAcounting\\PersonalAcounting\\IDataLoader\\IDataLoader.csproj": {
+              "projectPath": "C:\\Users\\Alex\\source\\repos\\Alex-RV\\PersonalAcounting\\PersonalAcounting\\IDataLoader\\IDataLoader.csproj"
             },
-            "D:\\Work\\PersonalAcounting\\PersonalAcounting\\IDirectory\\IDirectory.csproj": {
-              "projectPath": "D:\\Work\\PersonalAcounting\\PersonalAcounting\\IDirectory\\IDirectory.csproj"
+            "C:\\Users\\Alex\\source\\repos\\Alex-RV\\PersonalAcounting\\PersonalAcounting\\IDirectory\\IDirectory.csproj": {
+              "projectPath": "C:\\Users\\Alex\\source\\repos\\Alex-RV\\PersonalAcounting\\PersonalAcounting\\IDirectory\\IDirectory.csproj"
             },
-            "D:\\Work\\PersonalAcounting\\PersonalAcounting\\IIncome\\IIncome.csproj": {
-              "projectPath": "D:\\Work\\PersonalAcounting\\PersonalAcounting\\IIncome\\IIncome.csproj"
+            "C:\\Users\\Alex\\source\\repos\\Alex-RV\\PersonalAcounting\\PersonalAcounting\\IIncome\\IIncome.csproj": {
+              "projectPath": "C:\\Users\\Alex\\source\\repos\\Alex-RV\\PersonalAcounting\\PersonalAcounting\\IIncome\\IIncome.csproj"
             },
-            "D:\\Work\\PersonalAcounting\\PersonalAcounting\\IncomeFabric\\IncomeFabric.csproj": {
-              "projectPath": "D:\\Work\\PersonalAcounting\\PersonalAcounting\\IncomeFabric\\IncomeFabric.csproj"
+            "C:\\Users\\Alex\\source\\repos\\Alex-RV\\PersonalAcounting\\PersonalAcounting\\IncomeFabric\\IncomeFabric.csproj": {
+              "projectPath": "C:\\Users\\Alex\\source\\repos\\Alex-RV\\PersonalAcounting\\PersonalAcounting\\IncomeFabric\\IncomeFabric.csproj"
             },
-            "D:\\Work\\PersonalAcounting\\PersonalAcounting\\WPFHelper\\WPFHelper.csproj": {
-              "projectPath": "D:\\Work\\PersonalAcounting\\PersonalAcounting\\WPFHelper\\WPFHelper.csproj"
+            "C:\\Users\\Alex\\source\\repos\\Alex-RV\\PersonalAcounting\\PersonalAcounting\\WPFHelper\\WPFHelper.csproj": {
+              "projectPath": "C:\\Users\\Alex\\source\\repos\\Alex-RV\\PersonalAcounting\\PersonalAcounting\\WPFHelper\\WPFHelper.csproj"
             }
           }
         }
@@ -541,6 +564,12 @@
     "frameworks": {
       "netcoreapp3.1": {
         "targetAlias": "netcoreapp3.1",
+        "dependencies": {
+          "ilmerge": {
+            "target": "Package",
+            "version": "[3.0.41, )"
+          }
+        },
         "imports": [
           "net461",
           "net462",

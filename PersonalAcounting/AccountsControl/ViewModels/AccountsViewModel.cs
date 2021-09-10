@@ -20,6 +20,7 @@ namespace AccountControl.ViewModels
         private WPFHelper.RelayCommand _editorCommand;
         private WPFHelper.RelayCommand _openAccountCommand;
         private IEnumerable<Directory.IDirectory> _directories;
+        private IncomeControls.ViewModels.IncomesViewModel _income;
         #endregion fields
 
         #region constructor
@@ -193,6 +194,21 @@ namespace AccountControl.ViewModels
         }
         #endregion properties
 
+        public IncomeControls.ViewModels.IncomesViewModel Income
+        {
+            get { return _income; }
+            set
+            {
+                if (_income != value)
+                {
+                    _income = value;
+
+                    OnPropertyChanged(nameof(Income));
+                }
+            }
+        }
+
+
         #region metods
         private void InitEditor()
         {
@@ -201,6 +217,7 @@ namespace AccountControl.ViewModels
                 Editor = new AccountEditorViewModel(_accountEditor);
                 Editor.CancelEditor += OnCancelEditor;
                 Editor.EndEditing += Editor_EndEditing;
+                //Income.OpenIncomeDirectoryAmount += OnOpenIncomeDirectoryAmount;
             }
 
         }
@@ -287,6 +304,17 @@ namespace AccountControl.ViewModels
                 ChangedActivAcount(this, EventArgs.Empty);
             }
         }
+
+        ///// <summary>
+        ///// обработчик события нажатия на кнопку открытие суммы по категориям
+        ///// </summary>
+        ///// <param name="sender"></param>
+        ///// <param name="e"></param>
+        //private void OnOpenIncomeDirectoryAmount(object sender, EventArgs e)
+        //{
+            
+        //    //VisibleIncomeView = true;
+        //}
         #endregion events
 
         #region IDisposble

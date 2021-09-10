@@ -21,12 +21,14 @@
           "IDirectory": "1.0.0",
           "IIncome": "1.0.0",
           "IncomeFabric": "1.0.0",
-          "WPFHelper": "1.0.0"
+          "WPFHelper": "1.0.0",
+          "ILMerge": "3.0.41"
         },
         "runtime": {
           "PersonalAcounting.dll": {}
         }
       },
+      "ILMerge/3.0.41": {},
       "AccountControl/1.0.0": {
         "dependencies": {
           "CostsControls": "1.0.0",
@@ -230,6 +232,13 @@
       "type": "project",
       "serviceable": false,
       "sha512": ""
+    },
+    "ILMerge/3.0.41": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-u9n45xs40bSGoNFcmMYJkh3zkGYKR4BqzQaX2uHc2Ay4drdiQOTeo/1ECps3ttDXOu4Q6qbTnsIbQWb/06ShqA==",
+      "path": "ilmerge/3.0.41",
+      "hashPath": "ilmerge.3.0.41.nupkg.sha512"
     },
     "AccountControl/1.0.0": {
       "type": "project",

@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using System.Text;
 using AccountControl.ViewModels;
 using Directory;
+//using Telerik.WinControls.UI;
 
 namespace PersonalAcounting
 {
@@ -22,6 +23,7 @@ namespace PersonalAcounting
         private DirectoryControl.ViewModels.DirectoriesViewModel _directory;
         #endregion fields
         DataLoader.Loader loader;
+        
         #region constructor
         public MainViewModel()
         {

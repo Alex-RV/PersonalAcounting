@@ -25,9 +25,9 @@
         <Label 
             Grid.Row="0"
             Grid.Column="0"
-            Background="#282553"
+            Background="#A8BFA8"
             FontFamily="Candara Light"
-            Foreground="#e3dcdf"
+            Foreground="Black"
             FontSize="14"
             Content="Наименование"/>
 
@@ -42,9 +42,9 @@
         <Label 
             Grid.Row="1"
             Grid.Column="0"
-            Background="#282553"
+            Background="#A8BFA8"
             FontFamily="Candara Light"
-            Foreground="#e3dcdf"
+            Foreground="Black"
             FontSize="14"
             Content="Комментарий"/>
 
@@ -59,13 +59,14 @@
         <Label 
             Grid.Row="2"
             Grid.Column="0"
-            Background="#282553"
+            Background="#A8BFA8"
             FontFamily="Candara Light"
-            Foreground="#e3dcdf"
+            Foreground="Black"
             FontSize="14"
             Content="Сумма"/>
 
         <TextBox
+            x:Name="shomaretextBox" 
             Grid.Row="2"
             Grid.Column="1"
             Foreground="Black"
@@ -77,9 +78,9 @@
         <Label 
             Grid.Row="3"
             Grid.Column="0"
-            Background="#282553"
+            Background="#A8BFA8"
             FontFamily="Candara Light"
-            Foreground="#e3dcdf"
+            Foreground="Black"
             FontSize="14"
             Content="Дата получения дохода"/>
 
@@ -98,9 +99,9 @@
         <Label
             Grid.Row="4"
             Grid.Column="0"
-            Background="#282553"
+            Background="#A8BFA8"
             FontFamily="Candara Light"
-            Foreground="#e3dcdf"
+            Foreground="Black"
             FontSize="14"
             Content="Категория дохода"/>
         <ComboBox
